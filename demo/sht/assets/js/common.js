@@ -27,6 +27,5 @@ $(document).ready(function(){
 	$(".table th .checkbox").click(function(){
     	$(this).parents(".table").toggleClass("checked-all");
 	});
-	
 
 });
