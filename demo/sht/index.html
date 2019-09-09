@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+	<title>首页-数汇通-企业排污许可管理平台</title>
+
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/css/bootstrap-submenu.min.css" rel="stylesheet">
+	<link href="assets/icons.css" rel="stylesheet">
+	<link href="assets/css/animate.min.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="dashboard">
+<div class="navbar navbar-fixed-top header" id="header">
+	<a class="navbar-brand" id="logo" href="index.html">数汇通-企业排污许可管理平台</a>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/img/avatar-default@2x.png" class="img-circle avatar"><b>tianyi</b> <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">个人中心</a></li>
+				<li><a href="#">账号设置</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="login.html">退出</a></li>
+    		</ul>
+		</li>
+	</ul>
+</div><!-- /#header -->
+
+<div class="sidebar" id="sidebar">
+	<div class="site-nav-body">
+		<ul class="nav site-nav">
+			<li class="nav-item dropdown">
+				<a href="#" class="btn-menu"><i class="icon icon-menu"></i></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-docs"></i><span class="text">文件管理</span></i></a>
+				<ul class="sub-nav dropdown-menu">
+					<li class="sub-nav-item"><a href="table-side.html">一企一档</a></li>
+					<li class="sub-nav-item"><a href="#">国家法律法规</a></li>
+					<li class="sub-nav-item"><a href="#">企业内部规定</a></li>
+					<li class="sub-nav-item"><a href="#">地方性法规</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-bill"></i><span class="text">台账记录</span></a>
+				<ul class="sub-nav dropdown-menu">
+					<li class="sub-nav-item dropdown-submenu">
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">水点源</a>
+						<ul class="sub-nav dropdown-menu">
+							<li class="sub-nav-item"><a href="#">连续在线数据导入</a></li>
+							<li class="sub-nav-item"><a href="#">手工监测数据录入</a></li>
+							<li class="sub-nav-item"><a href="#">设施异常运行记录</a></li>
+							<li class="sub-nav-item"><a href="#">连续监测数据查询</a></li>
+							<li class="sub-nav-item"><a href="#">治理设施运行记录</a></li>
+						</ul>
+					</li>
+					<li class="sub-nav-item dropdown-submenu">
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">空气固定源</a>
+						<ul class="sub-nav dropdown-menu">
+							<li class="sub-nav-item"><a href="#">连续在线数据导入</a></li>
+							<li class="sub-nav-item"><a href="#">手工监测数据录入</a></li>
+							<li class="sub-nav-item"><a href="#">无组织排放监测记录</a></li>
+							<li class="sub-nav-item"><a href="#">生产设施运行记录</a></li>
+							<li class="sub-nav-item"><a href="#">有组织排放治理记录</a></li>
+							<li class="sub-nav-item"><a href="#">无组织排放治理记录</a></li>
+							<li class="sub-nav-item"><a href="#">设施异常运行记录</a></li>
+							<li class="sub-nav-item"><a href="#">特殊时段运行记录</a></li>
+						</ul>
+					</li>
+					<li class="sub-nav-item dropdown-submenu">
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">固废</a>
+						<ul class="sub-nav dropdown-menu">
+							<li class="sub-nav-item"><a href="#">月度固废管理记录</a></li>
+							<li class="sub-nav-item"><a href="#">危险固废管理记录</a></li>
+							<li class="sub-nav-item"><a href="#">一般固废管理记录</a></li>
+						</ul>
+					</li>
+					<li class="sub-nav-item dropdown-submenu">
+						<a href="#" class="sub-nav-item-title" data-toggle="dropdown">设备设施管理</a>
+						<ul class="sub-nav dropdown-menu">
+							<li class="sub-nav-item"><a href="#">排污口管理</a></li>
+							<li class="sub-nav-item"><a href="#">生产设备管理</a></li>
+							<li class="sub-nav-item"><a href="#">治污设备管理</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-chart"></i><span class="text">数据分析</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-check"></i><span class="text">诊断报表</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-execution"></i><span class="text">执行报告</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-analysis"></i><span class="text">分析报告</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-tax"></i><span class="text">税务报表</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-control"></i><span class="text">运行调度</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-fee"></i><span class="text">费用管理</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-system"></i><span class="text">系统管理</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title"><i class="icon icon-basic"></i><span class="text">基础管理</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-dashboard"></i><span class="text">系统监控</span></a>
+				<ul class="sub-nav dropdown-menu">
+					<li class="sub-nav-item"><a href="#">在线任务</a></li>
+					<li class="sub-nav-item"><a href="#">系统日志</a></li>
+					<li class="sub-nav-item"><a href="#">运行监控</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="javascript:void(0)" class="nav-item-title dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><i class="icon icon-tools"></i><span class="text">系统工具</span></a>
+				<ul class="sub-nav dropdown-menu">
+					<li class="sub-nav-item"><a href="#">代码生成</a></li>
+					<li class="sub-nav-item"><a href="#">计划任务</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div><!-- /.sidebar -->
+
+<div class="main" id="main">
+	<div class="content">
+		<ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="first active"><a href="#home" class="tab tab-home" aria-controls="home" role="tab" data-toggle="tab"><i class="icon icon-home"></i></a></li>
+		    <li role="presentation"><a href="#yqyd" class="tab" aria-controls="contact" role="tab" data-toggle="tab">一企一档</a><button type="button" class="btn btn-link btn-close"><i class="icon icon-close"></i></button></li>
+		    <li role="presentation"><a href="#gjxfg" class="tab" aria-controls="contact" role="tab" data-toggle="tab">国家法律法规</a><button type="button" class="btn btn-link btn-close"><i class="icon icon-close"></i></button></li>
+		    <li role="presentation"><a href="#dfxfg" class="tab" aria-controls="contact" role="tab" data-toggle="tab">地方性法规</a><button type="button" class="btn btn-link btn-close"><i class="icon icon-close"></i></button></li>
+		    <li role="presentation"><a href="#contact" class="tab" aria-controls="contact" role="tab" data-toggle="tab">联系我们</a><button type="button" class="btn btn-link btn-close"><i class="icon icon-close"></i></button></li>
+		    <li class="navbar-right last dropdown">
+		    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon icon-tab"></i></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">定位当前选项卡</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">关闭全部选项卡</a></li>
+					<li><a href="login.html">关闭其他选项卡</a></li>
+				</ul>
+		    </li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="panel first">
+				<form class="form-inline">
+					<div class="form-group dropdown drop-select justified">
+						<label>工厂：</label>
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    选择工厂
+						    <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+						  	<li><a href="javascript:void(0)">donggongzhongchang</a></li>
+						  	<li><a href="javascript:void(0)">jiaohuachang</a></li>
+						  	<li><a href="javascript:void(0)">liantiechang</a></li>
+						  	<li><a href="javascript:void(0)">liangangchang</a></li>
+						</ul>
+		  			</div>
+		  			
+		  			<div class="form-group dropdown drop-select justified">
+						<label>排放口：</label>
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    选择排放口
+						    <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+						  	<li><a href="javascript:void(0)">DA003-3号排口</a></li>
+						  	<li><a href="javascript:void(0)">废水总排口</a></li>
+						</ul>
+		  			</div>
+		  			
+		  			<div class="form-group dropdown drop-select justified">
+						<label>污染物：</label>
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						    选择污染物
+						    <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+						  	<li><a href="javascript:void(0)">氨氮</a></li>
+						  	<li><a href="javascript:void(0)">COD</a></li>
+						</ul>
+		  			</div>
+		  		</form>
+			</div><!-- /.panel -->
+			<div class="panel">
+				<h2 class="panel-title">浓度达标监控</h2>
+				<div class="panel-body">
+					<div class="block">
+						<h4 class="block-title text-center">xitugangliantiechang-DA628-球团焙烧废气脱硫除氟排放口-颗粒物</h4>
+						<div class="block-content">
+							
+						</div>
+					</div>
+				</div>
+			</div><!-- /.panel -->
+			<div class="panel">
+				<h2 class="panel-title">排量达标监控</h2>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="block">
+								<h4 class="block-title text-center">xitugangliantiechang-DA628-球团焙烧废气脱硫除氟排放口-颗粒物-最近7日排放量</h4>
+								<div class="block-content">
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="block">
+								<h4 class="block-title text-center">xitugangliantiechang-DA628-球团焙烧废气脱硫除氟排放口-颗粒物-当年</h4>
+								<div class="block-content">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.panel -->
+			<div class="panel">
+				<h2 class="panel-title">月度排放量监控</h2>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="block">
+								<h4 class="block-title text-center">xitugangliantiechang-月度许可排放量对比</h4>
+								<div class="block-content">
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="block">
+								<h4 class="block-title text-center">xxitugangliantiechang-年度许可量对比</h4>
+								<div class="block-content">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.panel -->
+			<div class="panel">
+				<h2 class="panel-title">超标排口汇总</h2>
+				<div class="panel-body">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>
+									<div class="checkbox">
+									    <input type="checkbox">
+									    <label></label>
+									</div>
+								</th>
+								<th>序号</th>
+								<th>工厂名称</th>
+								<th>排放口编号</th>
+								<th>时间</th>
+								<th>颗粒物</th>
+								<th>二氧化硫</th>
+								<th>氮氧化物</th>
+								<th>氨氮</th>
+								<th>COD</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="checkbox">
+									    <input type="checkbox">
+									    <label></label>
+									</div>
+								</td>
+								<td>1</td>
+								<td>donggongzhongchang</td>
+								<td>DA001</td>
+								<td>2019-02-28 23:00:00</td>
+								<td class="text-red">11.2 (0↑)</td>
+								<td class="text-red">36.59 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+									    <input type="checkbox">
+									    <label></label>
+									</div>
+								</td>
+								<td>1</td>
+								<td>donggongzhongchang</td>
+								<td>DA001</td>
+								<td>2019-02-28 23:00:00</td>
+								<td class="text-red">11.2 (0↑)</td>
+								<td class="text-red">36.59 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+									    <input type="checkbox">
+									    <label></label>
+									</div>
+								</td>
+								<td>1</td>
+								<td>donggongzhongchang</td>
+								<td>DA001</td>
+								<td>2019-02-28 23:00:00</td>
+								<td class="text-red">11.2 (0↑)</td>
+								<td class="text-red">36.59 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+								<td class="text-red">98.03 (0↑)</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="pages-bar">
+						<ul class="pull-right pagination">
+						    <li>
+						      <a href="#" aria-label="First">
+						        <span aria-hidden="true"><i class="icon icon-first"></i></span>
+						      </a>
+						    </li>
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true"><i class="icon icon-prev"></i></span>
+						      </a>
+						    </li>
+						    <li class="active"><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true"><i class="icon icon-next"></i></span>
+						      </a>
+						    </li>
+						    <li>
+						      <a href="#" aria-label="Last">
+						        <span aria-hidden="true"><i class="icon icon-last"></i></span>
+						      </a>
+						    </li>
+						</ul>
+						<div class="page-stats">
+							显示第<em>1</em>到第<em>10</em>条记录，总共<em>24</em>条记录，每页显示<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="page-size">10</span> <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li class="active"><a href="javascript:void(0)">10</a></li><li><a href="javascript:void(0)">25</a></li></ul></span>条记录
+						</div>
+					</div>
+				</div><!-- /.panel-body -->
+			</div><!-- /.panel -->
+			<div class="panel">
+				<h2 class="panel-title">绩效水平监控</h2>
+				<div class="panel-body"></div>
+			</div>
+		</div><!-- /.tab-content -->
+	</div>
+	<div class="clearfix footer" id="footer">
+		<div class="pull-left"><a href="contact.html">联系我们</a></div>
+		<div class="pull-right text-grey">Copyright &copy; 2018<span class="pipe">|</span>北京数汇通环境技术研究院有限公司</div>
+	</div><!-- /#footer -->	
+</div><!-- /.main -->
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
+<script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+</html>

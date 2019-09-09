@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?li0qro');
+  src:  url('fonts/icomoon.eot?li0qro#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?li0qro') format('truetype'),
+    url('fonts/icomoon.woff?li0qro') format('woff'),
+    url('fonts/icomoon.svg?li0qro#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-call-in:before {
+  content: "\e924";
+}
+.icon-tax:before {
+  content: "\e921";
+}
+.icon-add:before {
+  content: "\e900";
+}
+.icon-adjust:before {
+  content: "\e901";
+}
+.icon-analysis:before {
+  content: "\e902";
+}
+.icon-arrow:before {
+  content: "\e903";
+}
+.icon-basic:before {
+  content: "\e904";
+}
+.icon-bill:before {
+  content: "\e905";
+}
+.icon-chart:before {
+  content: "\e906";
+}
+.icon-check:before {
+  content: "\e907";
+}
+.icon-checked:before {
+  content: "\e908";
+}
+.icon-close:before {
+  content: "\e909";
+}
+.icon-control:before {
+  content: "\e90a";
+}
+.icon-dashboard:before {
+  content: "\e90b";
+}
+.icon-del:before {
+  content: "\e90c";
+}
+.icon-docs:before {
+  content: "\e90d";
+}
+.icon-download:before {
+  content: "\e90e";
+}
+.icon-dropdown:before {
+  content: "\e90f";
+}
+.icon-edit:before {
+  content: "\e910";
+}
+.icon-execution:before {
+  content: "\e911";
+}
+.icon-export:before {
+  content: "\e912";
+}
+.icon-fee:before {
+  content: "\e913";
+}
+.icon-first:before {
+  content: "\e914";
+}
+.icon-folder:before {
+  content: "\e915";
+}
+.icon-home:before {
+  content: "\e916";
+}
+.icon-last:before {
+  content: "\e917";
+}
+.icon-max:before {
+  content: "\e918";
+}
+.icon-menu:before {
+  content: "\e919";
+}
+.icon-next:before {
+  content: "\e91a";
+}
+.icon-prev:before {
+  content: "\e91b";
+}
+.icon-preview:before {
+  content: "\e91c";
+}
+.icon-revert:before {
+  content: "\e91d";
+}
+.icon-shut:before {
+  content: "\e91e";
+}
+.icon-system:before {
+  content: "\e91f";
+}
+.icon-tab:before {
+  content: "\e920";
+}
+.icon-tools:before {
+  content: "\e922";
+}
+.icon-zoom:before {
+  content: "\e923";
+}
