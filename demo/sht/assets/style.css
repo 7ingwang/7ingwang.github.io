@@ -178,8 +178,9 @@ button{ background: none; border: none;}
 
 /* main */
 
-.main{ padding: 20px;}
+.main{ padding: 20px 10px;}
 .content{ min-height: 80vh;}
+
 @media (min-width: 768px) {
 .main{ margin-left: 180px;}
 .main.wide{ margin-left: 56px;}
