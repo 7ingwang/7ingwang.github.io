@@ -218,7 +218,7 @@ button{ background: none; border: none;}
 
 /**** contact ****/
 .panel-contact{ background-image: url(img/inset-contact@2x.png); background-repeat: no-repeat; background-position: right center; background-size: 50% auto;}
-.panel-contact .panel-title{ font-size: 20px; color: #3A89DD;}
+.panel-contact .panel-title{ border-bottom: none; font-size: 20px; color: #3A89DD;}
 .panel-contact .list li p{ color: #666;}
 @media (min-width: 768px) {
 .panel-contact{ padding: 50px 80px; min-height: 75vh; }
