@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4037">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css?5127">
+	
+    <title>文件名称XXX-疤康医院病例系统</title>   
+</head>
+<body class="more">
+
+<div class="bloc bloc-theme" id="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="index.html" id="logo" class="pinned">疤康医院病例系统</a>
+			</div>
+			<div class="col-md-9 d-flex flex-row-reverse">
+				
+				<span class="login">登录医生：刘佳勇 <a href="#">退出</a></span>
+				<a class="btn-filter" href="filter.html">高级搜索</a>
+				<form class="form-inline">
+					<input class="form-control" placeholder="疤痕部位、姓名、身份证" />
+					<button class="btn btn-sm btn-search"><i class="fa fa-search"></i></button>
+				</form>
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bloc media-detail">
+	<div class="container">
+		<div class="title"><big>患者: <a href="single.html">张三</a> 的文件名称XXX </big> <small class="date float-right">2019-01-22 18:03</small></div>
+		<div class="content">
+			<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+			<div class="tags">
+				<span class="tag sm selected">标签</span><span class="tag sm">标签</span><span class="tag sm selected">标签</span>
+			</div>
+			<div class="note input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text">备注</span>
+  				</div>
+  				<textarea class="form-control">这里是备注内容……</textarea>		
+			</div>
+			<div class="submit-bar">
+				<button class="btn btn-primary" type="submit">保存</button>
+				<button class="btn btn-link btn-link-red float-right" type="submit">删除</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
+
+<!-- footer -->
+<div class="bloc l-bloc" id="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<p class="copyright">© 2015 北京孙便友疤康诊所有限公司 ALL Right Reserved 京ICP备15041225号</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+    
+
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+	<script src="./js/jquery-1.10.2.min.js?1102"></script>
+	<script src="./js/bootstrap.bundle.min.js?1623"></script>
+	<script src="./js/blocs.min.js?2658"></script>
+	<script src="./js/lazysizes.min.js" defer></script>
+	<script src="./js/stickUp.min.js"></script>
+	<script type="text/javascript">
+    	jQuery(function($){
+	        $(document).ready( function(){
+			  	
+			  	//设置标签
+	          	$('.media-detail .tags .tag').click(function(){
+			  		$(this).toggleClass('selected');
+			  	});
+
+	        });
+		});
+    </script>
+	
+</body>
+</html>

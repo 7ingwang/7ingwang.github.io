@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4037">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/icons.css?0129">
+	<link rel="stylesheet" type="text/css" href="style.css?5127">
+
+    <title>张三-疤康医院病例系统</title>
+</head>
+<body class="single">
+
+<div class="bloc bloc-theme" id="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="index.html" id="logo" class="pinned">疤康医院病例系统</a>
+			</div>
+			<div class="col-md-9 d-flex flex-row-reverse">
+
+				<span class="login">登录医生：刘佳勇 <a href="#">退出</a></span>
+				<a class="btn-filter" href="filter.html">高级搜索</a>
+				<form class="form-inline">
+					<input class="form-control" placeholder="疤痕部位、姓名、身份证" />
+					<button class="btn btn-sm btn-search"><i class="fa fa-search"></i></button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bloc navbar">
+	<div class="container-fluid">
+		<ul class="nav">
+			  <li class="nav-item active">
+			    <a class="nav-link" href="#">Active</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Link</a>
+			  </li> 
+			  <li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Link</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Link</a>
+			  </li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="bloc" id="headbar">
+	<div class="container-fluid">
+		<h1><big>患者 <b>张三</b> 的病例</big><small>会员号: <b>1811240007</b>    身份证号: <b>130637197811240910</b></small></h1>
+	</div>
+</div>
+
+<div class="bloc" id="filterbar">
+	<div class="container-fluid">
+		<div class="tags">
+			<span class="tag tag-all selected">所有</span><span class="tag tag-pic">图片</span><span class="tag tag-video">视频</span><span class="tag tag-other">其他</span><span class="tag">标签</span>
+		</div>
+	</div>
+</div>
+
+
+<ul class="scrollmenu" id="#media-list">
+	<li class="active"><a href="#item4" scrollTo="item4" class="scrollOnClick" duration="2000" easing="smooth">第 4 次</a></li>
+	<li><a href="#item3" scrollTo="item3" class="scrollOnClick" duration="2000" easing="smooth">第 3 次</a></li>
+	<li><a href="#item2" scrollTo="item2" class="scrollOnClick" duration="2000" easing="smooth">第 2 次</a></li>
+	<li><a href="#item1" scrollTo="item1" class="scrollOnClick" duration="2000" easing="smooth">第 1 次</a></li>
+</ul>
+
+<div class="bloc" id="timeline">
+	<div class="container-fluid">
+		<h2 class="bloc-title">最近更新病例的患者</h2>
+		<div class="media-content" data-spy="scroll" data-target="#media-list" data-offset="0">
+
+			<div class="media-group current" id="item4">
+				<h3><big>第 4 次</big><small class="date">2019-1-8 07:51:53</small><small>诊疗记录号: <b>2c908e73669e862a0166af79061c73sd</b></small><small>医生姓名: <b>刘加勇</b></small><small>文件数：<b>13</b></small><button class="btn btn-primary float-right">上传</button></h3>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<span class="iscover text-grey float-right">已为封面</span>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+				</div>
+				</div>
+
+				<div class="media-group" id="item3">
+					<h3><big>第 3 次</big><small class="date">2019-1-8 07:51:53</small><small>诊疗记录号: <b>2c908e73669e862a0166af79061c73sd</b></small><small>医生姓名: <b>刘加勇</b></small><small>文件数：<b>13</b></small><button class="btn btn-primary float-right">上传</button></h3>
+					<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+				</div>
+				</div>
+
+				<div class="media-group" id="item2">
+					<h3><big>第 2 次</big><small class="date">2019-1-8 07:51:53</small><small>诊疗记录号: <b>2c908e73669e862a0166af79061c73sd</b></small><small>医生姓名: <b>刘加勇</b></small><small>文件数：<b>13</b></small><button class="btn btn-primary float-right">上传</button></h3>
+					<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+				</div>
+				</div>
+
+				<div class="media-group" id="item1">
+					<h3><big>第 1 次</big><small class="date">2019-1-8 07:51:53</small><small>诊疗记录号: <b>2c908e73669e862a0166af79061c73sd</b></small><small>医生姓名: <b>刘加勇</b></small><small>文件数：<b>13</b></small><button class="btn btn-primary float-right">上传</button></h3>
+					<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="card media-card">
+							<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+							<div class="body">
+								<div class="tags">
+									<span class="tag sm selected">标签</span><span class="tag sm selected">标签</span><span class="tag sm selected">标签</span>
+								</div>
+								<div class="note">这里是备注内容……</div>
+								<div class="options">
+									<a href="more.html"><i class="icon icon-more"></i></a>
+									<a href="###" class="btn-compare float-right">+ 对比</a>
+									<a href="#" class="btn-cover float-right">设为封面</a>
+								</div>
+							</div>
+							<a href="#" class="check"><i class="icon icon-check icon-24"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 批量设置 -->
+<div class="toptoolbar" id="batchbar">
+	<button class="btn btn-link float-left">删除</button>
+	<button class="btn btn-coffee" data-toggle="modal" data-target="#setTagsModal">设置标签</button>
+	<button class="btn btn-purple" data-toggle="modal" data-target="#fileTransModal">文件转移</button>
+	<button class="btn btn-close btn-close-corner"><i class="icon icon-close icon-24"></i></button>
+</div>
+
+<!-- 上传 -->
+<div class="toptoolbar" id="uploadbar">
+	<button class="btn btn-primary">点击选择文件</button>
+	<p class="text-tips"></p>
+	<button class="btn btn-close btn-close-corner"><i class="icon icon-close icon-24"></i></button>
+</div>
+
+
+<!-- setTagsModal -->
+<div class="modal fade" id="setTagsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">设置标签</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="tags">
+			<span class="tag sm selected">标签</span><span class="tag sm">标签</span><span class="tag sm selected">标签</span>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light btn-cancel" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fileTransModal -->
+<div class="modal fade" id="fileTransModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">文件转移</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<form>
+		  <div class="form-group">
+		    <label>选择移动到</label>
+		    <select class="form-control">
+		      <option>新建</option>
+		      <option>目录1</option>
+		      <option>目录2</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+			  <label for="staticEmail">新建目录</label>
+			  <input type="text" class="form-control" placeholder="目录名">
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light btn-cancel" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sidebox">
+	<h2><button class="btn-compare"><i class="icon icon-compare icon-44"></i></button> 对比</h2>
+	<div class="content">
+		<div class="imgbox">
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+			<div class="img">
+				<img src="img/lazyload-ph.png" data-src="img/placeholder-image.png" class="img-fluid mx-auto d-block lazyload" />
+				<a class="del"><i class="icon icon-close icon-24"></i></a>
+			</div>
+		</div>
+		<div class="submit-bar">
+			<button class="btn btn-primary" onClick="window.open('compare.html')" target="_blank">对比</button>
+			<button class="btn btn-link btn-clear float-right">清空</button>
+		</div>
+	</div>
+</div>
+
+
+<!-- ScrollToTop Button -->
+<a class="btn scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
+
+<!-- footer -->
+<div class="bloc l-bloc" id="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<p class="copyright">© 2015 北京孙便友疤康诊所有限公司 ALL Right Reserved 京ICP备15041225号</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+
+
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+	<script src="./js/jquery-1.10.2.min.js?1102"></script>
+	<script src="./js/bootstrap.bundle.min.js?1623"></script>
+	<script src="./js/blocs.min.js?2658"></script>
+	<script src="./js/lazysizes.min.js" defer></script>
+	<script src="./js/stickUp.min.js"></script>
+	<script src="./js/smoothScroll-ES5.js"></script>
+	<script>
+		$(function () {
+		    $(".dropdown").mouseover(function () {
+		        $(this).children(".dropdown-menu").addClass("show");
+		    });
+		
+		    $(".dropdown-menu").mouseleave(function(){
+		        $(this).removeClass("show");
+		    })
+		
+		})
+	</script>
+	<script type="text/javascript">
+    	jQuery(function($){
+	        $(document).ready( function(){
+	          	//标签栏固定
+// 	          	$('#filterbar .tags').stickUp();
+
+
+
+	          	//标签过滤
+	          	$('#filterbar .tag:not(.tag-all)').click(function(){
+			  		$(this).toggleClass('selected');
+			  	});
+
+			  	//设置标签
+	          	$('#setTagsModal .tags .tag').click(function(){
+			  		$(this).toggleClass('selected');
+			  	});
+
+				//滚动监听
+				$('.scrollmenu li').click(function(){
+			  		$(this).addClass('active').siblings().removeClass('active');
+			  	});
+
+
+			  	//单图点选对比
+				$(".media-card .options .btn-compare").click(function(){
+					$(this).replaceWith("<span class='text-grey float-right'>已选</span>");
+					$(".sidebox").addClass("open");
+				});
+
+
+				//单图勾选
+				$(".media-card .check").click(function(){
+				    $(this).toggleClass("checked");
+				    $('#batchbar').addClass('open');
+				});
+
+				//关闭顶端浮层
+				$(".toptoolbar .btn-close").click(function(){
+				    $('.toptoolbar').removeClass('open');
+				});
+
+				//上传
+				$(".media-group h3 .btn.float-right").click(function(){
+				    $('#uploadbar').addClass('open');
+				});
+
+
+			  	//对比抽屉
+				$(".sidebox .btn-compare").click(function(){
+				    $(".sidebox").toggleClass("open");
+				});
+
+				//对比抽屉-删除与清空
+				$(".sidebox .imgbox .del").click(function(){
+				    $(this).parent().remove();
+				});
+				$(".sidebox .btn-clear").click(function(){
+					$(this).remove();
+				    $('.sidebox .imgbox .img').remove();
+				});
+
+	        });
+		});
+    </script>
+</body>
+</html>

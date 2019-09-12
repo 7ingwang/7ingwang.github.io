@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?v0619">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/icons.css?v0619">
+	<link href="http://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css?v0619">
+	
+    <title>案例分享-疤康医院病例系统</title>   
+</head>
+<body class="case case-edit">
+	<header class="header header-simple text-center">
+		<a href="#" class="float-left">案例列表</a>
+		<span class="title">案例编辑</span>
+	</header>
+	<div class="container">
+		<div class="content">
+			<div class="title">
+				<input type="text" placeholder="在这里输入标题">
+			</div>
+			<ul id="sortable">
+			    <li>
+					<div class="dragbox">
+						<textarea placeholder="在这里输入段落内容"></textarea>
+						<button class="btn btn-del"><i class="icon-close"></i></button>
+					</div>
+			    </li>
+				<li>
+					<div class="dragbox">
+						<img src="https://images.unsplash.com/photo-1542565506741-6483f00a150d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" >
+						<button class="btn btn-del"><i class="icon-close"></i></button>
+					</div>
+					<div class="checkbar">
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+						  <label class="form-check-label" for="inlineRadio1">治疗前</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						  <label class="form-check-label" for="inlineRadio2">治疗中</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+						  <label class="form-check-label" for="inlineRadio3">治疗后</label>
+						</div>
+					</div>
+			    </li>
+				<li>
+					<div class="dragbox">
+						<textarea placeholder="在这里输入段落内容"></textarea>
+						<button class="btn btn-del"><i class="icon-close"></i></button>
+					</div>
+				</li>
+				<li>
+					<div class="dragbox">
+						<textarea placeholder="在这里输入段落内容"></textarea>
+						<button class="btn btn-del"><i class="icon-close"></i></button>
+					</div>
+			    </li>
+		  	</ul>
+		  	<button class="btn btn-block btn-add" id="btn-add"><i class="icon-plus"></i></button>
+		  	<div class="btns d-flex justify-content-center">
+				<button type="button" class="btn btn-grey btn-lg">保存</button>
+				<button type="button" class="btn btn-sky btn-lg" onclick="javascript:window.location.href='case-preview.html'">预览</button>	
+				<button type="button" class="btn btn-green btn-lg">发布</button>	  	
+		  	</div>
+  		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function(){  
+			$("#sortable").sortable({   
+			    placeholder: "ui-sortable-placeholder"   
+			});
+			
+			$("#btn-add").click(function(){
+				$("#sortable").append('<li><div class="dragbox"><textarea placeholder="在这里输入段落内容"></textarea></div></li>');
+			});
+			
+			$(".btn-del").click(function(){
+				$(this).parentsUntil("ul").remove();
+			});
+		}); 
+	</script>
+</body>
+</html>

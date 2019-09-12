@@ -1,0 +1,32 @@
+html{ font-size: 20px;}
+
+.btn-brand, .page-item.active .page-link{ background-color: #003878; border-color: #003878;}
+
+.inner-brand{ display: inline-block; width: 7.2rem; height: 2.8rem; background: url(../images/logo.png) no-repeat; background-size: auto 100%; text-indent: -100vw;}
+header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 75%;}
+header.header-transparent .inner-nav > ul > li > a{}
+header.header-transparent .inner-nav > ul > li.active > a::after{ height: .25rem; border-radius: .125rem;}
+.inner-nav .sub-menu.mega-menu-row li > a{ padding-left: 20px; padding-right: 20px;}
+.inner-nav .sub-menu li > a{ background-size: 0 100%; transition: all .8s;}
+.inner-nav .sub-menu li > a:hover{ background-color: #003878; background: linear-gradient(to right, #003878, #003878) no-repeat; background-size: 100% 100%; color: #fff; }
+
+.module, .module-cover{ background: #F6F9FD;}
+
+.off-canvas-sidebar{ background: #FFF; }
+
+.footer .widget-recent-entries ul li{ border-color: #0C6436;}
+
+.footer{ background: #004822;}
+.footer-widgets + .footer-bar{ border-top-color: #0C6436;}
+.footer-bar{ font-size: .7rem;}
+
+.maps-container{ height: 608px;}
+
+
+@media (max-width: 575.98px){
+header.header-small .inner-brand{ margin-top: .5rem; background-size: auto 65%;}
+}
+
+@media (max-width: 991.98px){
+.inner-navigation{ background: #003878;}
+}
