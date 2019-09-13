@@ -11,6 +11,8 @@ em{ font-style: normal; font-weight: 600;}
 /* button */
 button{ background: none; border: none;}
 button:hover{ opacity: .8;}
+.btn-link, .btn-link:hover{ color: #3A89DD;}
+.btn-link:hover{ text-decoration: none;}
 .btn-primary, .btn-primary:hover, .btn-primary:active{ background-color: #229853 !important; border-color: #229853 !important;}
 .btn-default, .btn-default:hover, .btn-default:active{ background-color: #fff !important;}
 .btn-blue, .btn-blue:hover, .btn-blue:active{ background-color: #3A89DD !important; border-color: #3A89DD !important; color: #fff;}
@@ -124,6 +126,12 @@ button:hover{ opacity: .8;}
 .dropdown.justified .dropdown-toggle .caret{ position: absolute; top: 14px; right: 12px;}
 .dropdown.justified .dropdown-menu li a{ text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 .form-group.drop-select+.form-group.drop-select{ margin-left: 20px;}
+
+.dropdown.justified.wider .dropdown-toggle,
+.dropdown.justified.wider .dropdown-menu{ min-width: 240px; max-width: 320px;}
+
+.dropdown .dropdown-menu li.with-input{ padding: 6px 20px;}
+.dropdown .dropdown-menu li.with-input .form-control{ width: 100%;}
 
 .nav>li>a:focus,
 .nav .open>a,
