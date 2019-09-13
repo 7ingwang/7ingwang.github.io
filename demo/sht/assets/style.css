@@ -10,7 +10,7 @@ em{ font-style: normal; font-weight: 600;}
 
 /* button */
 button{ background: none; border: none;}
-.btn:hover{ opacity: .8;}
+button:hover{ opacity: .8;}
 .btn-primary, .btn-primary:hover, .btn-primary:active{ background-color: #229853 !important; border-color: #229853 !important;}
 .btn-default, .btn-default:hover, .btn-default:active{ background-color: #fff !important;}
 .btn-blue, .btn-blue:hover, .btn-blue:active{ background-color: #3A89DD !important; border-color: #3A89DD !important; color: #fff;}
@@ -22,6 +22,9 @@ button{ background: none; border: none;}
 /* icon */
 .icon{ font-size: 16px;}
 .icon-sm{ font-size: 12px;}
+.icon-blue{ color: #3A89DD;}
+.icon-green{ color: #00B894;}
+.icon-red{ color: #ED5566;}
 
 /* form */
 .form-group{ margin-bottom: 20px;}
