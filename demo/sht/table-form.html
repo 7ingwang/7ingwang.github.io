@@ -251,7 +251,7 @@
 											<button type="button"><i class="icon icon-del icon-red"></i></button></td>		
 										<td>
 											
-											<button type="button"><i class="icon icon-adjust icon-purple"></i></button>
+											<button type="button" data-toggle="modal" data-target="#myModal"><i class="icon icon-adjust icon-purple"></i></button>
 										</td>
 									</tr>
 								</tbody>
@@ -292,6 +292,93 @@
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
 		</div><!-- /.tab-content -->
+		
+		<!-- 配置限值 -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		  	<div class="modal-dialog modal-lg">
+		   		<div class="modal-content">
+		     		<div class="modal-header">
+			 			<button type="button" class="shut pull-right" data-dismiss="modal"><i class="icon icon-shut"></i></button>
+		        		<button type="button" class="max pull-right"><i class="icon icon-max"></i></button>
+						<button type="button" class="zoom pull-right"><i class="icon icon-minus"></i></button>		        		
+						<h4 class="modal-title" id="myModalLabel">配置限值</h4>
+					</div>
+				    <div class="modal-body">
+					    <ul class="list list-row-2">
+					        <li>
+					        	<label>二级厂名称</label>donggongzhongchang
+					        </li>
+					        <li>
+					        	<label>排放口名称</label>3号排口
+					        </li>
+					        <li>
+					        	<label>排放口许可编号</label>DA003
+					        </li>
+					        <li>
+					        	<label>排污类型</label>废气
+					        </li>
+					        <li>
+					        	<label>排放组织方式</label>有组织
+					        </li>	      
+					        <li>
+					        	<label>排放口类型</label>主要排放口
+					        </li>
+					    </ul>
+						<div class="table-responsive">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th>污染物名称</th>
+										<th>限值</th>
+										<th>单位</th>
+										<th>监控类型</th>
+										<th>连续在线监测名称</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>二氧化硫</td>
+										<td><input type="text" class="form-control" value="200.0"></td>
+										<td>
+											<div class="form-group dropdown drop-select justified narrower">
+												<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+												    自动、手动
+												    <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												  	<li><a href="javascript:void(0)">自动</a></li>
+												  	<li><a href="javascript:void(0)">手动</a></li>
+												  	<li><a href="javascript:void(0)">自动、手动</a></li>
+												</ul>
+								  			</div>
+										</td>
+										<td>
+											<div class="form-group dropdown drop-select justified narrower">
+												<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+												    mg/m3
+												    <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												  	<li><a href="javascript:void(0)">mg/m3</a></li>
+												</ul>
+								  			</div>
+										</td>
+										<td><input type="text" class="form-control" value="氮氧化物"></td>
+										<td><button type="submit"><i class="icon icon-del icon-red"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				    </div>
+			      	<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        	<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal -->
+		
 	</div><!-- /.content -->
 	<div class="clearfix footer" id="footer">
 		<div class="pull-left"><a href="contact.html">联系我们</a></div>

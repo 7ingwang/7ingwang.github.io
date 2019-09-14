@@ -30,11 +30,12 @@ button:hover{ opacity: .8;}
 .icon-purple{ color: #6C5CE7;}
 
 /* form */
-.form-group{ margin-bottom: 20px;}
+.form-group{ margin-bottom: 0;}
+.form-control{ width: auto;}
 
 /* table */
-.table-responsive{ border: none;}
-.table{ min-width: 1000px; overflow-x: auto;}
+.table-responsive{ border: none; overflow: inherit;}
+.table{}
 .table>tbody>tr>td{ vertical-align: middle; border-top-color: #DEEAF6;}
 .table>thead>tr>th{ border-bottom-color: #DEEAF6;}
 .table-striped>tbody>tr:nth-of-type(odd){ background-color: #F5F9FD;}
@@ -101,6 +102,10 @@ button:hover{ opacity: .8;}
 .pagination li a .icon{ font-size: 10px;}
 
 /* list */
+.list{}
+.list label{ display: inline-block; margin-right: 10px; min-width: 35%; text-align: right;}
+.list.list-row-2 li{ display: inline-block; width: 49%; white-space: nowrap;}
+
 .list-group{}
 .list-group-item{ padding: 10px; border-width: 1px 0 0 0; border-color: #DEEAF6;}
 .list-group-item .list-title{ text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
@@ -110,6 +115,10 @@ button:hover{ opacity: .8;}
 .list-file .list-group-item .list-title{ color: #666;}
 .list-file .list-group-item .btn.pull-right{ position: relative; top: -4px;}
 .list-file .list-group-item .list-title .icon{ color: #999;}
+
+/* modal-dialog */
+.modal-dialog{}
+.modal-header button .icon{ color: #91BBD3;}
 
 /* global */
 .pr{ position: relative;}
@@ -124,7 +133,7 @@ button:hover{ opacity: .8;}
 .dropdown-menu>li>a{ padding: 6px 20px;}
 .dropdown-menu>li>a:hover{ background-color: #DEEAF6;}
 .dropdown.justified .dropdown-toggle,
-.dropdown.justified .dropdown-menu{ min-width: 180px; max-width: 240px;}
+.dropdown.justified .dropdown-menu{ min-width: auto; max-width: 240px;}
 .dropdown.justified .dropdown-toggle{ position: relative; text-align: left;}
 .dropdown.justified .dropdown-toggle .caret{ position: absolute; top: 14px; right: 12px;}
 .dropdown.justified .dropdown-menu li a{ text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
@@ -132,6 +141,10 @@ button:hover{ opacity: .8;}
 
 .dropdown.justified.wider .dropdown-toggle,
 .dropdown.justified.wider .dropdown-menu{ min-width: 240px; max-width: 320px;}
+
+.dropdown.justified.narrower .dropdown-toggle,
+.dropdown.justified.narrower .dropdown-menu{ min-width: 120px; max-width: 180px;}
+
 
 .dropdown .dropdown-menu li.with-input{ padding: 6px 20px;}
 .dropdown .dropdown-menu li.with-input .form-control{ width: 100%;}
