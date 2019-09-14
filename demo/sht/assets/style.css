@@ -27,11 +27,14 @@ button:hover{ opacity: .8;}
 .icon-blue{ color: #3A89DD;}
 .icon-green{ color: #00B894;}
 .icon-red{ color: #ED5566;}
+.icon-purple{ color: #6C5CE7;}
 
 /* form */
 .form-group{ margin-bottom: 20px;}
 
-
+/* table */
+.table-responsive{ border: none;}
+.table{ min-width: 1000px; overflow-x: auto;}
 .table>tbody>tr>td{ vertical-align: middle; border-top-color: #DEEAF6;}
 .table>thead>tr>th{ border-bottom-color: #DEEAF6;}
 .table-striped>tbody>tr:nth-of-type(odd){ background-color: #F5F9FD;}
