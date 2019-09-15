@@ -247,8 +247,8 @@
 										<td>主要排放口</td>
 										<td>热力作业部1号、2号CCPP发电机组、热力作业部3号</td>
 										<td>
-											<button type="button"><i class="icon icon-edit icon-blue"></i></button>
-											<button type="button"><i class="icon icon-del icon-red"></i></button></td>		
+											<button type="button" data-toggle="modal" data-target="#myModal1"><i class="icon icon-edit icon-blue"></i></button>
+											<button type="button" data-toggle="modal" data-target=".modal-info"><i class="icon icon-del icon-red"></i></button></td>		
 										<td>
 											
 											<button type="button" data-toggle="modal" data-target="#myModal"><i class="icon icon-adjust icon-purple"></i></button>
@@ -293,6 +293,125 @@
 			</div><!-- /.panel -->
 		</div><!-- /.tab-content -->
 		
+		<!-- 编辑 -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="shut pull-right" data-dismiss="modal"><i class="icon icon-shut"></i></button>
+						<button type="button" class="max pull-right"><i class="icon icon-max"></i></button>
+						<button type="button" class="zoom pull-right"><i class="icon icon-minus"></i></button>	
+						<h4 class="modal-title">编辑</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">二级厂名称</label>
+								<div class="col-sm-9">
+									<div class="form-group dropdown drop-select justified wider">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    donggongzhongchang
+										    <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										  	<li><a href="javascript:void(0)">donggongzhongchang</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口名称</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="3号排口">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口许可编号</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="DA003">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排污口企业编号</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="3号炉排口">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排污类型</label>
+								<div class="col-sm-9">
+									<span class="iradio">
+										<input type="radio" name="optionsRadios">
+										<label class="text">废气</label>
+									</span>
+									<span class="iradio">
+										<input type="radio" name="optionsRadios">
+										<label class="text">废水</label>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放组织方式</label>
+								<div class="col-sm-9">
+									<div class="form-group dropdown drop-select justified wider">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    有组织
+										    <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+										  	<li><a href="javascript:void(0)">有组织</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口类型</label>
+								<div class="col-sm-9">
+									<span class="iradio">
+										<input type="radio" name="optionsRadios1">
+										<label class="text">一般排放口</label>
+									</span>
+									<span class="iradio">
+										<input type="radio" name="optionsRadios1">
+										<label class="text">主要排放口</label>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">生产单元</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="1-5号机组">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+		<!-- 确认信息 -->
+		<div class="modal fade modal-info" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm" role="document">
+		    	<div class="modal-content">
+			    	<div class="modal-header">
+						<button type="button" class="shut pull-right" data-dismiss="modal"><i class="icon icon-shut"></i></button>
+						<h4 class="modal-title">确认信息</h4>
+					</div>
+					<div class="modal-body">
+						<p>确定要删除选中的记录？</p>
+					</div>
+					<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        	<button type="button" class="btn btn-primary">确认</button>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		
 		<!-- 配置限值 -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
 		  	<div class="modal-dialog modal-lg">
@@ -324,8 +443,11 @@
 					        	<label>排放口类型</label>主要排放口
 					        </li>
 					    </ul>
+					    <div class="btn-group">
+								<button type="button" class="btn btn-green"><i class="icon icon-add"></i>添加</button>
+							</div>
 						<div class="table-responsive">
-							<table class="table table-striped table-hover table-condensed">
+							<table class="table table-striped table-hover table-condensed table-border-top">
 								<thead>
 									<tr>
 										<th>污染物名称</th>
