@@ -33,7 +33,7 @@ button:hover{ opacity: .8;}
 .form-group.dropdown{ margin-bottom: 0;}
 .form-horizontal .form-group{ margin-left: inherit; margin-right: inherit;}
 .form-error{ border-color: #ED5566;}
-.form-group .text{ display: inline-block; margin-top: 5px; color: #999;}
+.form-group .text-note{ display: inline-block; margin-top: 5px; color: #999;}
 .form-group .text-error{ color: #ED5566;}
 
 @media (min-width: 768px) {
@@ -73,7 +73,6 @@ button:hover{ opacity: .8;}
 .iradio input[type=radio]:checked + label:after{ position: absolute; top: 0; left: 0; display: inline-block; content: ""; width: 16px; height: 16px; border: 1px solid #D7D7D7; border-radius: 50%; background: #fff; z-index: 0;}
 .iradio input[type=radio]:checked + label:after{ border: 5px solid #3A89DD; background: none;}
 
-.icheckbox.checked-all input[type="checkbox"]{}
 
 /* tabs */
 .nav-tabs{ position: relative; margin-right: 0; background: #fff; border-bottom: 1px solid #DEEAF6; border-radius: 3px 3px 0 0;}
