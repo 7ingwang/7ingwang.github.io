@@ -83,16 +83,17 @@ button:hover{ opacity: .8;}
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover{ background: none; border: 1px solid #fff; border-radius: 0;}
 .nav-tabs>li>a{ margin-right: 0; padding-right: 0; color: #666; }
-.nav-tabs>li>a:hover{ cursor: pointer; background: none; color: #333;}
+.nav-tabs>li>a:hover{ cursor: pointer; background: none; border-color: #F4F4F4; color: #3A89DD;}
 .nav-tabs li{ position: relative; padding-right: 34px; background: #fff; cursor: pointer;}
 .nav-tabs li:first-child{ padding-right: 0;}
-.nav-tabs li:hover{ background-color: #f4f4f4;}
+.nav-tabs li:hover{ background-color: #F4F4F4;}
 .nav-tabs li.active a{ color: #3A89DD;}
 .nav-tabs li .btn{ color: #999;}
 .nav-tabs li .btn:hover{ text-decoration: none; color: #333;}
 .nav-tabs li .tab{ padding: 10px 0 10px 15px;}
 .nav-tabs li .btn-link.btn-close{ position: absolute; right: 0; top: 0; padding: 10px;}
 .nav-tabs li .btn-link.btn-close .icon-close{ font-size: 12px;}
+.nav-tabs>li>.btn-link.btn-close .icon-close:hover{ color: #3A89DD;}
 .nav-tabs li.first{ padding-right: 15px; border-radius: 3px 0 0 0; overflow: hidden;}
 .nav-tabs li.last{ margin-right: 0; padding-right: 0; border-right: none; border: 1px solid #fff; border-radius: 0 3px 0 0; }
 .nav-tabs li.last a{ padding-right: 15px; border: none; border-radius: 0 3px 0 0;}
@@ -114,8 +115,10 @@ button:hover{ opacity: .8;}
 
 /* list */
 .list{}
+@media (min-width: 768px) {
 .list label{ display: inline-block; margin-right: 10px; min-width: 35%; text-align: right;}
 .list.list-row-2 li{ display: inline-block; width: 49%; white-space: nowrap;}
+}
 
 .list-group{}
 .list-group-item{ padding: 10px; border-width: 1px 0 0 0; border-color: #DEEAF6;}
