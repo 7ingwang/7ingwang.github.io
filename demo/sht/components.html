@@ -22,25 +22,238 @@
 </head>
 <body class="components">
 	<div class="container-fluid">
-		<form>
+		<h2>色彩</h2>
+		<div class="colors">
+			<span class="dark">#244466</span>
+			<span class="primary">#125FB2</span>
+			<span class="light">#3A89DD</span>
+			<span class="green">#00B894</span>
+			<span class="grey">#DEEAF6</span>
+		</div>
+		
+		<h2>字号 / 字色</h2>
+		<div class="panel">
+			<h2 class="panel-title">栏目标题</h2>
+			<div class="panel-body">
+				<div class="block">
+					<h4 class="block-title">正文标题</h4>
+					<div class="block-content">正文内容</div>
+					<small class="text-grey">说明文字</small>
+				</div>
+			</div>
+		</div>
+		
+		<h2>表单</h2>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="请填写">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" value="1号排放口">
+			<small class="text">提示文字</small>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control form-error" value="1号排放口">
+			<small class="text text-error">错误提示文字</small>
+		</div>
+		<div class="form-group">
+			<button type="button" class="btn btn-default">取消</button>
+			<button type="button" class="btn btn-blue">提交</button>
+		</div>
+		<div class="form-group">
 			<span class="icheckbox">
 				<input type="checkbox">
-				<label></label>
+				<label class="text">复选</label>
 			</span>
 			<span class="icheckbox">
-				<input type="checkbox">
-				<label class="text">勾选我</label>
+				<input type="checkbox" checked="checked">
+				<label class="text">选中</label>
+			</span>
+		</div>
+		<div class="form-group">
+			<span class="iradio">
+				<input type="radio" name="iradio">
+				<label>废气</label>
 			</span>
 			<span class="iradio">
-				<input type="radio">
-				<label>选我</label>
+				<input type="radio" name="iradio">
+				<label>废水</label>
 			</span>
-		</form>
+		</div>
+		
+		<h2>按钮</h2>
+		<button type="button" class="btn btn-primary btn-lg">大按钮</button>
+		<button type="button" class="btn btn-blue">主要按钮</button>
+		<button type="button" class="btn btn-blue"><i class="icon icon-export"></i>导出</button>
+		<button type="button" class="btn btn-red"><i class="icon icon-del"></i>删除</button>
+		<button type="button" class="btn btn-green"><i class="icon icon-export"></i>上传新文件</button>
+		<button type="button" class="btn btn-default">取消</button>
+		<button type="button" class="btn btn-link">纯文字链接</button>
+		<button type="button" class="btn btn-blue btn-sm">小按钮</button>
+		<button type="button" class="btn btn-green btn-sm"><i class="icon icon-add"></i>新建目录</button>
+		
+		<h2>弹窗</h2>
+		<button type="button" data-toggle="modal" data-target="#myModal1"><i class="icon icon-edit icon-blue"></i></button>
+		<!-- 编辑 -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="shut pull-right" data-dismiss="modal"><i class="icon icon-shut"></i></button>
+						<button type="button" class="max pull-right"><i class="icon icon-max"></i></button>
+						<button type="button" class="zoom pull-right"><i class="icon icon-minus"></i></button>	
+						<h4 class="modal-title">编辑</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-3 control-label">二级厂名称</label>
+								<div class="col-sm-9">
+									<div class="form-group dropdown drop-select justified wider">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    donggongzhongchang
+										    <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										  	<li><a href="javascript:void(0)">donggongzhongchang</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口名称</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="3号排口">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口许可编号</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="DA003">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排污口企业编号</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="3号炉排口">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排污类型</label>
+								<div class="col-sm-9">
+									<span class="iradio">
+										<input type="radio" name="optionsRadios">
+										<label class="text">废气</label>
+									</span>
+									<span class="iradio">
+										<input type="radio" name="optionsRadios">
+										<label class="text">废水</label>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放组织方式</label>
+								<div class="col-sm-9">
+									<div class="form-group dropdown drop-select justified wider">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    有组织
+										    <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+										  	<li><a href="javascript:void(0)">有组织</a></li>
+										</ul>
+								  	</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">排放口类型</label>
+								<div class="col-sm-9">
+									<span class="iradio">
+										<input type="radio" name="optionsRadios1">
+										<label class="text">一般排放口</label>
+									</span>
+									<span class="iradio">
+										<input type="radio" name="optionsRadios1">
+										<label class="text">主要排放口</label>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">生产单元</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" value="1-5号机组">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+		
+		<h2>确认提示</h2>
+		<button type="button" data-toggle="modal" data-target=".modal-info"><i class="icon icon-del icon-red"></i></button>
+		<!-- 确认信息 -->
+		<div class="modal fade modal-info" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-sm" role="document">
+		    	<div class="modal-content">
+			    	<div class="modal-header">
+						<button type="button" class="shut pull-right" data-dismiss="modal"><i class="icon icon-shut"></i></button>
+						<h4 class="modal-title">确认信息</h4>
+					</div>
+					<div class="modal-body">
+						<p>确定要删除选中的记录？</p>
+					</div>
+					<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        	<button type="button" class="btn btn-primary">确认</button>
+					</div>
+		    	</div>
+			</div>
+		</div><!-- /.modal -->
+
+		<h2>分页</h2>
+		<div class="pages-bar">
+			<ul class="pull-right pagination">
+						    <li>
+						      <a href="#" aria-label="First">
+						        <span aria-hidden="true"><i class="icon icon-first"></i></span>
+						      </a>
+						    </li>
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true"><i class="icon icon-prev"></i></span>
+						      </a>
+						    </li>
+						    <li class="active"><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true"><i class="icon icon-next"></i></span>
+						      </a>
+						    </li>
+						    <li>
+						      <a href="#" aria-label="Last">
+						        <span aria-hidden="true"><i class="icon icon-last"></i></span>
+						      </a>
+						    </li>
+						</ul>
+			<div class="page-stats">
+				显示第<em>1</em>到第<em>10</em>条记录，总共<em>24</em>条记录，每页显示<span class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="page-size">10</span> <span class="caret"></span></button><ul class="dropdown-menu" role="menu"><li class="active"><a href="javascript:void(0)">10</a></li><li><a href="javascript:void(0)">25</a></li></ul></span>条记录
+			</div>
+		</div><!-- /.pages-bar -->
 	</div>
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
-<script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
-<script src="assets/js/common.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
+	<script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
+	<script src="assets/js/common.js"></script>
 </body>
 </html>
+
