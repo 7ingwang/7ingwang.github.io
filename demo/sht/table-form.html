@@ -10,6 +10,7 @@
 
 	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/css/bootstrap-submenu.min.css" rel="stylesheet">
+	<link href="assets/css/nice-select.css" rel="stylesheet">
 	<link href="assets/icons.css" rel="stylesheet">
 	<link href="assets/css/animate.min.css" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet">
@@ -307,15 +308,12 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">二级厂名称</label>
 								<div class="col-sm-9">
-									<div class="form-group dropdown drop-select justified wider">
-										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-										    donggongzhongchang
-										    <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										  	<li><a href="javascript:void(0)">donggongzhongchang</a></li>
-										</ul>
-								  	</div>
+									<select>
+										<option>donggongzhongchang</option>
+										<option>jiaohuachang</option>
+										<option>liantiechang</option>
+										<option>liangangchang</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -352,15 +350,9 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">排放组织方式</label>
 								<div class="col-sm-9">
-									<div class="form-group dropdown drop-select justified wider">
-										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-										    有组织
-										    <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-										  	<li><a href="javascript:void(0)">有组织</a></li>
-										</ul>
-								  	</div>
+									<select>
+										<option>有组织</option>
+									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -462,28 +454,16 @@
 										<td>二氧化硫</td>
 										<td><input type="text" class="form-control" value="200.0"></td>
 										<td>
-											<div class="form-group dropdown drop-select justified narrower">
-												<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-												    自动、手动
-												    <span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-												  	<li><a href="javascript:void(0)">自动</a></li>
-												  	<li><a href="javascript:void(0)">手动</a></li>
-												  	<li><a href="javascript:void(0)">自动、手动</a></li>
-												</ul>
-								  			</div>
+											<select>
+												<option>自动</option>
+												<option>手动</option>
+												<option>自动、手动</option>
+											</select>
 										</td>
 										<td>
-											<div class="form-group dropdown drop-select justified narrower">
-												<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-												    mg/m3
-												    <span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-												  	<li><a href="javascript:void(0)">mg/m3</a></li>
-												</ul>
-								  			</div>
+											<select>
+												<option>mg/m3</option>
+											</select>
 										</td>
 										<td><input type="text" class="form-control" value="氮氧化物"></td>
 										<td><button type="submit"><i class="icon icon-del icon-red"></i></button></td>
@@ -511,6 +491,7 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
 <script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
 <script src="assets/js/common.js"></script>
 </body>
 </html>

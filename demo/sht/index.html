@@ -10,6 +10,7 @@
 
 	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/css/bootstrap-submenu.min.css" rel="stylesheet">
+	<link href="assets/css/nice-select.css" rel="stylesheet">
 	<link href="assets/icons.css" rel="stylesheet">
 	<link href="assets/css/animate.min.css" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet">
@@ -163,42 +164,28 @@
 		<div class="tab-content">
 			<div class="panel first">
 				<form class="form-inline">
-					<div class="form-group dropdown drop-select justified">
+					<div class="form-group nice-select-group clearfix">
 						<label>工厂：</label>
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    选择工厂
-						    <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-						  	<li><a href="javascript:void(0)">donggongzhongchang</a></li>
-						  	<li><a href="javascript:void(0)">jiaohuachang</a></li>
-						  	<li><a href="javascript:void(0)">liantiechang</a></li>
-						  	<li><a href="javascript:void(0)">liangangchang</a></li>
-						</ul>
+						<select>
+							<option>donggongzhongchang</option>
+							<option>jiaohuachang</option>
+							<option>liantiechang</option>
+							<option>liangangchang</option>
+						</select>
 		  			</div>
-		  			
-		  			<div class="form-group dropdown drop-select justified">
+		  			<div class="form-group nice-select-group clearfix">
 						<label>排放口：</label>
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    选择排放口
-						    <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-						  	<li><a href="javascript:void(0)">DA003-3号排口</a></li>
-						  	<li><a href="javascript:void(0)">废水总排口</a></li>
-						</ul>
+						<select>
+							<option>DA003-3号排口</option>
+							<option>废水总排口</option>
+						</select>
 		  			</div>
-		  			
-		  			<div class="form-group dropdown drop-select justified">
+		  			<div class="form-group nice-select-group clearfix">
 						<label>污染物：</label>
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    选择污染物
-						    <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
-						  	<li><a href="javascript:void(0)">氨氮</a></li>
-						  	<li><a href="javascript:void(0)">COD</a></li>
-						</ul>
+						<select>
+							<option>氨氮</option>
+							<option>COD</option>
+						</select>
 		  			</div>
 		  		</form>
 			</div><!-- /.panel -->
@@ -388,6 +375,7 @@
 <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap-submenu/1.2.7/js/bootstrap-submenu.min.js"></script>
 <script src="assets/js/jquery.bootstrap-dropdown-hover.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
 <script src="assets/js/common.js"></script>
 </body>
 </html>

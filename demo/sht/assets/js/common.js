@@ -29,4 +29,7 @@ $(document).ready(function(){
        	}
 	});
 	
+	// select美化
+	$('select:not(.ignore)').niceSelect();      
+	  FastClick.attach(document.body);
 });
