@@ -1,0 +1,39 @@
+baseURL = "http://uedog.com/"
+languageCode = "zh-cn"
+title = "UeDog 优艺狗"
+theme = "uedog"
+
+# post pagination ##############################
+paginate = "3"
+
+# post excerpt ##############################
+summaryLength = "10"
+
+
+# Default Parameters ##############################
+[params]
+# home
+home = "首页"
+
+# logo
+logo = "images/logo.svg"
+
+# meta data
+author = "Terry Wang"
+description = "This is meta description"
+
+# copyright
+copyright = "&copy; 2020 UeDog 优艺狗 All Rights Reserved."
+
+
+# Navigation ##############################
+# main menu
+[[menu.main]]
+name = "设计"
+url = "/categories/design/"
+weight = 1
+
+[[menu.main]]
+name = "摄影"
+url = "/categories/photo/"
+weight = 2

@@ -1,0 +1,46 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_Image : "images/slider/hero-area.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Experience the new reality"
+  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+  button:
+    enable : true
+    label : "Explore Us"
+    link : "#services"
+
+############################# About ###################################
+about:
+  enable : true
+  title : About Us
+
+  about_Item :
+  - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+    title : We're Creative
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+  - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+    title : We're Professional
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+  - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
+    title : We're Genius
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+############################## Contact #############################
+contact:
+  enable : true
+  title : Contact Us
+  subtitle :
+  content :
+
+  contact_Details :
+  - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
+    info : "WeChat: 18601200180"
+
+  - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
+    info : "Phone: +86-186-0120-0180"
+
+  - icon : ti-email # themify icon pack : https://themify.me/themify-icons
+    info : "Email: terry.wang@me.com"

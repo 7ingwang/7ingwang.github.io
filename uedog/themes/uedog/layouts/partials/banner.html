@@ -1,0 +1,20 @@
+{{ if .Site.Data.home.banner.enable }}
+{{ with .Site.Data.home.banner }}
+<section class="hero-area" style='background-image: url("{{ .bg_Image | absURL }}");'>
+	<div class="block">
+		{{ if .icon }}
+		<div class="video-button">
+			<i class="{{ .icon }}"></i>
+		</div>
+		{{ end }}
+		<h1>{{ .title | markdownify }}</h1>
+		<p>{{ .content | markdownify }}</p>
+		{{ if .button.enable }}
+		{{ with .button }}
+		<a href="{{ .link }}" class="btn btn-transparent page-scroll">{{ .label }}</a>
+		{{ end }}
+		{{ end }}
+	</div>
+</section>
+{{ end }}
+{{ end }}
