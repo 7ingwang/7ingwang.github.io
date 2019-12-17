@@ -1,19 +1,19 @@
 ############################### Banner ################################
 banner:
   enable : true
-  bg_Image : "images/slider/hero-area.jpg"
+  # bg_Image : "images/hero.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Experience the new reality"
+  title : "About Us"
   content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
   button:
     enable : true
-    label : "Explore Us"
-    link : "#services"
+    label : ""
+    link : ""
 
 ############################# About ###################################
 about:
   enable : true
-  title : About Us
+  title : 服务项目
 
   about_Item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons

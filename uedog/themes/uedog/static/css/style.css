@@ -1,1 +1,32 @@
-.navbar-nav li.active{ border-bottom: 2px solid #ccc;}
+/* header */
+header{ background: #426EFE;}
+
+.navbar{ padding: .5rem 0;}
+.navbar-nav .nav-item a{ padding: .75rem 0 !important; color: #fff; text-align: center;}
+.navbar-nav .nav-item a:hover{ color: #fff; opacity: .8;}
+.navbar-toggler{ padding: .25rem 0;}
+
+/* hero */
+.hero-area{ padding: 5rem 0 0; background: #426EFE; text-align: center; color: #fff;}
+
+/* about */
+.about{ padding: 2rem 0; background: #426EFE; color: #fff;}
+.about h2{ margin-bottom: 3rem;}
+.about .icon-box i{ font-size: 3rem;}
+.about .ddd{ margin: 1rem 0;}
+
+/* contact */
+.contact-details .con-info i{ font-size: 3rem;}
+.contact-details .con-info p{ margin-top: 1rem;}
+
+.post-block h3{ margin: .5rem 0;}
+
+.pagination{ justify-content: center;}
+
+/* footer */
+footer{ padding: 2rem 0; text-align: center; font-size: 14px; font-weight: 100;}
+
+@media (min-width: 992px) {
+.nav-item{ margin-left: 2rem;}
+.navbar-nav .nav-item.active a{ border-bottom: 1px solid #fff;}
+}

@@ -18,10 +18,6 @@
         {{ if .Site.Params.postShare }}
         {{ partial "post-share.html" . }}
         {{ end }}
-        <!-- comments -->
-        <div class="mt-5">
-          {{ template "_internal/disqus.html" . }}
-        </div>
       </div>
     </div>
   </div>

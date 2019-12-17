@@ -16,7 +16,7 @@ summaryLength = "10"
 home = "首页"
 
 # logo
-logo = "images/logo.svg"
+logo = "images/logo-bright.svg"
 
 # meta data
 author = "Terry Wang"
