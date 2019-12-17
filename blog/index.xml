@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on UeDog 优艺狗</title>
+    <link>http://uedog.com/blog/</link>
+    <description>Recent content in Blogs on UeDog 优艺狗</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Dec 2019 13:53:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://uedog.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://uedog.com/blog/2019-12-15-hello-world/</link>
+      <pubDate>Sun, 15 Dec 2019 13:09:06 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-hello-world/</guid>
+      <description>xxx </description>
+    </item>
+    
+    <item>
+      <title>Pix</title>
+      <link>http://uedog.com/blog/2019-12-15-pix/</link>
+      <pubDate>Sun, 15 Dec 2019 13:53:23 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-pix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pix1</title>
+      <link>http://uedog.com/blog/2019-12-15-pix1/</link>
+      <pubDate>Sun, 15 Dec 2019 13:53:23 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-pix1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pix2</title>
+      <link>http://uedog.com/blog/2019-12-15-pix2/</link>
+      <pubDate>Sun, 15 Dec 2019 13:53:23 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-pix2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pix3</title>
+      <link>http://uedog.com/blog/2019-12-15-pix3/</link>
+      <pubDate>Sun, 15 Dec 2019 13:53:23 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-pix3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World1</title>
+      <link>http://uedog.com/blog/2019-12-15-hello-world1/</link>
+      <pubDate>Sun, 15 Dec 2019 13:09:06 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-hello-world1/</guid>
+      <description>xxx </description>
+    </item>
+    
+    <item>
+      <title>Hello World2</title>
+      <link>http://uedog.com/blog/2019-12-15-hello-world2/</link>
+      <pubDate>Sun, 15 Dec 2019 13:09:06 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-hello-world2/</guid>
+      <description>xxx </description>
+    </item>
+    
+    <item>
+      <title>Hello World3</title>
+      <link>http://uedog.com/blog/2019-12-15-hello-world3/</link>
+      <pubDate>Sun, 15 Dec 2019 13:09:06 +0800</pubDate>
+      
+      <guid>http://uedog.com/blog/2019-12-15-hello-world3/</guid>
+      <description>xxx </description>
+    </item>
+    
+  </channel>
+</rss>
