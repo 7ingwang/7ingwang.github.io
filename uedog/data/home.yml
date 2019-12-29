@@ -17,15 +17,15 @@ about:
 
   about_Item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-    title : We're Creative
+    title : 交互体验设计
     content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
 
   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-    title : We're Professional
+    title : 视觉设计
     content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
 
   - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
-    title : We're Genius
+    title : 界面开发
     content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
 
 ############################## Contact #############################
@@ -36,11 +36,5 @@ contact:
   content :
 
   contact_Details :
-  - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
-    info : "WeChat: 18601200180"
-
-  - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
-    info : "Phone: +86-186-0120-0180"
-
-  - icon : ti-email # themify icon pack : https://themify.me/themify-icons
-    info : "Email: terry.wang@me.com"
+  - info : ""
+    img: images/wechat_terry.wang.jpg

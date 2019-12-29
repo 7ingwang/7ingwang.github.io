@@ -34,6 +34,6 @@ url = "/categories/design/"
 weight = 1
 
 [[menu.main]]
-name = "摄影"
-url = "/categories/photo/"
+name = "联系"
+url = ""
 weight = 2
