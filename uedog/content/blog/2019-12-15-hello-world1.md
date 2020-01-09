@@ -8,6 +8,7 @@ description: "This is meta description"
 categories: [ "Design"]
 tags: [ "UI"]
 image: "/images/revently_events_v3.png"
+weight: 
 ---
 
 # xxx

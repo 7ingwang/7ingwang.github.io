@@ -1,9 +1,9 @@
 ############################### Banner ################################
 banner:
   enable : true
-  # bg_Image : "images/hero.jpg"
+  bg_Image : "images/hero.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "About Us"
+  title : "关于 UeDog"
   content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
   button:
     enable : true
@@ -28,10 +28,17 @@ about:
     title : 界面开发
     content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
 
+
+############################# Gallery ###################################
+gallery:
+  enable : true
+  title : 作品
+
+
 ############################## Contact #############################
 contact:
   enable : true
-  title : Contact Us
+  title : 联系我
   subtitle :
   content :
 

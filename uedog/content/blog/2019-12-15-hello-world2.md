@@ -8,6 +8,7 @@ description: "This is meta description"
 categories: [ "Design"]
 tags: [ "UI"]
 image: "/images/glc-home_en@2x.png"
+weight: 2
 ---
 
 One of the safest ways to transfer rights and interests for international workers is to transfer through multinational banks. However, the transmission process is cumbersome and long-term, and the loss of workers is relatively large, which is a huge loss to low-income migrant workers.

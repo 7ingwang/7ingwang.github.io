@@ -28,12 +28,13 @@ copyright = "&copy; 2020 UeDog 优艺狗 All Rights Reserved."
 
 # Navigation ##############################
 # main menu
+
 [[menu.main]]
 name = "设计"
 url = "/categories/design/"
 weight = 1
 
 [[menu.main]]
-name = "联系"
-url = ""
+name = "摄影"
+url = "/categories/photo/"
 weight = 2

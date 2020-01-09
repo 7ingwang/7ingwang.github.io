@@ -8,6 +8,7 @@ description: "This is meta description"
 categories: [ "Design"]
 tags: [ "UI"]
 image: "/images/miningbay_home.png"
+weight: 3
 ---
 
 矿湾为全球区块链爱好者提供一个点对点的交易信息匹配的电商平台。平台引入商识机制的基础上，建设区块链交易信息的基础设施，为需求者提供矿机、矿场、算力和家/第三方为用户提供矿机、矿场、矿池、算力、区块链技术服务等信息。
