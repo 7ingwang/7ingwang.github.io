@@ -36,5 +36,5 @@ weight = 1
 
 [[menu.main]]
 name = "摄影"
-url = "/categories/photo/"
+url = "/categories/photos/"
 weight = 2

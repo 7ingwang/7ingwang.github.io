@@ -1,5 +1,5 @@
 /* header */
-header{ background: #426EFE;}
+header{}
 
 .navbar{ padding: .5rem 0;}
 .navbar-nav .nav-item a{ padding: .75rem 0 !important; color: #fff; text-align: center;}
@@ -7,7 +7,7 @@ header{ background: #426EFE;}
 .navbar-toggler{ padding: .25rem 0;}
 
 /* hero */
-.hero-area{ padding: 5rem 0; min-height: calc(100vh - 74px);background-repeat: no-repeat; background-position: center; background-size: cover; text-align: center; color: #fff;}
+.hero-area{ padding: 10rem 0 5rem; min-height: calc(100vh - 0px); background-repeat: no-repeat; background-position: center; background-size: cover; text-align: center; color: #fff;}
 
 /* about */
 .about{ padding: 2rem 0; background: #426EFE; color: #fff;}

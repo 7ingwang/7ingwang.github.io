@@ -3,8 +3,8 @@ banner:
   enable : true
   bg_Image : "images/hero.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "关于 UeDog"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+  title : "UeDog 优艺狗"
+  content : "成立于2020年1月，专注于互联网产品体验设计，包括交互体验设计、视觉设计，与界面开发。创始人Terry 从事该行业十年以上，曾供职于康盛创想、腾讯云计算、极路由、比特大陆等知名企业。"
   button:
     enable : true
     label : ""
@@ -38,7 +38,7 @@ gallery:
 ############################## Contact #############################
 contact:
   enable : true
-  title : 联系我
+  title : 联系 Terry
   subtitle :
   content :
 
