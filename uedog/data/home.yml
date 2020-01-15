@@ -1,7 +1,7 @@
-############################### Banner ################################
-banner:
+############################### About ################################
+about:
   enable : true
-  bg_Image : "images/bg.jpg"
+  bg_Image : "images/hero.png"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "UeDog 优艺狗"
   content : "成立于2020年1月，专注于互联网产品体验设计，包括交互体验设计、视觉设计，与界面开发。创始人Terry 从事该行业十年以上，曾供职于康盛创想、腾讯云计算、极路由、比特大陆等知名企业。"
@@ -10,12 +10,12 @@ banner:
     label : ""
     link : ""
 
-############################# About ###################################
-about:
+############################# Services ###################################
+services:
   enable : true
   title : 服务项目
 
-  about_Item :
+  service_Item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
     title : 交互体验设计
     content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
