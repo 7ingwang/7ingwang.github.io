@@ -18,15 +18,15 @@ services:
   service_Item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
     title : 交互体验设计
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    content : 设计最简最优流程，让用户快速完成目标，并有完美体验
 
   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
     title : 视觉设计
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    content : 契合品牌性格的视觉才是好设计
 
   - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
     title : 界面开发
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    content : 好设计，更需好的开发
 
 
 ############################# Gallery ###################################
