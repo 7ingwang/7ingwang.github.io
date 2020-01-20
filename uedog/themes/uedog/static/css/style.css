@@ -7,6 +7,9 @@
 .navbar-nav .nav-item a:hover{ color: #fff; opacity: .8;}
 .navbar-toggler{ padding: .25rem 0;}
 
+/* content */
+#content{ padding-top: 74px;}
+
 /* about */
 #about{ padding-top: 74px;}
 .about{ padding: 10rem 0 5rem; min-height: calc(100vh - 0px); background: url(../images/bg.jpg) no-repeat center top; background-size: cover;  text-align: center; color: #fff;}
