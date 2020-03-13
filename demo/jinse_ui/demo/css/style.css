@@ -1,0 +1,225 @@
+/**
+ * 1 - reset
+ * 2 - basic
+ * 2.1 - common
+ * 2.2 - icon
+ * 2.3 - pic
+ * 2.4 - table
+ * 2.5 - menu
+ * 2.6 - list
+ * 2.7 - tabs
+ * 3 - layout
+ * 4 - header
+ * 5 - footer
+ * 6 - block
+ * 6.1 - box
+ * 6.2 - news-list
+ * 7 banner
+ * 8 bread-crumb
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1 reset
+ * ----------------------------------------------------------------------------
+ */
+ 
+ html, body, div, h1, h2, h3 ,h4, p, span, em, b, i, ul, ol, li, dl, dt, dd, table, tr, th, td, form, input, lable, select, textarea, img{ margin: 0; padding: 0; border: 0;}
+ html, body{ height: 100%;}
+ ol,ul,li{ list-style: none;}
+ img { vertical-align: middle;}
+ 
+ 
+ /**
+  * 2 basic
+  * ----------------------------------------------------------------------------
+  */
+ 
+body{ min-width: 1200px; line-height: 1.6;  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif; font-size: 14px; color: #666; background: #f4f6fb;}
+h1, h2, h3, h4{ color: #333;}
+h1{ font-size: 30px;}
+h2{ font-size: 20px;}
+h3{ font-size: 16px;}
+h4{ font-size: 14px;}
+a, a:visited{ color: #333; text-decoration: none;}
+a:hover{ color: #38688d;}
+a.grey{ color: #999;}
+a.grey:hover{ color: #38688d;}
+
+
+/* 2.1 common */
+.fl{ float: left;}
+.fr{ float: right;}
+.clear:before, .clear:after, .header:before, .header:after, .footer:before, .footer:after, .container:before, .section:before, .section:after, .container:after, .row:before, .row:after{ display: table; clear: both; content: "";}
+.pipe{ margin: 0 10px;}
+
+/* 2.2 icon */
+.icon{ margin-right: 8px;}
+.icon12{ font-size: 12px;}
+.icon13{ font-size: 13px;}
+.icon14{ font-size: 13px;}
+.icon15{ font-size: 15px;}
+.icon16{ font-size: 16px;}
+.icon20{ font-size: 20px;}
+.icon24{ font-size: 24px;}
+.icon32{ font-size: 32px;}
+
+/* 2.3 pic */
+.pic img{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+.pic:hover img{
+    opacity: 1;
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+}
+
+/* 2.4 table */
+.table{ margin-bottom: 20px; width: 100%; border-bottom: 1px solid #ddd;}
+.table th, .table td{ padding: 5px 10px;}
+.table th{ text-align: left;}
+.table td{border-top: 1px solid #ddd;}
+.table tr:hover, .table tr:hover td{ background: #f0f0f0;}
+.table tr:nth-child(even){ background: #f9f9f9;}/* :nth-child CSS选择器不被IE8支持 */
+
+/* 2.5 menu */
+.menu{}
+.menu-inline li{ display: inline;}
+.menu-inline li+li{ margin-left: 20px;}
+
+/* 2.6 list */
+.list{}
+
+/* 2.7 tabs */
+.tabs{}
+.tab-title .menu{ font-size: 16px; font-weight: 300;}
+.tab-title .menu a{ display: inline-block; border-bottom: 2px solid #fff;}
+.tab-title .menu a:hover{ border-bottom-color: #ddd;}
+.tab-title .menu a.current{ color: #38688d; border-bottom-color: #38688d;}
+.tab-list li{ display: none;}
+.tabs-x .tab-content{ height: 400px;}
+
+
+/**
+ * 3 layout
+ * ----------------------------------------------------------------------------
+ */
+ 
+ 
+.container{ margin: 20px auto 0; width: 1200px;}
+.section{}
+.section-bg{ padding-bottom: 20px; background: lightgrey;}
+.section-bg-blue{ background: lightblue;}
+.section .container{}
+
+.col{}
+.col+.col{ margin-left: 20px;}
+.col-880{ width: 880px;}
+.col-660{ width: 660px;}
+.col-300{ width: 300px;}
+.col-200{ width: 200px;}
+.col-4{ width: 291px;}
+.col-4+.col-4{ margin-left: 12px;}
+.col-6{ width: 190px;}
+.col-6+.col-6{ margin-left: 12px;}
+.col .col+.col{ margin-left: 0;}
+.col .col .box{ margin-right: 20px;}
+ 
+ 
+ /**
+ * 4 header
+ * ----------------------------------------------------------------------------
+ */
+ 
+ 
+.header{ height: 60px; line-height: 60px; background: #21201f;}
+.header .container{ margin-top: 0;}
+.header .logo{ position: absolute; display: block; margin-top: 10px; width: 145px; height: 40px; background: url(../img/logo@2x.png) no-repeat left top; background-size: 145px auto;}
+.ie8 .header .logo{ background-image: url(../img/logo.png);}
+.nav{ margin-left: 265px; font-size: 16px;}
+.nav li{ display: inline;}
+.nav li a{ display: inline-block; padding: 0 20px; color: #fff; text-decoration: none;}
+.nav li a:hover{ opacity: .8;}
+.nav li a.current{ color: #333; background: #ea4;}
+ 
+ 
+ /**
+ * 5 footer
+ * ----------------------------------------------------------------------------
+ */
+ 
+ 
+.footer{ margin-top: 20px; padding: 20px 0; color: #999; background: #3a3e40; }
+.footer a{ color: #999; text-decoration: none;} 
+.footer a:hover{ color: #fff;}
+
+
+/**
+ * 6 block
+ * ----------------------------------------------------------------------------
+ */
+ 
+ 
+.block{ background: #fff; }
+.block+.block{ margin-top: 20px;}
+.block-title{ padding: 10px 20px; line-height: 30px;}
+.block-title .more{ font-size: 14px; font-weight: 300;}
+.block-content{ padding: 0 20px 10px; min-height: 105px;}
+
+.block-full .block-title, .block-full .block-content, .block-no-bg .block-title, .block-no-bg .block-content{ padding: 0 ;}
+.block-no-bg{ background: none;}
+
+.block-x .block-content{ height: 400px;}
+
+/* 6.1 box */
+.box{ min-height: 100px; background: #fff;}
+.box-chart{ height: 114px; background: #ddd;}
+.box-red{ background: #f9d5d0;}
+.box-blue{ background: #e2f2fa;}
+.box-red{ background: #f9d5d0;}
+.box-red{ background: #f9d5d0;}
+.box-green{ background: #d3eca7;}
+.box-yellow{ background: #f3e4bd;}
+
+/* 6.2 news-list */
+.news-list{}
+.news-list li{ height: 165px; overflow: hidden; background: #fff;}
+.news-list li+li{ margin-top: 20px;}
+.news-list li .pic{ float: left; margin-right: 20px; width: 220px; height: 165px; overflow: hidden;}
+.news-list li .title, .news-list li .mark, .news-list li .summary{ padding-right: 20px;}
+.news-list li .title{ margin-top: 10px; height: 30px; line-height: 30px; overflow: hidden; }
+.news-list li .mark{ margin: 10px 0 20px; color: #999;}
+.news-list li .mark .date{ color: #333;}
+.news-list li .mark .tags a{ color: #999;}
+.news-list li .mark .tags a:hover{ color: #38688d;}
+.news-list li .summary{ height: 48px; overflow: hidden;}
+
+/**
+ * 7 banner
+ * ----------------------------------------------------------------------------
+ */
+ 
+ 
+.banner{ }
+.banner-full{}
+.banner-full .banner-box{ display: block; width: 100%; height: 400px; background: url(../images/macbookpro_large.png) center center;}
+
+
+/**
+ * 8 bread-crumb
+ * ----------------------------------------------------------------------------
+ */
+
+
+.bread-crumb{}
+.bread-crumb li+li{ margin-left: 0;}
+.bread-crumb li .icon{ margin: 0 5px; color: #999;}
+.bread-crumb li.current{ color: #333;}

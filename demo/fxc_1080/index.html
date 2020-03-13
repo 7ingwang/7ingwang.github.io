@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>民生放心查</title>
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="theme">
+        <i class="icon icon-theme"></i>
+    </div>
+    
+    <form class="form-search">
+        <div class="input-box"></div>
+        <input type="text" readonly="" placeholder="请您输入完整的产品编码" >
+        <a href="result.html" class="btn btn-search"><i class="icon icon-search"></i></a>
+        <a href="scope.html">查询范围</a>
+    </form>
+    
+    <ul class="tips">
+        <li>ASDA14193Y</li>
+        <li>BSDA14193Y</li>
+        <li>CSDA14193Y</li>
+        <li>DSDA14193Y</li>
+        <li>ESDA14193Y</li>
+    </ul>
+    
+    <footer></footer>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        
+        $(".tips li:last").css("border-bottom","none");
+        
+        $("input").focus(function(){
+          
+          $(".tips").fadeIn();
+        });
+        
+        $("input").blur(function(){
+          $(".tips").fadeOut();
+        });
+        
+        $(".tips li").click(function(){
+          $("input").attr('placeholder','').val($(this).text());
+        });
+        
+    </script>
+
+</body>
+</html>

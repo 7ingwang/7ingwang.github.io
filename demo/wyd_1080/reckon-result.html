@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+     	<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>额度测算</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+		 <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/mui.min.js"></script>
+        <script src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    </head>
+    <body id="reckon">
+        <div class="theme-box" id="theme-reckon"></div><!-- .theme-box -->
+        <div class="block" id="reckon-result">
+            <p>您的贷款能力评估值为</p>
+            <div class="badge wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">
+                <span class="big wow zoomInDown"></span>
+                <span class="small wow fadeInDown" data-wow-delay="1s">万元</span>
+            </div><!-- .badge -->
+            <p class="ps">此额度仅为试算金额哦， 具体可贷金额请以实际业务办理为准。</p>
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-block" onclick="location.href='reckon.html'">重新计算</button>
+        </div><!-- .mui-content-padded --> 
+		<div class="mui-c">
+            <button type="button"  id="backBtn" class="mui-btn mui-btn-small"><i class="icon icon-home icon12 icon-mr"></i><span></span></button>
+        </div>
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+
+        <script>
+      	  $(function(){
+        		$(".big").text(localStorage.total);
+        		localStorage.removeItem("total");
+        		
+        		var title = localStorage.back_title;
+        		title = title == null || title == ""||title==undefined ? "返回首页" : title;
+        		$("#backBtn span").text(title);
+        		$("#backBtn").click(function(){
+        			var url = localStorage.back_url;
+        			url = url == null || url == ""||url==undefined ? "index.html" : url;
+        			//localStorage.removeItem("back_url");
+        			//localStorage.removeItem("back_title");
+        			location.href=url;
+        		})
+        	});
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+      </script>
+    </body>
+</html>

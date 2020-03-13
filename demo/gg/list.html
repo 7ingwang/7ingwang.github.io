@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1160, initial-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" href="favicon.ico">
+    
+    <title>光顾-中国工程灯具数据库</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="list">
+    <div id="filter" class="fixed">
+      <div class="container">
+        <div class="filter-bar">
+          <span class="btn-go pull-right"><i class="icon icon-search"></i></span><a class="filter">点式投光灯<i class="icon icon-cancel icon12"></i></a><a class="filter">EPCOL<i class="icon icon-cancel icon12"></i></a>
+        </div>
+      </div>    
+    </div>
+    <nav class="navbar navbar-gg fixed">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">光顾</a>
+            </div>
+            <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown prod-catg">
+              <a href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品分类</a>
+              <div class="dropdown-menu">
+                <div class="container">
+                  <dl>
+                    <dt>建筑</dt>
+                    <dd class="active"><a href="#">点式投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd class="disabled"><a href="#">线式投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">点式自发光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">线式自发光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">点式地埋投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">线式地埋投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">室外壁灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">户外筒灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">室外投影灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">特殊灯具<i class="icon icon-cancel icon12"></i></a></dd>
+                  </dl>
+                  <dl>
+                    <dt>室内</dt>
+                    <dd><a href="#">明装筒灯射灯</a></dd>
+                    <dd><a href="#">嵌装筒灯射灯</a></dd>
+                    <dd><a href="#">办公系统</a></dd>
+                    <dd><a href="#">室内壁灯</a></dd>
+                    <dd><a href="#">轨道射灯</a></dd>
+                    <dd><a href="#">灯槽灯带</a></dd>
+                    <dd><a href="#">室内投影灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">装饰灯</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>景观</dt>
+                    <dd><a href="#">点式投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">点式自发光灯</a></dd>
+                    <dd><a href="#">线式自发光灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式地埋投光灯</a></dd>
+                    <dd><a href="#">台阶灯</a></dd>
+                    <dd><a href="#">地埋灯</a></dd>
+                    <dd><a href="#">水下灯</a></dd>
+                    <dd><a href="#">庭院灯</a></dd>
+                    <dd><a href="#">草坪灯</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>路桥</dt>
+                    <dd><a href="#">明装筒灯射灯</a></dd>
+                    <dd><a href="#">嵌装筒灯射灯</a></dd>
+                    <dd><a href="#">办公系统</a></dd>
+                    <dd><a href="#">室内壁灯</a></dd>
+                    <dd><a href="#">轨道射灯</a></dd>
+                    <dd><a href="#">灯槽灯带</a></dd>
+                    <dd><a href="#">室内投影灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">装饰灯</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown ls-catg">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">光源种类</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">LED<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">卤素灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">钠灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">荧光灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">金卤灯<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>      
+            </li>
+            <li class="dropdown power">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功率</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">≤1w<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">1-5w<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">5-10W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">10-30W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">30-60W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">60-100W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">&gt;100W<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown beam-angle">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">光束角</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">≤8°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">9-15°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">16-25°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">26-39°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">≥40°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">洗墙配光<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">其他非对称配光及道路配光<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown color-temp">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">色温颜色</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">RGB<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">RGBW<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">彩色单色<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">暖白<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">中性白<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">冷白<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown ctrl-mode">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">控制方式</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">Dali<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">DMX512<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">0-10V/1-10V<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">切相<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">开关<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">开关并自带调光钮<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown color-rendering">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">显色性</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li class=""><a href=" ">CRI&lt;60<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;60<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;80<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;90<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;95<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">缺<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown prod-brands">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品品牌</a>
+              <div class="dropdown-menu">
+                <div class="container">
+                  <ul>
+                    <li class="active"><a href="#">EPCOL</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li><a href="#">EPCOL</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    
+    
+    
+    <div class="content">
+      <div class="container">    
+        <div class="row">
+          <div class="topbar">
+            <span class="pull-left"><a href="cards.html" class="btn"><i class="icon icon-back icon16"></i></a></span><span class="pull-right"></span>
+          </div>
+          <div class="col-md-12 light-list">
+            <p>国家建筑节能质量监测检验中心认证<i class="icon icon-mark icon-red icon-ml"></i></p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>灯具图片</th>
+                  <th>编号</th>
+                  <th>灯具类型</th>
+                  <th>光源</th>
+                  <th>功率</th>
+                  <th>光束角</th>
+                  <th>色温颜色</th>
+                  <th>光通量</th>
+                  <th>显色性</th>
+                  <th>产品品牌</th>
+                  <th class="last"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="light-img"><i class="icon icon-mark"></i><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>点式地埋投光灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn selected"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                          <span class="new_project" data-toggle="modal" data-target="#new-item">新建</span>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><img  src="img/lamps.png"/></th>
+                  <td>71617.023</td>
+                  <td>轨道射灯</td>
+                  <td>LED</td>
+                  <td>12W</td>
+                  <td>30°</td>
+                  <td>暖白</td>
+                  <td>1650lm</td>
+                  <td>>90</td>
+                  <td>ERCO</td>
+                  <td class="last dropdown">
+                    <a href="#" class="btn"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"> <i class="icon icon-shopping icon16"></i></a>
+                    <div class="pop-cart dropdown-menu">
+                      <form class="form form-inline">
+                        <div class="form-group">
+                          <label>灯具颜色</label>
+                           <select class="form-control">
+                            <option>黑</option>
+                            <option>白</option>
+                            <option>灰</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>输入电源</label>
+                           <select class="form-control">
+                            <option>12V</option>
+                            <option>24V</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>灯具编号</label>
+                          <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>项目名称</label>
+                           <select class="form-control">
+                            <option>游客集散中心</option>
+                          </select>
+                        </div>
+                          <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                      </form><!--/form-inline -->
+                    </div><!--/.pop-cart -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer id="footer" class="fixed">
+      <div class="container">
+        <p class="copyright">中国工程灯具数据库／国家建筑节能质量监督检验中心认证<span>&copy; 2016-2017</span></p>
+      </div>
+    </footer><!--/#footer -->
+    
+    <div class="modal fade new-item" id="new-item" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="form clearfix">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">项目名称:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="pull-right">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary">新建</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $(".topbar .pull-right a").click(function(){
+                $(this).addClass("selected").siblings().removeClass("selected");
+            });
+            
+            $(".light-list .table tbody tr td").not(".last").click(function(){
+                window.location.href="detail.html";
+            });
+            
+        });
+    </script>
+    
+  </body>
+</html>

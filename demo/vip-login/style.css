@@ -1,0 +1,16 @@
+html,body,h1,h2,p,form,input,button{ margin: 0; padding: 0;}
+html{ height: 100%;}
+body{ padding: 20% 3% 0; height: 100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #212F3D; background-image: radial-gradient(50% 100%, #5E7285 19%, #212F3D 100%); font-size: 20px; text-align: center; overflow: hidden;}
+
+.box{ margin: 0 auto; padding: 5%; width: 90%; background: #FFF; border-radius: 3px;}
+h1#logo{ margin-bottom: 20px; height: 110px; background: url(images/logo@2x.png) no-repeat center center; background-size: auto 100%; text-indent: -9999px;}
+
+form input, form .btn{ margin: 20px 0 0; padding: 0 3%; width: 90%; height: 50px; line-height: 50px; font-size: 20px; background: #FFF; border: 1px solid #E9E9E9; box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.30); border-radius: 3px; color: #4A4A4A;}
+form .btn{ display: block; margin: 20px auto; padding: 0 3%; width: 90%; background: #596C7F; color: #FFF; box-shadow: inherit; font-weight: 700; text-decoration: none;}
+form .btn:hover{ background: #212F3D; opacity: .8;}
+form .error{ margin: 15px 0 0; font-size: 16px; color: #D63131;}
+
+@media (min-width: 768px) {
+body{ padding: 12% 0;}
+.box{ margin: 0 auto; padding: 40px; width: 360px; }
+}

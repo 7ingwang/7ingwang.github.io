@@ -1,0 +1,15 @@
+body{ padding: 0 10%; font-size: 14px; font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;}
+h1, h2, h3, h4, h5, h6{ margin: 0 0 10px; padding: 0;}
+p{ text-indent: 2em;}
+.fl{ float: left;}
+.fr{ float: right;}
+.cl, .box:before, .box:after{ display: table; clear: both; content: "";}
+.box{ margin-top: 10px; padding: 0  10px 10px; border: 1px dashed #999;}
+.box span{ margin-left: -10px; padding: 0 10px; color: #333; background: #e2f2fa;}
+.box.l1{ margin-bottom: 20px;}
+.box.col{ width: 29%;}
+.box.col+.box.col{ margin-left: 2%;}
+.box.col-4{ width: 20%;}
+.box.col-4.box.col-4{ margin-left: 2%;}
+.code{ padding: 20px; word-wrap: break-word; background: #f4f4f4;}
+.folder{ display: inline-block; padding: 2px 5px; color: #333; background: #e2f2fa; border-radius: 3px 3px 0 3px;}

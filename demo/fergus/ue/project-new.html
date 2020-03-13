@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"> 
+      document.onmousedown = function() { 
+        document.body.setAttribute("class", "is-highlighted"); 
+      } 
+      document.onmouseup = function() { 
+        document.body.setAttribute("class", ""); 
+      } 
+    </script> 
+    <style> 
+      html, body { 
+        padding: 0; 
+        margin: 0; 
+      } 
+      a { 
+        position: absolute; 
+      } 
+      body.is-highlighted a { 
+        background-color: #e5e5e5; 
+        opacity: .2; 
+      } 
+      main { 
+        position: relative; 
+        margin: 0 auto; 
+      } 
+      .top { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+      } 
+      .left { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        left: 0; 
+      } 
+      .bottom { 
+        position: fixed; 
+        z-index: 6; 
+        bottom: 0; 
+      } 
+      .right { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        right: 0; 
+      } 
+    </style> 
+  </head>
+  <body><main>
+<!-- project-new -->
+<img class="artboardImage" src="img/project-new.png" width="375">
+<a href="projects.html" style="z-index: 4; left: 8px; top: 30px; width: 102px; height: 24px"></a>
+<a href="projects.html" style="z-index: 4; left: 324px; top: 30px; width: 34px; height: 24px"></a>
+</main></body></html>

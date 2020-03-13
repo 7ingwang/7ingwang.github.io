@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>民生放心查</title>
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript">
+            function ScrollImgLeft(){ 
+            var speed=20; 
+            var scroll_begin = document.getElementById("scroll_begin"); 
+            var scroll_end = document.getElementById("scroll_end"); 
+            var scroll = document.getElementById("scroll"); 
+            scroll_end.innerHTML=scroll_begin.innerHTML; 
+            function Marquee(){ 
+            if(scroll_end.offsetWidth-scroll.scrollLeft<=0) 
+            scroll.scrollLeft-=scroll_begin.offsetWidth; 
+            else 
+            scroll.scrollLeft++; 
+            } 
+            var MyMar=setInterval(Marquee,speed); 
+            scroll.onmouseover=function() {clearInterval(MyMar);} 
+            scroll.onmouseout=function() {MyMar=setInterval(Marquee,speed);} 
+            } 
+        </script>
+    </head>
+    <body>
+        <div class="box result safe">
+            <div class="info">
+                <div class="row">产品编码<span>FSDA14193Y
+</span></div>
+                <div class="row">产品名称<span  id="scroll" class="scroll"><font id="scroll_begin">GS民生加银资管-民生保腾C2013006专项资产管理计划（2014年第93期）（对私）</font><font id="scroll_end"></font></span></div>
+            </div>
+            <i class="icon"></i>
+            <p>您查询的该产品为民生银行北京分行官方渠道发行，请您放心购买！</p>
+            <a href="index.html" class="btn">返回</a>
+        </div>
+        
+        <footer></footer>
+        <script type="text/javascript">ScrollImgLeft();</script>
+    </body>
+</html>

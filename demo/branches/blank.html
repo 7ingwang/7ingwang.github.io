@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>没有支行</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="">
+            </div>
+            <button type="button" class="positioning"><i class="icon icon-positioning icon20"></i></button>
+        </header>
+        <div class="topbar">
+            <a class="mui-tab-item tab" href="#tabbox">选择区域<i class="icon icon-drop-down"></i></a> 
+        </div><!-- /.topbar -->
+        
+        <div class="block blank">
+            <p>没有这个支行，请重新搜索</p>
+        </div><!-- /.block.blank -->
+        
+        <div id="tabbox">
+            <div class="mui-content mui-row mui-fullscreen">
+                <div class="mui-col-xs-5">
+                    <ul class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+                        <li class="mui-control-item"><a href="index.html">全部支行</a></li>
+                        <li class="mui-control-item"><a href="#">附近的</a></li>
+                        <li class="mui-control-item"><a href="#">东城区</a></li>
+                        <li class="mui-control-item"><a href="#">西城区</a></li>
+                        <li class="mui-control-item"><a href="#">崇文区</a></li>
+                        <li class="mui-control-item"><a href="#">宣武区</a></li>
+                        <li class="mui-control-item"><a href="#">朝阳区</a></li>
+                        <li class="mui-control-item"><a href="#">丰台区</a></li>
+                        <li class="mui-control-item"><a href="#">石景山区</a></li>
+                        <li class="mui-control-item"><a href="#">海淀区</a></li>
+                        <li class="mui-control-item"><a href="#">门头沟区</a></li>
+                        <li class="mui-control-item"><a href="#">房山区</a></li>
+                        <li class="mui-control-item"><a href="#">通州区</a></li>
+                        <li class="mui-control-item"><a href="#">顺义区</a></li>
+                    </ul><!-- /.mui-segmented-control-->
+                </div><!-- /.mui-col-xs-5-->
+                <div class="mui-col-xs-7">
+                    <ul class="mui-control-content">
+                        <li class="mui-table-view-cell"><a href="#">东城区所有支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东二环支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">正义路支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东单支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东二环支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">正义路支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东单支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东二环支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">正义路支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东单支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东二环支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">正义路支行</a></li>
+                        <li class="mui-table-view-cell"><a href="#">东单支行</a></li>
+                    </ul><!-- /.mui-control-content-->
+                </div><!-- /.mui-col-xs-7-->
+            </div><!-- /.mui-content-->
+        </div><!-- /#tabbox -->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mui.min.js"></script>
+        <script>
+            $('.tab').click(function(){
+                    $(this).toggleClass('active');
+                    $('#tabbox').toggleClass('active');
+            });
+        </script> 
+    </body>
+</html>

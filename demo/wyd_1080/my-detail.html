@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>我的申请</title>
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <script src="js/mui.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		if (localStorage.myDetail==0) {
+        			$("#name").text("北京尚思科技有限公司");
+        			$("#flowUl").append("<li><i class='icon finished'>1</i><span class='mui-pull-left'>2015-10-17</span><span class='text'>受理</span></li>");
+        			$("#flowUl").append("<li><i class='icon finished'>2</i><span class='mui-pull-left'>2015-10-18</span><span class='text'>联系</span></li>");
+        			$("#flowUl").append("<li><i class='icon finished'>3</i><span class='mui-pull-left'>2015-10-19</span><span class='text'>面签</span></li>");
+        			$("#flowUl").append("<li><i class='icon finished'>4</i><span class='mui-pull-left'>2015-10-20</span><span class='text'>审批未通过</span></li>");
+        		}else{
+        			$("#name").text("中国民生银行股份有限公司");
+        			$("#flowUl").append("<li><i class='icon finished'>1</i><span class='mui-pull-left'>2017-05-17</span><span class='text'>受理</span></li>");
+        			$("#flowUl").append("<li><i class='icon finished'>2</i><span class='mui-pull-left'>2017-05-18</span><span class='text'>联系</span></li>");
+        			$("#flowUl").append("<li><i class='icon finished'>3</i><span class='mui-pull-left'>2017-05-19</span><span class='text'>面签</span></li>");
+        			$("#flowUl").append("<li><i class='icon'>4</i><span class='mui-pull-left'>2017-05-20</span><span class='text'>待审批</span></li>");
+        		}
+        	});
+        </script>
+    </head>
+    <body id="my-detail">
+        <div class="theme-box" id="theme-my"></div><!-- .theme-box -->
+        <div class="block without">
+            <h2>我的申请信息</h2>
+            <div class="box">
+                <ul>
+                    <li><i class="icon icon-firm icon16"></i>企业名称<span id="name" class="mui-pull-right"></span></li>
+                    <li><i class="icon icon-person icon16"></i>姓名<span class="mui-pull-right">张三</span></li>
+                    <li><i class="icon icon-card"></i>身份证号<span class="mui-pull-right">23121982****2314</span></li>
+                    <li><i class="icon icon-mobile icon16"></i>手机号<span class="mui-pull-right">138****2323</span></li>
+                    <li><i class="icon icon-ask icon16"></i>是否已在申请单位工作满一年<span class="mui-pull-right">是</span></li>
+                </ul>
+            </div><!-- .box -->
+        </div><!-- .block -->
+        <div class="block without">
+            <h2>申请状态</h2>
+            <div class="box" id="steps">
+                <ul id="flowUl">
+                    <!--<li><i class="icon finished">1</i><span class="mui-pull-left">2016-12-17</span><span class="text">已受理</span></li>
+                    <li><i class="icon">2</i><span class="mui-pull-left">2016-12-17</span><span class="text">已联系</span></li>
+                    <li><i class="icon">3</i><span class="mui-pull-left">2016-12-17</span><span class="text">已面签</span></li>
+                    <li><i class="icon">4</i><span class="mui-pull-left">2016-12-17</span><span class="text">待审批</span></li>
+               --> </ul>
+            </div><!-- .box -->
+        </div><!-- .block -->
+        <div class="tc">
+            <button type="button" onclick="location.href='index.html'" class="mui-btn mui-btn-small"><i class="icon icon-home icon12 icon-mr"></i>返回首页</button>
+        </div><!-- .tc -->
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+    </body>
+</html>

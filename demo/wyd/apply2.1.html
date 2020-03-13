@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>申请公喜贷</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="theme-box" id="apply"></div><!-- .theme-box -->
+        <div class="block">
+            <form class="mui-input-group">
+                <div class="mui-input-row radio-row">
+                    <i class="icon icon-funds icon16"></i>
+                    <label class="full">公积金缴存地是否为北京：</label>
+                    <div class="inline-radio">
+                        <span class="mui-radio">是<input name="radio" type="radio"></span><span class="mui-radio">否<input name="radio" type="radio"></span>
+                    </div>
+                </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" id="toastBtn" class="mui-btn mui-btn-primary mui-btn-block" onclick="window.location.href='apply2.2.html'">下一步</button>
+        </div><!-- .mui-content-padded -->
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+        
+        <script src="js/mui.min.js"></script>
+        <script>
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				mui.toast('请按要求填写');
+			});
+		</script>
+    </body>
+</html>

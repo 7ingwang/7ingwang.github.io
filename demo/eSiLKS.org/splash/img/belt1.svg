@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1625px" height="1217px" viewBox="0 0 1625 1217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="-22.2983401%" y2="10.8966412%" id="linearGradient-1">
+            <stop stop-color="#0FE9CC" offset="0%"></stop>
+            <stop stop-color="#7A95FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00D0B4" offset="0%"></stop>
+            <stop stop-color="#3B62FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012">
+        <g id="Group-2-Copy-2" transform="translate(703.707279, 609.485107) scale(1, -1) rotate(-159.000000) translate(-703.707279, -609.485107) translate(-169.792721, 134.485107)">
+            <path d="M0.888729354,182.188615 C73.7214955,403.841174 99.8721975,668.516664 69.3921987,949.18589 C254.414975,581.922321 581.976569,337.606484 955.498678,337.606484 C1271.82159,337.606484 1555.10629,512.94522 1746.88539,789.643437 C1583.4435,329.467011 1145.59417,0.00482303071 630.867012,0.00482303071 C399.293362,0.00482303071 183.397015,66.9196311 0.888729354,182.188615 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M1704.68787,709.876597 C1535.69223,430.063003 1254.70338,246.782247 936.456331,246.782247 C539.057495,246.782247 209.418713,520.21151 73.8330077,922.950898 C73.1333234,930.059225 72.5429647,937.145613 71.777685,944.275879 C256.800461,576.99037 574.697665,344.916653 948.197909,344.916653 C1264.52082,344.916653 1547.82738,502.550389 1739.60649,779.248605 C1729.08936,749.652515 1717.41337,738.331845 1704.68787,709.876597 Z" id="Fill-4" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+      <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>我的申请</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+		 <script src="js/jquery-2.1.1.min.js"></script>
+		 <script src="js/mui.min.js"></script>
+		 <script src="js/comm.js"></script>
+		 <script type="text/javascript">
+		</script>
+    </head>
+    <body id="my">
+        <div class="theme-box" id="theme-my"></div><!-- .theme-box -->
+        <div class="block without" id="my-list">
+            <h2>我的申请</h2>
+            <a href='getDetail?applyId="+applyId+"&jobId="+data[i].JOB_ID+"' class='box'>
+        </div><!-- .block -->
+         <div class="tc">
+                <button type="button" class="mui-btn mui-btn-small" onclick="location.href='index.html'"><i class="icon icon-home icon12 icon-mr"></i>返回首页</button>
+            </div><!-- .tc -->
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+	
+		<script>
+			/*$(function(){
+				$.post("getApplyList",function(msg){
+					if( msg["code"] == 200 ){
+						var data = msg["data"];
+						if(data){
+							var html = "<h2>我的申请</h2>";
+							var status = 0;
+							var applyId = 0;
+							var attr = "";
+							for(var i in data){
+								status = data[i].JOB_STATUS;
+								applyId = data[i].APPLY_ID;
+								html += "<a href='getDetail?applyId="+applyId+"&jobId="+data[i].JOB_ID+"' class='box'>";
+								html += "<div class='no'>序号<em>"+(Number(i)+1)+"</em></div>";
+								html += "<div class='sn'>申请单号<em>"+applyId+"</em></div>";
+								html += "<div class='date fr'>申请日期<em>"+new Date(data[i].CREATE_TIME).format("yyyy-MM-dd")+"</em></div>";
+								//完成的样式 10审批通过 11审批未通过 -1终止
+								if( status == 10 || status == 11 || status == -1){
+									attr = "";
+								}else{
+									attr = "finished";
+								}
+								html += "<div class='process'><span class='mark "+attr+"'>"+data[i].STATUS_NAME+"</em></div>";
+								html += "</a>";
+							}
+							$("#my-list").html(html);
+						}
+					}else if( msg["code"] == 102){
+						//未登录
+						location.href="xfdLogin.jsp";
+					}else{
+						//异常
+						tipMsg("获取失败，请稍候刷新重试.");
+					}
+				});
+			});*/
+		</script>
+    </body>
+</html>

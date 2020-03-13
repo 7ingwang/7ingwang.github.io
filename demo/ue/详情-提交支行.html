@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>零售资产业务管理系统移动端UE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"> 
+      document.onmousedown = function() { 
+        document.body.setAttribute("class", "is-highlighted"); 
+      } 
+      document.onmouseup = function() { 
+        document.body.setAttribute("class", ""); 
+      } 
+    </script> 
+    <style> 
+      html, body { 
+        padding: 0; 
+        margin: 0; 
+      } 
+      a { 
+        position: absolute; 
+      } 
+      body.is-highlighted a { 
+        background-color: #e5e5e5; 
+        opacity: .2; 
+      } 
+      main { 
+        position: relative; 
+        margin: 0 auto;
+        width: 375px;
+        text-align: center;
+      } 
+      .top { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+      } 
+      .left { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        left: 0; 
+      } 
+      .bottom { 
+        position: fixed; 
+        z-index: 6; 
+        bottom: 0; 
+      } 
+      .right { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        right: 0; 
+      } 
+    </style> 
+  </head>
+  <body><main>
+<!-- 详情-提交支行 -->
+<img class="artboardImage" src="img/详情-提交支行.png" width="375">
+<a href="列表.html" style="z-index: 4; left: 26px; top: 13px; width: 49px; height: 24px"></a>
+<a href="提交.html" style="z-index: 4; left: 22px; top: 545px; width: 103px; height: 32px"></a>
+<a href="退回.html" style="z-index: 4; left: 135px; top: 545px; width: 104px; height: 32px"></a>
+<a href="终止.html" style="z-index: 4; left: 249px; top: 545px; width: 104px; height: 32px"></a>
+<a href="详情-提交分行.html" style="z-index: 4; left: 23px; top: 594px; width: 331px; height: 41px"></a>
+</main></body></html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="729px" height="684px" viewBox="0 0 729 684" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FBBF0E" offset="0%"></stop>
+            <stop stop-color="#0283CB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#0FE9CC" offset="0%"></stop>
+            <stop stop-color="#7A95FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#00D0B4" offset="0%"></stop>
+            <stop stop-color="#3B62FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012">
+        <g id="Group-2-Copy-5" transform="translate(443.436754, 346.151340) scale(-1, 1) rotate(572.000000) translate(-443.436754, -346.151340) translate(28.436754, 120.651340)">
+            <path d="M299.38807,0.498594572 C189.491076,0.498594572 87.0339981,32.2238172 0.421760784,86.8744138 C34.9857194,191.962914 47.3959549,317.449171 32.9311821,450.518277 C120.736711,276.393613 276.186325,160.560144 453.447239,160.560144 C603.563357,160.560144 738.000657,243.690629 829.01251,374.877025 C751.448538,156.701109 543.660105,0.498594572 299.38807,0.498594572" id="Fill-1" fill="url(#linearGradient-2)"></path>
+            <path d="M825.558189,369.948694 C820.567116,355.916784 815.026091,350.5495 808.986997,337.058479 C728.787406,204.39504 595.439633,117.499135 444.410388,117.499135 C255.818389,117.499135 99.3830125,247.135676 35.0386393,438.079909 C34.7065928,441.450064 34.4264287,444.809817 34.0632529,448.190374 C121.868782,274.055308 272.732004,164.025995 449.982542,164.025995 C600.09866,164.025995 734.546337,238.762298 825.558189,369.948694" id="Fill-4" fill="url(#linearGradient-3)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,150 @@
+html,body,h1,h2,h3,p,ul,li,input,textarea,button{ margin: 0; padding: 0;}
+body{ background: #f1f2f6; font-family: "微软雅黑","华文细黑",Arial, Helvetica, sans-serif; font-size: 14px; text-align: center; color: #333;}
+h1{ font-size: 20px;}
+h2{ font-size: 16px;}
+h3{ font-size: 14px;}
+p{ line-height: 30px;}
+ul,li{ list-style: none;}
+em{ font-style: normal;}
+a{ text-decoration: none; color: #4593CC;}
+a:hover{ text-decoration: none; opacity: .8;}
+
+/* 表单 */
+input{ padding: 0 3px; height: 34px; line-height: 34px; font-size: 14px;}
+button{ height: 36px; line-height: 36px; background: none; border: none; cursor: pointer; font-size: 14px;}
+
+/* 按钮 */
+.btn{ height: 24px; line-height: 24px; background-color: #2991DE; border-radius: 3px; font-size: 12px; color: #FFF;}
+.btn:hover{ opacity: .8;}
+.btn .icon{ margin-right: 6px;}
+.btn-big{ height: 36px; line-height: 36px; font-size: 14px;}
+.btn-grey{ background-color: #AAA;}
+.btn-hot{ background-color: #EA6937;}
+
+/* 图标 */
+.icon8{font-size: 8px;}
+.icon12{font-size: 12px;}
+.icon16{font-size: 16px;}
+.icon36{ font-size: 36px;}
+.icon-red{ color: #EA6937;}
+.icon-purple{ color: #B464BC;}
+.icon-blue{ color: #2E8DBE;}
+.icon-light-blue{ color: #3FC7E2;}
+.icon-green{ color: #97C512;}
+.icon-yellow{ color: #F2DD5F;}
+.icon-grey{ color: #888;}
+
+/* 全局 */
+.cl{ clear: both;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+.hl-r{ color: #EA6937;}
+.hl-b{ color: #2991DE;}
+.hl-g{ color: #aaa;}
+
+.badge{ padding: 10px 0; text-align: center;}
+.badge a{ display: inline-block; margin: 0 10px; width: 64px; height: 64px; overflow: hidden; border-radius: 100%; text-align: center; color: #FFF;}
+.badge a span{ display: block; margin-top: 10px; font-size: 20px;}
+.badge .b1{ background-color: #2E8DBE;}
+.badge .b2{ background-color: #3FC7E2;}
+.badge .b3{ background-color: #97C512;}
+
+.tick{ margin: 0 10px; color: #aaa; font-weight: 300;}
+.wrap{ clear: both; display: block; width: 1140px; margin: 0 auto; text-align: left;}
+
+.row{ display: block;}
+.row .col{ float: left;}
+.row .col-c{ margin-left: 15px;}
+.row .col-3{ width: 825px;}
+.row .col-2{ width: 405px;}
+.row .col-1{ width: 300px; float: right;}
+.row .box{ margin-bottom: 15px; background: #FFF;
+	-webkit-box-shadow: 0.5px 1.5px 3px 0 rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0.5px 1.5px 3px 0 rgba(0, 0, 0, 0.3); 
+            box-shadow: 0.5px 1.5px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.row .box.banner{ padding: 0; min-height: inherit; margin-bottom: 15px;}
+.row .box h2{ margin: 0 15px 10px; padding-top: 10px; height: 30px; line-height: 30px; border-bottom: 2px solid #dcdcdc;}
+.row .box h2 .title{ display: inline-block; border-bottom: 2px solid #5CC4BC;}
+.row .box h2 .fr{ font-weight: 300; font-size: 14px; color: #999;}
+.row .box h2 .icon{ margin-right: 6px; color: #888;}
+.row .box h2 em{ margin-left: 6px; font-weight: 300;}
+
+.list li{ line-height: 36px;}
+.list li a{ display: block; padding: 0 15px; color: #888;}
+.list li a .icon{ margin-right: 6px;}
+.list li a:hover{ text-decoration: none; background: #eee; color: #4593CC;}
+.list li.bg a{ background: #f9f9f9;}
+.list li .fr{ margin-right: 15px;}
+.list li .date{ font-size: 12px;}
+.list li a.btn{ margin-top: 6px; color: #FFF;}
+.list li a.btn:hover{ color: inherit;}
+
+.menu{ clear: both;}
+.menu .icon{ margin-right: 6px;}
+.menu .icon-arrow{ margin: 3px 0 0 6px;}
+
+#content{ padding-bottom: 30px;}
+#row-1 .box.banner{ height: 55px;}
+#row-2 .box{ height: 85px;}
+
+/* 头部 */
+#header{ margin-bottom: 20px; background: url(img/bg-header.png) repeat-x center top;}
+#headline{ height: 75px; background: url(img/slogan.png) no-repeat center center;}
+#headline h1{ position: absolute; text-indent: -9999px; overflow: hidden;}
+#headline #logo{ display: block; width: 234px; height: 75px; background: url(img/logo.svg) no-repeat center center;}
+#dashboard .menu{ text-align: right; }
+#dashboard .menu em{ font-size: 16px;}
+#dashboard #menu2{ margin-top: 15px;}
+#nav{ height: 44px; line-height: 44px; background: #2991DE;}
+#nav li{ display: inline;}
+#nav li a{ padding: 0 20px; color: #FFF; font-size: 16px;}
+#nav li a .icon-arrow{ color: #FFF; margin-left: 6px;}
+#nav li a:hover{ text-decoration: none; opacity: .8;}
+
+/* 待办事项 & 我的待审批流程 */
+#todo, #my{ height: 316px; overflow: hidden;}
+#todo #new-plan{ padding: 15px 15px 0;}
+#todo #new-plan input{ width: 320px;}
+#todo #new-plan .btn{ width: 36px; height: 36px; border: 1px solid #2991DE;}
+#todo #new-plan .btn .icon{ margin-right: 0;}
+
+/* 快捷方式 */
+#shortcut{ height: 210px;}
+#shortcut-icon{ padding: 10px 15px 0;}
+#shortcut-icon a{ display: inline-block; margin-bottom: 15px; width: 63px; text-align: center; overflow: hidden; text-decoration: none; color: #aaa;}
+#shortcut-icon a .icon{ display: block; margin-bottom: 5px; }
+#shortcut-icon a:hover{ color: #4593CC;}
+
+/* 通知公告 */
+#notice{ height: 161px; overflow: hidden;}
+
+/* 找人 */
+#find{ background: url(img/bg-search-bar.png) no-repeat center top; background-size: 100% auto; text-align: center;}
+#search-person{ padding-top: 24px;}
+#search-person input{ border: none;}
+#search-person .btn{ width: 72px;}
+
+/* 行业资讯 & 市场动态 & 公司活动 */
+#news, #market, #party{ height: 268px; overflow: hidden;}
+#party{ background: #FFF url(img/bg-sports.png) no-repeat center top; background-size: 100% auto;}
+#party h2, #party h2 span{ border-bottom: none;}
+#party .list#sports li a{ color: #2E8DBE;}
+#party .list#sports a.btn-hot{ background: #EA6937; color: #FFF;}
+#party .list#sports a.btn-grey{ background: #AAA; color: #FFF;}
+
+/* 活动影像 & 当前在线 */
+#media, #online{ height: 240px; overflow: hidden;}
+#online h2 em{ font-size: 16px; color: #EA6937; font-weight: 700; }
+#online .item{ padding: 0 15px;}
+#online p{ color: #AAA;}
+#who-online a{ display: inline-block; margin-right: 10px;}
+#media-show{ padding: 0 15px; width: 795px; overflow: hidden;}
+#media-show .owl-item{}
+#media-show .owl-item img{ display: block; margin: 0 2%; width: 96%; height: auto;}
+
+/* 底部 */
+#footer{ clear: both; padding: 20px 0; background: #dcdcdc;}
+#footer .wrap{ text-align: center;}
+#footer p{ color: #999;}

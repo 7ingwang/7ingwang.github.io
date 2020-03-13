@@ -1,0 +1,82 @@
+html, body, h1, h2, h3, h4, p, form, input{ margin: 0; padding: 0;}
+body{ background: #D5D5D5; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; }
+ul, li{ list-style: none;}
+i{ font-style: normal;}
+a{ color: #9F171A;}
+a:hover{}
+
+@keyframes pop {
+from { transform: scale(6); opacity: 0; }
+to { transform: scale(1); opacity: 1; }
+}
+
+.container{ margin: 0 auto; width: 1000px;}
+.section .container{ position: relative; text-align: left;}
+.bg{ background-position: center center; background-repeat: no-repeat; background-size: auto 100%;}
+.btn{ display: inline-block; padding: 0 30px; height: 54px; line-height: 54px; background-color: #9F171A; border-radius: 10px; color: #FFF; font-size: 20px; font-weight: 300; text-decoration: none;}
+.btn:hover{ opacity: .8;}
+.btn-large{ padding: 0 60px; font-size: 23px;}
+.btn.btn-o{ background: none; border: 2px solid #9F171A; color: #9F171A;}
+.show{ display: block !important;}
+
+#header{ height: 560px; background-image: url(../images/header.jpg);}
+#section1{ height: 843px; background-image: url(../images/section1.jpg);}
+#section2{ height: 995px; background-image: url(../images/section2.jpg);}
+#section3{ height: 1146px; background-image: url(../images/section3.jpg);}
+#section4{ height: 1594px; background-image: url(../images/section4.jpg);}
+#section5{ margin-bottom: 177px; height: 1268px; background-image: url(../images/section5.jpg);}
+#section5 .click{ position: relative; top: 165px; text-align: center; font-size: 20px; font-weight: bold; color: #9F171A;}
+#section5 .click a{ font-weight: inherit; font-size: 16px;}
+#section5 .click a:hover{ text-decoration: none;}
+#footer{ position: fixed; left: 0; right: 0; bottom: 0 !important; height: 177px; background-image: url(../images/footer.jpg); z-index: 1;}
+
+.video{ position: relative; top: 160px; height: 478px; background: #000;}
+.video .playerbox{ position: absolute; padding-top: 50px; width: 677px; }
+.video .player{ height: 381px; background: url(../images/video.jpg) center top no-repeat;}
+.video h2{ padding: 0 20px; height: 48px; line-height: 48px; font-size: 20px; color: #FFF; border-bottom: 1px solid #424242;}
+.video .vlist{ position: relative; margin-left: 677px; background-color: #383838;}
+.video .vlist ul{ position: relative; margin: 0 5px 0 0; padding: 0; height: 429px; overflow: auto;}
+.video .vlist li{ padding: 10px 0 5px 20px; height: 91px; font-size: 13px; color: #FFF;}
+.video .vlist li+li{ border-top: 1px solid #424242;}
+.video .vlist li:hover{ cursor: pointer; opacity: .8;}
+.video .vlist li.active{ background-color: #292929;}
+.video .vlist li h3{ font-size: 15px;}
+.video .vlist li h4{ font-size: 14px;}
+.video .vlist li .clip{ position: absolute; width: 120px; text-align: center;}
+.video .vlist li .clip img{ width: 106px; height: 60px;}
+.video .vlist li .clip h4{ margin-top: 5px;}
+.video .vlist li .cases{ margin-left: 120px; padding: 15px 0 15px 15px; }
+.video .vlist li .cases h3{ margin-bottom: 10px;}
+.video .vlist li .cases label{ position: absolute;}
+.video .vlist li .cases p{ padding-left: 40px;}
+.video .vlist li .cases p span+span{ margin-left: 10px;}
+
+.join{ position: relative; padding: 80px 0 0 46px; color: #FFF; font-size: 16px;}
+.join span{ position: relative;}
+.join label{ margin: 0 10px 0 40px;}
+.join input[type=text]{ padding: 0 5px; height: 36px; height: 36px; background: none; border: 1px solid #BB494F; border-radius: 5px; font-size: 14px; color: #FFF;}
+.join input:focus{ outline: none; background: #BB494F;}
+.join input::-webkit-input-placeholder{ color: #BB494F;}
+.join .btn{ position: absolute; right: 90px; padding: 0 60px; height: 60px; line-height: 60px; background-color: #FFF; color: #E21636; font-size: 25px; border: 5px solid #E21636; border-width: 0 0 5px 0;  border-radius: 5px; box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.50); cursor: pointer;}
+.join .btn:active{  box-shadow: 2px 6px 10px 0 rgba(0,0,0,0.50);}
+.join .tooltip{ position: absolute; right: 2px; top: -42px; padding: 5px 10px; background: #fff; border-radius: 5px 5px 5px 0; font-size: 13px; color: #E21636; opacity: .9;}
+
+.mask, .layer{ display: none;}
+.mask{ position: fixed; width: 100%; height: 100%; background: #000; opacity: .6; filter: alpha(opacity=60); top: 0; left: 0; z-index: 2;}
+.layer{ position: fixed; left: 0; right: 0; top: 15%; bottom: 15%; text-align: center; opacity: .9; z-index: 3; animation: pop .6s cubic-bezier(1,-0.49, 0, 1.5);}
+
+.layer.success{ }
+.layer.success .box{ position: relative; display: block; margin: 0 auto; width: 704px; height: 307px;  background: url(../images/popup-success.png) no-repeat center bottom;}
+
+.layer.popup-join{}
+.layer.popup-join .box{ position: relative; display: block; margin: 0 auto; width: 704px; height: 355px;  background: url(../images/popup-join.png) no-repeat center bottom;}
+.layer.popup-join .box span, .layer.popup-join .box .btn-join{ position: absolute; top: 196px;}
+.layer.popup-join .box span input{ width: 211px; height: 40px; line-height: 40px; background: none; border: none; font-size: 20px; color: #452609;}
+.layer.popup-join .box span input::-webkit-input-placeholder{ color: #A78B67;}
+.layer.popup-join .box .userNamebox{  left: 101px;}
+.layer.popup-join .box .phonebox{ right: 32px;}
+.layer.popup-join .box .phonebox input{ width: 248px;}
+.layer.popup-join .box .btn-join{ top: 260px; right: 227px; opacity: 0;}
+.layer.popup-join .box .tooltip{ top: -32px; right: 0; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50); opacity: .8; }
+
+.layer .box .close{ position: absolute; right: 0; top: 0; display: inline-block; width: 45px; height: 45px; background: url(../images/icon-close.png) no-repeat center center ; cursor: pointer; z-index: 1;}

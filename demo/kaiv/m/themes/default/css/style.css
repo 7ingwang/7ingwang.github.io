@@ -1,0 +1,334 @@
+/* 颜色
+	
+	背景灰 	#F8F8F8
+	字体深 	#444
+	字体中 	#666
+	字体浅 	#888
+	按钮灰	    #eee
+	分割线		#ddd
+	主题红   	#F97274
+	点缀绿		#4BCB8A
+	点缀橙		#FFAB0E
+	点缀红		#FF7F00
+	点缀棕		#C2A7A1
+	警示红		#F97274
+	
+*/
+
+/* reset */
+html, body, h1, h2, h3, h4, hr, p, ol, ul, li, dl, dt, dd, input, textarea,button{ margin: 0; padding: 0;}
+ul, ol{ list-style: none;}
+body{ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; background: #f8f8f8; text-align: center; line-height: 1.6; font-size: 16px;}
+h1{ font-size: 20px;}
+h2{ font-size: 16px;}
+h3{ font-size: 14px;}
+h4{ font-size: 12px;}
+p{ font-size: 14px; color: #666;}
+a{ text-decoration: none; color: #4BCB8A; /* -webkit-tap-highlight-color:transparent; */ }
+a:active{}
+big{ font-size: 20px;}
+small{ font-size: 12px;}
+button{ background: none; border: none;}
+input, textarea{ padding: 2px 4px; height: 30px; line-height: 30px; border: 1px solid #ddd; border-radius: 4.5px; font-size: 14px;}
+textarea{ height: 60px;}
+em, i{ font-style: normal;}
+i{ font-weight: 300;}
+
+/**** common ****/
+.fl{ float: left;}
+.fr{ float: right;}
+.center{ margin: 0 auto; text-align: center;}
+.hide{ display: none;}
+.show{ display: block!important;}
+.lightlink{ color: #888;}
+.line{ border: 1px solid #ddd; border-width: 1px 0 0 0;  margin-top: 10px; padding-top: 10px;}
+.line.dashed{ border-style: dashed;}
+.green{ color:#4BCB8A;}
+
+/* mask */
+.mask{ position: fixed; top:0; left: 0; right: 0; bottom: 0; background: #000; opacity: 0.3; z-index: 101; display: none;}
+
+/* effects */
+.shadow{ 
+-webkit-box-shadow: 0px 2.5px 5px 0 rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 2.5px 5px 0 rgba(0, 0, 0, 0.3);
+box-shadow: 0px 2.5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.radius{ 
+-webkit-border-radius: 4.5px 4.5px 4.5px 4.5px;
+-moz-border-radius: 4.5px 4.5px 4.5px 4.5px;
+border-radius: 4.5px 4.5px 4.5px 4.5px;
+}          
+            
+/* btns */
+.bigbtn{ position: relative; display: block; margin: 0 auto 5%;  height: 36px; line-height: 36px; background: #F97274; border-radius: 4.5px; text-align: center; font-size: 16px; font-weight: 700; color: #fff; text-decoration: none;}
+.bigbtn.light{ background: #C3A7A0;}
+.bigbtn .icon{ top: 0; left: 25%;}
+.btn{ display: block; text-align: center; height: 36px; line-height: 36px; background: #C2A7A1; border-radius: 4.5px; color: #fff; font-size: 14px;}
+.btn.thin{ background: #eee; color: #888;}
+.minibtn{ padding: 2px 8px; background: #F97274; border-radius: 4.5px; color: #fff; font-size: 14px;}
+.inline{ display: inline-block;}
+
+/* fixed */
+.fixed{ position: fixed; left: 0; right: 0;}
+.fixed.roof{ top: 0;}
+.fixed.floor{ bottom: 0;}
+.fixed.floor .bigbtn{ margin-bottom: 0; border-radius: 0; opacity: 0.9;}
+
+/* headroom */
+.headroom{ transition: all .6s ease-in-out .1s;}
+.headroom--unpinned{top: -99px;}
+.headroom--pinned{top: 0;}
+
+/* box */
+.box{ display: block; background: #fff; margin-bottom: 6px; padding: 10px;}
+
+/* 数字加减 */
+.spinner{ text-align: center; font-size: 20px;}
+.spinner .value{ margin: 0 auto; border: none; width: 36px; height: 36px; line-height: 36px; }
+.spinner button{ display: block; width: 72px; height: 36px; line-height: 36px; background: #eee; border-radius: 4.5px; color: #F97274; font-size: 20px;}
+.spinner button.decrease{ float: left;}
+.spinner button.increase{ float: right;}
+
+/* icons */
+.icon{ position: absolute; display: block; background-repeat: no-repeat; background-position: 0 0;}
+.icon72{ width: 72px; height: 72px; background-image: url(../images/icon72.png); background-size: auto 72px;}
+.icon48{ width: 48px; height: 48px; background-image: url(../images/icon48.png); background-size: auto 48px;}
+.icon44{ width: 44px; height: 44px; background-image: url(../images/icon44.png); background-size: auto 44px;}
+.icon36{ width: 36px; height: 36px; background-image: url(../images/icon36.png); background-size: auto 36px;}
+.icon24{ width: 24px; height: 24px; background-image: url(../images/icon24.png); background-size: auto 24px;}
+.icon20{ width: 20px; height: 20px; background-image: url(../images/icon20.png); background-size: auto 20px;}
+.icon.icon20.clear{ background-color: #eee; border-radius: 50%;}
+.icon.icon72.ready, .icon.icon72.empty, .icon.icon72.error{ position: relative; background-color: none; border-radius: 100%;}
+.icon.icon72.error{ background-position: -72px 0;}
+
+/* 分享到 */
+.sns{ display: inline-block; width: 48px; height: 72px; margin: 0 10px;}
+.sns .icon{ background-color: #eee; border-radius: 50%;}
+.sns .text{ display: block; position: relative; top:48px; height: 24px; line-height: 24px; text-align: center; font-size: 12px; color: #888;}
+.sns.qq .icon{ background-color: #6AB9DA;}
+.sns.weixin .icon{ background-color: #5FC739; background-position: -48px 0;}
+
+/* stars */
+.stars{ position: relative; display: inline-block; width: 120px; height: 24px;}
+.stars em{ position: absolute; width: 100%; height: 100%; z-index: 0; }
+.stars em.shape{ background: url(../images/star.png) repeat-x; background-size: auto 100%; z-index: 10;}
+.stars em.mask{ background: #FF7F00;}
+.stars.mini{ width: 60px; height: 12px;}
+
+/* 点亮星级 */
+.star{ display: inline-block; width: 24px; height: 24px; background-image: url(../images/star-grey.png); background-repeat: no-repeat; background-size: auto 100%;}
+.star.light{ background-color: #FF7F00; }
+
+/* tags */
+.tags span{ display: inline-block; padding: 4px 6px; margin: 4px 6px 4px 0; background: #eee; border-radius: 4.5px; color: #666; font-size: 14px;}
+.tags span.check{ background: #F97274; color: #fff;}
+
+/* table */
+.table, .table th, .table td{ border: 1px solid #eee; text-align: center; font-size: 12px;}
+.table{ border-width: 1px 0 0 1px;}
+.table th, .table td{ border-width: 0 1px 1px 0; padding: 5px;}
+.table th{ background: #f8f8f8; color: #888;}
+.table tr.overdue td{ color: #aaa;}
+
+/* textbox */
+.textbox{ margin-top: 10px; border: 1px dashed #ddd; padding: 0 10px 10px; display: none;}
+.textbox h3{ margin: 10px 0;}
+
+/* signpost */
+.signpost{ padding: 20% 0; text-align: center; }
+.signpost .icon{ margin-bottom: 20px;}
+.signpost .bigbtn{ margin: 30px 10px 0;}
+
+/* popup */
+.popup{ position: fixed; left: 0; right: 0; bottom: 0; background: #f8f8f8; text-align: center; display: none; box-shadow: 0px 7px 4px rgba(0,0,0,0.49); z-index: 102;}
+.popup .content{ padding: 10px;}
+.popup .content h2{ margin-bottom: 10px;}
+.popup .content .btn{ margin: 10px 0;}
+
+/* tips */
+.tips{ position: absolute; left: 0; right: 0; top:44px; background: #000; text-align: center; z-index: 100; height: 36px; line-height: 36px; font-size: 12px; color: yellow; opacity: 0.5;}
+
+/* form */
+.form{ position: relative;}
+.form .box{ padding: 10px 30px;}
+.form .box.first{ padding-top: 30px;}
+.form .box .row{ position: relative; height: 36px; line-height: 36px; padding:5px 0;}
+.form .box .row .push-bar input{ position: absolute; left: 0; right: 0; border: 1px solid #ddd;}
+.form .box .row .push-bar .clear{ top: 13px; right: 8px;}
+.form .box .row .push-bar.short{ display: inline;}
+.form .box .row .push-bar.short input{ width: 50%;}
+.form .box .row .push-bar.short .clear{ right: 50%;}
+.form .box .row .btn.inline{ width: 45%;}
+
+/**** layout ****/
+.page{ margin: 0 auto; overflow: hidden; text-align: left;}
+
+header{ top:0; z-index: 100;}
+header .bigbtn .icon{ left: 0; top: 0;}
+
+#titlebar{ height: 44px; line-height: 44px; background: #F97274; text-align: center; color: #fff;}
+#titlebar a{ display: block; width: 44px; height: 44px; line-height: 44px; text-decoration: none; text-indent: -9999px; overflow: hidden; color: #fff; }
+#titlebar .icon.search{ background-position: -44px 0;}
+#titlebar .icon.refresh{ background-position: -88px 0;}
+#titlebar .icon.back{ background-position: -132px 0;}
+#titlebar a.text{ width: auto; padding-right: 10px; text-indent: 0; font-size: 14px;}
+
+#searchform{ display: none;}
+
+nav{ clear: both; display: block; height: 36px; margin-top: 44px; z-index: 10;}
+nav li{ float: left; width: 50%;}
+nav li a{ display: block; height:36px; line-height: 36px; background: #fff; text-align: center; text-decoration: none; color: #888;}
+nav li a.current{ font-weight: 700; border-bottom: 2px solid #F97274; color: #F97274;}
+
+#main{ margin-top: 88px;}
+#main.no-nav{ margin-top: 44px;}
+
+.sidebar{ margin-top: 44px;}
+.sidebar h2{padding: 10px 10px 5px;}
+.sidebar h2 b{ color: #888;}
+.sidebar .box{ margin-bottom: 10px;}
+.sidebar .box .row{ height: 36px; line-height: 36px; font-size: 14px;}
+.sidebar .box .row .label{ width: 90px; display: inline-block; color: #888;}
+
+footer{ clear: both; display: block;}
+footer p{ color: #888;}
+footer .fixed{ bottom: 10px; z-index: 102;}
+footer .fixed a{ display: block; position: relative; opacity: 0.8;}
+footer .fixed a#open-menu{ width: 36px; height: 36px; background: #F97274; border-radius: 5px; left: 10px; text-indent: -9999px;}
+footer .fixed a#open-menu .icon{ background-position: -72px 0;}
+footer .fixed a#open-order{ width: auto; max-width: 60%; height: 36px; line-height: 36px; background: #EE5F67; padding-right: 36px; text-decoration: none; font-size: 14px; color: #fff;}
+footer .fixed a#open-order .icon{ background-position: -24px 0; right: 0; top: 6px;}
+footer .fixed a#open-order big{ display: inline-block; padding-left: 20px; margin-right: 10px; background: url(../images/badge-corner.png) no-repeat left center; background-size: auto 100%; position: relative; left: -9px;}
+footer .fixed a#open-order b{ margin: 0 5px; font-size: 16px;}
+footer .fixed .bigbtn{ margin-bottom: 0;}
+
+
+/**** pages ****/
+/* home & order */
+.dishbar{ position: relative; margin-bottom: 6px; z-index: 0;}
+.dishbar .box{ display: block; height: 50px; padding: 5px 10px; background: #fff;}
+.dishbar .cover{ position: absolute;}
+.dishbar .brief{ height: 50px; padding: 5px 0 0 60px;}
+.dishbar .brief h3{ color: #444; width: 112px; overflow-x: hidden; white-space:nowrap;}
+.dishbar .brief h3 .label{ margin-left: 3px; padding: 0 3px; border: 1px solid #ddd; border-radius: 3px; font-weight: 300;  font-size: 12px; color: #888;}
+.dishbar .brief .price{ color: #888; font-size: 12px;}
+.dishbar .brief .price b{ color: #EE5F67; font-size: 16px; margin-right: 5px;}
+.dishbar .brief .stars{ left: 10px; top: 2px;}
+.dishbar .toggle{ position: absolute; right: 0; top: 0; display: block; width: 40px; height: 60px; z-index: 1;}
+.dishbar .toggle .icon{ left: 8px; top: 18px; background-color: #E7E5E6; border-radius: 12px;}
+.dishbar .toggle.check .icon{ background-color: #4BCB8A; background-position: -48px 0;}
+.dishbar .toggle.remark{ right: 40px;}
+.dishbar .toggle.remark .icon{ background-color: #FFAB0E; background-position: -96px 0;}
+.dishbar .toggle.del .icon{ background-color: #F97274; background-position: -72px 0;}
+.dishbar .toggle.review{ right: 40px; display: none;}
+.dishbar .toggle.review .icon{ background-color: #FF7F00; background-position: -144px 0;}
+.dishbar .toggle.share{ display: none;}
+.dishbar .toggle.share .icon{ background-color: #4BCB8A; background-position: -168px 0;}
+.dishbar .spinner{ position: absolute; top: 0; right: 0; height: 40px; font-size: 12px; z-index: 10;}
+.dishbar .spinner button{ display: none; position: relative; width: 60px; height: 40px; line-height: 40px;}
+.dishbar .spinner .value{ padding: 0; top: 18px; right: 88px; width: 24px; height: 24px; line-height: 24px; border-radius: 12px; background: #C2A7A1; color: #fff;}
+.dishbar .spinner.show button{ display: block; top:10px; }
+.dishbar .spinner button.decrease{ right: 60px;}
+.dishbar .spinner button.increase{ right: 20px;}
+.dishbar .slidebox{ display: none; padding: 10px;}
+.dishbar .slidebox .btn{ margin-top: 5px;}
+.dishbar .slidebox .point-up{ position: absolute; right: 52px; top: 44px; width:  16px; height: 16px; background: url(../images/icon16.png) no-repeat 0 0; background-size:  auto 100%; z-index: 101;}
+
+/* 售罄 */
+.dishbar.sellout .box{ opacity: 0.5;}
+.dishbar.sellout .sellout-badge{ display: none; width: 50px; height: 50px; background: url(../images/sellout.png) no-repeat 0 0; background-size: auto 100%; opacity: 0.8; position: absolute; right: -1px; top: -1px; z-index: 11;}
+
+/* order */
+.dishcat .title{ padding: 0 10px; margin-bottom: 6px; font-size: 14px; color: #888;}
+.dishcat .title em{ margin-left: 10px;}
+
+/* 退改纪录 */
+.dishcat.modify{ border-bottom: 2px dashed #ddd; /* background: #FFF9F9; */ padding: 10px 0; margin-bottom: 10px;}
+.dishcat.modify .title{ color: #F97274;}
+#modify-list{ display: none;}
+#modify-list.table{ border-left: 0; color: #888;}
+#modify-list td{ border-right: 0;}
+#modify-list .name{ color: #444; font-size: 14px;}
+#modify-list .add{ color: #4BCB8A;}
+#modify-list .cut{ color: #F97274;}
+#modify-list .sum{ color: #F97274; font-weight: 700;}
+
+.item{ margin-bottom: 2px; padding: 0 10px; height: 36px; line-height: 36px; background: #fff;}
+.item .ps{ font-size: 12px;}
+.item .icon{ margin-top: 6px; display: none;}
+.item .num{}
+.item .num b{ color: #F97274;}
+.item .num .desknum{ height: 24px; line-height: 24px;}
+.item label{ font-size: 14px;}
+.item label input{ position: relative; top: 5px; margin-right: 10px;}
+
+.btn.view{ margin: 10px; display: none;}
+.btn.view .icon{ display: none;}
+.bigbtn.pay .icon{ background-position: -108px 0; }
+.bigbtn.place-order .icon{ background-position: -144px 0;}
+
+.slidebox.reviewbox{ padding-top: 5px;}
+.slidebox.reviewbox .point-up{ top: -22px;}
+.reviewbox{ position: relative; display: block; height: 140px;}
+.reviewbox .stars .mask{ width: 0%;}
+.reviewbox .word{ height: 24px; line-height: 24px; font-size: 14px;}
+.reviewbox textarea{ clear: both; position: absolute; left: 10px; right: 10px; top: 40px;}
+.reviewbox .btn{ position: relative; top: 70px;}
+
+
+/* loon */
+.loon{}
+.loon .box{ padding: 10px; background: #fff; font-size: 12px;}
+.loon .box h3{ border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 5px; color: #888;}
+.loon .box p{ text-align: center;}
+.loon .box p b{ font-size: 16px; color: #F97274; margin: 0 5px;}
+.loon .box label{ margin-right: 10px; font-size: 14px;}
+.loon .box label input{ position: relative; top: 8px;}
+.loon .bigbtn{ margin: 0 auto; width: 100%; text-align: center;}
+
+/* detail */
+.detail .box{ }
+.detail .box .bigimg{ width: 100%; height: auto;}
+.detail .box .row{ padding: 10px 0; border-bottom: 1px solid #f8f8f8;}
+.detail .box .row h3 .sellout-badge{ color: red; font-weight: 300;}
+.detail .box .row .price{ color: #888; font-size: 12px;}
+.detail .box .row .price b{ color: #F97274; font-size: 16px; margin-right: 5px;}
+.detail .box .row .stars{ top: 0; left: 10px;}
+
+.review{}
+.review h3{ padding-bottom: 5px;}
+.review-list li{ border-top: 1px solid #ddd; padding-top: 10px; min-height: 60px;}
+.review-list li .avatar{ position: absolute;}
+.review-list li h4, .review-list li p{ padding-left: 60px;}
+.review-list li h4 .date{ color: #888; font-weight: 300;}
+.review-list li p{ line-height: 1.5; font-size: 12px;}
+
+/* landing */
+.landing{ text-align: center; background: url(../images/testbg.png) no-repeat right bottom; background-size: 50% auto;}
+.landing h1{ font-weight: 300; font-size: 16px;}
+.landing h1 b{ padding: 0 5px;}
+.landing #logo{ margin: 10% auto 5%; width: 120px; height: 120px;}
+.landing #logo img{ border: 1px solid #ddd; border-radius: 50%; padding: 4px;}
+.landing p{ margin: 10% 0;}
+.landing .bigbtn{ width: 80%;}
+.landing .bigbtn .icon{ left: 20%;}
+.landing .bigbtn .icon.click{ background-position: 0 0;}
+.landing .bigbtn .icon.fly{ background-position: -36px 0;}
+
+/* open */
+#open header .bigbtn .icon{ background-position: -132px 0;}
+#open .slogan{ padding: 15% 0 0; text-align: center; font-size: 14px;}
+
+/* login */
+.others{ margin-top: 36px; text-align: center;}
+.others h3, .others a{ color: #888;}
+.others h3{ margin-bottom: 10px;}
+
+/* user */
+#k-num{ font-size: 14px;}
+#k-num td{ padding: 5px 0; border-bottom: 1px solid #f8f8f8;}
+#k-num .label{ font-size: 12px; color: #888;}
+#k-num b{ color: #F97274; }
+
+#k-list-content{ margin-top: 5px; display: none;}

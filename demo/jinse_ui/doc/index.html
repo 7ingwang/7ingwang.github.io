@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>JINSE.COM Web前端页面规范文档</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>JINSE.COM Web前端页面规范文档</h1>
+        <h2>写在前面</h2>
+        <p>为了前端开发的团队成员协作高效，以及便于后期维护，现制订一套Web前端规范。规范不是约束，而是服务于设计师与前端开发工程师，减少沟通成本。JINSE.COM PC端网页为固定宽度，不考虑响应式，所以该规范只适用于固定宽度的页面。</p>
+        <h2>目录</h2>
+        <ul>
+            <li>HTML页面布局</li>
+            <li>CSS</li>
+                <ul>
+                    <li>CSS命名规范</li>
+                    <li>书写格式</li>
+                    <li>声明顺序</li>
+                </ul>
+            <li>文件目录</li>
+        </ul>
+        <h2>HTML页面布局</h2>
+        <div class="layout">
+            <div class="box l1">
+                <span>header</span>
+                <div class="box l2">
+                    <span>container</span>
+                    <div class="box">
+                        <span>logo</span>
+                    </div>
+                    <div class="box">
+                        <span>nav</span>
+                    </div>
+                    <div class="box">
+                        <span>login</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box l1">
+                <span>sectioin banner banner-full</span>
+                <div class="box">
+                    <span>banner-box</span>
+                </div>
+            </div>
+            
+            <div class="box l1">
+                <span>sectioin</span>
+                <div class="box l2">
+                    <span>container</span>
+                    <div class="cl"></div>
+                    <div class="box col-4 l3 fl">
+                        <span>col</span>
+                        <div class="box l4">
+                            <span>box</span>
+                        </div>
+                    </div>
+                    <div class="box col-4 l3 fl">
+                        <span>col</span>
+                        <div class="box l4">
+                            <span>box</span>
+                        </div>
+                    </div>
+                    <div class="box col-4 l3 fl">
+                        <span>col</span>
+                        <div class="box l4">
+                            <span>box</span>
+                        </div>
+                    </div>
+                    <div class="box col-4 l3 fl">
+                        <span>col</span>
+                        <div class="box l4">
+                            <span>box</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box l1">
+                <span>section</span>
+                <div class="box l2">
+                    <span>container</span>
+                    <div class="cl"></div>
+                    <div class="box col l3 fl">
+                        <span>col</span>
+                        <div class="box l3">
+                            <span>block tabs tabs-x</span>
+                            <div class="box l4">
+                                <span>block-title tab-title</span>
+                                <div class="box l5">
+                                    <span>menu menu-inline</span>
+                                </div>
+                            </div>
+                            <div class="box l4">
+                                <span>block-content</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col l3 fl">
+                        <span>col</span>
+                        <div class="box l4">
+                            <span>box</span>
+                        </div>
+                    </div>
+                    <div class="box col l3 fl">
+                        <span>col</span>
+                        <div class="box l3">
+                            <span>block</span>
+                            <div class="box l4">
+                                <span>block-title</span>
+                            </div>
+                            <div class="box l4">
+                                <span>block-content</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box l1">
+                <span>section</span>
+                <div class="box l2">
+                    <span>container</span>
+                    <div class="box l3">
+                        <span>menu menu-inline bread-crumb</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box l1">
+                <span>footer</span>
+                <div class="box l2">
+                    <span>container</span>
+                </div>
+            </div>
+        </div><!-- .layout -->
+        
+        <h2>CSS</h2>
+        <h3>命名规范</h3>
+        <div class="naming">
+            <ul>
+                <li>头部／header</li>
+                <li>尾部／footer</li>
+                <li>部分／section</li>
+                <li>特定部分／section-xxx</li>
+                <li>容器／container</li>
+                <li>竖列／col</li>
+                <li>宽度为300的列／col-300</li> 
+                <li>1行4等分的单列／col-4</li>
+                <li>1行6等分的单列／col-6</li>
+                <li>特定列／col-xxx</li>  
+                <li>盒容器／box</li>
+            </ul>
+            <ul>
+                <li>主导航／nav</li>
+                <li>子导航／nav-sub</li>
+                <li>特定导航／nav-xxx</li>
+                <li>菜单／menu</li>
+                <li>子菜单／menu-sub</li>
+                <li>行内菜单／menu-inline</li>
+                <li>特定菜单／menu-xxx</li>
+                <li>当前激活项／current</li>
+            </ul>
+            <ul>
+                <li>栏目块／block</li>
+                <li>栏目标题／block-title</li>
+                <li>栏目内容／block-content</li>
+                <li>栏目内容列表／block-list</li>
+                <li>无缩紧的栏目块／block-full</li>
+                <li>无背景色的栏目块／block-no-bg</li>
+                <li>特定栏目／block-xxx</li>
+            </ul>
+            <ul>
+                <li>标签页／tabs</li>
+                <li>标签页标题栏／tab-title</li>
+                <li>标签页内容区／tab-content</li>
+                <li>标签页内容列表／tab-list</li>
+                <li>特定标签页／tabs-xxx</li>
+            </ul>
+            <ul>
+                <li>文章列表／list</li>
+                <li>文章标题附加栏／mark</li>
+                <li>文章摘要／summary</li>
+                <li>日期／date</li>
+                <li>编辑／editor</li>
+                <li>标签／tags</li>
+            </ul>
+            <ul>
+                <li>面包屑／bread-crumb</li>
+                <li>分割线／pipe</li>
+            </ul>
+            <ul>
+                <li>图标／icon</li>
+                <li>图标名／icon-editor</li>
+                <li>图标字体尺寸／icon16</li>
+            </ul>
+            <ul>
+                <li>广告条／banner</li>
+                <li>通栏广告条／banner-full</li>
+            </ul>
+        </div>
+        <h3>CSS书写格式</h3>
+        <pre class="code">
+/**
+ * 1 - reset
+ * 2 - basic
+ * 2.1 - common
+ * 2.2 - icon
+ * 2.3 - pic
+ * 2.4 - table
+ * 2.5 - menu
+ * 2.6 - list
+ * 2.7 - tabs
+ * 3 - layout
+ * 4 - header
+ * 5 - footer
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1 reset
+ * ----------------------------------------------------------------------------
+ */
+ 
+ html, body, div, h1, h2, h3 ,h4, p, span, em, b, i, ul, ol, li, dl, dt, dd, table, tr, th, td, form, input, lable, select, textarea, img{ margin: 0; padding: 0; border: 0;}
+ 
+ 
+ /**
+  * 2 basic
+  * ----------------------------------------------------------------------------
+  */
+ 
+body{ min-width: 1200px; line-height: 1.6; font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif; font-size: 14px; color: #666; background: #f4f6fb;}
+h1, h2, h3, h4{ color: #333;}
+h1{ font-size: 30px;}
+h2{ font-size: 20px;}
+h3{ font-size: 16px;}
+
+
+/* 2.1 common */
+.fl{ float: left;}
+.fr{ float: right;}
+.clear:before, .clear:after, .header:before, .header:after, .footer:before, .footer:after, .container:before, .section:before, .section:after, .container:after, .row:before, .row:after{ display: table; clear: both; content: "";}
+.pipe{ margin: 0 10px;}
+
+/* 2.2 icon */
+.icon{ margin-right: 8px;}
+        </pre>
+        <h3>CSS声明顺序</h3>
+        <ol>
+            <li>位置属性：position, top, right, z-index, display, float...</li>
+            <li>大小：width, height, padding, margin...</li>
+            <li>文字系列：font, line-height, color, text-align...</li>
+            <li>背景：background, border...</li>
+            <li>其他：opacity...</li>
+        </ol>
+        <h2>文件目录</h2>
+        <h3>demo</h3>
+        <ul>
+            <li>index.html</li>
+            <li>home.html</li>
+            <li>news.html</li>
+            <li><span class="folder">css</span>
+                <ul>
+                    <li>style.css</li>
+                    <li>icons.css</li>
+                </ul>
+            </li>
+            <li><span class="folder">img</span>
+                <ul>
+                    <li>logo.png</li>
+                    <li>logo@2x.png</li>
+                </ul>
+            </li>
+            <li><span class="folder">fonts</span>
+                <ul>
+                    <li>icomoon.eot</li>
+                    <li>icomoon.svg</li>
+                    <li>icomoon.ttf</li>
+                    <li>icomoon.woff</li>
+                </ul>
+            </li>
+            <li><span class="folder">js</span>
+                <ul>
+                    <li>jquery.js</li>
+                </ul>
+            </li>
+            <li><span class="folder">images</span>
+                <ul>
+                    <li>banner.png</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

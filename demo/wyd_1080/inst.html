@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>选择网点</title>
+        <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/mui.min.js"></script>
+    </head>
+    <script type="text/javascript">
+    	
+	</script>
+    <body>
+        <div class="mui-content mui-row mui-fullscreen">
+			<div class="mui-col-xs-4">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				<a class="mui-control-item mui-active" data-index="0" href="javascript:void(0);" onclick="getInstList('1',0);">东城区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('2',1);">西城区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('3',2);">海淀区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('4',3);">朝阳区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('5',4);">丰台区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('6',5);">大兴区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('7',6);">昌平区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('8',7);">通州区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('9',8);">石景山区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('10',9);">顺义区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('12',10);">房山区</a>
+				<a class="mui-control-item" data-index="0" href="javascript:void(0);" onclick="getInstList('13',11);">门头沟区</a>
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-8">
+			</div>
+		</div><!-- .mui-content -->
+        
+        <script>
+        	var items = [{circleId:1,instInfo:[{INST_NO:87203,INST_NAME:'正义路支行',INST_ADDR:'北京市东城区正义路3号'},{INST_NO:87216,INST_NAME:'什刹海支行',INST_ADDR:'东城区地安门东大街56号首层'},{INST_NO:87236,INST_NAME:'东单支行',INST_ADDR:'北京市东城区王府井大街金鱼胡同18号，丽苑公寓首层'},{INST_NO:87238,INST_NAME:'和平里支行',INST_ADDR:'北京市东城区青龙胡同一号歌华大厦B座首层'},{INST_NO:87239,INST_NAME:'崇文门支行',INST_ADDR:'崇文门外大街9号正仁大厦首层'},{INST_NO:87445,INST_NAME:'南二环支行',INST_ADDR:'北京市东城区永外大街101号百荣世贸商城A座一层'},{INST_NO:87454,INST_NAME:'东二环支行',INST_ADDR:'北京市东城区东直门南大街甲3号居然大厦首层'},{INST_NO:87470,INST_NAME:'陶然桥支行',INST_ADDR:'北京市东城区永定门西滨河路8号院7楼（中海地产广场东塔一层）'},{INST_NO:87474,INST_NAME:'广渠门支行',INST_ADDR:'北京市东城区广渠门外大街广渠家园10号楼1层'},{INST_NO:87492,INST_NAME:'东四支行',INST_ADDR:'北京市东城区东四北大街265号一层、二层'}]},{circleId:2,instInfo:[{INST_NO:87204,INST_NAME:'阜成门支行',INST_ADDR:'北京市阜外大街2号万通新世界广场'},{INST_NO:87214,INST_NAME:'首体支行',INST_ADDR:'北京市西城区西直门外大街甲143号凯旋大厦首层'},{INST_NO:87215,INST_NAME:'金融街支行',INST_ADDR:'北京市金融大街33号通泰大厦'},{INST_NO:87217,INST_NAME:'北太平庄支行',INST_ADDR:'北京市西城区新街口外大街2-5号'},{INST_NO:87218,INST_NAME:'广安门支行',INST_ADDR:'北京市西城区广内大街338号港中旅维景国际大酒店'},{INST_NO:87436,INST_NAME:'西单支行',INST_ADDR:'西城西单北大街107号北京电信综合楼首层'},{INST_NO:87439,INST_NAME:'德胜门支行',INST_ADDR:'西城区德外大街新风街2号天成科技大厦首层'},{INST_NO:87442,INST_NAME:'西二环支行',INST_ADDR:'北京市西城区平安里西大街26号新时代大厦1-2层'},{INST_NO:87443,INST_NAME:'分行营业部',INST_ADDR:'北京市西城区复兴门内大街2号中国民生银行大厦首层'},{INST_NO:87468,INST_NAME:'长椿街支行',INST_ADDR:'北京市西城区宣武门西大街97号2号楼一层、二层'}]},{circleId:3,instInfo:[{INST_NO:87202,INST_NAME:'木樨地支行',INST_ADDR:'北京市海淀区复兴路甲3号'},{INST_NO:87206,INST_NAME:'中关村支行',INST_ADDR:'北京市海淀区知春路113号'},{INST_NO:87211,INST_NAME:'万寿路支行',INST_ADDR:'朝阳区东三环北路甲2号京信大厦西南配楼首层'},{INST_NO:87212,INST_NAME:'上地支行',INST_ADDR:'北京市海淀区上地东里一区4号楼'},{INST_NO:87230,INST_NAME:'紫竹支行',INST_ADDR:'北京市海淀区紫竹院路31号华澳中心'},{INST_NO:87233,INST_NAME:'魏公村支行',INST_ADDR:'北京市海淀区中关村南大街16号中国科学技术出版社办公楼一层'},{INST_NO:87235,INST_NAME:'西直门支行',INST_ADDR:'北京市海淀区西直门北大街45号'},{INST_NO:87237,INST_NAME:'苏州街支行',INST_ADDR:'海淀区海淀南路32号'},{INST_NO:87438,INST_NAME:'成府路支行',INST_ADDR:'海淀区成府路298号中关村方正大厦首层南侧'},{INST_NO:87448,INST_NAME:'航天桥支行',INST_ADDR:'海淀区西三环北路100号光耀东方大厦首层'},{INST_NO:87449,INST_NAME:'中关村西区支行',INST_ADDR:'北京市海淀区海淀北二街10号泰鹏大厦首层'},{INST_NO:87451,INST_NAME:'环保园支行',INST_ADDR:'海淀区地锦路5号中关村环保科技示范园内'},{INST_NO:87452,INST_NAME:'首体南路支行',INST_ADDR:'北京市海淀区首体南路9号主语国际6号楼中国电工大厦首层'},{INST_NO:87457,INST_NAME:'世纪金源支行',INST_ADDR:'北京市海淀区蓝靛厂路垂虹园甲4号'},{INST_NO:87465,INST_NAME:'万柳支行',INST_ADDR:'北京市海淀区万柳中路6号院2号楼'},{INST_NO:87481,INST_NAME:'杏石口支行',INST_ADDR:'北京市海淀区杏石口路80号益园文化创意产业基地A区1号楼'},{INST_NO:87490,INST_NAME:'知春路支行',INST_ADDR:'北京市海淀区知春路13号航南大厦首层'},{INST_NO:87496,INST_NAME:'香山支行',INST_ADDR:'北京市海淀区闵庄路3号玉泉慧谷二期1号楼一层'},{INST_NO:87502,INST_NAME:'中关村软件园支行',INST_ADDR:'北京市海淀区西北旺东路10号院16号楼一层'}]},{circleId:4,instInfo:[{INST_NO:87205,INST_NAME:'建国门支行',INST_ADDR:'北京市建国门外大街21号国际俱乐部'},{INST_NO:87207,INST_NAME:'工体北路支行',INST_ADDR:'北京市朝阳区工体北路9号'},{INST_NO:87208,INST_NAME:'西坝河支行',INST_ADDR:'北京市朝阳区西坝河北里甲24号'},{INST_NO:87209,INST_NAME:'安定门支行',INST_ADDR:'朝阳区安外大街1号信义大厦首层'},{INST_NO:87213,INST_NAME:'国贸支行',INST_ADDR:'北京市朝阳区建国路128号中航工业大厦首层'},{INST_NO:87219,INST_NAME:'朝阳门支行',INST_ADDR:'北京市朝阳区朝外大街22号'},{INST_NO:87232,INST_NAME:'亚运村支行',INST_ADDR:'北京市朝阳区北四环东路131号'},{INST_NO:87240,INST_NAME:'奥运村支行',INST_ADDR:'朝阳区北辰西路8号北辰世纪A座二层'},{INST_NO:87241,INST_NAME:'三元支行',INST_ADDR:'朝阳区东三环北路甲2号京信大厦西南配楼首层'},{INST_NO:87437,INST_NAME:'劲松支行',INST_ADDR:'朝阳区劲松三区甲302号'},{INST_NO:87440,INST_NAME:'电子城支行',INST_ADDR:'朝阳区酒仙桥路14号兆维大厦首层'},{INST_NO:87441,INST_NAME:'首都机场支行',INST_ADDR:'朝阳区首都机场航安路'},{INST_NO:87446,INST_NAME:'建国门外支行',INST_ADDR:'朝阳区建国门外大街甲12号'},{INST_NO:87447,INST_NAME:'京广支行',INST_ADDR:'朝阳区西大望路3号院蓝堡国际底商HS01'},{INST_NO:87450,INST_NAME:'望京支行',INST_ADDR:'朝阳区南湖东园122号博泰国际B座'},{INST_NO:87458,INST_NAME:'国奥支行',INST_ADDR:'朝阳区安立路66号安立花园C座首层'},{INST_NO:87466,INST_NAME:'光华支行',INST_ADDR:'北京市朝阳区金桐西路10号01层102、02层202'},{INST_NO:87469,INST_NAME:'华威支行',INST_ADDR:'北京市朝阳区松榆南路38号院1号楼一层101室、二层201室'},{INST_NO:87471,INST_NAME:'朝阳北路支行',INST_ADDR:'朝阳区朝阳北路107号院58号楼首层107房间、二层203房间'},{INST_NO:87477,INST_NAME:'西大望路支行',INST_ADDR:'北京市朝阳区西大望路19号院1号楼1层1-A-101、1-A-102、2层1-A-201、1-A-202'},{INST_NO:87479,INST_NAME:'媒体村支行',INST_ADDR:'北京市朝阳区天朗园C座1层01商业'},{INST_NO:87480,INST_NAME:'亮马桥支行',INST_ADDR:'北京市朝阳区亮马桥路48号'},{INST_NO:87482,INST_NAME:'林萃路支行',INST_ADDR:'北京市朝阳区林萃西里16号楼1层'},{INST_NO:87485,INST_NAME:'望京科技园支行',INST_ADDR:'北京市朝阳区融科橄榄城一期底商502号楼'},{INST_NO:87486,INST_NAME:'东坝支行',INST_ADDR:'北京市朝阳区朝新嘉园6区东里1号楼底商'},{INST_NO:87487,INST_NAME:'太阳宫支行',INST_ADDR:'朝阳区太阳宫中路16号院1号楼冠捷大厦首层'},{INST_NO:87493,INST_NAME:'常营支行',INST_ADDR:'北京市朝阳区常惠路4号楼1至2层122'}]},{circleId:5,instInfo:[{INST_NO:87210,INST_NAME:'西客站支行',INST_ADDR:'丰台区西客站南广场中盐大厦首层'},{INST_NO:87229,INST_NAME:'方庄支行',INST_ADDR:'北京市丰台区方古园一区28-3号通润会馆'},{INST_NO:87456,INST_NAME:'总部基地支行',INST_ADDR:'丰台区丰台镇富丰路2号星火科技大厦2-6幢首层'},{INST_NO:87483,INST_NAME:'万丰路支行',INST_ADDR:'丰台区万丰路303号梦都酒家首层'},{INST_NO:87494,INST_NAME:'南苑支行',INST_ADDR:'丰台区马家堡东路189号院2号楼2-3号'},{INST_NO:87503,INST_NAME:'丽泽商务区支行',INST_ADDR:'北京市丰台区丽泽路5号1层101号-2室'}]},{circleId:6,instInfo:[{INST_NO:87453,INST_NAME:'大兴支行',INST_ADDR:'北京市大兴区黄村镇永华路1-2号'},{INST_NO:87467,INST_NAME:'亦庄支行',INST_ADDR:'北京经济技术开发区隆庆街7号中材大厦首层'},{INST_NO:87495,INST_NAME:'榆垡支行',INST_ADDR:'北京市大兴区榆垡镇金荣街9号'},{INST_NO:87498,INST_NAME:'大兴新城支行',INST_ADDR:'北京市大兴区枣园东巷1号院1号楼'}]},{circleId:7,instInfo:[{INST_NO:87475,INST_NAME:'昌平支行',INST_ADDR:'北京市昌平区白浮泉路26号院2号楼'},{INST_NO:87488,INST_NAME:'回龙观支行',INST_ADDR:'北京市昌平区回龙观西大街16号院1号楼首层'},{INST_NO:87489,INST_NAME:'天通苑支行',INST_ADDR:'北京市昌平区东小口镇立汤路181号院6号楼卢卡新天地首层'}]},{circleId:8,instInfo:[{INST_NO:87478,INST_NAME:'通州支行',INST_ADDR:'北京市通州区九棵树西路京洲园195号楼1-2层'}]},{circleId:9,instInfo:[{INST_NO:87473,INST_NAME:'石景山支行',INST_ADDR:'北京市石景山区银河南街2号紫御国际首层'}]},{circleId:10,instInfo:[{INST_NO:87444,INST_NAME:'空港支行',INST_ADDR:'北京市顺义区空港工业区A区天纬四街9号凯兰大厦一层'},{INST_NO:87455,INST_NAME:'顺义支行',INST_ADDR:'北京市顺义区大东路3号院27号商住楼首层和二层'},{INST_NO:87484,INST_NAME:'顺义新城支行',INST_ADDR:'北京市顺义区顺安南路68号首层'}]},{circleId:12,instInfo:[{INST_NO:87472,INST_NAME:'房山支行',INST_ADDR:'北京市房山区拱辰街道政通路12号1号楼首层大厅'}]},{circleId:13,instInfo:[{INST_NO:87497,INST_NAME:'门头沟支行',INST_ADDR:'北京市门头沟区滨河路115号滨河大厦首层'}]}];
+        	$(document).ready(function(){
+        		getInstList(1,0);
+        	});
+        	
+        	function getCircleAndInst(e){
+				//87445|南二环支行|null
+				var o = $(e).closest("li").data("param");
+				//alert(o);
+				var arr = o.split("|");
+				localStorage.circleId = arr[0];
+				localStorage.instNo = arr[1];
+				localStorage.instName = arr[2];
+				localStorage.instAddr = arr[3];
+				//window.history.back();
+				location.href=document.referrer;
+			}
+        	
+			var controls = document.getElementById("segmentedControls");
+			var contents = document.getElementById("segmentedControlContents");
+     		function getInstList(circleId,index){
+				var html = '';
+				html += '<ul class="mui-table-view">';
+				var p = "";
+				$.each(items,function(i,im){
+					if (im.circleId==circleId) {
+						$.each(im.instInfo,function(j,item){
+							p = circleId+"|"+item.INST_NO+"|"+item.INST_NAME+"|"+item.INST_ADDR;
+							html += "<li class='mui-table-view-cell' data-param='"+p+"'><a href='javascript:void(0);' onclick='javascript:getCircleAndInst(this)'>"+item.INST_NAME+"</a></li>";
+						});
+					}
+				});
+				
+				html += '</ul>';
+				contents.innerHTML = html;
+				//选中样式切换
+				var lastActiveElem = controls.querySelector('.mui-active');
+				lastActiveElem && (lastActiveElem.classList.remove('mui-active'));
+				var currentElem = controls.querySelector('.mui-control-item:nth-child(' + (index + 1) + ')');
+				currentElem.classList.add('mui-active');
+			  }
+			
+			
+		</script>
+    </body>
+</html>

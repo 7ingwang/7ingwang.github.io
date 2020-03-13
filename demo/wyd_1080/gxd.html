@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>申请公喜贷</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/papply.comm.js"></script>
+        <script src="js/mui.min.js"></script>
+    </head>
+    <script type="text/javascript">
+		 	function onBridgeReady(){
+				WeixinJSBridge.call('hideOptionMenu');
+			}
+		
+			if (typeof WeixinJSBridge == "undefined"){
+			    if( document.addEventListener ){
+			        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+			    }else if (document.attachEvent){
+			        document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+			        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+			    }
+			}else{
+			    onBridgeReady();
+			}
+	</script>
+    <body>
+        <div class="theme-box" id="apply"></div><!-- .theme-box -->
+        <div class="block apply">
+            <form class="mui-input-group">
+                <div class="mui-input-row radio-row">
+                    <i class="icon icon-funds icon16"></i>
+                    <label class="full">公积金缴存地是否为北京：</label>
+                    <div class="inline-radio">
+                        <span class="mui-radio">是<input name="isGjj" type="radio" value="1"></span><span class="mui-radio">否<input name="isGjj" type="radio" value="0" checked></span>
+                    </div>
+                </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" id="toastBtn" class="mui-btn mui-btn-primary mui-btn-block" onclick="toApply()">下一步</button>
+        </div><!-- .mui-content-padded -->
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+        
+        <script>
+        	function toApply(){
+        	 clearStorage();
+    		 //localStorage.productId = 1;
+    		 var isGjj =  $("input[name='isGjj']:checked").val();
+    			if(isGjj == 0){
+    				tipMsg("很抱歉,本产品暂不支持公积金缴存地非北京的用户哦！");
+    				return;
+    			}else{
+    				window.location.href="applyGxd.html";
+    			}
+    		}
+		</script>
+    </body>
+</html>

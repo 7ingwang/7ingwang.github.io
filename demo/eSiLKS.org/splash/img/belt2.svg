@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="755px" height="1220px" viewBox="0 0 755 1220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="81.7996696%" x2="-46.9711929%" y2="142.966395%" id="linearGradient-1">
+            <stop stop-color="#0FE9CC" offset="0%"></stop>
+            <stop stop-color="#94A8F9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00D0B4" offset="0%"></stop>
+            <stop stop-color="#263C94" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="Group-2-Copy" transform="translate(468.474571, 607.521532) rotate(431.000000) translate(-468.474571, -607.521532) translate(-107.525429, 294.521532)">
+            <path d="M0.585800477,120.663359 C48.5930695,266.624993 65.8301436,440.917892 45.7394402,625.742913 C167.696063,383.894179 383.606269,223.008427 629.811065,223.008427 C838.313365,223.008427 1025.03873,338.471693 1151.44874,520.681742 C1043.71703,217.648458 755.111335,0.692518007 415.832103,0.692518007 C263.191759,0.692518007 120.885012,44.7569527 0.585800477,120.663359 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M1145.99976,515.727622 C1139.06746,496.23814 1131.37131,488.783304 1122.98337,470.045084 C1011.59094,285.78351 826.378863,165.090301 616.608284,165.090301 C354.665289,165.090301 137.385918,345.147694 48.0154357,610.357802 C47.5542431,615.038745 47.1651119,619.705241 46.6606824,624.400632 C168.617305,382.537451 378.157288,229.713323 624.347672,229.713323 C832.849972,229.713323 1019.58975,333.517573 1145.99976,515.727622" id="Fill-4" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

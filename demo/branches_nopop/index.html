@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>支行查询</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="">
+            </div>
+            <button type="button" class="positioning"><i class="icon icon-positioning icon20"></i></button>
+        </header>
+        <div class="topbar">
+            <a class="tab" href="tab.html">选择区域<i class="icon icon-drop-down"></i></a> 
+        </div><!-- /.topbar -->
+       
+        <div class="block">
+            <ul class="all" id="all">
+                <li class="area default open">
+                    <h2 class="area-title"><i class="mui-pull-right icon icon-drop-down icon6"></i><i class="mui-pull-right icon icon-fold-up icon6"></i>东城区</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">正义路支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                    </ul><!-- /.list-group -->
+                </li><!-- /.area -->
+                <li class="area">
+                    <h2 class="area-title"><i class="mui-pull-right icon icon-drop-down icon6"></i><i class="mui-pull-right icon icon-fold-up icon6"></i>西城区</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">正义路支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                    </ul><!-- /.list-group -->
+                </li><!-- /.area -->
+                <li class="area">
+                    <h2 class="area-title"><i class="mui-pull-right icon icon-drop-down icon6"></i><i class="mui-pull-right icon icon-fold-up icon6"></i>崇文区</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">东二环支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="single.html">
+                                <i class="icon icon-position icon32"></i>
+                                <h3 class="branch">正义路支行
+                        </h3>
+                                <p class="adress">地址：北京市东城区东直门南大街甲3号居然...</p>
+                                <p class="tel">010-64015923</p>   
+                            </a>
+                        </li>
+                    </ul><!-- /.list-group -->
+                </li><!-- /.area -->
+            </ul>
+        </div><!-- /.block.all -->
+        
+
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mui.min.js"></script>
+        <script>
+            $('.tab').click(function(){
+                $('#tabbox').toggleClass('active');
+            });
+        </script>    
+        <script>       	
+            $(function () {                
+                var All = function (el, multiple) {
+                    this.el = el || {};
+                    this.multiple = multiple || false;
+                    var links = this.el.find('.area-title');
+                    links.on('click', {
+                        el: this.el,
+                        multiple: this.multiple
+                    }, this.dropdown);
+                };
+                All.prototype.dropdown = function (e) {
+                    var $el = e.data.el;
+                    $this = $(this), $next = $this.next();
+                    $next.slideToggle();
+                    $this.parent().toggleClass('open');
+                    if (!e.data.multiple) {
+                        $el.find('.list-group').not($next).slideUp().parent().removeClass('open');
+                    }
+                    ;
+                };
+                var all = new All($('#all'), false);
+            });
+            //@ sourceURL=pen.js
+        </script>
+    </body>
+</html>

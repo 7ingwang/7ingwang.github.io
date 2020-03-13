@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商情监控－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/animate.css"> 
+    <script src="js/Chart.min.js"></script>
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li class="current"><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+
+	
+	<div id="main">
+		<ul class="title-bar" id="menu">
+			<li class="current"><a href="#">营业收入</a></li>
+			<li><a href="#">付款情况</a></li>
+			<li><a href="#">桌位统计</a></li>
+			<li><a href="#">销售统计</a></li>
+			<li><a href="#">评价分享</a></li>
+			<li><a href="#">电子返券</a></li>
+		</ul><!-- .title-bar  -->
+		
+		<div class="block">
+			<div class="chart-box" style="width:50%">
+				<canvas id="canvas" height="450" width="600"></canvas>
+			</div>
+		</div><!-- .block  -->
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p></p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/stickUp.min.js"></script>
+<script>
+//标题栏向下滚动时固定
+jQuery(function($) {
+  $(document).ready( function() {
+    $('.title-bar').stickUp();
+  });
+});
+</script>
+
+<!-- line -->
+<script>
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+	}
+
+
+	</script>
+
+</body>
+</html>

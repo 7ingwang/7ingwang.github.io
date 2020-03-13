@@ -1,0 +1,4 @@
+header{ border-bottom: 2px solid #ddd;}
+header a{ display: none;}
+.content{ min-height: 842px;}
+footer{ position: absolute; left: 0; right: 0; bottom: 0; padding-top: 10px; border-top: 2px solid #ddd;}

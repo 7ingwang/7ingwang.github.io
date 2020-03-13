@@ -1,0 +1,86 @@
+html, body, h1, h2, h3, p, form, ul, li{ margin: 0; padding: 0;}
+ul{ list-style: none;}
+html{ height: 100%;}
+body{ padding: 45px; background: #AECEE0 url(../img/bg.png) no-repeat  center center; background-size: cover; font-family: 'Helvetica Neue',Helvetica,sans-serif; font-size:45px;line-height: 1.6; text-align: center;}
+input:focus, button:focus{ outline: none;}
+a{ color: #fff;}
+
+/* btn */
+.btn{ padding: 30px 90px; border-radius: 12px; border: none; background-color: #41E0EB; font-size:45px; text-decoration: none; text-align: center;}
+.btn-primary{ background-image: radial-gradient(30% 100%, #41E0EB 27%, #1FBCD2 100%);}
+.btn-block{ display: block; padding: 12px 0; border-radius: 12px; font-size:55px;color: #FFF; font-weight: bold;}
+
+/* box */
+.box{ position: absolute; left: 45px; right: 45px; top: 45px; bottom: 150px; padding: 45px; opacity: 0.9; border-radius: 12px;  background: #FFF; font-size:45px; color: #000; text-align: left; z-index: 1;}
+.box .title{ font-size:55px; font-weight: inherit;}
+.box .title .icon{ position: relative; top: 15px; margin-right: 55px; font-size:65px; color: #FFF;}
+.box p{ margin-top: 45px; padding-top: 50px; background: url(../img/line2.png) no-repeat center top; background-size: 100% auto; line-height: 1.6; font-size:45px; color: #757575;}
+.box .products{ margin: 35px 0 45px 0;}
+.box .products ul{ padding-bottom: 100px; line-height: 100px; font-size:45px; text-align: left;}
+.box ul li{ padding-right: 45px;}
+.box ul li.declare{margin-top: 45px; padding: 55px 55px 0 0; background: url(../img/line2.png) no-repeat center top; background-size: 100% auto; line-height: 1.6; font-size: 40px; color: #757575;}
+.box ul li.declare a{ margin: 0 15px; color: #1FBCD2; font-weight: bold;}
+.box .btn-block{ position: absolute; left: 45px; right: 45px; bottom: 45px;}
+.box.dark{ background-color: #216089; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30); border-radius: 6px; color: #FFF; opacity: 0.8;}
+.box.dark p, .box.dark .declare{ color: #FFF;}
+
+/* result */
+.box.result{ text-align: center;}
+.box.result .icon{ display: block; margin: 100px 0; height: 200px; background: url(../img/service.png) no-repeat center center; background-size: auto 100%;}
+.box.result p{ margin-bottom: 100px; padding-top: 0; background: none; line-height: 2; font-size:55px;color: #212121;}
+.box.result p a{ color: #41E0EB; font-weight: bold;}
+.box.result .btn{ position: relative; top: 45px;}
+.box.result .info{ padding-bottom: 45px; background: url(../img/line.png) no-repeat center bottom; background-size: 100% auto; text-align: left; color: #757575;}
+.box.result .info .row{ line-height: 2;}
+.box.result .info .row span, .box.result .info .row marquee{ position: absolute; right: 45px; max-width: 60%; height: 90px; overflow:  auto; color: #000; text-align: right;}
+.box.result .info .row .scroll{ padding-left: 5%; max-width: 65%; white-space: nowrap; overflow:hidden;}
+.box.result .info .row .scroll #scroll_begin{ margin-right: 5%;}
+.box.result.safe .icon{ background-image: url(../img/safe.png);}
+.box.result.safe p{ color: #1FBCD2;}
+
+/* theme */
+.theme{ padding: 150px 0;}
+.theme .icon{ display: block; font-size: 360px; color: #FFF;}
+
+/* form-search */
+.form-search{ position: relative;  text-align: center;}
+.form-search .input-box{ position: absolute; left: 0; right: 150px; height: 150px; line-height: 150px; opacity: .3; background: #000; box-shadow: inset 2px 4px 12px 0 rgba(0,0,0,0.50); border-radius: 12px 0 0 12px; text-align: left; z-index: 0;}
+.form-search input{ position: absolute; left: 0; right: 150px; padding: 0 45px; width: 75%; height: 150px; line-height: 150px; background: none; border: none; font-size:55px;color: #fff; opacity: 1;}
+.form-search .btn-search{ position: absolute; right: 0; top: 0; display: block; padding: 0; width: 150px; height: 150px; line-height: 150px; border: none; border-radius: 0 12px 12px 0; background-image: radial-gradient(60% 60%, #41E0EB 27%, #1FBCD2 100%); text-align: center;}
+.form-search .btn-search .icon{ position: relative; top:15px; font-size: 80px; color: #FFF;}
+.form-search a{ position: relative; top: 250px; font-size:55px;}
+
+/* tips */
+.tips{ position: absolute; left: 45px; right: 200px; top: 910px; border-radius: 12px; background-color: #216089; opacity: .8; display: none;}
+.tips li{ display: block; padding: 15px 45px; line-height: 100px; text-align: left; border-bottom: 2px solid #ddd; color: #fff; text-decoration: none; font-size: 55px;}
+
+/* footer */
+footer{ position: fixed; left: 0; right: 0; bottom: 40px; height: 180px; background: url(../img/logobai.png) no-repeat center bottom; background-size: auto 40%; z-index: -1;}
+
+/* Styled scrollbars */
+
+
+.iScrollVerticalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	width: 30px;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.iScrollIndicator {
+	position: absolute;
+	border-radius: 15px;
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+	width: 100%;
+  background-color: #41E0EB;
+	opacity: .5;
+}
+
+.box #scope{ position: absolute;  height: 900px; overflow: hidden;}
+.box #scope ul{ width: 900px;}
+.box.popup #scope{}

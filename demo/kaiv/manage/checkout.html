@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>结账－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li class="current"><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+	
+	<div id="main">
+		
+		<div class="title-bar">
+			<a href="order.html" class="fr"><i class="icon icon-chevron-left"></i>返回</a>
+			<h2><i class="icon icon-file-alt"></i><b>5</b>桌结账</h2>	
+		</div><!-- .title-bar -->
+		
+			
+				
+			<div class="block" id="bill">
+				
+				<form class="form form-common">
+					<div class="group">
+						<div class="row">
+							<label class="control-label">会员卡号</label>
+							<div class="controls">
+								<input type="text" class="input-large">
+								<span class="help">可输入手机号自动查询</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">会员卡余额</label>
+							<div class="controls">
+								<span>¥232</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">享受折扣</label>
+							<div class="controls">
+								<select class="input-large">
+								<option>无折扣</option>
+								<option>9.5折</option>
+								<option>9.0折</option>
+								<option>8.5折</option>
+								<option>8.0折</option>
+							</select>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">全单打折</label>
+							<div class="controls">
+								<select class="input-large">
+									<option>无折扣</option>
+									<option>9.5折</option>
+									<option>9.0折</option>
+									<option>8.5折</option>
+									<option>8.0折</option>
+								</select>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+					</div><!-- .group -->
+					
+					<div class="group">
+						<div class="row">
+							<label class="control-label">流水号</label>
+							<div class="controls">
+								<span>2015050141637</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">消费金额</label>
+							<div class="controls">
+								<span>¥365</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">折扣金额</label>
+							<div class="controls">
+								<span>-15</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">最终结算</label>
+							<div class="controls">
+								<span class="big red">¥350</span>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+						<div class="row">
+							<label class="control-label">支付方式</label>
+							<div class="controls">
+								<select class="input-large">
+									<option>现金</option>
+									<option>刷卡</option>
+								</select>
+							</div><!-- .controls -->
+						</div><!-- .row -->
+						
+					</div><!-- .group -->
+					
+					<div class="row">
+						<div class="controls">
+							<a href="#" class="btn large blue"><i class="icon icon-print"></i> 打印预结单</a><a href="home.html" class="btn large green"><i class="icon icon-ok"></i> 完成结账</a><a href="home.html" class="btn large grey"><i class="icon icon-remove"></i> 取消</a>
+						</div><!-- .controls -->
+					</div><!-- .row -->
+					
+				</form>
+				
+			</div><!-- .block  -->
+								
+		
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p></p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<div id="mask"></div><!-- #mask-->
+<div class="animated bounceIn" id="dialog">
+	<h2>确认删除该条菜肴？</h2>
+	<a href="#" class="btn red close">确认</a>
+	<a href="#" class="btn grey close">取消</a>
+</div><!-- #popbox-->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.spinner.min.js"></script>
+<script src="js/tips.min.js"></script>
+<script src="js/pop.js"></script><!-- 弹窗 -->
+<script>
+//.frame加载时适应浏览器高度
+$(document).ready(function() {
+	$(".frame").css("height", $(window).height() - 80);
+	$("#order-list").css("height", $(window).height() - 290);
+	$("#menu-show .dish").css("height", $(window).height() - 230);
+});
+
+/* spinner  */
+$('.spinner').spinner();
+
+// 订单操作菜单
+$("#order-list .switch .icon").mouseover(function(){
+	$(this).next(".hold").show(300);
+});
+$("#order-list .switch").mouseleave(function(){
+	$(this).children(".hold").hide(300);
+});
+
+// 菜肴过滤
+$("#filter a").click(function(){
+    $("#filter a").removeClass("checked");
+    $(this).addClass("checked");
+});
+ 
+//  选菜
+$(".dish .card").click(function(){
+    $(this).toggleClass("checked");
+});
+
+// 下单
+$("#order-place").click(function(){
+	$(this).hide();
+    $("#order-add").show();
+});
+</script>
+</body>
+</html>

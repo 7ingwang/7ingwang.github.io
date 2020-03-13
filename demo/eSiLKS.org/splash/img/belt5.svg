@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="467px" height="623px" viewBox="0 0 467 623" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0FE9CC" offset="0%"></stop>
+            <stop stop-color="#334CB0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00D0B4" offset="0%"></stop>
+            <stop stop-color="#263C94" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Group-2-Copy-3" transform="translate(165.254312, 313.226756) rotate(594.000000) translate(-165.254312, -313.226756) translate(-142.245688, 145.726756)">
+            <path d="M221.963602,0.369653498 C140.486967,0.369653498 64.5262176,23.8904461 0.312689624,64.4079033 C25.9380954,142.319565 35.1389315,235.353939 24.41488,334.010169 C89.5131038,204.91572 204.762039,119.037836 336.181675,119.037836 C447.476405,119.037836 547.147001,180.670024 614.622364,277.93043 C557.117138,116.176782 403.064676,0.369653498 221.963602,0.369653498" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M612.061362,274.27661 C608.361026,263.873479 604.25296,259.894223 599.77563,249.892103 C540.31638,151.536631 441.45355,87.1127943 329.481835,87.1127943 C189.661436,87.1127943 73.6816651,183.224151 25.9773297,324.788476 C25.7311535,327.287078 25.5234423,329.777969 25.2541871,332.284283 C90.3524108,203.182122 202.201037,121.607386 333.61298,121.607386 C444.90771,121.607386 544.585999,177.016204 612.061362,274.27661" id="Fill-4" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

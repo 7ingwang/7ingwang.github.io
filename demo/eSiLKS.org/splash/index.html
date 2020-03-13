@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>eSiLKS.org COMING</title>
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="splash">
+      <div class="belts wow" data-wow-duration="1000ms">
+        <div id="belt1" class="belt wow pulse" data-wow-iteration="infinite" data-wow-duration="2000ms"></div>
+        <div id="belt2" class="belt wow fadeInDown" data-wow-delay=".5s"></div>
+        <div id="belt3" class="belt wow pulse" data-wow-iteration="infinite" data-wow-duration="2000ms"></div>
+        <div id="belt4" class="belt wow fadeInDown"></div>
+        <div id="belt5" class="belt wow fadeInUp" data-wow-delay="1.5s"></div>
+      </div>
+      <div class="box wow" data-wow-delay=".5s" data-wow-duration="3000ms">
+        <h1><span id="logo" class="wow rotateIn"></span><span id="esilks" class="wow flipInY" data-wow-delay="1s">eSiLKS</span><span id="org" class="wow pulse" data-wow-iteration="infinite" data-wow-duration="2000ms">.org</span></h1>
+        <h2 id="slogan" class="wow zoomInDown" data-wow-delay="3s">COMING NOW</h2>
+        <p id="date" class="wow bounce" data-wow-delay="2s"><em>2017.5.16</em></p>
+      </div>
+      <a href="#" class="out">Out</a>
+      <audio autoplay="true" src="http://qn.esilks.org/mp3/silk-road-theme.mp3" hidden="true" loop="true"></audio>
+    </div>
+       
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+      
+      $(".out").click(function(){
+        $(".belts").addClass("rotateOutDownRight");
+        $(".box").addClass("fadeOutRightBig");
+      });
+    </script>
+  </body>
+</html>

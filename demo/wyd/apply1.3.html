@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>申请优信微贷</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="theme-box" id="apply"></div><!-- .theme-box -->
+        <div class="block">
+            <form class="mui-input-group">
+                <div class="mui-input-row">
+                    <i class="icon icon-person icon16"></i>
+                    <label>姓名</label>
+    		        <input type="text" class="mui-input-clear" placeholder="姓名">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-card icon12"></i>
+                    <label>身份证号</label>
+    		        <input type="number" class="mui-input-clear error" placeholder="请输入身份证号">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-firm icon16"></i>
+                    <label>工作单位</label>
+    		        <input type="text" class="mui-input-clear" placeholder="请输入工作单位名称">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                    <label>年收入</label>
+    		        <input type="number" class="mui-input-clear" placeholder="请输入年收入">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="mui-icon mui-icon-arrowdown mui-pull-right"></i>
+                    <i class="icon icon-position icon14"></i>
+                    <label>申请支行</label>
+    		        <select class="select">
+    					<option value="item-1">请选择申请支行</option>
+    					<option value="item-2">item-2</option>
+    					<option value="item-3">item-3</option>
+    					<option value="item-4">item-4</option>
+    					<option value="item-5">item-5</option>
+    				</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-mobile icon16"></i>
+                    <label>手机号</label>
+    		        <input type="text" class="mui-input-clear" placeholder="请输入手机号">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row verify">
+                    <i class="icon icon-code icon16"></i>
+                    <label>验证码</label>
+    		        <input type="text" class="mui-input-clear" placeholder="验证码">
+    		        <button type="button" class="mui-btn-grey">获取验证码</button>
+    		    </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" id="toastBtn" class="mui-btn mui-btn-primary mui-btn-block" onclick="window.location.href='success.html'">提 交</button>
+        </div><!-- .mui-content-padded --> 
+
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+        
+        <script src="js/mui.min.js"></script>
+        <script>
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				mui.toast('请按要求填写');
+			});
+		</script>
+    </body>
+</html>

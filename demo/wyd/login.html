@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>登录</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="login">
+        <div class="theme-box" id="theme-login">
+            <i class="icon icon-person"></i>
+        </div><!-- .theme-box -->
+        <div class="block">
+            <form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+    				<i class="icon icon-mobile icon16"></i>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="手机号">
+				</div>
+				<div class="mui-input-row verify">
+    				<i class="icon icon-code icon16"></i>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="验证码">
+					<button type="button" class="mui-btn-grey">获取验证码</button>
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id='login' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</div>
+			<div class="mui-content-padded oauth-area">
+
+			</div>
+        </div><!-- .block -->
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+
+        <script src="js/mui.min.js"></script>
+    </body>
+</html>

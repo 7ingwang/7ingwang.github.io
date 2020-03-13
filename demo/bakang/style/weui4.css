@@ -1,0 +1,47 @@
+.weui_grids:before, .weui_cells:after{ border-color: #f8f8f8;}
+.funct:before, .funct:after, .route:before{ border-color: #fff;}
+
+.icon{ display: inline-block; width: 16px; height: 16px; line-height: 16px; background-repeat: no-repeat; background-position: center center; background-size: contain;}
+
+.icon.icon-view{ background-image: url(img/icon-view.png);}
+.icon.icon-like{ background-image: url(img/icon-like.png);}
+.icon.icon-liked{ background-image: url(img/icon-liked.png);}
+
+.icon.icon-home{ background-image: url(img/icon-home-o@3x.png);}
+.icon.icon-cases{ background-image: url(img/icon-cases-o@3x.png);}
+.icon.icon-contact{ background-image: url(img/icon-contact-o@3x.png);}
+.icon.icon-my{ background-image: url(img/icon-my-o@3x.png);}
+
+.tabbar .weui-menu-inner{ border-left: #fff;}
+.tabbar .icon{ margin: 4px auto 2px; width: 22px; height: 22px; line-height: 22px;}
+.tabbar .txt{ font-size: 9px; color: #979797;}
+.tabbar .active .txt{ color: #3bc4de;}
+.tabbar .active .icon.icon-home{ background-image: url(img/icon-home@3x.png);}
+.tabbar .active .icon.icon-my{ background-image: url(img/icon-my@3x.png);}
+.tabbar .active .icon.icon-cases{ background-image: url(img/icon-cases@3x.png);}
+.tabbar .active .icon.icon-contact{ background-image: url(img/icon-contact@3x.png);}
+
+.weui-flex__item.date{ flex: 1;}
+
+.meta{ font-size: 13px;}
+.meta .icon{ margin-right: 5px; position: relative; top: 3px;}
+.meta .date{ color: #999;}
+.meta .view{ margin-right: 15px;}
+
+.case_per{ margin: 10px 0; padding: 10px 15px; background-color: #fff;}
+.case_per .title{ margin-bottom: 10px; font-size: 17px; color: #212121;}
+.case_per .desc{ margin: 10px 0; font-size: 13px;}
+.case-gallery{justify-content: space-between;/*  align-items: center; */}
+.case-gallery .case_img{ position: relative;}
+.case-gallery .case_img img{ width: 96%; border-radius: 6px;}
+.case_img .badge{ display: block; position: absolute; left: -1px; top:-1px; width: 54px; height: 54px; background: url(img/case-before.png) no-repeat left top; background-size: contain;}
+.case_per .case_img.ing .badge{ background-image: url(img/case-ing.png);}
+.case_per .case_img.after .badge{ background-image: url(img/case-after.png);}
+
+
+
+@media (max-width: 320px){
+.case-gallery .case_img img{ width: 99%;}
+.case_per .case_img .badge{ width: 48px; height: 48px;}	
+.route .weui_grid_label{ font-size: 11px;}
+}

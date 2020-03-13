@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="621px" height="506px" viewBox="0 0 621 506" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0FE9CC" offset="0%"></stop>
+            <stop stop-color="#334CB0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.8085258%" y1="81.6480999%" x2="4.216544%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00D0B4" offset="0%"></stop>
+            <stop stop-color="#263C94" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Group-2-Copy-4" transform="translate(258.782180, 250.568459) scale(-1, 1) rotate(745.000000) translate(-258.782180, -250.568459) translate(-81.717820, 65.568459)">
+            <path d="M0.346382742,71.3480219 C28.7329924,157.654867 38.9252425,260.713936 27.0456466,370.00063 C99.1583728,226.99592 226.82568,131.864471 372.406122,131.864471 C495.693147,131.864471 606.103509,200.137688 680.849517,307.878154 C617.147954,128.695132 446.49594,0.409484621 245.880756,0.409484621 C155.624802,0.409484621 71.4790848,26.4647036 0.346382742,71.3480219 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M678.01256,303.830625 C673.913503,292.30653 669.362783,287.8985 664.403009,276.818625 C598.536871,167.865096 489.021314,96.4994238 364.984357,96.4994238 C210.097947,96.4994238 81.6210555,202.967028 28.7764543,359.785276 C28.503752,362.553109 28.2736594,365.3124 27.9753912,368.088775 C100.088117,225.075522 223.988723,134.710897 369.560643,134.710897 C492.847669,134.710897 603.266552,196.090159 678.01256,303.830625" id="Fill-4" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>菜肴分类－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li class="current"><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+
+	
+	<div id="main">
+		<ul class="title-bar" id="menu">
+			<li><a href="menu.html">菜肴列表</a></li>
+			<li class="current"><a href="menu-cat.html">菜单分类</a></li>
+			<li><a href="menu-suit.html">套餐设置</a></li>
+		</ul><!-- .title-bar  -->
+		
+		<div class="block">
+			<div class="bar">
+				<form>
+					<span class="fr"><a href="#" class="btn grey"><i class="icon icon-trash"></i>批量删除</a><a href="#" class="btn green"><i class="icon icon-plus"></i>添加分类</a></span>
+					搜索
+					<input type="text" placeholder="分类" class="input-xlarge search-query">
+					<a href="#" class="btn blue"><i class="icon icon-search"></i>搜索</a>
+				</form>
+			</div><!-- .bar -->
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-list dish-list">
+				<tr>
+			    	<th><input type="checkbox" value="" class="checkbox"></th>
+			    	<th>序号</th>
+			    	<th>分类名称</th>
+			    	<th>包含数量</th>
+			    	<th>参与折扣</th>
+			    	<th>操作管理</th>
+			    	<th>排序</th>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join highlight">是</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join">否</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join">否</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join">否</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join">否</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+				<tr>
+			    	<td class="check"><input type="checkbox" value="" class="checkbox"></td>
+			    	<td class="qty">1</td>
+			    	<td class="name">凉菜</td>
+			    	<td class="include">23</td>
+			    	<td class="join">否</td>
+			    	<td class="switch">
+			    	    <a href="#" title="菜肴管理" class="over top" data-tipso="菜肴管理"><i class="icon icon-list icon-large"></i></a>
+			    	    <a href="#" title="添加菜肴" class="markdown top" data-tipso="添加菜肴"><i class="icon icon-plus-sign-alt icon-large"></i></a>
+			    	    <a href="#" title="修改" class="edit top" data-tipso="修改"><i class="icon icon-edit icon-large"></i></a>
+			    	    <a href="#" title="删除" class="del top" data-tipso="删除"><i class="icon icon-trash icon-large"></i></a>
+			    	</td>
+			    	<td class="shift">
+			    	    <a href="#" title="上移" class="up top" data-tipso="上移"><i class="icon icon-circle-arrow-up icon-large"></i></a>
+			    	    <a href="#" title="下移" class="down top" data-tipso="下移"><i class="icon icon-circle-arrow-down icon-large"></i></a>
+			    	</td>
+				</tr>
+			</table><!-- .dish-list  -->
+			
+		</div><!-- .block  -->
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p class="ps">
+			<span><i class="icon icon-list"></i>菜肴管理</span><span><i class="icon icon-plus-sign-alt"></i>添加菜肴</span><span><i class="icon icon-edit"></i>修改</span><span><i class="icon icon-trash"></i>删除</span><span><i class="icon icon-circle-arrow-up"></i>上移</span><span><i class="icon icon-circle-arrow-down"></i>下移</span>
+		</p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/tips.min.js"></script>
+<script>
+/* tips */
+$('.right').tipso({
+    position: 'right',
+    background: 'rgba(0,0,0,0.8)',
+    useTitle: false,
+});
+$('.left').tipso({
+    position: 'left',
+    background: 'tomato',
+    useTitle: false,
+});
+$('.bottom').tipso({
+    position: 'bottom',
+    background: '#2574A9',
+    useTitle: false,
+});
+$('.top').tipso({
+    position: 'top',
+    background: '#999',
+    width: '80px',
+    useTitle: false,
+});
+
+ 
+/* 删除该分类 */
+/*
+$(".switch a.del").click(function(){
+    $(this).parent().parent().remove();
+    $(".tipso_bubble").hide();
+});
+*/
+</script>
+</body>
+</html>

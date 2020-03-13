@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>solution</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-595.000000, -739.000000)">
+        <g id="Group-8" transform="translate(596.000000, 740.000000)" stroke="#00A9AD" stroke-width="1.5">
+            <g id="solution">
+                <ellipse id="Oval" cx="64.553397" cy="6" rx="5.90769231" ry="6"></ellipse>
+                <ellipse id="Oval-Copy" cx="21.77653" cy="23.2075472" rx="5.90769231" ry="6"></ellipse>
+                <ellipse id="Oval-Copy-3" cx="55.5840539" cy="89.759434" rx="5.90769231" ry="6"></ellipse>
+                <ellipse id="Oval-Copy-4" cx="89.3915778" cy="61.4009434" rx="5.90769231" ry="6"></ellipse>
+                <ellipse id="Oval-Copy-2" cx="5.90769231" cy="75.1415094" rx="5.90769231" ry="6"></ellipse>
+                <path d="M63.0700466,12.3474381 L55.125,84 M52.125,84.375 L23.6787849,29.4871017 M25.8644217,26.7843264 L83.9791006,59.6987782 M83.5733927,63.1697486 L11.8153846,74.625 M9.00189137,70.5905023 L60.0152554,10.2463349" id="Path-2"></path>
+                <path d="M58.6854504,7.08746978 L26.5748132,20.2593275 M18.3184475,28.6437351 L6.22762356,69.3562713 M10.9061475,77.9471375 L49.875,87 M60,85.125 L84.9230769,65.25 M86.3814349,55.5734284 L67.2140289,11.8018419" id="Path-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

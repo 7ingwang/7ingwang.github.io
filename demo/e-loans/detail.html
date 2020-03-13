@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" /><!-- 禁用自动拨号 -->
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title>零售E贷款</title>
+        <link rel="stylesheet" href="css/aui.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="aui-bar aui-bar-nav">
+            <a class="aui-btn aui-pull-left" href="list.html">
+                <i class="icon icon-back"></i>
+            </a>
+            <div class="aui-title">张三</div>
+            <a class="aui-pull-right aui-btn" href="process-m.html">
+                查看流程明细
+            </a>
+            
+        </header>
+        
+        <div class="aui-content aui-margin-t-15">
+            <ul class="aui-list aui-list-in">
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">序号</div>
+                        <div class="aui-list-item-right">1</div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">客户姓名</div>
+                        <div class="aui-list-item-right">张三</div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">联系电话</div>
+                        <div class="aui-list-item-right">1382342000</div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">贷款大类</div>
+                        <div class="aui-list-item-right">小微贷款</div>
+                    </div>
+                </li>
+                <li class="aui-list-item" onclick="window.location.href='edit-cate.html'">
+                    <div class="aui-list-item-inner aui-list-item-arrow" >
+                        <div class="aui-list-item-title">贷款小类</div>
+                        <div class="aui-list-item-right">风险补偿基金</div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner aui-list-item-arrow">
+                        <div class="aui-list-item-title">申请书编号</div>
+                        <div class="aui-list-item-right">22</div>
+                    </div>
+                </li>
+                <li class="aui-list-item" onclick="window.location.href='edit.html'">
+                    <div class="aui-list-item-inner aui-list-item-arrow">
+                        <div class="aui-list-item-title">申请金额</div>
+                        <div class="aui-list-item-right">12 万</div>
+                    </div>
+                </li>
+                <li class="aui-list-item" onclick="window.location.href='edit-prod.html'">
+                    <div class="aui-list-item-inner aui-list-item-arrow">
+                        <div class="aui-list-item-title">已签约产品</div>
+                        <div class="aui-list-item-right">手机产品、手机银行、手机产品、手机银行</div>
+                    </div>
+                </li>
+                <li class="aui-list-item">
+                    <div class="aui-list-item-inner">
+                        <div class="aui-list-item-title">提交时间</div>
+                        <div class="aui-list-item-right">2017-06-06 09:21:30</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aui-grid btns-inline">
+            <div class="aui-row">
+                <div class="aui-col-xs-4">
+                    <div class="aui-btn aui-btn-success" tapmode onclick="openDialog('text')"><i class="icon icon-submit"></i>提 交</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <div class="aui-btn aui-btn-warning" onclick="window.location.href='reason.html'"><i class="icon icon-return"></i>退 回</div>
+                </div>
+                <div class="aui-col-xs-4">
+                    <div class="aui-btn aui-btn-danger" onclick="window.location.href='reason-stop.html'"><i class="icon icon-stop"></i>终 止</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="aui-content-padded aui-margin-t-0 aui-padded-b-15">
+            <div class="aui-btn aui-btn-primary aui-btn-block" tapmode onclick="openActionsheet()"><i class="icon icon-push"></i>上报有权签字人</div>
+        </div>
+        
+        <script type="text/javascript" src="js/aui-dialog.js" ></script>
+        <script type="text/javascript">
+            apiready = function () {
+                api.parseTapmode();
+            }
+            var dialog = new auiDialog();
+            function openDialog(type){
+                switch (type) {
+                    case "text":
+                        dialog.alert({
+                            title:"",
+                            msg:'是否提交所选数据？',
+                            buttons:['取消','确定']
+                        },function(ret){
+                            console.log(ret)
+                        })
+                        break;        
+                }
+            }
+        </script>
+        
+    </body>
+</html>

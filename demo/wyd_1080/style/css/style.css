@@ -1,0 +1,289 @@
+/* reset */
+html,body,div,h1,h2,h3,h4,p,ul,li,input,img{ margin: 0; padding: 0;}
+ui,li{ list-style: none;}
+img{ width: 100%; height: auto; border: none;}
+em,i,b{ font-style: normal;}
+
+body{ background-color: #eee; font-size:100%; line-height: 1;}
+a:active{ opacity: .8;}
+p{ font-size: 40px;}
+
+/* mui修改 */
+input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea{ width: 80%; height: 100%; line-height: 100%; font-size: 250%; color: #212121;}
+
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit]{ top: 20%; font-size: 250%; border-radius:6px;}
+.mui-btn{ padding: 3%;}
+.mui-btn-block{ margin-bottom: 0; padding: 4%; font-size: 300%;}
+.mui-btn-block .icon{ font-size: inherit;}
+.mui-btn-blue, .mui-btn-primary{ border-color: #2B98F0; background-color: #2B98F0;}
+.mui-btn-small{ padding: 1% 2%;}
+.mui-btn-no{ padding: 0; border: none;}
+.mui-btn-grey{ position: absolute; right: 10px;}
+
+.mui-slider-indicator{ bottom: 10%;}
+.mui-slider-indicator .mui-indicator{ margin: 0 5px; width: 10px; height: 10px; background: #fff; box-shadow: none;}
+.mui-slider-indicator .mui-indicator.mui-active{ background: #2B98F0;}
+
+.mui-input-group .mui-input-row{ padding: 0 10%; height:8%; line-height: 8%; border: 1px solid #ddd;}
+.mui-input-group:before{ background-color: #fff;}
+.mui-input-group:after{ background-color: #ddd;}
+.mui-input-group .mui-input-row:after{ left: 0; background-color: #ddd;}
+.mui-input-row label{ padding: 6.4% 3%;width:45%; font-size: 250%; color: #757575;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{ float: none;width: 55%;}
+.mui-input-row label~select{ margin: 7% 0 0;  width: 55%;}
+.mui-input-row label.full{ width: 100%;}
+.mui-input-row input.full{ width: 100%; padding-left: 10px;}
+.mui-input-row select{ height: 100%; line-height: 100%; font-size: 250%;}
+.mui-input-row.radio-row{ padding-bottom: 3%; height: 100%; line-height: 100%;}
+.mui-input-row.radio-row .mui-radio{ margin-right: inherit; margin-left: 20%; margin-top: 3%; padding: 3% 0; }
+.mui-input-row.auto-row{ height: auto; min-height: 44px; line-height: inherit;}
+.mui-input-row.auto-row .mui-btn-no{ display: block; margin-top: 7%; margin-left: 3%; width: 100%; text-align: left; font-size: 250%; color: #212121;}
+.mui-input-row.auto-row p{ position: relative; top: -5px; margin: 0 0 10px 0; padding: 0 0 0 35%; color: #9e9e9e; line-height: 21px;}
+.mui-input-row.auto-row input.full{ margin: 0 0 10px; padding: 0 10px; height: inherit;}
+.mui-input-row{ position: relative; padding-left: 26px;}
+.mui-input-row .icon{ position: absolute; left: 4%; top:32%; color: #757575; font-size: 320%;}
+.mui-input-row .icon12{ font-size: 240%;}
+.mui-input-row .mui-icon-arrowdown{ margin-top: 12px; color: #bdbdbd;}
+.mui-icon-clear{}
+.mui-icon-home{ border-color: #9e9e9e; color: #757575;}
+.mui-input-row .error{ color: red;}
+.mui-input-row.label-long label{ width: 60%;}
+.mui-input-row.label-long input{ width: 40%;}
+.mui-input-row.label-long select{ width: 30%;}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{ top:35%; right: 5%; font-size: 250%;}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before { width: 70px; height: 70px;  font-size: 70px;}
+
+.mui-pciker-rule{ margin-top: 0;}
+.mui-pciker-list li{ height: 3pc; font-size: 2pc;}
+
+
+/* tab-scroll */
+.mui-row.mui-fullscreen>[class*="mui-col-"] {
+    height: 100%;
+}
+
+.mui-col-xs-4,
+.mui-col-xs-8 {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.mui-segmented-control{ font-size: 250%; }
+
+.mui-segmented-control .mui-control-item {
+    line-height: 4;
+    width: 100%;
+}
+
+.mui-control-content {
+    display: block;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    background-color: #fff;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item, .mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active{ border-bottom-width: 2px;}
+
+.mui-table-view-cell{ padding: 2% 6%; line-height: 3; font-size: 250%;}
+.mui-table-view-cell:after{ height: 3px;}
+
+
+/* 通用 */
+.mui-pick-bar{ position: relative; padding: 0 10px; border-bottom: 2px solid #e7e7e7;}
+.mui-pick-bar input, .mui-pick-barselect, .mui-pick-bartext area{ height: inherit; line-height: inherit; font-size: inherit;}
+.mui-pick-bar button{ margin-bottom: 0; padding-left: 26px; border: none; color: #757575; font-size: 250%;}
+.mui-pick-bar button .icon{ position: absolute; left: 3%; font-size: 120%; }
+.mui-pick-bar button .mui-pull-left{ margin-left: 9%; width: 45%; text-align: left;}
+.mui-pick-bar button .mui-pull-right{ float: inherit;}
+.mui-pick-bar button .ui-alert{ width: 30%; text-align: left; color: #212121;}
+.mui-c{ padding: 20px 0; text-align: center;}
+.mui-c .mui-btn{ margin: 0 auto;}
+.mui-btn-blue{ background: #2B98F0; border: none;}
+.mui-btn-blue .icon{ color: #fff;}
+.mui-input-row .text{ margin-top: 50px; font-size: 250%;}
+.mui-content-padded{ margin: 3%;}
+.mui-poppicker{}
+.mui-poppicker-header .mui-btn{ padding: 1% 2%; font-size: 250%;}
+
+
+.grey{ height: 44px; line-height: 44px; color: #9E9E9E;}
+.fr{ float: right;}
+.tc{ text-align: center;}
+.fixed{ position: fixed; left: 0; right: 0;  bottom: 0; z-index: 1;}
+
+.input-row{padding: 0 10px; line-height: 44px; font-size: 15px;}
+
+.inline-radio{ padding: 5% 10% 5% 0; text-align: right; font-size: 250%;}
+.inline-radio span{ margin-right: 50px;}
+.inline-radio span input{ margin-left: 10px;}
+.inline-radio span.mui-radio input[type=radio]{ left: 55px; top: -22px; color: #757575;}
+.inline-radio span.mui-radio input[type=radio]:checked:before{color: #979797;}
+
+/* congrats */
+.congrats{ padding: 8% 5% 0 27%; background: url(../img/congrats@3x.png) 5% 100% no-repeat; background-size: auto 75%; font-size: 100%;}
+.congrats h4{ margin-bottom: 3%; font-size: 250%;}
+.congrats p{ font-size: 200%; color: #212121; line-height: 1.6;}
+
+/* 验证码 */
+.verify input{ width: 50%;}
+.verify button{ margin: 6px 0 0 0; float: right; border: none; background: #DEDEDE;  color: #757575;}
+.verify .mui-icon-clear{ margin-right: 100px;}
+
+.drop{ position: absolute; width: 100%; z-index: 1;}
+.drop li{ padding: 1% 10%; background: #fff; font-size: 250%;  color: #757575;}
+.drop li.active{ background: #f4f4f4; color: #212121;}
+
+
+/* 自动消失报错提示 */
+.mui-toast-container{ top: 0;}
+.mui-toast-message{ margin: 0; padding: 5% 0; width: 100%; border-radius: 0; background: #F1453D; color: #fff; font-size: 250%;}
+
+.select{ margin: 0 10px; line-height: 44px;}
+
+.icon{ display: inline-block; text-align: center;}
+.icon11{ font-size: 110%;}
+.icon12{ font-size: 120%;}
+.icon13{ font-size: 130%;}
+.icon14{ font-size: 140%;}
+.icon16{ }
+.icon24{ font-size: 240%;}
+.icon36{ font-size: 360%;}
+.icon40{ font-size: 400%;}
+.icon80{ width: 80px; height: 80px; font-size: 80px;}
+.icon90{ width: 100px; height: 100px; font-size: 100px;}
+.icon100{ width: 100px; height: 100px; font-size: 100px;}
+.icon-home{ color: #9e9e9e;}
+.icon-success{ color: #50AE55;}
+.icon-mr{ margin-right: 5px;}
+
+li{ line-height: 2; color: #757575;}
+li .mui-pull-right{ color: #212121;}
+li .icon{ display: inline-block; margin-right: 3%; width: 3%;}
+
+.block{ display: block; margin: -3% 3% 3%; background: #fff;}
+.block.without{ margin: 3%; background: none;}
+.block.without h2{ padding: 3%; font-size: 250%; color: #757575;}
+.block.without .box{ margin: 0 0 3%; padding: 10%; background: #fff;}
+.block.ps{ margin: 10px; padding: 0 10px; background: none; font-size: 200px;}
+.block .ps{ margin-top: 10px; padding-top: 10px; line-height: 1.6; }
+
+#footer{ margin: 3% 0; text-align: center;}
+#footer p{ font-size: 200%; color: #959595;}
+
+/* 主题区 */
+.theme-box{ height: 490px;}
+.theme-box#apply{ background:#55ADF3 url(../img/theme-apply@3x.png) right center no-repeat; background-size: 75% auto;}
+.theme-box#theme-calculator{ background: #43D191 url(../img/theme-calculator@3x.png) center center no-repeat; background-size: auto 50%;}
+.theme-box#theme-reckon{ background: #1FBCD2 url(../img/theme-reckon@3x.png) center center no-repeat; background-size: auto 65%;}
+.theme-box#theme-success{ background: #2B98F0 url(../img/theme-success@3x.png) center center no-repeat; background-size: auto 50%;}
+.theme-box#theme-my{ background: #2B98F0 url(../img/theme-my@3x.png) center center no-repeat; background-size: auto 50%;}
+.theme-box#theme-login{ background: #55ADF3; text-align: center;}
+.theme-box#theme-login .icon{ position: relative; top: 20%; display: block; margin: 0 auto; width: 300px; height: 300px; line-height: 300px; border: 2px solid #fff; border-radius: 50%; text-align: center; font-size: 200px; color: #fff;}
+
+/* home */
+.menu{ padding-left: 6%; background: #fff; border-bottom: 1px solid #ddd;}
+.menu a{ display: inline-block; padding: 8% 1% 4%; width:23%; text-align: center; font-size: 250%;  color: #212121;}
+.menu a .icon{ display: block; margin: 0 auto; color: #2B98F0; font-size: 200%;}
+
+.block#product{ margin-top: 10px; background: none;}
+#product h2{ padding: 3% 0 3% 5%;  font-size: 300%; color: #757575;}
+#product .single{position: relative; margin-bottom:2%; padding: 3% 0 0 50%; display: block; height: 300px; background: #dedede url(../img/loan@3x.png) 30% center no-repeat; background-size: auto 50%; color: #212121;}
+#product .single h3{ margin-top: 10%; font-size: 300%; }
+#product .single p{ margin-top: 5%; font-size: 240%; color: #757575;}
+#product .single .mui-icon{ position: absolute; right: 5%; top: 40%; font-size: 400%;}
+.single#p1 p, .single#p2 p{ color: #fff;}
+.single#p1{ padding: 3% 0 0 50%; background: #468FDC url(../img/p1@3x.png) 10% 70% no-repeat; background-size: auto 90%; color: #fff;}
+.single#p2{ padding: 2% 0 0 5%; background: #1FBCD2 url(../img/p2@3x.png) center bottom no-repeat; background-size: auto 75%; color: #fff;}
+.single#p2 h3{ margin-right: 3%;}
+.single#p2 h3, .single#p2 p{ display: inline-block;}
+
+/* product */
+.box{ margin-top: 3%; background: #fff;}
+.box .title{ padding: 3% 5%; background-color: #55ADF3; font-size: 300%; color: #fff;}
+.box .content{ padding: 5%; line-height: 2; color: #757575;}
+.box .content p{ font-size: 300%;}
+.box .content em, .box .content i, .box .content b{ font-weight: bold; color: #212121;}
+.box .content li{ margin-bottom: 5%; font-size: 300%;}
+.box.feature{ margin-bottom: 20%;}
+.box .conditions{ padding: 0 0 5%;}
+.box .conditions li{ padding-top: 5%; text-align: center;}
+.box .conditions li .icon{ display: block; margin-bottom: 5px; width: 100%; height: 20%; background-repeat: no-repeat; background-position: center center; background-size: auto 100%;}
+.box .conditions li .icon-after-1year{ background-image: url(../img/icon-after-1year@3x.png);}
+.box .conditions li .icon-age{ background-image: url(../img/icon-age@3x.png);}
+.box .conditions li .icon-good{ background-image: url(../img/icon-good@3x.png);}
+.box .conditions li .icon-¥1000{ background-image: url(../img/icon-1000@3x.png);}
+.box .conditions li .icon-deposit-1year{ background-image: url(../img/icon-deposit-1year@3x.png);}
+.box .conditions li em{ color: #2B98F0;}
+#btn-assess{ position: absolute; top: 0; padding: 0 12% 0 4%; width: 10%; height: 100%; line-height: 100%; border-right: 2px solid #fff; z-index: 1; border-radius: 6px 0 0 6px;}
+#btn-assess .icon{ font-size: 200%;}
+
+
+/* calculator */
+#calculator .mui-input-row label{ width: 35%;}
+#calculator .mui-input-row label~input, #calculator .mui-input-row label~select{ width: 50%;}
+#calculator .mui-input-row label~select{ margin-top: 0;}
+#result{ margin-top: 10px; padding: 10px;}
+#result .box li em{ margin-left: 20px; font-weight: bold; color: #2B98F0;}
+
+/* reckon */
+#reckon .mui-input-row label{ width: 55%;}
+#reckon .mui-input-row input{ width: 30%;}
+#reckon .mui-input-row label~select{ width: 30%; text-align: right; height: 100%; line-height: 100%;}
+#reckon .mui-input-row label~select option{ text-align: right; font-size: 10px !important;}
+#reckon-result{ padding: 10%; text-align: center;}
+#reckon-result p{ line-height: 1.6; font-size: 250%;}
+#reckon-result .ps{ font-size: 250%;}
+.badge{ margin: 10% auto; padding: 10%; width: 360px; height: 360px; background-color: #FDC02F; border-radius: 50%; text-align: center;}
+.badge span{ display: block;   color: #785549;}
+.badge .big{ margin: 5% 0 10%; font-size: 720%; font-weight: bold; color: #fff;}
+.badge .small{ font-size: 320%;}
+#reckon .mui-input-row .icon12{ font-size: 320%;}
+
+/* activities */
+#activities .block.banners{ margin-top: 3%; background: none; min-height: 353px;}
+#activities .block.banners a{position: relative; display: block; margin-top: 3%;}
+#activities .block.banners a .mark{ position: absolute; right: -1px; top: -1px; display: block; width: 160px; height: 160px;}
+#activities .block.banners a .mark.ing{ background: url(../img/ing@3x.png) no-repeat center center; background-size: auto 100%;}
+#activities .block.banners a .mark.end{ background: url(../img/end@3x.png) no-repeat center center; background-size: auto 100%;}
+
+/* success */
+.tips{ position: relative; padding: 10%; text-align: center; line-height: 2; font-size: 250%; min-height: 480px;}
+.tips .mui-btn{ padding: 2% 4%; font-size: 100%;}
+.tips p { margin-bottom: 20px; font-size: 100%; color: #212121;}
+.tips p a{ text-decoration: underline;}
+#official{ position: absolute; bottom: 20%; left: 10%; right: 10%; width: 80%; margin: 0 auto; font-size: 90%; color: #757575; line-height: 1.6;}
+.qr{ margin: 0 0 20%}
+.qr img{width: inherit; width: 360px; height: 360px;}
+
+/* my */
+#my-list{}
+#my-list .box{ display: block; padding: 3%; min-height: 400px; line-height: 1.6; font-size: 250%; color: #757575;}
+#my-list .box em{ color: #212121;}
+#my-list .box .no em{ margin-left: 5px; font-size: 100%;}
+#my-list .box .sn, #my-list .box .date{ margin: 20px 0; display: inline-block;}
+#my-list .box .sn{ margin-right: 10%;}
+#my-list .box .sn em, #my-list .box .date em{ margin-top: 5px; display: block; color: #212121;}
+#my-list .box .process{ height: 40px;}
+#my-list .box .process .mark{ position: absolute; right: 0; display: block; width: 40%; padding: 0 7%; height: 100px; line-height: 100px; background: url(../img/mark@3x.png) left center no-repeat; background-size: auto 100%; font-size: 100%; font-weight: bold; color: #757575; opacity: .8;}
+#my-list .box .process .mark.finished{ background-image: url(../img/mark-green@3x.png); color: #fff;}
+
+#my-detail .box{ padding: 3%; font-size: 250%;}
+#my-detail .box#steps{ padding: 3% 3% 0;}
+#steps li{ position: relative; margin-left: 3%; padding: 0 0 3% 6%; border-left: 2px solid #ddd; line-height: 1.6; color: #212121;}
+#steps li:last-child{ border-left: none;}
+#steps li .icon{ position: absolute; left: -3%; top: 0; display: block; float: left; width:60px; height: 60px;  line-height: 60px; border-radius: 50%; background: #eee; color: #757575;}
+#steps li .icon.finished{ background: #5DC762; color: #fff;}
+#steps li span{ display: inline-block;}
+#steps li .mui-pull-left{ width: 40%; color: #757575;}
+#steps li .text{ width: 20%;}
+#my-detail .icon-card{ font-size: 70%;}
+
+/* login */
+#login .block{ margin: -10px 10px 0; padding:  0 0 10px;}
+#login .link-area{ margin-top: 20px; text-align: center;}
+
+/* apply */
+.apply .mui-input-row .icon{ top: 15%;}
+.apply .mui-input-row label{ padding: 5% 0;}
+.apply .mui-input-row input{padding: 5% 0;}

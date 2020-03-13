@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1160, initial-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" href="favicon.ico">
+    
+    <title>光顾-中国工程灯具数据库</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="detail">
+
+    <div id="filter" class="fixed">
+      <div class="container">
+        <div class="filter-bar">
+          <span class="btn-go pull-right"><i class="icon icon-search"></i></span><a class="filter">点式投光灯<i class="icon icon-cancel icon12"></i></a><a class="filter">EPCOL<i class="icon icon-cancel icon12"></i></a>
+        </div>
+      </div>    
+    </div>
+    
+    <nav class="navbar navbar-gg fixed">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">光顾</a>
+            </div>
+            <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown prod-catg">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品分类</a>
+              <div class="dropdown-menu">
+                <div class="container">
+                  <dl>
+                    <dt>建筑</dt>
+                    <dd class="active"><a href="#">点式投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd class="disabled"><a href="#">线式投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">点式自发光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">线式自发光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">点式地埋投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">线式地埋投光灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">室外壁灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">户外筒灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">室外投影灯<i class="icon icon-cancel icon12"></i></a></dd>
+                    <dd><a href="#">特殊灯具<i class="icon icon-cancel icon12"></i></a></dd>
+                  </dl>
+                  <dl>
+                    <dt>室内</dt>
+                    <dd><a href="#">明装筒灯射灯</a></dd>
+                    <dd><a href="#">嵌装筒灯射灯</a></dd>
+                    <dd><a href="#">办公系统</a></dd>
+                    <dd><a href="#">室内壁灯</a></dd>
+                    <dd><a href="#">轨道射灯</a></dd>
+                    <dd><a href="#">灯槽灯带</a></dd>
+                    <dd><a href="#">室内投影灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">装饰灯</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>景观</dt>
+                    <dd><a href="#">点式投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">点式自发光灯</a></dd>
+                    <dd><a href="#">线式自发光灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式地埋投光灯</a></dd>
+                    <dd><a href="#">台阶灯</a></dd>
+                    <dd><a href="#">地埋灯</a></dd>
+                    <dd><a href="#">水下灯</a></dd>
+                    <dd><a href="#">庭院灯</a></dd>
+                    <dd><a href="#">草坪灯</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>路桥</dt>
+                    <dd><a href="#">明装筒灯射灯</a></dd>
+                    <dd><a href="#">嵌装筒灯射灯</a></dd>
+                    <dd><a href="#">办公系统</a></dd>
+                    <dd><a href="#">室内壁灯</a></dd>
+                    <dd><a href="#">轨道射灯</a></dd>
+                    <dd><a href="#">灯槽灯带</a></dd>
+                    <dd><a href="#">室内投影灯</a></dd>
+                    <dd><a href="#">点式地埋投光灯</a></dd>
+                    <dd><a href="#">线式投光灯</a></dd>
+                    <dd><a href="#">装饰灯</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown ls-catg">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">光源种类</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">LED<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">卤素灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">钠灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">荧光灯<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">金卤灯<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>      
+            </li>
+            <li class="dropdown power">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功率</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">≤1w<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">1-5w<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">5-10W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">10-30W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">30-60W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">60-100W<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">&gt;100W<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown beam-angle">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">光束角</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">≤8°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">9-15°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">16-25°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">26-39°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">≥40°<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">洗墙配光<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">其他非对称配光及道路配光<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown color-temp">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">色温颜色</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">RGB<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">RGBW<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">彩色单色<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">暖白<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">中性白<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">冷白<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown ctrl-mode">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">控制方式</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li><a href="#">Dali<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">DMX512<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">0-10V/1-10V<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">切相<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">开关<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li><a href="#">开关并自带调光钮<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown color-rendering">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">显色性</a>
+              <div class="dropdown-menu" aria-labelledby="dLabel">
+                <div class="container">
+                  <ul>
+                    <li class=""><a href=" ">CRI&lt;60<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;60<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;80<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;90<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">CRI&gt;95<i class="icon icon-cancel icon12"></i></a ></li>
+                    <li class=""><a href="#">缺<i class="icon icon-cancel icon12"></i></a ></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown prod-brands">
+              <a href="#" data-target="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品品牌</a>
+              <div class="dropdown-menu">
+                <div class="container">
+                  <ul>
+                    <li class="active"><a href="#">EPCOL</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li><a href="#">EPCOL</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                    <li class="disabled"><a href="#">DTS</a></li>
+                    <li><a href="#">基恩</a></li>
+                    <li><a href="#">RISE</a></li>
+                    <li><a href="#">VAS</a></li>
+                    <li><a href="#">iGuzzini</a></li>
+                    <li><a href="#">雅江</a></li>
+                    <li><a href="#">StrongLED</a></li>
+                    <li><a href="#">VF</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+
+    
+    <div class="content">
+      <div class="container">    
+        <div class="row">
+          <div class="topbar">
+            <span class="pull-left"><a href="cards.html" class="btn"><i class="icon icon-back icon16"></i></a></span><span class="pull-right dropdown"><a href="#" class="btn btn-fav"><i class="icon icon-heart icon16"></i></a><a href="#" class="btn btn-cart" data-toggle="dropdown"><i class="icon icon-shopping icon16"></i></a><a href="pdf.html" target="_blank" class="btn"><i class="icon icon-pdf icon16"></i></a><a href="#" class="btn"><i class="icon icon-print icon16"></i></a><a href="contact.html" class="flag">联系厂家</a>
+              <div class="pop-cart dropdown-menu">
+                <form class="form form-inline">
+                  <div class="form-group">
+                    <label>灯具颜色</label>
+                     <select class="form-control">
+                      <option>黑</option>
+                      <option>白</option>
+                      <option>灰</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>输入电源</label>
+                     <select class="form-control">
+                      <option>12V</option>
+                      <option>24V</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>灯具编号</label>
+                    <input type="number" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>项目名称</label>
+                     <select class="form-control">
+                      <option>游客集散中心</option>
+                    </select>
+                    <span class="new_project" data-toggle="modal">新建</span>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm">加入购物车</button>
+                </form><!--/form-inline -->
+              </div><!--/.pop-cart -->
+            </span>
+          </div>
+          <div class="col-md-12 detail">
+            <h1>Parscan<b>轨道射灯</b></h1>
+            <div class="row">
+              <div class="col-md-6 col-left">
+                <div id="lightshow" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#lightshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#lightshow" data-slide-to="1"></li>
+                    <li data-target="#lightshow" data-slide-to="2"></li>
+                    <li data-target="#lightshow" data-slide-to="3"></li>
+                    <li data-target="#lightshow" data-slide-to="4"></li>
+                    <li data-target="#lightshow" data-slide-to="5"></li>
+                    <li data-target="#lightshow" data-slide-to="6"></li>
+                  </ol>
+                  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/lightshow.png" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow2.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow3.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow4.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow5.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow6.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                      <img src="img/slideshow7.jpg" alt="">
+                      <div class="carousel-caption"></div>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="model"><span class="no">71617.023</span><span class="band">ERCO</span></h2>
+                <h2>说明 ／ description</h2>
+                <p>这里是描述文字这里是描述文字这里是描述文字，这里是描述文字这里是描述文字，这里是描述文字。这里是描述文字这里是描述文字这里是描述文字，这里是描述文字这里是描述文字，这里是描述文字。这里是描述文字这里是描述文字这里是描述文字，这里是描述文字这里是描述文字，这里是描述文字。这里是描述文字这里是描述文字这里是描述文字，这里是描述文字这里是描述文字，这里是描述文字。</p>
+                <div class="tech">
+                  <h2>技术参数 ／ Technical data</h2>
+                  <table class="table">
+                    <tr>
+                      <td>灯具类型</td>
+                      <td>轨道射灯</td>
+                    </tr>
+                    <tr>
+                      <td>光源种类</td>
+                      <td>LED</td>
+                    </tr>
+                    <tr>
+                      <td>功率</td>
+                      <td>12w</td>
+                    </tr>
+                    <tr>
+                      <td>光束角</td>
+                      <td>90°</td>
+                    </tr>
+                    <tr>
+                      <td>色温颜色</td>
+                      <td>RGBW</td>
+                    </tr>
+                    <tr>
+                      <td>光通量</td>
+                      <td>≤500lm</td>
+                    </tr>
+                    <tr>
+                      <td>显色性</td>
+                      <td>CRI>60<60</td>
+                    </tr>
+                    <tr>
+                      <td>防护等级</td>
+                      <td>IP67</td>
+                    </tr>
+                    <tr>
+                      <td>控制方式</td>
+                      <td><a href="#">单色</a> ／ <a href="#">DMX512</a></td>
+                    </tr>
+                    <tr>
+                      <td>灯具颜色</td>
+                      <td><a>白</a> / <a>灰</a> / <a>黑</a></td>
+                    </tr>
+                    <tr>
+                      <td>输入电源</td>
+                      <td><a href="#">12V</a> ／ <a href="#">24V</a></td>
+                    </tr>
+                    <tr>
+                      <td>灯具尺寸</td>
+                      <td>L1000x22*H26mm</td>
+                    </tr>
+                    <tr>
+                      <td>开孔尺寸</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>重量</td>
+                      <td>0.7kg</td>
+                    </tr>
+                    <tr>
+                      <td>70%光衰承诺小时</td>
+                      <td>6000h</td>
+                    </tr>
+                    <tr>
+                      <td>灯具效率</td>
+                      <td>90%</td>
+                    </tr>
+                    <tr>
+                      <td>表面最高温度</td>
+                      <td>不高于70°</td>
+                    </tr>
+                    <tr>
+                      <td>自带电器</td>
+                      <td>不带电源</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-right">
+                <div class="pix row">
+                  <span class="pic pic1 col-lg-6" style="background-image: url(img/lightshow.png);"></span><span class="pic pic2 col-lg-6" style="background-image: url(img/lightshow.png);"></span><span class="pic pic3 col-lg-6" style="background-image: url(img/lightshow.png);" ></span><span class="pic pic4 col-lg-6" style="background-image: url(img/lightshow.png);"></span><span class="pic pic5 col-lg-3" style="background-image: url(img/lightshow.png);"></span><span class="pic pic6 col-lg-3" style="background-image: url(img/lightshow.png);"></span><span class="pic pic7 col-lg-3" style="background-image: url(img/lightshow.png);"></span>
+                </div>
+                <div class="parts">
+                  <h2><a href="parts.html">选择配件</a></h2>
+                  <img class="part part1" src="img/lightshow.png" alt="" /><img class="part part2" src="img/lightshow.png" alt="" /><img class="part part3" src="img/lightshow.png" alt="" />
+                  <ul>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="icon icon-cad icon24"></i></a>
+              <a href="#"><i class="icon icon-ies icon24"></i></a>
+              <a href="#"><i class="icon icon-install icon24"></i></a>
+              <a href="#"><i class="icon icon-cert icon24"></i></a>
+            </div>
+            <p style="position: absolute; left: 50px; right: 50px; bottom: -25px; border-top: 1px solid #ddd; color: #999;">
+光联/联系人: 黄泽准/电话: 18621506427/E-mail: 2217629889@qq.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer id="footer" class="fixed">
+      <div class="container">
+        <p class="copyright">中国工程灯具数据库／国家建筑节能质量监督检验中心认证<span>&copy; 2016-2017</span></p>
+      </div>
+    </footer><!--/#footer -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          
+        $(".topbar .pull-right a.btn-fav").click(function(){
+          $(this).toggleClass("selected");
+        });
+        
+/*
+        $(".topbar .btn-cart").click(function(){
+          $(".pop-cart").slideToggle("fast");
+        });
+*/
+        
+        $(".tech .table a").click(function(){
+          $(this).addClass("selected").siblings().removeClass("selected");
+        });
+        
+        if($(".pic1").height()>$(".pic1").width()){
+          $(".pix").addClass("pic1v");
+        };
+          
+      });
+    </script>  
+  </body>
+</html>

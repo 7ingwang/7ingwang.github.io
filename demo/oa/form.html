@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>智维万方-报销系统</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="智维万方-报销系统">
+        <link rel="stylesheet" href="css/weui.min.css">
+        <link rel="stylesheet" href="css/jquery-weui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body ontouchstart>
+        
+        <div class="scan">
+            <i class="icon icon-scan icon90"></i>
+            <p>优先扫一扫，若不能识别二维码，再手动填写</p>
+        </div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">金额 <i class="required">*</i></label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" placeholder="0.01">
+                </div>
+                <div class="weui-cell__ft">
+                    <span class="units">元</span>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">未税金额</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" placeholder="0.01">
+                </div>
+                <div class="weui-cell__ft">
+                    <span class="units">元</span>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label class="weui-label">发票代码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="10位数字">
+                </div>
+                <div class="weui-cell__ft">
+                    <i class="weui-icon-warn"></i>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">发票编号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="8位数字">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">发票校验码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_select">
+                <div class="weui-cell__hd padded-l-15"><label class="weui-label">税率</label></div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select padded-l-0" name="select1">
+                        <option selected="" value="1">3%</option>
+                        <option value="2">5%</option>
+                        <option value="3">6%</option>
+                        <option value="4">13%</option>
+                        <option value="5">17%</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">备注 <i class="required">*</i></label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="发票用途等">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">开票日期</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="格式：20170101">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__hd">
+                            <p class="weui-uploader__title">图片上传 <i class="required">*</i></p>
+                            <div class="weui-uploader__info">0/2</div>
+                        </div>
+                        <div class="weui-uploader__bd">
+                            <ul class="weui-uploader__files" id="uploaderFiles">
+                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="weui-uploader__file-content">
+                                        <i class="weui-icon-warn"></i>
+                                    </div>
+                                </li>
+                                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="weui-uploader__file-content">50%</div>
+                                </li>
+                            </ul>
+                            <div class="weui-uploader__input-box">
+                              <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padded-15">
+            <a href="detail.html" class="weui-btn weui-btn_primary">提交</a>
+        </div>
+        
+    </body>
+</html>

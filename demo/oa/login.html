@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>智维万方-扫码登录</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="智维万方-扫码登录">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id="login">
+        <header id="header">
+            <div class="container">
+                <a href="http://smartwell.cn/" target="_blank" id="logo"></a>
+            </div>
+        </header>
+        
+        <div id="login-theme">
+            <div class="container">
+                <div id="login-box">
+                    <div class="title">扫码登录</div>
+
+                    <div class="qr-code">
+                        <img src="images/qr-code.png" alt="二维码">
+                        <div class="mask">
+                            <p>二维码已失效</p>
+                            <a href="#" class="btn">刷新二维码</a>
+                        </div>
+                         <p>打开<span class="highlight">手机微信</span>，扫描二维码</p>
+                    </div>
+
+                    <div class="scan-success">
+                        <i class="icon icon-success icon72"></i>
+                        <h3>扫码成功</h3>
+                        <p>请在手机上确认登录</p>
+                    </div>
+              
+                </div>
+            </div>
+        </div> 
+        
+        <footer  id="footer">
+            <div class="container">
+                <p>©2012-2017 SmartWell.CN</p>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-2.1.4.js"></script>
+        <script>
+            $(".mask").delay(3000).fadeIn();
+            $(".mask .btn").click(function(){
+                $(".mask").fadeOut();
+            });
+        </script>
+    </body>
+</html>

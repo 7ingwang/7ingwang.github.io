@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>申请公喜贷</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/mui.min.js"></script>
+        <style>
+            #selInstDiv{ position: relative;}
+            #selInstDiv .icon.icon-position.icon14{ position: absolute; top: 13%;}
+            #instAddress{ margin: 5% 0 5% 0; padding: 0 0 0 45%; line-height: 1.6;}
+            #checkBtn{ margin: 1% 5% 0 0;}
+        </style>
+    </head>
+    <body>
+        <div class="theme-box" id="apply"></div><!-- .theme-box -->
+        <div class="block">
+            <form class="mui-input-group" id="form" action="saveApplyInfo" method="post">
+                <div class="mui-input-row">
+                    <i class="icon icon-person icon16"></i>
+                    <label>姓名</label>
+                    <select class="select" name="name" >
+    					<option value="0">请输入</option>
+    					<option value="1">宋彦霖</option>
+    					<option value="2">罗丹丹</option>
+    					<option value="3">马骁骁</option>
+    					<option value="4">郭圣子</option>
+    					<option value="5">刘阳</option>
+    				</select><!--
+    		        <input type="text" class="mui-input-clear" readonly="readonly" value="张三" name="name" placeholder="姓名">
+    		   --> </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-card icon12"></i>
+                    <label>身份证号</label>
+                    <select class="select" name="cn" >
+    					<option value="0">请输入</option>
+    					<option value="1">1101051969****8335</option>
+    					<option value="2">1306021988****0055</option>
+    					<option value="3">4115221989****0374</option>
+    					<option value="4">1102241979****5610</option>
+    					<option value="5">1102271955****5648</option>
+    				</select>
+    		        <!--<input type="text" class="mui-input-clear" readonly="readonly" value="23121982****2314" name="cn" placeholder="身份证号">
+    		    --></div><!-- .mui-input-row -->
+    		    <div class="mui-input-row" style="height: 1%;">
+                    <i class="icon icon-firm icon16"></i>
+                    <label>工作单位</label>
+                    <select class="select" name="enterPriseName" >
+    					<option value="0">请输入</option>
+    					<option value="1">中国民生银行股份有限公司</option>
+    					<option value="2">中国石油化工股份有限公司</option>
+    					<option value="3">北汽福田汽车股份有限公司</option>
+    					<option value="4">北京尚思科技有限公司</option>
+    					<option value="5">北京蓝天科技有限公司</option>
+    				</select>
+    		        <!--<textarea rows="1" class="mui-input-clear" readonly="readonly" name="enterPriseName" placeholder="工作单位名称">北京尚思科技有限公司
+    		        </textarea>-->
+    		        <!-- <input type="text" class="mui-input-clear" name="enterPriseName" placeholder="工作单位名称"> -->
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+    		    	<i class="mui-icon mui-pull-right"></i>
+                    <i class="icon icon-firm icon14"></i>
+                    <label>工作单位类型</label>
+    		        <select class="select" name="enterPriseType" >
+    					<option value="0">请选择</option>
+						<option value="1">党政机关及事业单位</option>
+						<option value="2">国家重点科研院所</option>
+						<option value="3">公立教育机构</option>
+						<option value="4">公立医疗机构</option>
+						<option value="5">中央企业</option>
+						<option value="6">地方国有企业</option>
+						<option value="7">优质新兴信息科技企业</option>
+						<option value="8">国际国内500强企业</option>
+						<option value="9">优质境内主板上市公司</option>
+						<option value="10">中小板、创业板上市公司</option>
+						<option value="11">金融机构</option>
+						<option value="12">专业人士</option>
+						<option value="13">我行对公授信及结算企业客户</option>
+						<option value="14">我行代发工资客户</option>
+						<option value="15">其他优质单位</option>
+    				</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                     <label>公积金月缴存</label>
+    		        <input type="number" class="mui-input-clear" style="margin-top: 5%;" placeholder=">=900" name="gjjAmount">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="mui-icon mui-pull-right"></i>
+                    <i class="icon icon-date icon14"></i>
+                     <label>公积金缴存年限</label>
+    		        <select class="select" name="gjjAgeLimit">
+    					<option value="0">请选择</option>
+			    		<option value="1">小于1年</option>
+			    		<option value="2">1-3年</option>
+			    		<option value="3">3-8年</option>
+			    		<option value="4">8年以上</option>
+    				</select>
+    		    </div><!-- .mui-input-row -->
+    		     <div class="mui-input-row auto-row" id="selInstDiv">
+                    <!--<span class="mui-icon mui-icon-map" style="position:relative;;top:12px;font-size: 20px;float: right;"></span>-->
+                   <i class="icon icon-positioning icon20" id="nearInst" style="position:relative;top:40px;margin-right: 12px;float: right;"></i>
+                   <i class="icon icon-position icon14"></i>
+                     <label>申请支行</label>
+                    <a href="inst.html" class="mui-btn-no"><span id="selInst">请选择支行</span></a>
+    				<p id="instAddress"></p>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-mobile icon16"></i>
+                     <label>手机号</label>
+    		        <input type="text" class="mui-input-clear" style="padding-top: 6%;" readonly="readonly" value="138****2323" name="mobile" placeholder="手机号">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row verify">
+                    <i class="icon icon-code icon14"></i>
+                     <label>验证码</label>
+    		        <input type="text" class="mui-input-clear" style="padding-top: 6%;" name="checkCode" placeholder="验证码">
+    		        <button type="button" id="checkBtn" class="mui-btn-grey">获取验证码</button>
+    		    </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" id="submitBtn" class="mui-btn mui-btn-primary mui-btn-block">提 交</button>
+        </div><!-- .mui-content-padded --> 
+
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+        
+       <script>
+    		$(function(){
+    			$("[name='name']").on("change",function(){
+    				localStorage.name = $("[name='name']").val();
+    			});
+    			$("[name='cn']").on("change",function(){
+    				localStorage.cn = $("[name='cn']").val();
+    			});
+    			$("[name='enterPriseName']").on("change",function(){
+    				localStorage.enterPriseName = $("[name='enterPriseName']").val();
+    			});
+    			$("[name='enterPriseType']").on("change",function(){
+    				localStorage.enterPriseType = $("[name='enterPriseType']").val();
+    			});
+    			$("[name='gjjAmount']").on("change",function(){
+    				localStorage.gjjAmount = $("[name='gjjAmount']").val();
+    			});
+    			$("[name='gjjAgeLimit']").on("change",function(){
+    				localStorage.gjjAgeLimit = $("[name='gjjAgeLimit']").val();
+    			});
+    			if (localStorage.name!=undefined) {
+    				$("[name='name']").val(localStorage.name);
+    			}
+    			if (localStorage.cn!=undefined) {
+    				$("[name='cn']").val(localStorage.cn);
+    			}
+    			if (localStorage.enterPriseName!=undefined) {
+    				$("[name='enterPriseName']").val(localStorage.enterPriseName);
+    			}
+    			if (localStorage.enterPriseType!=undefined) {
+    				$("[name='enterPriseType']").val(localStorage.enterPriseType);
+    			}
+    			if (localStorage.gjjAmount!=undefined) {
+    				$("[name='gjjAmount']").val(localStorage.gjjAmount);
+    			}
+    			if (localStorage.gjjAgeLimit!=undefined) {
+    				$("[name='gjjAgeLimit']").val(localStorage.gjjAgeLimit);
+    			}
+    			if (localStorage.checkCode!=undefined) {
+    				$("[name='checkCode']").val(localStorage.checkCode);
+    			}
+    			if (localStorage.instName!=undefined) {
+    				$("#selInst").text(localStorage.instName);
+    				$("#instAddress").text(localStorage.instAddr);
+    			}
+    			$("#nearInst").on("click",function(){
+    				$("#selInst").text("分行营业部");
+    				$("#instAddress").text("北京市西城区复兴门内大街2号中国民生银行大厦首层");
+	    		});
+    			
+    			//表单提交
+    			$("#submitBtn").on("click",function(){
+    				if ($("[name='name']").val()==0) {
+    					mui.toast("请输入"+$("[name='name']").prev().html()+"！");
+    					return false;
+    				}
+    				if ($("[name='cn']").val()==0) {
+    					mui.toast("请输入"+$("[name='cn']").prev().html()+"！");
+    					return false;
+    				}
+    				if ($("[name='enterPriseName']").val()==0) {
+    					mui.toast("请输入"+$("[name='enterPriseName']").prev().html()+"！");
+    					return false;
+    				}
+    				if ($("[name='enterPriseType']").val()==0) {
+    					mui.toast("请输入"+$("[name='enterPriseType']").prev().html()+"！");
+    					return false;
+    				}
+    				if ($("[name='gjjAmount']").val()==''||$("[name='gjjAmount']")<900) {
+    					mui.toast($("[name='gjjAmount']").prev().html()+">=900元！");
+    					return false;
+    				}
+    				if ($("[name='gjjAgeLimit']").val()==0) {
+    					mui.toast("请输入"+$("[name='gjjAgeLimit']").prev().html()+"！");
+    					return false;
+    				}
+    				if ($("#selInst").text()=='请选择支行') {
+    					mui.toast("请选择申请支行！");
+    					return false;
+    				}
+    				if ($("[name='checkCode']").val()==undefined||$("[name='checkCode']").val()=='') {
+    					mui.toast("请获取验证码！");
+    				}else{
+    					localStorage.removeItem("name");
+    					localStorage.removeItem("cn");
+    					localStorage.removeItem("enterPriseName");
+    					localStorage.removeItem("enterPriseType");
+    					localStorage.removeItem("gjjAmount");
+    					localStorage.removeItem("gjjAgeLimit");
+    					localStorage.removeItem("instName");
+    					localStorage.removeItem("instAddr");
+    					localStorage.removeItem("checkCode");
+    					window.location.href='success.html';
+    				}
+	    		});
+	    		$("#checkBtn").on("click",function(){
+	    			localStorage.checkCode = 888888;
+    				$("[name='checkCode']").val("888888");
+	    		});
+	    		
+    		});
+   		</script>
+    </body>
+</html>

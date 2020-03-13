@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>额度测算</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/mui.picker.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="reckon">
+        <div class="theme-box" id="theme-reckon"></div><!-- .theme-box -->
+        <div class="block">
+            <form class="mui-input-group">
+                <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                    <label>本人年收入*</label>
+    		        <input type="number" class="mui-input-clear" placeholder="0"><span class="text grey fr">万元</span>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row auto-row">
+        		    <i class="mui-icon mui-icon-arrowdown mui-pull-right"></i>
+                    <i class="icon icon-firm icon14"></i>
+                    <label>本人职业</label>
+    		        <select class="select">
+    					<option value="item-1">工程师</option>
+    					<option value="item-2">item-2</option>
+    					<option value="item-3">item-3</option>
+    					<option value="item-4">item-4</option>
+    					<option value="item-5">item-5</option>
+    				</select>
+    		    </div><!-- .mui-input-row -->
+    		    
+<!--
+    		    <div class="mui-pick-bar">  
+                    <button id='job' class="mui-btn mui-btn-block" type='button' value=""><i class="icon icon-job icon16"></i><span class="mui-pull-left">本人职业</span><span id='jobResult' class="ui-alert"></span></button>
+    		    </div>
+-->
+    		    
+    		    <div class="mui-input-row">
+                    <i class="icon icon-position icon16"></i>
+                    <label>所在省份</label>
+    		        <span class="text">北京</span>
+    		    </div><!-- .mui-input-row -->
+    		    
+    		   <div class="mui-input-row auto-row">
+        		    <i class="mui-icon mui-icon-arrowdown mui-pull-right"></i>
+                    <i class="icon icon-firm icon14"></i>
+                    <label>拟贷款期限</label>
+    		        <select class="select">
+    					<option value="item-1">三年</option>
+    					<option value="item-2">item-2</option>
+    					<option value="item-3">item-3</option>
+    					<option value="item-4">item-4</option>
+    					<option value="item-5">item-5</option>
+    				</select>
+    		    </div><!-- .mui-input-row -->
+    		    
+<!--
+    		    <div class="mui-pick-bar">  
+                    <button id='loan-time-limit' class="mui-btn mui-btn-block" type='button' value=""><i class="icon icon-date icon16"></i><span class="mui-pull-left">拟贷款期限</span><span id='userResult' class="mui-pull-right ui-alert"></span></button>
+    		    </div>
+-->
+    		    
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                    <label>在我行金融资产</label>
+    		        <input type="number" class="mui-input-clear" placeholder="0"><span class="text grey fr">万元</span>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                    <label>房产价值</label>
+    		        <input type="number" class="mui-input-clear" placeholder="0"><span class="text grey fr">万元</span>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                    <label>他行信用贷款</label>
+    		        <input type="number" class="mui-input-clear" placeholder="金额"><span class="text grey fr">万元</span>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon16"></i>
+                   <label>月供款</label>
+    		        <input type="number" class="mui-input-clear" placeholder="0"><span class="text grey fr">元</span>
+    		    </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="block ps">
+            <p>* 为必填项</p>
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-block" onclick="window.location.href='reckon-result.html'">立即计算</button>
+        </div><!-- .mui-content-padded --> 
+
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+
+        <script src="js/mui.min.js"></script>
+        <script src="js/mui.picker.min.js"></script>
+        <script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//本人职业
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: '111',
+						text: '职业经理人'
+					}, {
+						value: '222',
+						text: '银行职员'
+					}, {
+						value: '333',
+						text: '码农'
+					}, {
+						value: '444',
+						text: 'UI设计师'
+					}]);
+					var showUserPickerButton = doc.getElementById('job');
+					var jobResult = doc.getElementById('jobResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							jobResult.innerText = JSON.stringify(items[0]);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+					//拟贷款期限
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: '1',
+						text: '一年'
+					}, {
+						value: '2',
+						text: '二年'
+					}, {
+						value: '3',
+						text: '三年'
+					}, {
+						value: '4',
+						text: '四年'
+						}, {
+						value: '5',
+						text: '五年'
+					}]);
+					var showUserPickerButton = doc.getElementById('loan-time-limit');
+					var userResult = doc.getElementById('timeResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText = JSON.stringify(items[0]);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+
+                });
+			})(mui, document);
+		</script>
+    </body>
+</html>

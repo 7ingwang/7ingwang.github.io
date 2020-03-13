@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>民生微优贷</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="slider" class="mui-slider">
+	        <div class="mui-slider-group mui-slider-loop">
+	        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	        	<div class="mui-slider-item mui-slider-item-duplicate">
+	        		<a href="p2.html">
+	        			<img src="img/home-slide_4.png">
+	        		</a>
+	        	</div>
+	        	<!-- 第一张 -->
+	        	<div class="mui-slider-item">
+	        		<a href="p1.html">
+	        			<img src="img/home-slide_1.png">
+	        		</a>
+	        	</div>
+	        	<!-- 第二张 -->
+	        	<div class="mui-slider-item">
+	        		<a href="p1html">
+	        			<img src="img/theme-p1@3x.png">
+	        		</a>
+	        	</div>
+	        	<!-- 第三张 -->
+	        	<div class="mui-slider-item">
+	        		<a href="p2.html">
+	        			<img src="img/theme-p2@3x.png">
+	        		</a>
+	        	</div>
+	        	<!-- 第三张 -->
+	        	<div class="mui-slider-item">
+	        		<a href="p2.html">
+	        			<img src="img/home-slide_4.png">
+	        		</a>
+	        	</div>
+	        	<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	        	<div class="mui-slider-item mui-slider-item-duplicate">
+	        		<a href="p1.html">
+	        			<img src="img/home-slide_1.png">
+	        		</a>
+	        	</div>
+	        </div>
+	        <div class="mui-slider-indicator">
+	        	<div class="mui-indicator mui-active"></div>
+	        	<div class="mui-indicator"></div>
+	        	<div class="mui-indicator"></div>
+	        	<div class="mui-indicator"></div>
+	        </div>
+	    </div><!-- #slider -->
+        
+        <nav class="menu">
+            <a href="calculator.html"><i class="icon icon-calculator icon24"></i>利息计算器</a>
+            <a href="reckon.html"><i class="icon icon-assess icon24"></i>额度测算</a>
+            <a href="activities.html"><i class="icon icon-gift icon24"></i>福利专区</a>
+            <a href="my-apply.html"><i class="icon icon-apply icon24"></i>我的申请</a>
+        </nav><!-- .menu -->
+        
+        <div class="block" id="product">
+            <h2>产品专区</h2>
+            <a href="p1.html" class="single wow slideInRight" id="p1">
+                <h3>消费微贷</h3>
+                <p>优质企业员工专属</p>
+                <i class="mui-icon mui-icon-arrowright"></i>
+            </a>
+            <a href="p2.html" class="single wow bounceInLeft" id="p2">
+                <h3>公喜贷</h3>
+                <p>公积金个人月缴存 1000 元以上客户专享</p>
+                <i class="mui-icon mui-icon-arrowright"></i>
+            </a>
+            <a class="single wow bounce" data-wow-delay="1s">
+                <h3>更多产品</h3>
+                <p>即将推出……</p>
+            </a>
+        </div><!-- #product -->
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- .footer -->
+        
+        <script src="js/mui.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+			var slider = mui("#slider");
+			    slider.slider({
+                    interval: 5000
+            });
+        </script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+      </script>
+    </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>申请消费微贷</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/papply.comm.js"></script>
+        <script src="js/mui.min.js"></script>
+        <style>
+            .mui-input-row label.full{ width: 40%; line-height: 1.6;}
+            .inline-radio{ padding:10% 0 5% 45%;}
+            .inline-radio .mui-radio{ position: relative; left: -30%;}
+            .mui-input-row.auto-row p.address{ margin: 5% 0 5% 0; padding: 0 0 0 45%; line-height: 1.6;}
+        </style>
+  </head>
+  <body>
+   	<div class="theme-box" id="apply"></div><!-- .theme-box -->
+         <!-- 企业贷白名单 -->
+        <div class="block" id="whiteDiv" style="display:none;">
+            <div class="congrats">
+                <h4>恭喜您！</h4>
+                <p>您所在企业已为我行认定优质企业，<br>请输入以下信息，我们将迅速为您提供贷款服务</p>
+            </div><!-- .congrats -->
+            <form class="mui-input-group" id="whiteForm" action="saveApplyInfo" method="post">
+                <input type="hidden" name="circleId" />
+    	  		<input type="hidden" name="instNo" />
+     	 		<input type="hidden" name="productFlag" value="qyd" />
+     	 		<input type="hidden" name="enterPriseId" /><br/>
+    			<input type="hidden" name="enterPriseName" /><br/>
+    			<input type="hidden" name="enterPriseType" />
+    			<input type="hidden" name="productId" /><br/>
+                <div class="mui-input-row">
+                    <i class="icon icon-person icon16"></i>
+                    <label>姓名</label>
+    		        <select class="select" name="name" >
+			    					<option value="0">请输入</option>
+			    					<option value="1">宋彦霖</option>
+			    					<option value="2">罗丹丹</option>
+			    					<option value="3">马骁骁</option>
+			    					<option value="4">郭圣子</option>
+			    					<option value="5">刘阳</option>
+    						</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-card icon12"></i>
+                    <label>身份证号</label>
+                    <select class="select" name="cn" >
+				    					<option value="0">请输入</option>
+				    					<option value="1">1101051969****8335</option>
+				    					<option value="2">1306021988****0055</option>
+				    					<option value="3">4115221989****0374</option>
+				    					<option value="4">1102241979****5610</option>
+				    					<option value="5">1102271955****5648</option>
+    								</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row radio-row" style="padding-bottom: 0;">
+                    <i class="icon icon-ask icon16" style="top: 25%;"></i>
+                    <label class="full">是否在本单位工作满一年</label>
+                    <div class="inline-radio">
+                        <span class="mui-radio" style="left: -60%;">是<input name="toAyear" type="radio" value="1" checked style="top: 8%;"></span><span class="mui-radio">否<input name="toAyear" type="radio" value="0" style="top: 8%;"></span>
+                    </div>
+                </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row auto-row" id="selInstDiv" style="position: relative;">
+                    <i class="icon icon-positioning icon20" id="nearInst" onclick="getNearInst('whiteForm');" style="position: absolute;top:11%; left: 90%; "></i>
+                    <i class="icon icon-position icon14" style="top:11%;"></i>
+                    <label>申请支行</label>
+                    <div id="instNoDiv"></div>
+                    <!--<a href="inst.html" class="mui-btn-no"><span id="selInst"></span></a>-->
+    				<!--<p>北京市朝阳区建国路128号中航工业...</p>-->
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-mobile icon16"></i>
+                    <label>手机号</label>
+    		        <input type="text" class="mui-input-clear" readonly="readonly" value="138****2323" name="mobile" placeholder="手机号" style="padding-top: 6%;">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row verify">
+                    <i class="icon icon-code icon14"></i>
+                     <label>验证码</label>
+    		        <input type="text" class="mui-input-clear" name="checkCode" placeholder="验证码" style="padding-top: 6%;">
+    		        <button type="button" id="checkBtn" class="mui-btn-grey" style="margin: 1% 5% 0 0;">获取验证码</button>
+    		    </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+         <!-- 企业贷非白名单 -->
+         <div class="block" id="notWhiteDiv" style="display:none;">
+            <form class="mui-input-group" id="notWhiteForm" action="saveApplyInfo" method="post" >
+            	 <input type="hidden" name="circleId" />
+    	 		<input type="hidden" name="instNo" />
+        		<input type="hidden" name="productFlag" value="qyd" />
+        		<input type="hidden" name="enterPriseId" />
+        		<input type="hidden" name="enterPriseType" />
+    			<input type="hidden" name="productId" />
+                <div class="mui-input-row">
+                    <i class="icon icon-person icon16"></i>
+                    <label>姓名</label>
+    		        <select class="select" name="name" >
+			    					<option value="0">请输入</option>
+			    					<option value="1">张三</option>
+			    					<option value="2">李逍遥</option>
+			    					<option value="3">李达康</option>
+			    					<option value="4">张三丰</option>
+			    					<option value="5">李四</option>
+    						</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-card icon12"></i>
+                    <label>身份证号</label>
+    		              <select class="select" name="cn" >
+					    					<option value="0">请输入</option>
+					    					<option value="1">1101051969****8335</option>
+					    					<option value="2">1306021988****0055</option>
+					    					<option value="3">4115221989****0374</option>
+					    					<option value="4">1102241979****5610</option>
+					    					<option value="5">1102271955****5648</option>
+					    				</select>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row" style="height: 1%;">
+                    <i class="icon icon-firm icon16"></i>
+                    <label>工作单位名称</label>
+    		        <textarea rows="1" name="enterPriseName" placeholder="工作单位名称" readonly>
+    		        </textarea>
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-money icon12"></i>
+                    <label>年收入(万)</label>
+    		        <input type="number" name="inCome" placeholder="年收入" />
+    		    </div><!-- .mui-input-row -->
+    		   <div class="mui-input-row auto-row" id="selInstDiv">
+    		   					<i class="icon icon-positioning icon20" onclick="getNearInst('notWhiteForm');" style="position:relative;top:15px;margin-right: 12px;float: right;"></i>
+                    <i class="icon icon-position icon14"></i>
+                    <label>申请支行</label>
+                    <a href="inst.html" class="mui-btn-no"><span id="selInst"></span></a>
+    				<!--<p>北京市朝阳区建国路128号中航工业...</p>-->
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row">
+                    <i class="icon icon-mobile icon16"></i>
+                    <label>手机号</label>
+    		        <input type="text" class="mui-input-clear" readonly="readonly" value="138****2323" name="mobile" placeholder="手机号">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="mui-input-row verify">
+                    <i class="icon icon-code icon14"></i>
+                    <label>验证码</label>
+    		        <input type="text" class="mui-input-clear" name="checkCode" placeholder="验证码">
+    		        <button type="button"  id="checkBtn" class="mui-btn-grey">获取验证码</button>
+    		    </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        
+        
+        <div class="mui-content-padded">
+            <button type="button" id="submitBtn" class="mui-btn mui-btn-primary mui-btn-block">提 交</button>
+        </div><!-- .mui-content-padded --> 
+
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+  
+    <script>
+    	function getNearInst(flag){
+    		var _form = $("#"+flag);
+    		_form.find("#selInst").text("分行营业部");
+    		_form.find("#selInstDiv").find("p").eq(0).remove();
+    		_form.find("#selInstDiv").append("<p>北京市西城区复兴门内大街2号中国民生银行大厦首层</p>");
+    	}
+    	$(function(){
+    		var enterPriseName = localStorage.enterPriseName;
+    		$("#instNoDiv").html("<a href='#' class='mui-btn-no'><span id='selInst'></span></a>");
+    		$("#selInst").on("click",selInst);
+    		$("#nearInst").show();
+    		//获取所填企业名称
+    		var _form = null;
+    		var isWhite = localStorage.isWhite;
+    		if( isWhite == 0){
+    			_form = $("#whiteForm");
+    			_form.find("input[name='enterPriseName']").val(enterPriseName);
+    			$("#whiteDiv").show();//白名单
+    		}else{
+    			_form = $("#notWhiteForm");
+    		_form.find("textarea[name='enterPriseName']").val(enterPriseName);
+    			$("#notWhiteDiv").show();//白名单
+    		}
+    		if( _form == null ){
+    			return;
+    		}
+    		$(window).bind("pageshow", function () {
+    			//区域ID
+    			var circleId = localStorage.circleId;
+    			_form.find("input[name='circleId']").val(circleId);
+    			//支行名称
+    	    	var instName = localStorage.instName;
+    	    	_form.find("#selInst").text(instName==undefined||instName==null?"请选择支行":instName);
+    	    	//支行号
+    	    	_form.find("input[name='instNo']").val(localStorage.instNo);
+    	    	//支行地址
+    	    	var instAddr = localStorage.instAddr;
+    	    	_form.find("#selInstDiv").find("p").eq(0).remove();
+        		if( instAddr != null && instAddr != "null" && instAddr != ""){
+        			_form.find("#selInstDiv").append("<p class='address'>"+instAddr+"</p>");
+        		}
+    		});
+    		var _inst = _form.find("input[name='instNo']");
+    		_form.find("input[name='enterPriseType']").val(localStorage.enterPriseType);
+    		_form.find("input[name='productId']").val(QYD_TYPE_ID);
+    		_form.find("input[name='enterPriseId']").val(getLocalStorage("enterPriseId"));
+    		
+    		
+    		if (localStorage.name!=undefined) {
+    				_form.find("[name='name']").val(localStorage.name);
+    			}
+    		if (localStorage.cn!=undefined) {
+    				_form.find("[name='cn']").val(localStorage.cn);
+    		}
+    		if (localStorage.checkCode!=undefined) {
+    				_form.find("[name='checkCode']").val(localStorage.checkCode);
+    		}
+    		if (localStorage.inCome!=undefined) {
+    				_form.find("[name='inCome']").val(localStorage.inCome);
+    		}
+    		_form.find("[name='name']").on("change",function(){
+    				localStorage.name = _form.find("[name='name']").val();
+    		});
+    		_form.find("[name='cn']").on("change",function(){
+    				localStorage.cn = _form.find("[name='cn']").val();
+    		});
+    		_form.find("[name='inCome']").on("change",function(){
+    				localStorage.inCome = _form.find("[name='inCome']").val();
+    		});
+    		//表单提交
+    		$("#submitBtn").on("click",function(){
+    			if (_form.find("[name='name']").val()==0) {
+    				mui.toast("请输入姓名！");
+    				return false;
+    			}
+    			if (_form.find("[name='cn']").val()==0) {
+    				mui.toast("请输入身份证号！");
+    				return false;
+    			}
+    			if (_form.find("[name='inCome']").val()=='') {
+    				mui.toast("请输入年收入！");
+    				return false;
+    			}
+    			if (_form.find("#selInst").text()=='请选择支行') {
+    					mui.toast("请选择申请支行！");
+    					return false;
+    			}
+    			if (_form.find("[name='checkCode']").val()==undefined||_form.find("[name='checkCode']").val()=='') {
+    				mui.toast("请获取验证码！");
+    			}else{
+    				localStorage.removeItem("name");
+    				localStorage.removeItem("cn");
+    				localStorage.removeItem("instAddr");
+    				localStorage.removeItem("instName");
+    				localStorage.removeItem("instNo");
+    				localStorage.removeItem("inCome");
+    				localStorage.removeItem("checkCode");
+    				localStorage.removeItem("enterPriseName");
+    				window.location.href='success.html';
+    			}
+    		});
+    		var _checkBtn = _form.find("#checkBtn");
+    		_checkBtn.on("click",function(){
+					_form.find("[name='checkCode']").val("888888");
+					localStorage.checkCode = 888888;
+    		});
+    	});
+    </script>
+  </body>
+</html>

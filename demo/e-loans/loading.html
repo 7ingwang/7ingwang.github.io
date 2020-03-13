@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+        <title>loading</title>
+        <link rel="stylesheet" href="css/aui.css">
+    </head>
+    <body>
+        <a href="#" tapmode onclick="showDefault('loading')">弹出loading样式</a>
+        
+        <script type="text/javascript" src="js/aui-toast.js" ></script>
+        <script type="text/javascript">
+            apiready = function(){
+                api.parseTapmode();
+            }
+            var toast = new auiToast();
+            function showDefault(type){
+                switch (type) {
+                      case "loading":
+                        toast.loading({
+                            title:"加载中",
+                            duration:2000
+                        },function(ret){
+                            console.log(ret);
+                            setTimeout(function(){
+                                toast.hide();
+                            }, 3000)
+                        });
+                        break;
+                }
+            }
+        
+        </script>
+    </body>
+</html>

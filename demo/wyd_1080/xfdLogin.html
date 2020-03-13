@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+         <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no,email=no" name="format-detection" />
+	    <meta name="description" content="">
+        <title>登录</title>
+         <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+        <link rel="stylesheet" href="style/css/mui.min.css">
+        <link rel="stylesheet" href="style/css/animate.min.css">
+        <link rel="stylesheet" href="style/css/icon.css">
+        <link rel="stylesheet" href="style/css/style.css">
+		 <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/mui.min.js"></script>
+        <script src="js/papply.comm.js"></script>
+    </head>
+    <script type="text/javascript">
+    	
+	</script>
+    <body id="login">
+        <div class="theme-box" id="theme-login">
+            <i class="icon icon-person"></i>
+        </div><!-- .theme-box -->
+        <div class="block">
+            <form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+                    <i class="icon icon-person icon16"></i>
+    		        <input type="text" readonly="readonly" value="138****2323" class="mui-input-clear" id='mobile' placeholder="请输入手机号" autocomplete="off">
+    		    </div><!-- .mui-input-row -->
+				<div class="mui-input-row verify">
+                    <i class="icon icon-code icon14"></i>
+    		        <input type="text" class="mui-input-clear" id="checkCode" placeholder="验证码">
+    		        <button type="button" id="checkBtn" class="mui-btn-grey">获取验证码</button>
+    		    </div><!-- .mui-input-row -->
+			</form>
+			<div class="mui-content-padded">
+				<button id='loginBtn' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</div>
+			<div class="mui-content-padded oauth-area">
+
+			</div>
+        </div><!-- .block -->
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+
+        <script>
+    		$(function(){
+    		var _mobile = $("#mobile");
+    		var _checkBtn = $("#checkBtn");
+    			_checkBtn.on("click",function(){
+					$("#checkCode").val("888888");
+    			});
+    			$("#loginBtn").on("click",function(){
+    				var code = $("#checkCode").val();
+    				if(code == null || code == ""){
+    					tipMsg("请输入验证码");
+    					return;
+    				}
+    				location.href="my.html";
+    			});
+    		})
+    	</script>
+    </body>
+</html>

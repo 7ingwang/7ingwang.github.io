@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
+<title>FERGUS佛格斯</title>
+<style>
+html, body, div, form, input, p, span{ margin: 0; padding: 0;}
+body{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: #fff; text-align: center;}
+.clear{ clear: both;}
+.container{ position: relative; margin: 0 auto; text-align: left;}
+#header{ padding: 10px;}
+#logo{ display: block; min-height: 40px; background: url(img/logo.png) no-repeat left center; background-size: contain; text-indent: -9999px;}
+.banner{ height: 120px; background: url(img/banner.png) no-repeat center top; background-size: 160% auto;}
+.main{ }
+.main .container{ margin: 5px; padding: 10px 10px 0; background: #f96031; box-shadow: 2px 3px 4px 0 rgba(0,0,0,0.30); border-radius: 16px;}
+.main .box{ height: 300px; background-repeat: no-repeat; background-position: center top; background-size: contain;}
+.main .boxl{ background-image: url(img/boxl.png);}
+.main .boxr{ background-image: url(img/boxr.png);}
+
+.calform{ padding: 18% 0 0 0; text-align: center;}
+.calform .row{ margin-bottom: 2%; height: 36px; line-height: 36px; text-align: left;}
+.calform .row label{ display: inline-block; width: 100px; font-weight: bolder; text-align: right; font-size: 14px; color: #fff;}
+.calform .row .input{ padding: 0 5px; width: 196px; height: 100%; line-height: 100%; background: #fff; border: none; font-size: 14px;}
+.calform .btn{ margin: 5px auto 0; width: 110px; height: 26px; background: url(img/btn.png) no-repeat center center; border: none; background-size: contain; text-indent: -9999px; cursor: pointer;}
+
+@media (max-width: 320px) {
+.banner{ height: 98px;}
+.main .box{ height: 252px;}
+.calform{ padding-top: 16%;}
+.calform .row{ height: 30px; line-height: 30px;}
+.calform .row label{ width: 86px;}
+.calform .row .input{ width: 170px;}
+}
+
+@media (min-width: 414px) {
+.banner{ height: 130px;}
+.main .box{ height: 340px;}
+.calform .row{ height: 40px; line-height: 40px;}
+.calform .row label{ width: 100px;}
+.calform .row .input{ width: 240px;}
+.calform .btn{ width: 150px; height: 35px;}
+}
+
+@media (min-width: 568px) {
+.banner{ height: 180px;}
+.calform { padding: 15% 0 0 15%;}
+.calform .btn{ position: relative; left: -20px;}
+}
+
+@media (min-width: 667px) {
+.banner{ height: 210px;}
+.calform{ padding: 12% 0 0 18%;}
+.calform .btn{ left: -40px;}
+}
+
+@media (min-width: 736px) {
+.banner{ height: 240px;}
+.calform{ padding: 10% 0 0 22%;}
+.calform .btn{ left: -60px;}
+}
+
+@media (min-width: 800px) {
+.banner{ height: 250px;}	
+.main .box{ width: 50%;}
+.main .box.boxl{ float: left;}
+.main .box.boxr{ float: right;}
+.calform{ padding: 18% 0 0 2%;}
+.calform .btn{ left: 0;}
+}
+
+@media (min-width: 1024px) {
+body{ height: 1vh;}
+.banner{ height: 240px; background-position: center center; background-size: cover; }
+.container { margin: 0 auto; width: 940px;}
+.main{ position: relative; top: -40px;}
+.main .container{ margin: 0 auto; width: 640px;}
+.main .box{ width: 320px; height: 272px;}
+.main .box.boxl{ float: left;}
+.main .box.boxr{ float: right;}
+.calform{ padding: 55px 0 0 5px;}
+.calform .row{ margin-bottom: 12px; height: 30px; line-height: 30px;}
+.calform .row label{ width: 90px; font-size: 14px;}
+.calform .row .input{ width: 180px; font-size: 14px;}
+.calform .btn{ margin: 0 auto; width: 120px; height: 28px;}
+.calform .btn:hover{ opacity: .9;}
+.calform .btn:active{ position: relative; left: 2px; top: 3px;}
+}
+
+@media (min-width: 1690px) {
+.banner{ height: 400px;}
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<a href="#" id="logo">FERGUS佛格斯——科技引领未来</a>
+		</div>
+	</div>
+	<div class="banner"></div>
+	<div class="main">
+		<div class="container">
+			<div class="box boxl">
+				<form class="calform">
+					<div class="row">
+						<label>所在地区：</label>
+						<input type="text" name="area" class="input">
+					</div>
+					<div class="row">
+						<label>公司名称：</label>
+						<input type="text" name="company" class="input">
+					</div>
+					<div class="row">
+						<label>姓名：</label>
+						<input type="text" name="name" class="input">
+					</div>
+					<div class="row">
+						<label>联系电话：</label>
+						<input type="tel" name="tel" class="input">
+					</div>
+					<button type="submit" class="btn">快速计算</button>
+				</form>
+			</div>
+			<div class="box boxr"></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?kc768g');
+  src:  url('../fonts/icomoon.eot?kc768g#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?kc768g') format('truetype'),
+    url('../fonts/icomoon.woff?kc768g') format('woff'),
+    url('../fonts/icomoon.svg?kc768g#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sina:before {
+  content: "\e91e";
+}
+.icon-qq:before {
+  content: "\e91f";
+}
+.icon-role:before {
+  content: "\e91d";
+}
+.icon-delete:before {
+  content: "\e900";
+}
+.icon-age:before {
+  content: "\e901";
+}
+.icon-sex:before {
+  content: "\e902";
+}
+.icon-company:before {
+  content: "\e903";
+}
+.icon-nickname:before {
+  content: "\e904";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-info:before {
+  content: "\e906";
+}
+.icon-tel:before {
+  content: "\e907";
+}
+.icon-mail:before {
+  content: "\e908";
+}
+.icon-user:before {
+  content: "\e909";
+}
+.icon-setting:before {
+  content: "\e90a";
+}
+.icon-shopping-cart:before {
+  content: "\e90b";
+}
+.icon-wechat:before {
+  content: "\e90c";
+}
+.icon-light:before {
+  content: "\e90d";
+}
+.icon-shopping:before {
+  content: "\e90e";
+}
+.icon-selected:before {
+  content: "\e90f";
+}
+.icon-radio:before {
+  content: "\e910";
+}
+.icon-cert:before {
+  content: "\e911";
+  color: #9f9fa0;
+}
+.icon-install:before {
+  content: "\e912";
+  color: #9f9fa0;
+}
+.icon-ies:before {
+  content: "\e913";
+  color: #9f9fa0;
+}
+.icon-cad:before {
+  content: "\e914";
+  color: #9f9fa0;
+}
+.icon-mark-down:before {
+  content: "\e915";
+}
+.icon-mark:before {
+  content: "\e916";
+}
+.icon-back:before {
+  content: "\e917";
+}
+.icon-heart:before {
+  content: "\e918";
+}
+.icon-print:before {
+  content: "\e919";
+}
+.icon-pdf:before {
+  content: "\e91a";
+}
+.icon-search:before {
+  content: "\e91b";
+}
+.icon-cancel:before {
+  content: "\e91c";
+}

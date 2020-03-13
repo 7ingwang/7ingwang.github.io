@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <title>额度测算</title>
+        <link rel="stylesheet" href="css/mui.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="reckon">
+        <div class="theme-box" id="theme-reckon"></div><!-- .theme-box -->
+        <div class="block" id="reckon-result">
+            <p>您的贷款能力评估值为</p>
+            <div class="badge wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">
+                <span class="big wow zoomInDown">19</span>
+                <span class="small wow fadeInDown" data-wow-delay="1s">万元</span>
+            </div><!-- .badge -->
+            <p class="ps">此额度仅为试算金额哦， 具体可贷金额请以实际业务办理为准。</p>
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-block">重新计算</button>
+        </div><!-- .mui-content-padded --> 
+        
+        <div class="mui-c">
+            <button type="button" class="mui-btn mui-btn-small"><i class="icon icon-home icon12 icon-mr"></i>返回首页</button>
+        </div>
+            
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+
+        <script src="js/mui.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
+      </script>
+    </body>
+</html>

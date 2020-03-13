@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>路由器后台</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="css/retina.css" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)" />
+</head>
+<body id="home">
+<div id="header">
+	<div class="wrap">
+		<p class="top_menu">
+		    <span class="spotbar"><input type="text" name="autocomplete" id="autocomplete" class="spot" placeholder='请输入功能' /></span>
+			<a id="mobile_app" href="http://www.hiwifi.com/mobile" target="_blank">APP下载
+			  <span class="app_alert_icon"></span>
+			</a>
+			<span class="pipe">|</span>
+			<a href="#" id="traffic_info">实时流量</a>
+			<span class="pipe">|</span><a href="/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/net_detect" id="system_netdetect" target="_blank"><span class="icon"></span>网络诊断</a>
+			<span class="pipe">|</span><a href="#" id="system_config" title="密码为 admin,不安全,请修改">修改密码
+			
+					<img src="images/alert-icon.png" height="15" border="0" />
+			</a>
+			<span class="pipe">|</span><a href="#" id="setting_guide"><span class="icon"></span>设置向导</a>
+			<span class="pipe">|</span><a href="/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/logout">退出</a>
+		</p>
+		<h1><a href="http://www.hiwifi.com" id="logo" target="_blank">极路由</a></h1>
+	</div>
+</div>
+
+<div id="content">
+    <div class="sd-error-tip" style="display:none">
+        <span id="sd_icon" class="icon-i"></span><span id="sd_info"></span></a>
+    </div>
+	<div class="wrap">
+		<div id="side">
+			<ul id="nav">
+				<li><a href="http://bbs.hiwifi.com" target="_blank" id="home"><span>极客社区</span></a></li>
+				<li><a href="#" id="state"><span>系统状态</span><i class="alert-icon" title="" id="system-alert" style="display:none;"></i></a></li>
+				<li><a href="#" id="options"><span>高级设置</span></a></li>
+				<li style="background:none;"><a href="/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/passport/apps?sid=13" id="mobile" target="_blank"><span>移动管理</span></a></li>
+			</ul>
+		</div>
+		<div id="main">
+		    <a href="http://www.hiwifi.com/twxredirect/?type=view&mac=D4EE070B14EA" id="internet" target="_blank"><span class="txt">互联网</span><span class="icon"></span></a>
+			<div id="services" class="guide_s">
+				<a href="/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/passport/apps" id="plug-in" target="_blank"><span class="icon"></span><span class="txt">云插件</span></a>
+			</div>
+			<div id="map">
+				<div class="stream"></div>
+				<div class="alert-icon">
+					<i class="network-alert func_alert" id="network-alert" title="" style="display:none;"></i>
+					<i class="wifi-alert func_alert" id="wifi-alert" title="" style="display:none;"></i>
+					<i class="cloud-alert func_alert" id="cloud-alert" title="" style="display:none;"></i>
+				</div>
+				<a href="#" id="set_wifi" class="guide_s"><span class="txt">无线设置</span><span class="icon"></span></a>
+				<a href="#" id="set_network" class="ok guide_s"><span class="txt">外网设置</span><span class="icon"></span></a>
+				<!-- 
+				GRUDE start
+				 -->
+				<div id="step1_sgin" class="step_msg" style="position: absolute; display: none; margin-top: 230px; margin-left: 100px; z-index:102;">
+					<!--[if lte IE 6]><img src="images/s1_130715-ie6.png" usemap="#map1" border="0"><![endif]-->
+					<!--[if gt IE 6]><img src="images/s1_130715.png"  usemap="#map1" border="0"><![endif]-->
+					<![if !IE]><img src="images/s1_130715.png" usemap="#map1" border="0"><![endif]>
+					<map name="map1"><area shape="rect" coords="275,48,457,80" href="javascript:void();" onclick="guide_step2();" onFocus="this.blur()"/></map>
+				</div>
+				<div id="step2_sgin" class="step_msg" style="position: absolute; display: none; margin-top: 150px; margin-left: 240px; z-index:102;">
+					<!--[if lte IE 6]><img src="images/s2_130715-ie6.png" usemap="#map2" border="0"><![endif]-->
+					<!--[if gt IE 6]><img src="images/s2_130715.png" usemap="#map2" border="0"><![endif]-->
+					<![if !IE]><img src="images/s2_130715.png" usemap="#map2" border="0"><![endif]>
+					<map name="map2"><area shape="rect" coords="177,35,256,68" href="javascript:void();" onclick="guide_step3();" onFocus="this.blur()"/></map>
+				</div>
+				<div id="step3_sgin" class="step_msg" style="position: absolute; display: none; margin-top: 112px; margin-left: 382px; z-index:102;">	
+					<!--[if lte IE 6]><img src="images/s3_130715-ie6.png" usemap="#map3" border="0"><![endif]-->
+					<!--[if gt IE 6]><img src="images/s3_130715.png" usemap="#map3" border="0"><![endif]-->
+					<![if !IE]><img src="images/s3_130715.png" usemap="#map3" border="0"><![endif]>
+					<map name="map3"><area shape="rect" coords="268,68,387,107" href="javascript:void();" onclick="guide_step_done();" onFocus="this.blur()"/></map>
+				</div>
+				<div id="step_done_sgin" class="step_msg" style="position: absolute; display: none; margin-top: -75px; margin-left: 217px; z-index:102;">
+					<!--[if lte IE 6]><img src="images/sd_130715-ie6.png" usemap="#map4" border="0"><![endif]-->
+					<!--[if gt IE 6]><img src="images/sd_130715.png" usemap="#map4" border="0"><![endif]-->
+					<![if !IE]><img src="images/sd_130715.png" usemap="#map4" border="0"><![endif]>
+					<div style="position: absolute; margin-top: -51px; margin-left: 153px; " id="weibo_share_box"></div>
+					<map name="map4">
+					<area shape="rect" coords="460,0,551,57" href="javascript:void();" onclick="guide_step_final();" onFocus="this.blur()"/>
+					</map>
+				</div>
+				<div id="cloud_guide" class="step_msg" style="position: absolute; display: none; margin-top: 112px; margin-left: 382px; z-index:102;">	
+					<!--[if lte IE 6]><img src="images/cloud_guide_ie6.png" usemap="#map4" border="0"><![endif]-->
+					<!--[if gt IE 6]><img src="images/cloud_guide.png" usemap="#map4" border="0"><![endif]-->
+					<![if !IE]><img src="images/cloud_guide.png" usemap="#map4" border="0"><![endif]>
+				</div>
+				<!-- 
+				GRUDE end
+				 -->
+			</div>
+			<div id="lans_list"><span id="lan1" class="offline"></span><span id="lan2" class="offline"></span><span id="lan3" class="offline"></span><span id="lan4" class="offline"></span></div>
+			<p id="devices">
+			<a href="#"><span>►</span>已有<em>4</em>台设备连接到路由器</a>
+			</p>
+			<a href="#" id="reboot"><span>重启</span></a>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="wrap">
+		<p class="system_info">系统版本 : HC5761 - 0.9005.3761s<span class="pipe"></span> MAC : <span id="buttonmac">D4EE070B14EA</span><span class="pipe"></span>服务热线 : <span id="iphonenum">40060-24680</span></p>
+		<p class="bottom_menu">
+			&copy 2014 极路由 版权所有
+			<span class="pipe">|</span><a href="http://www.hiwifi.com" target="_blank">官方网站</a>
+			<span class="pipe">|</span><a href="http://bbs.hiwifi.com/forum.php" target="_blank">极客社区</a>
+			<span class="pipe">|</span><a href="javascript:void();" id="weixin" target="_blank">官方微信</a>
+			<span class="pipe">|</span><a href="http://www.hiwifi.com/twxredirect/?type=products&mac=D4EE070B14EA" target="_blank" id="buy"><img border="0" src="images/buy.png" alt="优惠购买" /></a>
+			<span class="pipe">|</span><a href="javascript:switch_interface_type('mobile','/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_mobile');">移动版界面</a>
+		</p>
+	</div>
+</div>
+
+
+<input type="hidden" value="0" id="close_guide_tag">
+<input type="hidden" value="0" id="guide_mode">
+
+<script type="text/javascript">//<![CDATA[
+	var URL_ROOT_PATH = "/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d";
+	var i18_connection = "连接中...";
+	var i18_second = "秒";
+	var i18_hour = "小时";
+	var i18_minute = "分钟";
+	var i18_day = "天";
+ //]]></script>
+<script type="text/javascript" src="/turbo-static/turbo/web/js/jquery-1.8.1.min.js?v=3667"></script>
+<script type="text/javascript" src="/turbo-static/turbo/web/js/artDialog/jquery.artDialog.js?skin=blueskin"></script>
+<script type="text/JavaScript" src="/turbo-static/turbo/web/js/jquery.autocomplete.js?v=3667"></script>
+<script type="text/JavaScript" src="/turbo-static/turbo/web/js/jquery.autocomplete.data.js?v=3667"></script>
+<script type="text/javascript" src="/turbo-static/turbo/web/js/jquery.cookie.min.js?v=3667"></script>
+<script type="text/javascript" src="/turbo-static/turbo/interface.js?v=3667"></script>
+<script src="/turbo-static/turbo/web/js/artDialog/plugins/iframeTools.source.js?v=3667"></script>
+<script src="/turbo-static/turbo/web/js/util.js?v=3667"></script>
+<script type="text/javascript">
+	var light_timer_arr = new Array();
+	var luci_url_base = "/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/";
+	function is_internet_connect(){
+		var result = false;
+		var request_date = {}; 
+		$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/is_internet_connect",request_date,function(rsp) 
+		{ 
+			result = rsp.isconn;
+		})
+		return result;
+	}
+	
+	$("#weixin,#weixin_img").hover(
+		function(){
+			$("#weixin_img").show();
+		},function(){
+			$("#weixin_img").hide();
+		}
+	)
+	
+	$("#weixin,#weixin_img").click(function(){
+		if ($("#weixin_img").css("display") == "block"){
+			$("#weixin_img").hide();
+		} else {
+			$("#weixin_img").show();
+		}
+	})
+
+	$(function(){
+		//判断设备
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		
+		if(bIsIphoneOs){$("#iphonenum").html('<a href="callto:4006024680" style="color:#ddd;">40060-24680 <img border="0" src="images/calling.png"></a>')}
+		if(bIsAndroid){$("#iphonenum").html('<a href="wtai://wp/mc;4006024680" style="color:#ddd;">40060-24680 <img border="0" src="images/calling.png"></a>')}
+		if(bIsWM){$("#iphonenum").html('<a href="tel:4006024680" style="color:#ddd;">40060-24680 <img border="0" src="images/calling.png"></a>')}
+
+		/* 	无线设置 */
+		$("#set_wifi").click(function(){
+			open_windows("set_wifi");
+		})		
+		
+		/* 	外网设置 */
+		$("#set_network").click(function(){
+			var guide_mode = $("#guide_mode").val();
+			if(guide_mode == 1){
+				open_windows("set_network_autotype");
+			} else {
+				open_windows("set_network");
+			}
+		})	
+		
+		/* 云平台 */
+		/*  /cgi-bin/turbo/admin_web/passport */
+		$("#cloud-speed-up,#cloud,#pass").click(function(){
+			open_windows("cloud");
+		})	
+		
+		/* 精彩应用 直接连接了 */
+		$("#speeder,#mobile").click(function(){
+			open_windows("application");
+		})
+		
+		$(".app_btn").click(function(){
+			var guide_mode = $("#guide_mode").val();
+			if(guide_mode==1){
+				guide_step_done();
+			}
+		})
+		
+		/* 系统状态 */
+		$("#state").click(function(){
+			open_windows("state");
+		})	
+		
+		/* 高级设置 */
+		$("#options").click(function(){
+			open_windows("options");
+		})
+		
+		$("#traffic_info").click(function(){
+			open_windows("traffic_info");
+		})
+		/* 	修改密码*/
+		$("#system_config").click(function(){
+			open_windows("system_config");
+		})
+		
+		/* 	列无线设备列表*/
+		$("#devices").click(function(){
+			open_windows("devices");
+		})
+		
+		/* 重新启动 */
+		$("#reboot").click(function(){
+			reboot_window();
+		});
+		
+		/* 插件 */
+		$("#system_plug").click(function(){
+			open_windows("system_plug");
+		});
+	})
+	
+	function reboot_window(){
+		art.dialog({
+			title:false,
+		    content: '是否确定重启路由器，重启将断开和路由器的连接！',
+		    icon: 'warning',
+		    id: "wating_box",
+		    ok: function(){
+		    	
+		    	this.close();
+	    		global_dorestart("重启路由器","192.168.199.1",true);
+	    		
+		    	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/reboot",{},function(rsp) 
+		    	{
+		    		if(rsp.code==0){
+		    			
+		    		}  else {
+		    			art.dialog({icon:"error",title:false,content:"重启失败"}).lock().time(4);
+			    		this.close();
+		    		}
+		    	});
+		        return false;
+		    },
+		    okVal: "现在重启", 
+		    cancel: function(){
+		        this.close();
+		        return false;
+		    }
+		}).lock();
+	}
+	
+	function reset_window(){
+		art.dialog({
+			title:false,
+		    content: '是否确定恢复出厂设置，将断开和路由器的连接！',
+		    icon: 'warning',
+		    id:"wating_box",
+		    ok: function(){
+		    	
+		    	this.close();
+		    	global_dorestart("恢复出厂设置","192.168.199.1",true);
+		    	
+		    	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/reset_all",{},function(rsp) 
+		    	{
+		    		if(rsp.code==0){
+		    			
+		    		}  else {
+		    			art.dialog({icon:"error",title:false,content:"恢复出厂设置失败"}).lock().time(4);
+			    		this.close();
+		    		}
+		    	});
+		        return false;
+		    },
+		    okVal: "恢复出厂设置", 
+		    cancel: function(){
+		        this.close();
+		        return false;
+		    }
+		}).lock();
+	}
+	
+	function open_windows(act,param){
+		if(art.dialog.list['func_box']){
+			art.dialog.list['func_box'].close();
+		}
+		var guide_mode = $("#guide_mode").val();
+		if (act=="set_wifi")
+        {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/wifi?guide_mode='+guide_mode, {id:"func_box", title: '无线设置',width:600, height:480, lock:true,drag: false});
+        } else  if (act=="set_network") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/network?guide_mode='+guide_mode+'&autotype='+param, {id:"func_box", title: '外网设置',width:640, height:550, lock:true,drag: false});
+        } else  if (act=="set_network_autotype") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/network/setup/autowantype?guide_mode='+guide_mode, {id:"func_box", title: '外网设置',width:640, height:450, lock:true,drag: false});
+        } else  if (act=="cloud") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/passport?guide_mode='+guide_mode, {id:"func_box", title: '云平台',width:760, height:450, lock:true,drag: false});
+        } else  if (act=="application") {
+			//windows.open();
+        } else  if (act=="state") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/info', {id:"func_box", title: '系统状态',width:515, height:580, lock:true,drag: false});
+        } else  if (act=="upgrade") {	/* 系统升级 */
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/upgrade', {id:"func_box", title: '系统升级',width:780, height:570, lock:true,drag: false});
+        } else  if (act=="options") {
+        	if(param){
+        		art.dialog.open(luci_url_base+param, {id:"func_box", title: '高级设置',width:780, height:590, lock:true,drag: false});
+        	} else {
+        		art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/network/setup/lan', {id:"func_box", title: '高级设置',width:780, height:590, lock:true,drag: false});
+        	}
+        } else  if (act=="system_config") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system', {id:"func_box", title: '修改密码',width:500, height:450, lock:true,drag: false});
+        } else  if (act=="system_plug") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/plugin/mentohust', {id:"func_box", title: '插件',width:780, height:520, lock:true,drag: false});
+        } else  if (act=="devices") {
+			art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/network/devices_list', {id:"func_box", title: '连接设备列表',width:800, height:450, lock:true,drag: false});
+        } else if (act=="mac_filter") {
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/wifi/setup/mac_filter', {id:"func_box", title: 'mac 地址访问限制',width:780, height:570, lock:true,drag: false});
+        } else if (act=="wifi_channel"){
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/wifi/setup/channel', {id:"func_box", title: '频道设置',width:780, height:570, lock:true,drag: false});
+        } else if (act=="traffic_info"){
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/traffic/index', {id:"func_box", title: '实时流量',width:790, height:480, lock:true,drag: false});
+        } else if (act=="guide"){
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/guide', {id:"func_box", title: '引导模式',width:400, height:350, lock:true,drag: false,close: function () {
+        		var close_tag = $("#close_guide_tag").val();
+        		if (close_tag == 0){
+        			guide_step_done();         
+        		}
+        		skip_dont();
+            }});
+        } else if (act=="cloud_guide"){
+        	$("#guide_mode").val(0);
+        	$("#guide_mask").show();
+        	$(".step_msg").hide();
+        	$("#cloud_guide").show();
+        	$(".guide_s").css("z-index","");
+        	$("#services").css("z-index",101);
+        	$(".func_alert").css("z-index",55);
+        	$("#cloud-alert").css("z-index",102);
+        	$("#guide_mask_close_action").show();
+        } else if (act=="net_detect"){
+        	art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/net_detect?type=inside', {id:"func_box", title: '网络诊断',width:620, height:600, lock:true,drag: false});
+        } else if (act=="system_sd_manual_part"){
+            art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/sd_manual_part', {id:"func_box", title: '格式化SD卡',width:560, height:490, lock:true,drag: false});
+        } else if (act=="system_sata_manual_part"){
+            art.dialog.open('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/admin_web/system/sata_manual_part', {id:"func_box", title: '格式化硬盘',width:560, height:490, lock:true,drag: false});
+        }
+	}
+</script>
+<script type="text/javascript">
+
+//$.ajaxSettings.async = false;
+$(function(){
+	init_guide();
+	
+	
+	
+	//getPassport();
+	getWifiInfo();
+	getWanInfo();
+	getLanInfo();
+
+	check_upgrade();
+});
+
+function init_guide(){
+	
+}
+
+//通用提示，重启并自动连接的。
+//return_ip 修改 lan ip 的时候用用于重置 ip
+function global_dorestart(action_cont,return_ip,need_flash){
+	if (typeof(return_ip)=="string") {
+		var ip = return_ip;
+	} else {
+		var ip = global_lan_ipv4;
+		if(ip==""){
+			ip = window.location.host;
+		}
+	};
+	var time_ts = (+new Date());
+	
+	art.dialog({id:"wating_box",icon:"wait",title:false,content:action_cont+'，等待自动连接跳转...'}).lock();
+	
+	//为等待彻底关闭服务，10秒后再开始自动检测
+	setTimeout(function(){
+		autoLink("http://"+ip+"images/logo_130726.png",{
+			"success":function(){
+				if(art && art.dialog.list['wating_box']){
+					art.dialog.list['wating_box'].close();
+				}
+				art.dialog({icon:"succeed",id:"wating_box",title:false,content:'操作生效,重启成功！'}).lock().time(4);
+				if(need_flash){
+					window.setTimeout('window.location.href="http://'+ip+'";',3000); 
+				}
+			},"error":function(){
+				//error	
+				var usetime = Math.round(((+new Date()) - time_ts)/1000);
+				art.dialog.list['wating_box'].content(action_cont+", 等待自动跳转... 用时"+usetime+i18_second);
+
+			},"timeout":function(){
+				if(art && art.dialog.list['wating_box']){
+					art.dialog.list['wating_box'].close();
+				}
+				art.dialog({icon:"warning",id:"wating_box",title:false,content:'自动连接HIWIFI路由器失败，请检查无线或者网线是否连接正确。',
+				ok:function(){
+					top.location.href = 'http://'+ip+URL_ROOT_PATH;
+				},
+				okVal: "手动连接", 
+				cancel: function(){
+			        this.close();
+			        return false;
+			    }
+				}).lock();
+			}},150);
+	},15000);
+}
+
+function getPassport(){
+	//passport/user 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/passport/user",{},function(rsp) 
+	{ 
+
+	 if(rsp.username){
+		 $("#pass").show();
+		 $("#pass span").html(rsp.username + "已经绑定");
+	 } else {
+		 $("#pass").hide();
+	 };
+	});
+}
+
+function getWifiInfo(){
+	//取最后一个
+	//wifi/get_status_list 
+	var request_date = {}; 
+	if(global_wifi_status=='1'){	
+			if(global_wifi_encryption=='none'){
+				var msgs = "无线网未设置密码，有被他人盗用的风险，请关闭无线网，或设置密码。";
+				$("#wifi-alert").show().attr("title",msgs);
+			}
+	}else{
+		var msgs = "WIFI 未开启";
+		$("#wifi-alert").show().attr("title",msgs);
+	}
+}
+
+function reboot(){
+	//system/reboot 
+
+}
+var light_lan_timer = [0,0,0]
+function getLanInfo(){
+	//network/get_lan_info 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/network/get_lan_info",{},function(rsp) 
+	{ 
+		if(rsp.code == 0){
+			if(rsp.ipv6 && rsp.ipv6[0]){
+				global_lan_ipv6 = rsp.ipv6[0].ip;
+				global_lan_ipv6_mask = rsp.ipv6[0].mask;
+			}
+			if(rsp.ipv6 && rsp.ipv4[0]){
+				global_lan_ipv4 = rsp.ipv4[0].ip;
+				global_lan_ipv4_mask = rsp.ipv4[0].mask;
+			}
+			if(rsp.mac){
+				global_lan_mac = rsp.mac 
+			}
+			for(var i in rsp.is_lan_link){
+			//i 为索引数字
+				var lan_index = i.substr(4,1);
+				var lan_status = rsp.is_lan_link[i];
+				if(lan_status == 1){
+					light_lan_timer[lan_index] = setInterval("light_flash('"+lan_index+"');",500);
+				}
+			}
+		}
+	})
+}
+
+function light_flash(index){
+	if($("#lan"+index).hasClass("lightning")){
+		$("#lan"+index).removeClass("lightning");
+	} else {
+		$("#lan"+index).addClass("lightning");
+	}
+}
+
+function getDeviceInfo(success_callback, fail_callback){
+	//wifi/get_connected_devices_list 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/network/device_list",{},function(rsp) 
+	{ 
+		if(rsp.code == 0){
+			set_devices_cnt(rsp.devices.length);
+		}
+		if(typeof(success_callback) == "function"){
+            success_callback();
+        }
+	})
+	.fail(function(rsp){
+        if(typeof(fail_callback) == "function"){
+            fail_callback();
+        }
+    });
+}
+
+function getWanInfo(){
+	var is_conn_now = true;
+	var msgs="";
+	
+	//联通正常检查
+	if (!is_conn_now){
+		msgs = msgs+"未连通互联网 请检查线路, 或者核对 pppoe 用户名密码";
+		$("#network-alert").show().attr("title",msgs);
+		$("#set_network").removeClass("ok");
+		$(".stream").hide();
+	}else{
+		$("#network-alert").hide().attr("title","");
+		$("#set_network").addClass("ok");
+		$(".stream").show();
+	}
+	
+	check_wan_info();
+}
+
+function check_wan_info(){
+	//network/get_wan_info 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/network/get_wan_info",{},function(rsp) 
+	{
+		if(rsp.code != 0){
+			return;
+		}
+
+		if (rsp.macaddr && rsp.macaddr != ""){
+			global_wan_mac = rsp.macaddr.toUpperCase();
+		}else if(rsp.mac && rsp.mac!=""){
+			global_wan_mac =rsp.mac.toUpperCase();
+		}
+		
+		//alert(global_wan_mac);
+	
+		var global_wan_type_tmp = rsp.type.toUpperCase();
+		
+		$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/wifi/get_bridge",{},function(rsp) 
+		{ 
+			if(rsp.status == 1){
+				global_wan_type = "无线中继 DHCP";
+			} else {
+				global_wan_type = global_wan_type_tmp
+			}
+		})
+	
+		if(rsp.ipv4 && rsp.ipv4[0] && rsp.ipv4[0].ip){
+			global_wan_ipv4 = rsp.ipv4[0].ip;
+			global_wan_ipv4_mask = rsp.ipv4[0].mask;
+		}
+		if(rsp.ipv6){
+			for (var i=0;i<rsp.ipv6.length;i++){
+				if(rsp.ipv6[i].type == 'Global'){
+					global_wan_ipv6 = rsp.ipv6[i].ip;
+					global_wan_ipv6_mask = rsp.ipv6[i].mask;
+				}
+			}
+		}
+		
+		if(!rsp.is_eth_link){
+			msgs = "WAN 未连接网线或断开连接";
+			$("#network-alert").show().attr("title",msgs);
+			$("#set_network").removeClass("ok");
+			$(".stream").hide();
+		}
+	});
+}
+
+//刷新检查更新
+function check_upgrade(){
+	var msgs = new Array();
+	var request_date = {}; 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/upgrade_check",request_date,function(rsp) 
+	{ 
+		global_upgrade_info = rsp;
+
+		//$("#loading3").hide();
+		if (rsp.need_upgrade == 1){
+			msgs[0] = "有可用更新";
+		}
+		if (msgs.length>0) {
+			$("#system-alert").show().attr("title",msgs);
+		} else {
+			$("#system-alert").hide().attr("title","");
+		}
+	})
+}
+
+//检查网络状态
+function check_network_status(success_callback, fail_callback){
+	$.ajax({
+		  url: "/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/check_network_connect",
+		  cache: false,
+		  dataType: "json",
+		  success: function(rsp){
+			  if(rsp){
+				set_wan_status(rsp.isconn);
+				set_lan_status(1,rsp.isconn_lan1);
+				set_lan_status(2,rsp.isconn_lan2);
+				set_lan_status(3,rsp.isconn_lan3);
+				set_lan_status(4,rsp.isconn_lan4);
+				set_devices_cnt(rsp.devices_cnt);
+				
+				if(rsp.wifi_status=='1'){	
+					if(rsp.wifi_encryption=='none'){
+						var msgs = "无线网未设置密码，有被他人盗用的风险，请关闭无线网，或设置密码。";
+						$("#wifi-alert").show().attr("title",msgs);
+					} else {
+						$("#wifi-alert").hide().attr("title","");
+					}
+				}else{
+					var msgs = "WIFI 未开启";
+					$("#wifi-alert").show().attr("title",msgs);
+				}
+			  }
+			  if(typeof(success_callback) == "function"){
+                success_callback();
+              }
+		  },
+		  error :function(){
+			  if (art.dialog.list['func_box'] || art.dialog.list['wating_box']){
+				  
+			  }else{
+				  art.dialog({
+						title:false,
+					    content: '无法连接到路由器，请检查网络连接情况！',
+					    icon: 'warning',
+					    ok: function(){
+					    	top.location.reload();
+					        return false;
+					    },
+					    okVal: "刷新页面 ", 
+					    cancel: function(){
+					        this.close();
+					        return false;
+					    }
+					}).lock();
+			  }
+			  if(typeof(fail_callback) == "function"){
+                 fail_callback();
+              }
+		  }
+	});
+}
+function set_wan_status(isconn){
+	var wan_now_status = $("#network-alert").attr("title")=="";
+	if(wan_now_status==isconn){
+		return;
+	}
+	if(isconn){
+		$("#network-alert").hide().attr("title","");
+		$("#set_network").addClass("ok");
+		$(".stream").show();
+	}else{
+		$("#network-alert").show().attr("title","WAN 未连接网线或断开连接");
+		$("#set_network").removeClass("ok");
+		$(".stream").hide();
+	}
+}
+function set_lan_status(lan_index,isconn){
+	if(isconn){
+		if(light_lan_timer[lan_index] && light_lan_timer[lan_index]>0 ){
+			return;	
+		}else{
+			light_lan_timer[lan_index] = setInterval("light_flash('"+lan_index+"');",500);
+		}
+	}else{
+		if(light_lan_timer[lan_index]>0){
+			clearInterval(light_lan_timer[lan_index]);
+			$("#lan"+lan_index).removeClass("lightning");
+			light_lan_timer[lan_index] = 0;
+		}
+		
+	}
+}
+
+function set_devices_cnt(devices_cnt){
+	if(devices_cnt >0 ){
+		$("#devices em").html(devices_cnt);
+		$("#devices_loading").hide();
+	} else {
+		$("#devices em").html(0);
+	}
+}
+
+</script>
+
+
+<!-- 
+GUIDE
+TODO: IE6 
+-->
+
+<script type="text/javascript">
+var sys_board = 'HC5761';
+var alert_icon = '<img src="images/alert-icon.png" height="15" border="0" />';
+var isFocus = true;
+var check_timer;
+var lock_map = {};
+$(function(){
+	$("#setting_guide").click(function(){
+		guide_step1();
+	})
+	
+	$("#step_done_sgin").click(function(){
+		guide_step_final();
+		
+	})
+	
+	$("#guide_mask_close_action,#cloud_guide").click(function(){
+		guide_step_final();
+	})
+
+	check_mobile_app_upgrade();
+	check_status();
+    check_timer = window.setInterval("check_status()", 9000);
+    window.onfocus = function(){
+        isFocus = true;
+    }
+    window.onblur = function(){
+        isFocus = false;
+    }
+})
+
+function check_storage_state(){
+    if(sys_board == 'HC5663'){
+        if(lock_map['get_sata_state'] != true){
+            get_sata_state(function(){
+                lock_map['get_sata_state'] = false;
+            }, function(){
+                lock_map['get_sata_state'] = false;
+            });
+            lock_map['get_sata_state'] = true;
+        }
+    }else{
+        if(lock_map['get_sd_state'] != true){
+            get_sd_state(function(){
+                lock_map['get_sd_state'] = false;
+            }, function(){
+                lock_map['get_sd_state'] = false;
+            });
+            lock_map['get_sd_state'] = true;
+        }
+    }
+}
+
+function check_status(){
+    if(isFocus != true){
+        return;
+    }
+    if(lock_map['check_network_status'] != true){
+        check_network_status(function(){
+            	lock_map['check_network_status'] = false;
+            },
+            function(){
+            	lock_map['check_network_status'] = false;
+            });
+        lock_map['check_network_status'] = true;
+    }
+    if(lock_map['getDeviceInfo'] != true){
+        setTimeout(function(){
+            getDeviceInfo(function(){
+            	lock_map['getDeviceInfo'] = false;
+            },
+            function(){
+            	lock_map['getDeviceInfo'] = false;
+            });
+        }, 3000);
+        lock_map['getDeviceInfo'] = true;
+    }
+    setTimeout(function(){
+        check_storage_state();
+    }, 6000);
+}
+
+//向导模式
+function guide_step1(){
+	$("#guide_mode").val(1);
+	$("#guide_mask").show();
+	$(".step_msg").hide();
+	$("#step1_sgin").show();
+	$(".guide_s").css("z-index","");
+	$("#set_network").css("z-index",101);
+	$(".func_alert").css("z-index",55);
+	$("#network-alert").css("z-index",102);
+	
+}
+
+function guide_step2(){
+	$("#guide_mode").val(1);
+	$("#guide_mask").show();
+	$(".step_msg").hide();
+	$("#step2_sgin").show();
+	$(".guide_s").css("z-index","");
+	$("#set_wifi").css("z-index",101);
+	$(".func_alert").css("z-index",55);
+	$("#wifi-alert").css("z-index",102);
+}
+
+function guide_step3(){
+	$("#guide_mode").val(1);
+	$("#guide_mask").show();
+	$(".step_msg").hide();
+	$("#step3_sgin").show();
+	$(".guide_s").css("z-index","");
+	$("#services").css("z-index",101);
+	$(".func_alert").css("z-index",55);
+	$("#cloud-alert").css("z-index",102);
+}
+
+function guide_step_done(){
+	$("#guide_mode").val(0);
+	$("#guide_mask").hide();
+	$("#guide_mask_close_action").show();
+	$(".step_msg").hide();
+	$("#step_done_sgin").show();
+	$(".guide_s").css("z-index","");
+	$(".func_alert").css("z-index",55);
+	insert_weibo_share();
+}
+
+function insert_weibo_share(){
+  var weibo_cent = get_share_content();
+  var randong_id = Math.floor(Math.random()*weibo_cent.length);
+  var title_cont = weibo_cent[randong_id];
+  var _w = 106 , _h = 24;
+  var param = {
+    url:"http://hiwifi.com",
+    type:'5',
+    title:title_cont, /**分享的文字内容(可选，默认为所在页面的title)*/
+    pic:'https://static.hiwifi.com/st/img/sina_share.jpg', /**分享图片的路径(可选)*/
+    ralateUid:'2812471311', /**关联用户的UID，分享微博会@该用户(可选)*/
+	language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+    rnd:new Date().valueOf()
+  }
+  var temp = [];
+  for( var p in param ){
+    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+  }
+  $("#weibo_share_box").html('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+}
+
+function guide_step_final(){
+	$("#guide_mode").val(0);
+	$("#guide_mask").hide();
+	$("#guide_mask_close_action").hide();
+	$(".step_msg").hide();
+	$(".guide_s").css("z-index","");
+	$(".func_alert").css("z-index",55);
+}
+
+//跳过，下次不在引导
+function skip_dont(){
+	//system/set_guide_cache 
+	var request_date = {"guide_tag":"201211_chaowang"}; 
+	$.getJSON("/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/set_guide_cache",request_date,function(rsp) 
+	{ 
+		//donoting
+	})
+}
+
+//刷新页面
+function reloadpage3s(url){
+	if(url){
+		window.setTimeout('window.location.href="'+url+'"',0); 
+	}else {
+		window.setTimeout('window.location.href="/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d";',0); 
+	}
+}
+
+var laststate = null;
+var sd_error = false;
+var laststatetime = 0;
+
+function now(){
+    var myDate = new Date();
+    return myDate.getTime();
+}
+
+function get_sd_state(success_callback, fail_callback){
+    var mill = now();
+    var request_data = {};
+    $.getJSON('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/system/sd_state?'+mill,request_data,function(rsp) 
+    { 
+        var msg = rsp.msg;
+        var code = rsp.code;
+        var state = rsp.state;
+        var sdsize = rsp.sdsize;
+        var minsize = rsp.minsize;
+        if(state != laststate){
+            sd_error = false;
+            $(".sd-error-tip").hide();
+            laststatetime = now();
+        }
+        laststate = state;
+        if(code == 0 || code == "0"){
+            if(state == "removed"){
+                $(".sd-error-tip").removeClass("yellow");
+                $("#sd_info").html("未插入SD卡");
+                $("#sd_icon").addClass("icon-i-y").removeClass("icon-i");
+                $(".sd-error-tip").show();
+            }else if(state == "not-formated"){
+                if(sdsize < minsize){
+                    $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                    $("#sd_info").html("SD卡太小，最低要求"+minsize+"M，当前"+sdsize+"M");
+                    $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                    $(".sd-error-tip").show();
+                }else{
+                    $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                    $("#sd_info").html("您的SD卡文件格式不符，请<a href='#' id='system_sd_manual_part'>格式化</a>");
+                    $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                    $(".sd-error-tip").show();
+                    /* 格式化SD */
+                    $("#system_sd_manual_part").click(function(){
+                        open_windows("system_sd_manual_part");
+                    });
+                }
+            }else if(state == "inserted"){
+                setTimeout(function(){
+                    if(laststate == "inserted" && laststatetime + 10 < now()){
+                        $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("SD卡有异常，请重启路由器");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-error-tip").show();
+                        sd_error = true;
+                    }
+                }, 10000);
+            }else if(state == "umounted"){
+                setTimeout(function(){
+                    if(laststate == "umounted" && laststatetime + 10 < now()){
+                        $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("请拔掉SD卡再插上");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-error-tip").show();
+                        sd_error = true;
+                    }
+                }, 10000);
+            }else if(state == "mounted"){
+                $(".sd-error-tip").hide();
+            }
+        }
+        if(typeof(success_callback) == "function"){
+            success_callback();
+        }
+    })
+    .fail(function(rsp){
+        laststate = null;
+        if(typeof(fail_callback) == "function"){
+            fail_callback();
+        }
+    });
+    
+}
+
+function get_sata_state(success_callback, fail_callback){
+    var mill = now();
+    var request_data = {'type':'SATA'};
+    $.getJSON('/cgi-bin/turbo/;stok=2c4905c35e1b49514ef098d7ddcd4b4d/api/storage/state?'+mill,request_data,function(rsp) 
+    { 
+        var msg = rsp.msg;
+        var code = rsp.code;
+        var state = rsp.state;
+        var sdsize = rsp.size;
+        var minsize = rsp.minsize;
+        if(state != laststate){
+            sd_error = false;
+            $(".sd-error-tip").hide();
+            laststatetime = now();
+        }
+        laststate = state;
+        if(code == 0 || code == "0"){
+            if(state == "removed"){
+                $(".sd-error-tip").removeClass("yellow");
+                $("#sd_info").html("未插入硬盘");
+                $("#sd_icon").addClass("icon-i-y").removeClass("icon-i");
+                $(".sd-error-tip").show();
+            }else if(state == "not-formated" || state == "mount-failed"){
+                if(sdsize < minsize){
+                    $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                    $("#sd_info").html("硬盘太小，最低要求"+minsize+"M，当前"+sdsize+"M");
+                    $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                    $(".sd-error-tip").show();
+                }else{
+                    $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                    $("#sd_info").html("您的硬盘文件格式不符，请<a href='#' id='system_sd_manual_part'>格式化</a>");
+                    $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                    $(".sd-error-tip").show();
+                    /* 格式化 */
+                    $("#system_sd_manual_part").click(function(){
+                        open_windows("system_sata_manual_part");
+                    });
+                }
+            }else if(state == "inserted"){
+                setTimeout(function(){
+                    if(laststate == "inserted" && laststatetime + 10 < now()){
+                        $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("硬盘有异常，请重启路由器");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-error-tip").show();
+                        sd_error = true;
+                    }
+                }, 10000);
+            }else if(state == "umounted"){
+                setTimeout(function(){
+                    if(laststate == "umounted" && laststatetime + 10 < now()){
+                        $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("请拔掉硬盘再插上");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-error-tip").show();
+                        sd_error = true;
+                    }
+                }, 10000);
+            }else if(state == "mounted"){
+                $(".sd-error-tip").hide();
+            }else if(state == "auto-formated"){
+                $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                $("#sd_info").html("硬盘正在格式化中...");
+                $("#sd_icon").addClass("icon-i-y").removeClass("icon-i");
+                $(".sd-error-tip").show();
+                setTimeout(function(){
+                    if(laststate == "auto-formated" && laststatetime + 10 < now()){
+                        $(".sd-error-tip").removeClass("yellow").addClass("yellow");
+                        $("#sd_info").html("请拔掉硬盘再插上");
+                        $("#sd_icon").addClass("icon-i").removeClass("icon-i-y");
+                        $(".sd-error-tip").show();
+                        sd_error = true;
+                    }
+                }, 120000);
+            }
+        }
+        if(typeof(success_callback) == "function"){
+            success_callback();
+        }
+    })
+    .fail(function(rsp){
+        laststate = null;
+        if(typeof(fail_callback) == "function"){
+            fail_callback();
+        }
+    });
+    
+}
+
+function check_mobile_app_upgrade(){
+    var app_upgrade = false;
+    //TODO check app upgrade
+    if(app_upgrade){
+        $("#mobile_app .app_alert_icon").html(alert_icon);
+    }else{
+        $("#mobile_app .app_alert_icon").html("");
+    }
+}
+
+</script>
+
+<div id="guide_mask" style="display:none; width: 100%; height: 100%; position: absolute; z-index: 100; top: 0px; left: 0px; overflow: hidden; ">
+	<div style="height: 100%; background-color: rgb(0, 0, 0); opacity:0.6; filter:alpha(opacity=90); z-index: 100; background-position: initial initial; background-repeat: initial initial; ">
+	</div>
+</div>
+
+<div id="guide_mask_close_action" style="display:none; width: 100%; height: 100%; position: absolute; z-index: 100; top: 0px; left: 0px; overflow: hidden; ">
+	<div style="height: 100%; background-color: rgb(0, 0, 0); opacity:0.6; filter:alpha(opacity=90); z-index: 100; background-position: initial initial; background-repeat: initial initial; ">
+	</div>
+</div>
+
+<!-- 
+GUIDE END
+-->
+
+</body>
+</html>

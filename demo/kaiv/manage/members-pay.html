@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>短信服务－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/animate.css"> 
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li class="current"><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+
+	
+	<div id="main">
+		<ul class="title-bar" id="menu">
+			<li><a href="members.html">会员列表</a></li>
+			<li><a href="members-card.html">会员卡</a></li>
+			<li class="current"><a href="members-sms.html">短信服务</a></li>
+		</ul><!-- .title-bar  -->
+		
+		<div class="block">
+			<div class="bar">
+				<form class="form">
+					<p class="title">是否开通短信服务：
+						<label class="radio">
+							  <input type="radio" value="1" name="group" id="open" checked="checked">
+							开通
+						</label>
+						<label class="radio">
+							  <input type="radio" value="2" name="group" id="closed">
+							关闭
+						</label>
+					</p>
+				</form><!-- .form -->
+			</div><!-- .bar -->
+			
+			<div class="item-box" id="pay-box">
+				<h2>短信服务充值</h2>
+				<p class="guide"><span><i class="icon icon-caret-right"></i>选择充值金额、付款方式</span><span><i class="icon icon-caret-right"></i>支付成功</span><span><i class="icon icon-caret-right"></i>正式开通短信服务</span><span><i class="icon icon-caret-right"></i>设置短信内容</p>
+				<h3>选中充值金额</h3>
+				<div class="tags" id="sum">
+					<a href="#" class="tag checked"><b>150</b>元（含1000条短信）</a>
+					<a href="#" class="tag"><b>200</b>元（含1500条短信）</a>
+					<a href="#" class="tag"><b>300</b>元（含3000条短信）</a>
+					<a href="#" class="tag"><b>500</b>元（含5000条短信）</a>
+				</div><!-- #sum  -->
+				<h3>选择付款方式</h3>
+				<div class="tags" id="banks">
+					<a href="#" class="tag bank checked" id="CB" title="中国银行"></a>
+					<a href="#" class="tag bank" id="ICBC" title="中国工商银行"></a>
+					<a href="#" class="tag bank" id="ABC" title="中国农业银行"></a>
+					<a href="#" class="tag bank" id="CCB" title="中国建设银行"></a>
+					<a href="#" class="tag bank" id="BC" title="交通银行"></a>
+					<a href="#" class="tag bank" id="CP" title="中国邮政"></a>
+					<a href="#" class="tag bank" id="CMB" title="招商银行"></a>
+					<a href="#" class="tag bank" id="BB" title="北京银行"></a>
+					<a href="#" class="tag bank" id="HB" title="华夏银行"></a>
+					<a href="#" class="tag bank" id="CIB" title="兴业银行"></a>
+					<a href="#" class="tag bank" id="CGB" title="广发银行"></a>
+					<a href="#" class="tag bank" id="SDB" title="深圳发展银行"></a>
+					<a href="#" class="tag bank" id="CMBC" title="中国民生银行"></a>
+					<p>
+						<a href="#" class="clear" id="other-banks"><i class="icon icon-caret-down"></i> 其他付款方式</a>
+					</p>
+				</div><!-- #banks -->
+				<a href="#" class="btn large green">下一步</a>
+			</div><!-- .item-box  -->
+			
+			<div class="tips hide" id="sms-closed-tips">
+				<i class="icon icon-envelope-alt icon-5x"></i>
+				<h2>该餐厅未开通短信服务</h2>
+				<p>点击上方“开通”选项，可开通短信服务</p>
+				<p class="important">重要提示：开启短信服务需按条收取短信服务费</p>
+			</div><!-- .tips  -->
+			
+			
+		</div><!-- .block  -->
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p></p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+// 选择开通或关闭
+$("#open").change(function() { 
+	$("#sms-closed-tips").hide();
+	$("#pay-box,#agreement").show()
+ });
+$("#closed").change(function() { 
+	$("#pay-box,#agreement").hide();
+	$("#sms-closed-tips").show()
+ });
+	
+// 选择充值金额
+$("#sum a").click(function(){
+    $("#sum a").removeClass("checked");
+    $(this).addClass("checked");
+ });
+ 
+ // 其他银行
+$("#banks a.bank:gt(3)").hide();
+$("#other-banks").click(function(){
+	$("#other-banks .icon-caret-down").toggleClass("icon-caret-up");
+    $("#banks a.bank:gt(3)").toggle();
+ });
+ 
+// 选择付款银行
+$("#banks a.bank").click(function(){
+    $("#banks a.bank").removeClass("checked");
+    $(this).addClass("checked");
+ });
+</script>
+</body>
+</html>

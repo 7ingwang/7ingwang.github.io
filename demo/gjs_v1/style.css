@@ -1,0 +1,48 @@
+html, body, h1, h2, p, ul, li{ margin: 0; padding: 0;}
+body{ max-width: 767px; margin: 0 auto; padding: 15px 0 0; background-color: #fff; font-family: 'Helvetica Neue',Helvetica,sans-serif; font-size: 15px; font-weight: 300; text-align: center; line-height: 1.6;}
+ul, li{ list-style: none;}
+.inline{ display: inline;}
+
+.pic{ display: block; margin: 0 0 15px; min-height: 200px; background-position: center top; background-repeat: no-repeat; background-size: cover;}
+.pic a{ display: block; height: 100%;}
+.gjs1{ background-image: url(img/gjs1@2x.png);}
+.gjs2{ background-image: url(img/gjs2@2x.png); min-height: 230px;}
+.gjs3{ background-image: url(img/gjs3@2x.png); min-height: 215px;}
+.gjs4{ background-image: url(img/gjs4@2x.png); min-height: 270px;}
+.gjs5{ background-image: url(img/gjs5@2x.png); min-height: 290px;}
+
+.product{ padding: 0 30px; min-height: 240px; text-align: left;}
+.product .label{ margin: 10px 0 0; font-size: 15px; color: #00955B;}
+.product .title{ font-weight: inherit; font-size: 25px; color: #006DA7; text-indent: 25px;}
+.product .features{ padding-top: 5px;}
+.product .features li{ position: relative; margin-bottom: 5px; padding-left: 25px;}
+.product .features li .icon{ position: absolute; left: 0; top: 7px; display: inline-block; width: 20px; height: 9px; background: url(img/arrow@2x.png) no-repeat left center; background-size: auto 100%;}
+.product .inline{ position: relative;}
+.product .label.inline{ margin-right: 10px;}
+.product p.inline{ padding-right: 20px;}
+
+.btn{ display: inline-block; margin: 30px 0; background-repeat: no-repeat; background-position: center center; background-size: contain; font-size: 20px; color: #fff !important; text-decoration: none; text-shadow: none; font-weight: 300 !important;}
+.btn.btn1{ padding-top: 20px; width: 172px; height: 45px; background-image: url(img/btn1@2x.png);}
+.btn.btn2{ padding-top: 24px; width: 210px; height: 60px; background-image: url(img/btn2@2x.png);}
+.btn.btn3{ padding-top: 15px; width: 181px; height: 56px; background-image: url(img/btn3@2x.png);}
+.btn.btn4{ padding-top: 24px; width: 226px; height: 52px; background-image: url(img/btn4@2x.png);}
+.btn.btn5{ padding-top: 10px; padding-left: 76px; width: 190px; height: 42px; background-image: url(img/btn5@2x.png);}
+
+footer{ margin: 15px 0; height: 20px; background: url(img/logobai.png) no-repeat center center; background-size: auto 100%;}
+
+.guide{ padding-top: 100px; margin-bottom: 200px; font-size: 20px; color: #00955B;}
+.guide .icon{ display: block; margin-bottom: 30px; height: 100px; background: url(img/guide@2x.png) no-repeat center center; background-size: contain; text-align: center;}
+
+@media (max-width: 320px) {
+    body{ padding-top: 15px;}
+    .product{ padding: 0 15px;}
+    .btn{ margin: 15px 0;}
+}
+
+@media (min-width: 413px) {
+    body{ padding-top: 60px;}
+}
+
+@media (min-width: 768px) {
+    .pic{ background-size: contain;}
+}

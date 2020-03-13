@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>申请消费微贷</title>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="description" content="">
+    
+    <link rel="shortcut icon" type="style/image/png" href="favicon.png">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <link rel="stylesheet" href="style/css/mui.min.css">
+    <link rel="stylesheet" href="style/css/animate.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/icon.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/papply.comm.js"></script>
+	
+  </head>
+   <body>
+        <div class="theme-box" id="apply"></div><!-- .theme-box -->
+        <div class="block apply">
+            <form class="mui-input-group" onsubmit="return false;">
+                <div class="mui-input-row auto-row">
+                    <i class="icon icon-firm icon16"></i>
+                    <label class="full">您所在企业名称</label>
+    		        <input type="text" id="enterPriseName" name="enterPriseName" placeholder="您所在企业名称" autocomplete="off" style="width:100%">
+    		    </div><!-- .mui-input-row -->
+    		    <div class="drop" style="display: none;">
+    		    	<ul>
+    		    	</ul>	
+    		    </div>
+               <div class="mui-input-row radio-row">
+                    <i class="icon icon-funds icon16"></i>
+                    <label class="full">公积金缴存地是否为北京：</label>
+                    <div class="inline-radio">
+                        <span class="mui-radio">是<input name="isGjj" type="radio" value="1" ></span><span class="mui-radio">否<input name="isGjj" type="radio" value="0" checked></span>
+                    </div>
+                </div><!-- .mui-input-row -->
+            </form><!-- .mui-input-group -->
+        </div><!-- .block -->
+        <div class="mui-content-padded">
+            <button type="button" id="applyBtn" class="mui-btn mui-btn-primary mui-btn-block">下一步</button>
+        </div><!-- .mui-content-padded -->
+        
+        <div id="footer">
+            <p>Copyright &copy; 中国民生银行</p>
+        </div><!-- #footer -->
+        
+    <script>
+	  	$(function(){
+		   var _name = $("#enterPriseName");
+			var _list = $("#nameList");
+			var _drop = $(".drop");
+			var _ul = _drop.find("ul");
+			//绑定输入框事件
+			$("#enterPriseName").on("click",function(){
+				_ul.empty();
+				$("<li></li>").text("中国民生银行股份有限公司").appendTo(_ul);
+				$("<li></li>").text("中国石油化工股份有限公司").appendTo(_ul);
+				$("<li></li>").text("北汽福田汽车股份有限公司").appendTo(_ul);
+				$("<li></li>").text("北京尚思科技有限公司").appendTo(_ul);
+				$("<li></li>").text("北京蓝天科技有限公司").appendTo(_ul);
+				_drop.show();
+				_ul.find("li").on("click",function(e){
+						_name.val($(this).text());
+						_drop.hide();
+				})
+			});
+			
+			//输入框回车 隐藏清除下拉框 
+			_name.keyup(function(e){
+				e.preventDefault();
+				if( e.keyCode == 13){
+					_ul.empty();
+					_drop.hide();
+					toNext();
+				}
+			});
+			$("#applyBtn").on("click",toNext);
+			//下一步
+			function toNext(){
+				var name = _name.val();
+				var isGjj = $("input[name='isGjj']:checked").val();
+				if (isGjj == 0) {
+					tipMsg("很抱歉,本产品暂不支持公积金缴存地非北京的用户哦！");
+					return;
+				}
+				if (name == null || name == "") {
+					tipMsg("请输入企业名");
+					return;
+				}
+				if (name=='中国民生银行股份有限公司'||name=='中国石油化工股份有限公司'||name=='北汽福田汽车股份有限公司') {
+					localStorage.isWhite = 0;
+				}else{
+					localStorage.isWhite = 1;
+				}
+				localStorage.enterPriseName = name;
+				window.location.href = "applyQyd.html?v=2";
+			}
+		});
+	</script>
+  </body>
+</html>

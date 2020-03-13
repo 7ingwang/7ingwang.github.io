@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加新菜－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li class="current"><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+
+	
+	<div id="main">
+		<ul class="title-bar" id="menu">
+			<li class="current"><a href="menu.html">菜肴列表</a></li>
+			<li><a href="menu-cat.html">菜单分类</a></li>
+			<li><a href="menu-suit.html">套餐设置</a></li>
+		</ul><!-- .title-bar  -->
+		
+		<div class="block">
+			<div class="bar">
+				<h2>添加新菜</h2>
+			</div><!-- .bar -->
+			<form class="form form-common">
+				<h3><i class="icon icon-pencil"></i> 基本信息<span class="ps">（必填）</span></h3>
+				<div class="row">
+					<label class="control-label">所属分类</label>
+					<div class="controls">
+						<select class="input-large">
+							<option>凉菜</option>
+							<option>热菜</option>
+							<option>主食</option>
+							<option>汤</option>
+							<option>饮品</option>
+						</select>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">菜名</label>
+					<div class="controls">
+						<input type="text" class="input-large">
+						<span class="help">请输入菜名</span>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">助记编码</label>
+					<div class="controls">
+						<input type="text" class="input-large">
+						<span class="help">请输入4位数字</span>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">定价方式</label>
+					<div class="controls">
+						<label class="radio">
+							  <input type="radio" value="1" name="group" checked="checked">
+							  固定价格
+						</label>
+						<label class="radio">
+							  <input type="radio" value="2" name="group">
+							  按用料或份量定价
+						</label>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">单价</label>
+					<div class="controls">
+						<input type="text" class="input-large">
+						<span class="help">元</span>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">结算单位</label>
+					<div class="controls">
+						<select class="input-large">
+							<option>份</option>
+							<option>斤</option>
+							<option>条</option>
+							<option>位</option>
+						</select>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<div class="controls">
+						 <label class="checkbox">
+						 	<input type="checkbox" value="">
+						 	使用双单位模式<span class="help">（例如鱼，点菜按条计算，结账时按斤计算）</span>
+						 </label>
+					 </div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">打印位置</label>
+					<div class="controls">
+						<select class="input-large">
+							<option>请选择厨房或出单位置</option>
+						</select>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<h3><i class="icon icon-pencil"></i> 选填信息<span class="ps">（可以丰富菜单内容，且作为参与开味网推广的必要信息）</span></h3>
+				<div class="row">
+					<label class="control-label">所属菜系</label>
+					<div class="controls">
+						<select class="input-large">
+							<option>鲁菜</option>
+							<option>粤菜</option>
+							<option>川菜</option>
+							<option>西北菜</option>
+							<option>客家菜</option>
+							<option>清真菜</option>
+						</select>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">菜品口味</label>
+					<div class="controls">
+						<select class="input-large">
+							<option>微辣</option>
+						</select>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">所用食材</label>
+					<div class="controls">
+						<input type="text" class="input-large">
+						<span class="help"></span>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<label class="control-label">菜肴图片</label>
+					<div class="controls">
+						<input class="input-file" id="fileInput" type="file">
+						<span class="help"></span>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+				<div class="row">
+					<div class="controls">
+						<a href="#" class="btn large green open">保存</a><a href="#" class="btn large green">保存并继续添加</a><a href="#" class="btn large grey">取消</a>
+					</div><!-- .controls -->
+				</div><!-- .row -->
+				
+			</form><!-- .form  -->
+
+			
+		</div><!-- .block  -->
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p></p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/tips.min.js"></script>
+<script src="js/pop.js"></script>
+
+</body>
+</html>

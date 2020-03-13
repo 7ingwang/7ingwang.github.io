@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>点菜单－开味餐饮管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/tips.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div class="page">
+	
+	<div id="header">
+		<h1><span id="logo"></span><span id="name">开味餐饮管理系统</span></h1>
+		<ul id="top-menu">
+		    <li id="user"><b>Terry</b><small class="label">超级管理员</small>已登录，</li>
+		    <li><a href="#"><i class="icon icon-retweet icon-large"></i>切换餐厅</a></li>
+		    <li><a href="accounts.html"><i class="icon icon-user icon-large"></i>账号管理</a></li>
+		    <li><a href="notice.html"><i class="icon icon-bullhorn icon-large"></i>通知中心</a></li>
+		    <li><a href="index.html" id="exit"><i class="icon icon-signout icon-large"></i>注销</a></li>
+		</ul>
+	</div><!-- #header  -->
+	
+	<div id="sidebar">
+		<ul id="nav">
+			<li class="current"><a href="home.html"><i class="icon icon-th-large icon-2x"></i>销售管理</a></li>
+			<li><a href="charts.html"><i class="icon icon-bar-chart icon-2x"></i>商情监控</a></li>	
+			<li><a href="menu.html"><i class="icon icon-food icon-2x"></i>菜单管理</a></li>
+			<li><a href="members.html"><i class="icon icon-group icon-2x"></i>会员管理</a></li>
+			<li><a href="system.html"><i class="icon icon-cogs icon-2x"></i>系统设置</a></li>
+		</ul>
+		<p id="copyright"><small>&copy 2015 乐享互联</small></p>
+	</div><!-- #sidebar -->
+
+	
+	<div id="main">
+		
+		<div class="frame fl" id="order-show">
+
+			<div class="title-bar">
+				<h2><a href="#" class="btn green fr"><i class="icon icon-bookmark"></i>清台</a><i class="icon icon-file-alt"></i><b>5</b>桌点菜单</h2>	
+			</div><!-- .title-bar -->
+				
+			<div class="block">
+				<div id="order-list">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-list">
+						<thead>
+							<tr>
+						    	<th>菜名</th>
+						    	<th>单价</th>
+						    	<th>数量</th>
+						    	<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+						    	<td class="name"><b>山野大百花丝丝</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花丝丝</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花丝丝</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花丝丝</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花丝丝</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+							<tr>
+						    	<td class="name"><b>山野大百花</b></td>
+						    	<td class="price highlight">¥36</td>
+						    	<td class="qty"><input type="text" class="spinner"/></td>
+						    	<td class="switch">
+							    	<i class="icon icon-edit icon-large"></i>
+							    	<ul class="hold">
+								    	<li><a href="#" class="open">删</a></li>
+										<li><a href="#">退</a></li>
+										<li><a href="#">催</a></li>
+										<li><a href="#">赠</a></li>
+										<li><a href="#">备注</a></li>
+							    	</ul>
+						    	</td>
+							</tr>
+						</tbody>
+					</table><!-- .table-list -->
+				
+				</div><!-- #order-list  -->
+				
+				<div class="bar" id="total">
+					<div class="fl">就餐人数：<span><input type="text" class="spinner"/></span></div>
+					<div class="fr">点菜数量：<span><input type="text" class="spinner"/></span></div>
+				</div><!-- .bar -->
+			
+				<div class="bar clear tr"><span class="fl grey">2015-5-11 16:17</span><big>¥88</big></div><!-- .bar -->
+
+				<div class="btns clear tr">
+					<a href="#" class="btn large green" id="order-place"><i class="icon icon-download-alt"></i>下单</a>
+					<a href="#" class="btn large orange" id="order-add" style="display: none"><i class="icon icon-plus"></i>加单</a>
+					<a href="checkout.html" class="btn large red" id="order-check"><i class="icon icon-credit-card"></i>结账</a>
+				</div><!-- .bar -->
+			
+			</div><!-- .block  -->
+			
+			
+			
+			
+		</div><!-- .frame -->
+		
+		<div class="frame fr" id="menu-show">
+			
+			<div class="title-bar">
+				<h2><i class="icon icon-th-list"></i>本店菜肴</h2>	
+			</div><!-- .title-bar -->
+			
+			<div class="block">
+				<div class="tags" id="filter">
+					<a class="checked">全部</a>
+					<a href="#">餐前小菜</a>
+					<a href="#">精美凉菜</a>
+					<a href="#">热菜</a>
+					<a href="#">特色火锅</a>
+					<a href="#">酒水饮料</a>
+					<a href="#">主食</a>
+				</div><!-- .tags -->
+				
+				<form class="search-bar">
+					助记码检索：
+					<input type="text" placeholder="助记码" class="input-xlarge search-query">
+				</form>
+				
+				<div class="dish">
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+	<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+	<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card checked"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					
+					<a class="card"><span class="num">0102</span><b class="name">山野大白花</b><span class="price">¥28</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">西湖醋鱼</b><span class="price">¥56</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">大盘鸡</b><span class="price">¥36</span></a>
+					<a class="card"><span class="num">0102</span><b class="name">米饭</b><span class="price">¥2</span></a>
+					
+				</div><!-- .dish -->
+
+
+			</div><!-- .block  -->
+		</div><!-- .frame -->
+		
+		 <div class="clear"></div>
+	
+	</div><!-- #main  -->
+	
+	<div class="fixed floor" id="footer">
+		<p></p>
+	</div><!-- #footer  -->
+	
+</div><!-- .page  -->
+
+<div id="mask"></div><!-- #mask-->
+<div class="animated bounceIn" id="dialog">
+	<h2>确认删除该条菜肴？</h2>
+	<a href="#" class="btn red close">确认</a>
+	<a href="#" class="btn grey close">取消</a>
+</div><!-- #popbox-->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.spinner.min.js"></script>
+<script src="js/tips.min.js"></script>
+<script src="js/pop.js"></script><!-- 弹窗 -->
+<script>
+//.frame加载时适应浏览器高度
+$(document).ready(function() {
+	$(".frame").css("height", $(window).height() - 80);
+	$("#order-list").css("height", $(window).height() - 290);
+	$("#menu-show .dish").css("height", $(window).height() - 230);
+});
+
+/* spinner  */
+$('.spinner').spinner();
+
+// 订单操作菜单
+$("#order-list .switch .icon").mouseover(function(){
+	$(this).next(".hold").show(300);
+});
+$("#order-list .switch").mouseleave(function(){
+	$(this).children(".hold").hide(300);
+});
+
+// 菜肴过滤
+$("#filter a").click(function(){
+    $("#filter a").removeClass("checked");
+    $(this).addClass("checked");
+});
+ 
+//  选菜
+$(".dish .card").click(function(){
+    $(this).toggleClass("checked");
+});
+
+// 下单
+$("#order-place").click(function(){
+	$(this).hide();
+    $("#order-add").show();
+});
+</script>
+</body>
+</html>
