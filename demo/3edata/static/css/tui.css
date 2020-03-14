@@ -1,0 +1,159 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, button{ margin: 0; padding: 0;}
+html, body{ height: 100vh;}
+html{ font-size: 16px;}
+body{ position: relative; font-family: Helvetica, Arial, sans-serif; color: #333;}
+a{ color: #0984E3; text-decoration: none;}
+a:hover{ opacity: .75; transition: all .3s ease;}
+h2, h3, h4, h5, h6{ margin-bottom: 1rem;}
+h2{ font-size: 1.5rem;}
+ul,li{ list-style: none;}
+img{ object-fit: cover; max-width: 100%;}
+
+/* general */
+.show{ display: block !important;}
+.line-upper:before,
+.line-lower:after,
+.line-upper-dashed:before,
+.line-lower-dashed:after{ content: ""; display: block; margin: 1rem 0; width: 100%; height: 1px; background: #DDD;}
+.line-upper-dashed:before,
+.line-lower-dashed:after{ background: none; border-top: 1px dashed #DDD;}
+.container{ margin: 0 auto; width: 1200px;}
+
+/* flex */
+[class*="flex-"], [class*=" flex-"]{ display: flex;}
+.flex-start{ justify-content: flex-start;}
+.flex-end{ justify-content: flex-end;}
+.flex-around{ justify-content: space-around;}
+.flex-between{ justify-content: space-between;}
+.flex-evenly{ justify-content: space-evenly;}
+.flex-wrap{ flex-wrap: wrap;}
+.flex-wrap-rev{ flex-wrap: wrap-reverse;}
+
+/* table */
+table{ border-collapse: collapse; border-spacing:0; width: 100%; border-top: 1px solid #DDD;}
+thead th{ border-bottom: 1px solid #CCC;}
+th+th, td+td{ border-left: 1px solid #DDD;}
+th, td{ padding: .5rem 1rem; border-bottom: 1px solid #DDD; text-align: center;}
+th{ background: #EEE; font-weight: bold;}
+tr:hover{ background: #F9F9F9;}
+/* tr:nth-child(even){} */
+tr td:even-child{ text-align: left;}
+
+/* from */
+.form{ display: flex; flex-direction: column;}
+.form .form-item{ margin-bottom: 1rem;}
+.form-input{ padding: .6rem .3rem; border: 1px solid #DFDFDF; border-radius: 3px; font-size: 1rem;}
+
+.form-inline{}
+.form-inline .form-item+.form-item{ margin-left: .1rem;}
+
+/* texts */
+.text-omit{ text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.text-omit-lines:after{ content: "...";}
+
+/* avatar */
+.avatar{ border-radius: 50%;}
+
+/* code */
+pre{ background: #F9F9F9; border: 1px solid #F3F3F3;}
+code{ line-height: 2;}
+
+/* button */
+button{ border: none;}
+.btn{ padding: .6rem 1rem; border-radius: .3rem; font-size: 1rem; background: #DDD;  color: #888; transition: all .3s ease;}
+.btn:hover{ opacity: .8; cursor: pointer;}
+.btn-block{ margin: .5rem 0; display: block; width: 100%;}
+.btn-small{ padding: .3rem .6rem; font-size: .75rem;}
+.btn-big{ padding: .8rem 1.2rem; font-size: 1.2rem;}
+.btn-badge{ padding: .15rem .45rem; border-radius: 1rem; font-size: .75rem;}
+.btn-main{ background: #0984E3; color: #FFF;}
+.btn-warning{ background: #FFEAA7; color: #AD9E6F;}
+.btn-success{ background: #00B894; color: #FFF;}
+
+/* btns */
+.btns{ display: flex; justify-content: center;}
+.btns .btn{ border-radius: 0;}
+.btns .btn:first-child{ border-radius: .3rem 0 0 .3rem;}
+.btns .btn:last-child{ border-radius: 0 .3rem .3rem 0;}
+.btns .btn+.btn{ border-left: 1px solid #FFF;}
+
+/* toggle menu */
+.toggle{ padding: 0 6px; border: none; border-radius: 0 3px 3px 0; background: #2D4488; opacity: .9;}
+.toggle span{ content: ""; display: block; height: 1px; background: #FFF; transition: all .3s ease;}
+.toggle span:nth-child(2){ margin: 6px 0;}
+
+/* blank */
+.blank{ margin-bottom: 1rem; min-height: 30vh; border: 1px dashed #ddd;}
+
+/* grids */
+.row{ display: block;}
+[class^="col-"], [class*=" col-"] { display: block; width: 100%; margin-bottom: 1rem; min-height: 4rem; border: 1px dashed #CCC; text-align: center; line-height: 4rem; color: #666;}
+
+/* header */
+#header{ position: fixed; left: calc(-10vw - 2rem); top: 0; bottom: 0; padding: 1rem; width: 10vw; background: #2D4488; color: #FFF; transition: all .3s ease; z-index: 1;}
+#header.open{ left: 0; width: 60vw;}
+#header a{ color: #FFF;}
+h1{ margin-bottom: 1rem;}
+#nav{ position: relative; display: flex; flex-direction: column;}
+#nav a{ display: block; padding: .5rem 0; color: #FFF;}
+#nav a:hover{ background: rgba(0,0,0,.1);}
+#toggle{ position: absolute; right: -3rem; top: -3.2rem; width: 2rem; height: 2rem; line-height: 2rem; text-align: center;}
+#header.open #toggle span:nth-child(2){ display: none;}
+#header.open #toggle span:first-child{ transform:rotate(315deg);}
+#header.open #toggle span:last-child{ transform:rotate(-315deg);}
+
+.nav{ display: inline-block;}
+
+/* menus */
+.menu{}
+.menu li{ height: 4rem; line-height: 4rem;}
+.menu li+li{ margin-left: 2rem;}
+.menu li a{ color: #666;}
+.menu li.active{ position: relative;}
+.menu li.active a{ color: #0984E3;}
+.menu li.active:after{ position: absolute; bottom: 2px; content: ""; display: block; width: 100%; height: 2px; background: #0984E3;}
+.menu li.has-submenu a:after{ content: ""; display: inline-block; width: 1rem; height: 1rem; background: #EEE;}
+.menu li.has-submenu .submenu{ display: none;}
+.menu li.has-submenu .submenu a:after{ display: none;}
+.menu li.has-submenu:active .submenu{ display: block;}
+.menu li.has-submenu .submenu li+li{ margin-left: inherit;}
+
+/* list */
+.list li{ display: flex; justify-content: space-between; height: 3rem; line-height: 3rem; border-top: 1px solid #DDD;}
+.list li a{ display: inline-block; width: 65%;}
+.list li span{ color: #999;}
+
+/* content */
+#content{ padding: 1rem;}
+#content h2{ position: relative; margin-top: 2rem; padding-top: 2rem;}
+#content h2:before{ position: absolute; left: -2rem; top: 1.7rem; content: ""; display: inline-block; width: 1.5rem; height: 4px; background: #000;}
+
+/* footer */
+#footer{ padding: 1rem; color: #999;}
+
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) {
+
+.row{ display: flex; justify-content: space-between; margin-bottom: 1rem; width: 100%;}
+[class^="col-"], [class*=" col-"]{ margin-bottom: 0;}
+[class^="col-"] + [class^="col-"],
+[class*=" col-"] + [class*=" col-"]{ margin-left: 1rem;}
+
+.col-1-4{  flex-shrink: 3;}
+.col-1-3{  flex-shrink: 2;}
+
+#header{ left: 0; }
+#toggle{ display: none;}
+#content, #footer{ padding: 2rem 2rem 2rem 15vw;}
+#content h2{ padding-top: 1rem;}
+
+}
