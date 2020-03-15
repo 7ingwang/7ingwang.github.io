@@ -17,3 +17,13 @@ function removeNav() {
 function toggleSubmenu() {
   document.getElementsByClassName("submenu")[0].classList.toggle("show");
 }
+
+
+// 首页轮播图
+$(document).on('ready', function() {
+	$(".lazy").slick({
+	  dots: true,
+	  infinite: true,
+	});
+});
+

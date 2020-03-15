@@ -1,0 +1,76 @@
+body{ /* padding-top: 90px; */ width: 100vw;}
+
+a{ color: #2D3436;}
+
+.btn-outline{ background: none; border: 1px solid #148FE4; color: #148FE4;}
+
+.block .content{ padding-bottom: 120px;}
+.block .title{ font-size: 30px; color: #2D3436; font-weight: 500;}
+.block .title .more{ padding-top: 6px; font-size: 24px; color: #636E72; font-weight: normal;}
+.block .title .more .icon{ margin-left: 9px; font-size: 20px;}
+
+.header{ height: 90px; background: #148FE4; color: #FFF;}
+.header .logo{ display: block; margin-top: 15px; width: 173px; height: 63px; background: url(../img/logo@2x.png) no-repeat center center; background-size: contain; text-indent: -9999px;}
+.header .menu li a{ color: #FFF;}
+.header .nav .menu li+li{ margin-left: 0;}
+.header .nav .menu li a{ display: inline-block; padding: 0 20px; height: 90px; line-height: 90px;}
+.header .option{ margin-top: 28px;}
+.header .option:last-child li{ height: inherit; line-height: inherit;}
+.header .btn-outline{ padding: .3rem 1.25rem; border-radius: 20px; border-color: #FFF; color: #FFF;}
+
+.block.slick{ height: calc(100vw * 669 / 1440); overflow: hidden;}
+.slider{ position: relative; display: block; margin: 0 auto; width: 100%;}
+.slick-track{ display: flex; flex-wrap: nowrap;}
+.slick-slide{ text-align: center;}
+.slick-slide img{ width: 100%; height: auto;}
+.slick-slide p{ position: absolute; top: 20%; display: block; margin: 0 auto; width: 100vw; font-size: 40px; font-size: 1rem; color: #41C8B3; text-align: center; z-index: 1;}
+.slick-prev,
+.slick-next{ top: 49.45%; width: 2rem; height: 2rem; z-index: 1;}
+.slick-prev{ left: 1rem;}
+.slick-next{ right: 1rem;}
+.slick-prev:before,
+.slick-next:before{ font-family: 'icomoon'; content: "\e90c"; font-size: 2rem;}
+.slick-next:before{ content: "\e90d";}
+.slick-slide{ transition: all ease-in-out .3s;}
+.slick-active{}
+.slick-current{}
+.slick-dots{ bottom: 1rem;}
+.slick-dots li{ display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #D8D8D8; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15); opacity: .8;}
+.slick-dots li button:before{ display: none;}
+.slick-dots li:hover{ opacity: 1;}
+.slick-dots li.slick-active{ background: #00B894;}
+
+#basic{ background: url(../img/bg_hill.png) no-repeat right bottom;}
+.cardbox{ display: flex; justify-content: space-around; flex-wrap: wrap; padding: 0 10px;}
+.card{ display: block; margin-bottom: 20px; padding: 50px 0; width: 45%; background: grey; border-radius: 5px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); text-align: center; font-size: 24px; color: #FFF;}
+.card .icon{ display: block; margin-bottom: 50px; font-size: 96px;}
+.card:hover{ opacity: 1; box-shadow: 0 10px 20px 0 rgba(0,0,0,.3);}
+
+
+.color-1{ background: #8C9AEF;}
+.color-2{ background: #BC91E6;}
+.color-3{ background: #8CBAEF;}
+.color-4{ background: #4BC2D0;}
+.color-5{ background: #728CC1;}
+.color-6{ background: #72A8C1;}
+
+@media (min-width: 1200px) {
+.block .title{ padding: 50px 0 30px;}
+
+.block.slick{ height: 669px;}
+.slick-slide p{ top: 20%; font-size: 50px;}
+.slick-prev,
+.slick-next{ top: 49.45%; width: 6rem; height: 6rem; z-index: 1;}
+.slick-prev{ left: 3rem;}
+.slick-next{ right: 3rem;}
+.slick-prev:before,
+.slick-next:before{ font-size: 6rem;}
+.slick-prev:hover,
+.slick-next:hover{ opacity: 1;}
+.slick-dots{ bottom: 3rem;}
+.slick-dots li{ margin: 0 10px; width: 20px; height: 20px;}
+
+.cardbox{ justify-content: space-between; flex-wrap: nowrap; padding: 0;}
+.card{ margin-bottom: 0; width: 15%;}
+
+}
