@@ -91,7 +91,7 @@ button{ border: none;}
 
 /* grids */
 .row{ display: block;}
-[class^="col-"], [class*=" col-"] { display: block; width: 100%; margin-bottom: 1rem; min-height: 4rem; border: 1px dashed #CCC; text-align: center; line-height: 4rem; color: #666;}
+[class^="col-"], [class*=" col-"] { display: block; width: 100%; overflow: hidden;}
 
 /* header */
 #header{ position: fixed; left: calc(-10vw - 2rem); top: 0; bottom: 0; padding: 1rem; width: 10vw; background: #2D4488; color: #FFF; transition: all .3s ease; z-index: 1;}
@@ -123,8 +123,8 @@ h1{ margin-bottom: 1rem;}
 .menu li.has-submenu .submenu li+li{ margin-left: inherit;}
 
 /* list */
-.list li{ display: flex; justify-content: space-between; height: 3rem; line-height: 3rem; border-top: 1px solid #DDD;}
-.list li a{ display: inline-block; width: 65%;}
+.list li{ display: flex; justify-content: space-between; height: 3rem; line-height: 3rem;}
+.list li a{ display: inline-block;}
 .list li span{ color: #999;}
 
 /* content */
