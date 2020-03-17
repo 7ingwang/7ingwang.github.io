@@ -102,7 +102,7 @@ h1{ margin-bottom: 1rem;}
 #nav{ position: relative; display: flex; flex-direction: column;}
 #nav a{ display: block; padding: .5rem 0; color: #FFF;}
 #nav a:hover{ background: rgba(0,0,0,.1);}
-#toggle{ position: absolute; right: -3rem; top: -3.2rem; width: 2rem; height: 2rem; line-height: 2rem; text-align: center;}
+#toggle{ position: absolute; right: 1rem; top: 1rem; width: 2rem; height: 2rem; line-height: 2rem; text-align: center;}
 #header.open #toggle span:nth-child(2){ display: none;}
 #header.open #toggle span:first-child{ transform:rotate(315deg);}
 #header.open #toggle span:last-child{ transform:rotate(-315deg);}
