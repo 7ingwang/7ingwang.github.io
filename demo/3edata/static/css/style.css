@@ -3,14 +3,15 @@ body{ /* padding-top: 90px; */}
 a{ color: #2D3436;}
 
 .btn-outline{ background: none; border: 1px solid #148FE4; color: #148FE4;}
+.fixed-top{ z-index: 2;}
 
-.block .content{ padding-bottom: 120px; overflow: hidden;}
+.block .content{ padding-bottom: 60px; overflow: hidden;}
 .block .title{ padding: 20px 15px 10px; font-size: 30px; color: #2D3436; font-weight: 500;}
 .block .title .more{ padding-top: 6px; font-size: 24px; color: #B2BEC3; font-weight: normal;}
 .block .title .more .icon{ margin-left: 9px; font-size: 20px;}
 .block .title.light, .block .title.light a{ color: #FFF;}
 
-.header{ height: 90px; background: #148FE4; color: #FFF;}
+.header{ height: 90px; background-image: linear-gradient(180deg, #148FE4 0%, #117FDD 100%); color: #FFF;}
 .header .logo{ display: block; margin-top: 15px; width: 173px; height: 63px; background: url(../img/logo@2x.png) no-repeat center center; background-size: contain; text-indent: -9999px;}
 .header .menu li a{ color: #FFF;}
 .header .nav .menu li+li{ margin-left: 0;}
@@ -41,10 +42,10 @@ a{ color: #2D3436;}
 .slick-dots li:hover{ opacity: 1;}
 .slick-dots li.slick-active{ background: #00B894;}
 
-#basic{ background: url(../img/bg_hill.png) no-repeat right bottom;}
+#basic{ background: url(../img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
 .cardbox{ display: flex; justify-content: space-around; flex-wrap: wrap; padding: 0 10px;}
-.card{ display: block; margin-bottom: 20px; padding: 50px 0; width: 45%; background: grey; border-radius: 5px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); text-align: center; font-size: 24px; color: #FFF;}
-.card .icon{ display: block; margin-bottom: 50px; font-size: 96px;}
+.card{ display: block; margin-bottom: 20px; padding: 20px 0; width: 45%; background: grey; border-radius: 5px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); text-align: center; font-size: 16px; color: #FFF;}
+.card .icon{ display: block; margin-bottom: 10px; font-size: 80px;}
 
 .color-1{ background: #8C9AEF;}
 .color-2{ background: #BC91E6;}
@@ -55,7 +56,7 @@ a{ color: #2D3436;}
 
 
 #plats{ position: relative; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
-#plats:after{ position: absolute; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: 0 auto; background: url(../img/bg_platform.png) no-repeat center bottom;}
+#plats:after{ position: absolute; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: 0 auto; background: url(../img/bg_platform.png) no-repeat center bottom; background-attachment: fixed;}
 .network{ display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; margin: -70px 0; text-align: center;}
 .network:after{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: auto; width: 405px; height: 467px; background: url(../img/bg_nodes@2x.png) no-repeat center center; background-size: contain; opacity: .5;}
 .network .node{ display: flex; justify-content: center; position: relative; color: #FFF; text-align: center; z-index: 1;}
@@ -83,7 +84,7 @@ a{ color: #2D3436;}
 .network .node:nth-child(6) .icon{ background-image: url(../img/icon-airplan@2x.png);}
 
 
-#research{ background: #148FE4 url(../img/bg_hill_sm.png) no-repeat 30% bottom;}
+#research{ background: #148FE4 url(../img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
 #research .items{ padding: 40px 0 130px;}
 #research .item{ display: block; text-align: center; font-size: 20px; color: #FFF; text-align: center;}
 #research .item:not(:last-child){ margin-bottom: 40px;}
@@ -94,12 +95,29 @@ a{ color: #2D3436;}
 .newslist li{ position: relative; padding-left: 35px; padding-right: 15px; height: 40px; line-height: 40px;}
 .newslist li:before{ position: absolute; left: 15px; top: calc(50% - 3px); content: ""; display: inline-block; width: 6px; height: 6px; background: #D8D8D8;}
 
+#member{ background-image: radial-gradient(51% 98%, #476182 0%, #2E4562 97%, #2E4562 98%);}
+#member .card{ margin: 0 15px; padding: 40px 20px; width: 100%; box-sizing: border-box; background: none; border: 1px solid #FFF; box-shadow: none;}
+#member .card+.card{ margin-top: 15px;}
+#member .card .icon{ margin: 25px 0 35px; font-size: 70px;}
+#member .card p{ font-size: 16px; line-height: 30px;}
 
+.imgbox{ text-align: center;}
+.imgbox a{ display: inline-block; margin-bottom: 10px;}
+.imgbox img{ width: 200px; height: 50px; object-fit: contain;}
+.imgbox a:hover{ opacity: 1;}
+
+.footer{ padding: 50px 15px 100px; background-image: radial-gradient(50% 133%, #526379 0%, #3C4858 100%); color: #B2BEC3;}
+.footer a{ color: #DFE6E9;}
+.footer .menu{ display: flex; justify-content: flex-start; flex-wrap: wrap; margin-bottom: 30px; padding: 0 15px;}
+.footer .menu li{ width: 45%; height: 44px; line-height: 44px;}
+.footer .menu li+li{ margin-left: 0;}
+.footer .menu li a{ font-size: 16px; color: #DFE6E9;}
+.footer p+p{ margin-top: 10px; font-size: 14px;}
 
 @media (min-width: 1200px) {
 .block .title{ padding: 50px 0 30px;}
 
-.block.slick{ height: 669px;}
+.block.slick{ padding: 0; height: 669px;}
 .slick-slide p{ top: 20%; font-size: 50px;}
 .slick-prev,
 .slick-next{ top: 49.45%; width: 6rem; height: 6rem; z-index: 1;}
@@ -113,7 +131,8 @@ a{ color: #2D3436;}
 .slick-dots li{ margin: 0 10px; width: 20px; height: 20px;}
 
 .cardbox{ justify-content: space-between; flex-wrap: nowrap; padding: 0;}
-.card{ margin-bottom: 0; width: 15%;}
+.card{ margin-bottom: 0; padding: 50px 0; width: 15%; font-size: 24px;}
+.card .icon{ margin-bottom: 50px; font-size: 96px;}
 .card:hover{ opacity: 1; box-shadow: 0 10px 20px 0 rgba(0,0,0,.3);}
 
 #plats:after{ width: 933px; height: 372px;}
@@ -128,4 +147,19 @@ a{ color: #2D3436;}
 .newslist li:before{ left: 0;}
 .newslist li:hover:before{ background: #148FE4;}
 .newslist li a:hover{ opacity: 1; color: #148FE4;}
+
+#member .cardbox{ justify-content: space-between;}
+#member .card{ padding: 50px; width: 32.2%;}
+#member .card+.card{ margin-top: inherit;}
+#member .card:hover{ box-shadow: none;}
+
+.imgbox{ text-align: inherit;}
+.imgbox a+a{ margin-left: 50px;}
+.imgbox a:nth-child(5n+1){ margin-left: 0;}
+
+.footer .menu{ display: flex; justify-content: center;}
+.footer .menu li{ width: inherit;}
+.footer .menu li+li{ margin-left: 2rem;}
+.footer p{ text-align: center;}
+
 }
