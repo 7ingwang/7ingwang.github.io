@@ -1,11 +1,11 @@
 #tui.uedog.com 绑定子目录tui
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^((www|tui)\.)?uedog\.com$
+RewriteCond %{HTTP_HOST} ^tui\.uedog\.com$
 RewriteCond %{REQUEST_URI} !^/tui/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /tui/$1
-RewriteCond %{HTTP_HOST} ^((www|tui)\.)?uedog\.com$
+RewriteCond %{HTTP_HOST} ^tui\.uedog\.com$
 RewriteRule ^(/)?$ tui/index.php [L]
 
 #pixwind.com 绑定子目录pix
@@ -17,9 +17,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /pix/$1
 RewriteCond %{HTTP_HOST} ^((www|)\.)?pixwind\.com$
 RewriteRule ^(/)?$ pix/index.php [L]
-
-
-RewriteCond %{HTTP_HOST} ^(www\.)?csslog\.com\.cn$
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php [QSA,L]
