@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------
 	    3edata
-        Built with Blocs
 -----------------------------------------------------------------------------------*/
 body{
 	margin:0;
@@ -40,8 +39,8 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-right:0;
 }
 
-.bloc h2{ display: flex; justify-content: space-between; margin-top: 50px; padding: 50px 0 30px; font-size: 30px; color: #2D3436;}
-.bloc h2 .more{ display: inline-block; margin-top: .5rem; font-size: 1.5rem; color: #636E72; font-weight: normal;}
+.bloc h2{ display: flex; justify-content: space-between; margin-top: 50px; padding: 50px 0 30px; font-size: 30px; color: #2D3436; font-weight: 500;}
+.bloc h2 .more{ display: inline-block; margin-top: .5rem; font-size: 1.5rem; color: #B2BEC3; font-weight: normal;}
 .bloc h2 .more .icon{ margin-left: .5rem; font-size: 1rem;}
 
 /* Sizes */
@@ -157,7 +156,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	position:fixed;
 	top:0;
 	z-index:1000;
-	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	box-shadow:0 5px 10px rgba(0,0,0,.15);
 	 transition: all .2s ease-out;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
@@ -229,8 +228,6 @@ button{
 }
 
 
-
-
 /* ScrollToTop button */
 
 .scrollToTop{
@@ -251,6 +248,9 @@ button{
 	opacity: 1;
 }
 
+
+
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -260,6 +260,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container{
 	max-width:1200px;
 }
+
+
+/* = List
+-------------------------------------------------------------- */
+ul, li{ margin: 0; padding: 0; list-style: none;}
+
+.list li{ height: 44px; line-height: 44px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.list li a{ color: #2D3436;}
+.list-symbol li{ position: relative; padding-left: 20px;}
+.list-symbol li:before{ position: absolute; left: 0; top: calc(50% - 3px); content: ""; display: inline-block; width: 6px; height: 6px; background: #D8D8D8;}
+.list-symbol li:hover a{ color: #148FE4;}
+.list-symbol li:hover:before{ background: #148FE4;}
+
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -283,16 +296,63 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 -------------------------------------------------------------- */
 #bloc-carousel .carousel-caption{ bottom: inherit; top: 15%; font-size: 50px;}
 #bloc-carousel .carousel-item-1 .carousel-caption{ color: #41C8B3;}
+#bloc-carousel .carousel-nav-controls .icon{ font-size: 5rem;}
 
 
 /* = basic
 -------------------------------------------------------------- */
-#basic{}
+#basic{ padding-bottom: 6.25rem; background: url(img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
 
 /* card */
 .card{ padding: 3.125rem 0; border: none; text-align: center; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); font-size: 1.5rem; color: #FFF; }
 .card:hover{ color: #FFF; box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);}
 .card .icon{ margin-bottom: 3.125rem; font-size: 5rem;}
+
+/* = plats
+-------------------------------------------------------------- */
+
+#plats{ position: relative; padding-bottom: 6.25rem; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
+#plats h2{ color: #FFF;}
+#plats:after{ position: absolute; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: 0 auto; width: 100%; height: calc( 100% / 2.5); background: url(img/bg_platform.png) no-repeat center bottom; background-size: 75%; background-attachment: fixed;}
+.hexage{ position: relative; display: flex; justify-content: space-between; margin: -70px 0;flex-wrap: wrap; text-align: center;}
+.hexage:after{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: auto; height: 467px; background: url(img/bg_nodes@2x.png) no-repeat center center; background-size: contain; opacity: .5;}
+
+.hexage .node{ position: relative; display: flex; justify-content: center; margin: 20px 0; width: 45%; color: #FFF; text-align: center; z-index: 1;}
+.hexage .node .icon{ display: block; margin: 0 auto 10px; width: 148px; height: 148px; border-radius: 50%; background: #3C5473 no-repeat center center; background-size: contain;}
+.hexage .node:hover .icon{ box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);}
+.hexage .node span{ display: block; font-size: 24px;}
+.hexage .node:nth-child(1) .icon{ background-image: url(img/icon-measure@2x.png);}
+.hexage .node:nth-child(2) .icon{ background-image: url(img/icon-pop@2x.png);}
+.hexage .node:nth-child(3) .icon{ background-image: url(img/icon-waterplat@2x.png);}
+.hexage .node:nth-child(4) .icon{ background-image: url(img/icon-carbon@2x.png);}
+.hexage .node:nth-child(5) .icon{ background-image: url(img/icon-county@2x.png);}
+.hexage .node:nth-child(6) .icon{ background-image: url(img/icon-airplan@2x.png);}
+
+.hexage .node:nth-child(1), 
+.hexage .node:nth-child(6){ position: relative; top: -3rem; flex-direction: column; width: 100%; text-align: center;}
+.hexage .node:nth-child(1){ flex-direction: column-reverse; top: 3rem;}
+
+.hexage .node:nth-child(n+2):not(:nth-child(6)){ justify-content: flex-start; padding-left: 7%;}
+.hexage .node:nth-child(n+2):not(:nth-child(6)) .icon{ margin: 0 20px 10px;}
+.hexage .node:nth-child(n+2):not(:nth-child(6)) span{ height: 148px; line-height: 148px;}
+
+.hexage .node:nth-child(2), 
+.hexage .node:nth-child(4){ flex-direction: row-reverse; justify-content: flex-end; padding-left: inherit; padding-right: 7%;}
+
+
+/* = app
+-------------------------------------------------------------- */
+#app{ padding-bottom: 6.25rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
+#app h2, #app h2 .more{ color: #FFF;}
+#app .items{ display: flex; justify-content: space-around; padding: 40px 0 130px;}
+#app .item{ display: block; text-align: center; font-size: 24px; color: #FFF; text-align: center;}
+#app .item:not(:last-child){ margin-bottom: 40px;}
+#app .item .icon{ display: block; margin-bottom: 48px; font-size: 145px;}
+
+/* = news
+-------------------------------------------------------------- */
+#news h2{ padding-bottom: 10px;}
+
 
 
 /* = Mobile adjustments 
@@ -383,19 +443,38 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		text-align:center;
 	}
 	
-	#header .bloc-sm{ padding: 10px 0;}
+	#header .bloc-sm{ padding: 5px 0;}
 	.navbar-collapse{ margin: 1rem 0;}
+	.navbar-brand{ width: 103px; height: 30px;}
 	.navbar-collapse .navbar-nav{ border-bottom: 1px solid rgba(255,255,255,.3); margin-bottom: 2rem; padding-bottom: 1rem;}
 	.navbar-light .navbar-nav .nav-link{ padding: 10px 0;}
 	.navbar-collapse .nav-login{ justify-content: flex-start; width: 100%;}
 
-	.bloc h2{ padding: 1.5rem 0; font-size: 1.125rem;}
-	.bloc h2 .more{ margin-top: inherit; font-size: .75rem;}
+	.bloc h2{ margin-top: 2.5rem; padding: 1.5rem 0; font-size: 1.5rem;}
+	.bloc h2 .more{ margin-top: 0; font-size: .75rem;}
 	.bloc h2 .more .icon{ font-size: .625rem;}
 	
 	#basic .row{ justify-content: space-evenly;}
 	#basic .col-md-2{ margin-bottom: 1rem; padding: 0; width: 45%;}
 	.card{ padding: 1.25rem 0; font-size: 1rem;}
 	.card .icon{ margin-bottom: 1.25rem;}
+
+	.hexage{ margin-top: inherit; padding-bottom: 3rem;}
+	.hexage:after{ display: none;}
+	.hexage .node{ width: 45%;}
+	.hexage .node:nth-child(1), .hexage .node:nth-child(6){ top: inherit; width: 45%;}
+	.hexage .node:nth-child(1){ flex-direction: column; top: inherit;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)){ flex-direction: column; padding-left: inherit;}
+	.hexage .node:nth-child(2), .hexage .node:nth-child(4){ padding-right: inherit;}
+	.hexage .node .icon{ width: 6rem; height: 6rem;}
+	.hexage .node span{ font-size: 1rem;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)) span{ height: inherit; line-height: inherit;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)) .icon{ margin: 0 auto 10px;}
+	
+	
+	#app .col-md-4+.col-md-4{ margin-top: 3rem;}
+	#app .item{ font-size: 1.25rem;}
+	#app .item .icon{ margin-bottom: 20px; font-size: 96px;}
+
 }
 
