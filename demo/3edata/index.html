@@ -18,7 +18,7 @@
 </head>
 <body>
 <!-- Header -->
-<div class="bloc l-bloc sticky-nav " id="header">
+<div class="bloc l-bloc sticky-nav" id="header">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col">
@@ -85,11 +85,6 @@
 	</div>
 </div>
 <!-- bloc-carousel END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
 
 <!-- Basic -->
 <div class="bloc l-bloc" id="basic">
@@ -158,6 +153,31 @@
 </div>
 <!-- App END -->
 
+<!-- Software -->
+<div class="bloc" id="software">
+	<div class="container">
+		<h2>软件平台<a class="more" href="#">更多<i class="icon icon-more"></i></a></h2>
+		<div class="row">
+			<div class="col-md-4">
+				<a class="card" href="#"><i class="icon icon-png-air"></i>空气质量日管理平台</a>
+			</div>
+			<div class="col-md-4">
+				<a class="card" href="#"><i class="icon icon-png-water"></i>水污染源排污许可管理支持平台</a>
+			</div>
+			<div class="col-md-4">
+				<a class="card" href="#"><i class="icon icon-png-sewage"></i>企业排污许可管理支持平台</a>
+			</div>
+			<div class="col-md-4">
+				<a class="card" href="#"><i class="icon icon-png-garbage"></i>生活垃圾管理平台</a>
+			</div>
+			<div class="col-md-4">
+				<a class="card" href="#"><i class="icon icon-png-book"></i>知识平台</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Software END -->
+
 <!-- News -->
 <div class="bloc l-bloc" id="news">
 	<div class="container">	
@@ -191,31 +211,6 @@
 	</div>
 </div>
 <!-- News END -->
-
-<!-- Software -->
-<div class="bloc" id="software">
-	<div class="container">
-		<h2>软件平台<a class="more" href="#">更多<i class="icon icon-more"></i></a></h2>
-		<div class="row">
-			<div class="col-md-4">
-				<a class="card" href="#"><i class="icon icon-png-air"></i>空气质量日管理平台</a>
-			</div>
-			<div class="col-md-4">
-				<a class="card" href="#"><i class="icon icon-png-water"></i>水污染源排污许可管理支持平台</a>
-			</div>
-			<div class="col-md-4">
-				<a class="card" href="#"><i class="icon icon-png-sewage"></i>企业排污许可管理支持平台</a>
-			</div>
-			<div class="col-md-4">
-				<a class="card" href="#"><i class="icon icon-png-garbage"></i>生活垃圾管理平台</a>
-			</div>
-			<div class="col-md-4">
-				<a class="card" href="#"><i class="icon icon-png-book"></i>知识平台</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Software END -->
 
 <!-- Member -->
 <div class="bloc" id="member">
@@ -278,12 +273,34 @@
 	</div>
 </div>
 <!-- Footer END -->
-</div>
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 
 <script src="./js/jquery-3.3.1.min.js?5591"></script>
 <script src="./js/bootstrap.bundle.min.js?9096"></script>
+<script src="./js/jquery.bootstrap-autohidingnavbar.js?0515"></script>
 <script src="./js/blocs.min.js?5318"></script>
 <script src="./js/lazysizes.min.js" defer></script>
+
+<script>
+	// 滚动时自动隐藏固定的头部
+	$(".sticky-nav").autoHidingNavbar();
+
+	//平滑滚动到锚dian
+	$(".site-navigation .nav-item .nav-link").click(function() {
+    	$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+    	}, {
+			duration: 500,
+			easing: "swing"
+    	});
+		return false;
+  	});
+
+</script>
+
 <!-- Additional JS END -->
 
 <!-- Preloader -->

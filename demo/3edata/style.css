@@ -39,7 +39,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-right:0;
 }
 
-.bloc h2{ display: flex; justify-content: space-between; margin-top: 50px; padding: 50px 0 30px; font-size: 30px; color: #2D3436; font-weight: 500;}
+.bloc h2{ display: flex; justify-content: space-between; padding: 50px 0 30px; font-size: 30px; color: #2D3436; font-weight: 500;}
 .bloc h2 .more{ display: inline-block; margin-top: .5rem; font-size: 1.5rem; color: #B2BEC3; font-weight: normal;}
 .bloc h2 .more .icon{ margin-left: .5rem; font-size: 1rem;}
 
@@ -322,7 +322,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = Basic
 -------------------------------------------------------------- */
-#basic{ padding-bottom: 6.25rem; background: url(img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
+#basic{ padding-bottom: 3.125rem; background: url(img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
 
 #basic .card{ margin-bottom: 3.125rem; padding: 3.125rem 0; border: none; font-size: 1.5rem; color: #FFF;}
 #basic .card:hover{ color: #FFF; }
@@ -332,7 +332,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 /* = Plats
 -------------------------------------------------------------- */
 
-#plats{ position: relative; padding-bottom: 6.25rem; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
+#plats{ position: relative; padding-bottom: 3.125rem; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
 #plats h2{ color: #FFF;}
 #plats:after{ position: absolute; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: 0 auto; width: 100%; height: calc( 100% / 2.5); background: url(img/bg_platform.png) no-repeat center bottom; background-size: 75%; background-attachment: fixed;}
 .hexage{ position: relative; display: flex; justify-content: space-between; margin: -70px 0;flex-wrap: wrap; text-align: center;}
@@ -352,6 +352,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 .hexage .node:nth-child(1), 
 .hexage .node:nth-child(6){ position: relative; top: -3rem; flex-direction: column; width: 100%; text-align: center;}
 .hexage .node:nth-child(1){ flex-direction: column-reverse; top: 3rem;}
+.hexage .node:nth-child(1) .icon{ margin-top: 10px;}
 
 .hexage .node:nth-child(n+2):not(:nth-child(6)){ justify-content: flex-start; padding-left: 7%;}
 .hexage .node:nth-child(n+2):not(:nth-child(6)) .icon{ margin: 0 20px 10px;}
@@ -363,7 +364,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = App
 -------------------------------------------------------------- */
-#app{ padding-bottom: 6.25rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
+#app{ padding-bottom: 3.125rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
 #app h2, #app h2 .more{ color: #FFF;}
 #app .items{ display: flex; justify-content: space-around; padding: 40px 0 130px;}
 #app .item{ display: block; text-align: center; font-size: 24px; color: #FFF; text-align: center;}
@@ -372,7 +373,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = News
 -------------------------------------------------------------- */
-#news{ padding-bottom: 6.25rem;}
+#news{ padding-bottom: 3.125rem;}
 #news h2{ padding-bottom: 10px;}
 
 /* = Software
@@ -384,7 +385,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = Member
 -------------------------------------------------------------- */
-#member{ padding-bottom: 6.25rem; background-image: radial-gradient(51% 98%, #476182 0%, #2E4562 97%, #2E4562 98%);}
+#member{ padding-bottom: 3.125rem; background-image: radial-gradient(51% 98%, #476182 0%, #2E4562 97%, #2E4562 98%);}
 #member h2{ color: #FFF;}
 #member .card{ padding: 3.125rem; height: 100%; background: none; border: 1px solid #FFF; box-shadow: none; box-sizing: border-box; color: #FFF;}
 #member .card .icon{ margin: 25px 0 35px; font-size: 70px;}
@@ -392,7 +393,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = Links
 -------------------------------------------------------------- */
-#links{ padding-bottom: 6.25rem;}
+#links{ padding-bottom: 3.125rem;}
 #links h2{ margin-top: inherit;}
 #links .imgbox{}
 #links .imgbox a{ display: inline-block; margin-bottom: 10px;}
@@ -536,7 +537,6 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 @media (max-width: 575px){
 	
-	#header .bloc-sm{ padding: 5px 0;}
 	.navbar-collapse{ margin: 1rem 0;}
 	.navbar-brand{ width: 103px; height: 30px;}
 	.navbar-collapse .navbar-nav{ border-bottom: 1px solid rgba(255,255,255,.3); margin-bottom: 2rem; padding-bottom: 1rem;}
