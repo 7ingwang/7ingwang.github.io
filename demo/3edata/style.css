@@ -433,10 +433,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
 }
 @media (max-width: 767px){
-    .page-container{
-        overflow-x: hidden;
-        position:relative;
-    }
+
     .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
         padding-left:0;padding-right:0;
     }
@@ -474,11 +471,6 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 }
 
 @media (max-width: 991px){
-	.mt-md-0{
-	}
-	.mt-md-4{
-	}
-
 
 	#bloc-carousel .carousel-caption{ top: 15%; font-size: 1.5rem;}
 
@@ -511,16 +503,17 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	#software .card .icon{ width: 6rem; height: 6rem;}
 
 	#member .card{ padding: 3rem 1rem 1rem; min-height: inherit;}
+
+	#links .imgbox{ text-align: center;}
+
+	#footer .qrcode{ position: inherit; margin-bottom: 2rem; padding: 0 1rem; text-align: center;}
+	#footer .qrcode img{ display: inherit; margin: 0 auto 5px;}
 	
 }
 
 @media (max-width: 767px){
-	.text-right{
-	}
-	.text-left{
-	}
-	.text-center{
-	}
+	
+	.navbar-nav .nav-item{ text-align: inherit;}
 	
 	#bloc-carousel .carousel-caption{ top: 5%; font-size: 1.2rem;}
 
@@ -538,14 +531,10 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	#member .col-md-4+.col-md-4{ margin-top: 1rem;}
 	#member .card p{ font-size: 15px;}
 
+	#footer .qrcode img{ margin: 0 0 5px;}
 }
 
 @media (max-width: 575px){
-	.mt-1{
-	}
-	.footer-link{
-		text-align:center;
-	}
 	
 	#header .bloc-sm{ padding: 5px 0;}
 	.navbar-collapse{ margin: 1rem 0;}
@@ -571,6 +560,5 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	#footer .menu li{ margin-bottom: 1rem; padding: 0 1rem; width: 45%;}
 	#footer p+p{ margin-top: 10px; font-size: 14px;}
 	#footer p{ text-align: left;}
-	#footer .qrcode{ position: inherit; margin-bottom: 2rem; padding: 0 1rem;}
 }
 
