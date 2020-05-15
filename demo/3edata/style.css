@@ -133,10 +133,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 -------------------------------------------------------------- */
 #header{ background: #148FE4;}
 #header .bloc-sm{ padding: 17px 0;}
+#header.sticky{ background: rgba(20,143,228,.9);}
 
 /* = NavBar
 -------------------------------------------------------------- */
-.navbar-brand{ width: 138px; height: 40px; background-image: url(img/logo@2x.png); background-size: contain; text-indent: -9999vw;}
+.navbar-brand{ width: 138px; height: 40px; background: url(img/logo@2x.png) no-repeat left center; background-size: contain; text-indent: -9999vw;}
+.navbar-brand:hover{ opacity: .75;}
 
 .hero .hero-nav{
 	padding-left:inherit;
@@ -157,7 +159,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	top:0;
 	z-index:1000;
 	box-shadow:0 5px 10px rgba(0,0,0,.15);
-	 transition: all .2s ease-out;
+	transition: all .3s ease-out;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	padding-left: 1.25rem;
@@ -242,6 +244,7 @@ button{
 }
 .scrollToTop span{
 	margin-top: 6px;
+	color: #FFF;
 }
 .showScrollTop{
 	font-size: 14px;
@@ -261,6 +264,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1200px;
 }
 
+/* = Icons-png
+-------------------------------------------------------------- */
+[class^="icon-png-"], [class*=" icon-png-"]{ display: block; width: 10rem; height: 10rem; background: no-repeat center center; background-size: contain;}
+.icon-png-air{ background-image: url(img/icon-png-air@2x.png);}
+.icon-png-water{ background-image: url(img/icon-png-water@2x.png);}
+.icon-png-sewage{ background-image: url(img/icon-png-sewage@2x.png);}
+.icon-png-garbage{ background-image: url(img/icon-png-garbage@2x.png);}
+.icon-png-book{ background-image: url(img/icon-png-book@2x.png);}
 
 /* = List
 -------------------------------------------------------------- */
@@ -274,13 +285,22 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 .list-symbol li:hover:before{ background: #148FE4;}
 
 
+
+
+/* = Card
+-------------------------------------------------------------- */
+.card{ padding: 1rem; text-align: center; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); font-size: 1rem;}
+.card:hover{ box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);}
+.card .icon{ margin: 0 auto 1.25rem; font-size: 3rem;}
+
+
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background color styles */
 
 .bgc-white{
-	background-color:#FFFFFF;
+	background-color:#FFF;
 }
 
 /* bg-color */
@@ -297,18 +317,19 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 #bloc-carousel .carousel-caption{ bottom: inherit; top: 15%; font-size: 50px;}
 #bloc-carousel .carousel-item-1 .carousel-caption{ color: #41C8B3;}
 #bloc-carousel .carousel-nav-controls .icon{ font-size: 5rem;}
+#bloc-carousel .carousel-indicators li{ background-color: #D8D8D8;}
+#bloc-carousel .carousel-indicators li.active{ background-color: #00B894;}
 
-
-/* = basic
+/* = Basic
 -------------------------------------------------------------- */
 #basic{ padding-bottom: 6.25rem; background: url(img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
 
-/* card */
-.card{ padding: 3.125rem 0; border: none; text-align: center; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); font-size: 1.5rem; color: #FFF; }
-.card:hover{ color: #FFF; box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);}
-.card .icon{ margin-bottom: 3.125rem; font-size: 5rem;}
+#basic .card{ margin-bottom: 3.125rem; padding: 3.125rem 0; border: none; font-size: 1.5rem; color: #FFF;}
+#basic .card:hover{ color: #FFF; }
+#basic .card .icon{ margin-bottom: 3.125rem; font-size: 5rem;}
 
-/* = plats
+
+/* = Plats
 -------------------------------------------------------------- */
 
 #plats{ position: relative; padding-bottom: 6.25rem; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
@@ -340,7 +361,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 .hexage .node:nth-child(4){ flex-direction: row-reverse; justify-content: flex-end; padding-left: inherit; padding-right: 7%;}
 
 
-/* = app
+/* = App
 -------------------------------------------------------------- */
 #app{ padding-bottom: 6.25rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
 #app h2, #app h2 .more{ color: #FFF;}
@@ -349,16 +370,53 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 #app .item:not(:last-child){ margin-bottom: 40px;}
 #app .item .icon{ display: block; margin-bottom: 48px; font-size: 145px;}
 
-/* = news
+/* = News
 -------------------------------------------------------------- */
+#news{ padding-bottom: 6.25rem;}
 #news h2{ padding-bottom: 10px;}
 
+/* = Software
+-------------------------------------------------------------- */
+#software{ padding-bottom: 4.25rem; background: #EFF8FD url(img/bg_cloud.png) no-repeat right bottom; background-size: 30%; background-attachment: fixed;}
+#software .card{ margin-bottom: 2rem; background: none; border: none; box-shadow: none; color: #636E72;}
+#software .card:hover{ background: rgba(255,255,255,.5);}
 
+
+/* = Member
+-------------------------------------------------------------- */
+#member{ padding-bottom: 6.25rem; background-image: radial-gradient(51% 98%, #476182 0%, #2E4562 97%, #2E4562 98%);}
+#member h2{ color: #FFF;}
+#member .card{ padding: 3.125rem; height: 100%; background: none; border: 1px solid #FFF; box-shadow: none; box-sizing: border-box; color: #FFF;}
+#member .card .icon{ margin: 25px 0 35px; font-size: 70px;}
+#member .card p{ font-size: 16px; line-height: 30px;}
+
+/* = Links
+-------------------------------------------------------------- */
+#links{ padding-bottom: 6.25rem;}
+#links h2{ margin-top: inherit;}
+#links .imgbox{}
+#links .imgbox a{ display: inline-block; margin-bottom: 10px;}
+#links .imgbox a+a{ margin-left: 50px;}
+#links .imgbox a:nth-child(5n+1){ margin-left: 0;}
+#links .imgbox img{ width: 200px; height: 50px; object-fit: contain;}
+#links .imgbox a:hover{ opacity: 1;}
+
+/* = Footer
+-------------------------------------------------------------- */
+#footer{ padding: 3.125rem 1rem 1rem; background-image: radial-gradient(50% 133%, #526379 0%, #3C4858 100%); color: #B2BEC3;}
+#footer .container{ position: relative;}
+#footer a{ color: #DFE6E9;}
+#footer .menu{ display: flex; justify-content: center; margin-bottom: 2rem;}
+#footer .menu li{ width: inherit;}
+#footer .menu li+li{ margin-left: 2rem;}
+#footer .menu li a{ font-weight: bold;}
+#footer p{ padding: 0 1rem; text-align: center;}
+#footer .qrcode{ position: absolute; top: 0; right: 0;}
+#footer .qrcode img{ display: block; margin-bottom: 5px; width: 86px; height: 86px; object-fit: cover;}
 
 /* = Mobile adjustments 
 -------------------------------------------------------------- */
-@media (max-width: 1024px)
-{
+@media (max-width: 1024px){
     .bloc{
         padding-left: 20px; 
         padding-right: 20px;  
@@ -368,15 +426,13 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
         padding-right: 0;  
     }
 }
-@media (max-width: 991px)
-{
+@media (max-width: 991px){
     .container{width:100%;}
     .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */
     .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
 }
-@media (max-width: 767px)
-{
+@media (max-width: 767px){
     .page-container{
         overflow-x: hidden;
         position:relative;
@@ -422,6 +478,39 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	}
 	.mt-md-4{
 	}
+
+
+	#bloc-carousel .carousel-caption{ top: 15%; font-size: 1.5rem;}
+
+	.navbar-nav .nav-item{ width: 50%; text-align: center;}
+	.navbar-collapse .nav-login a+a{ margin-left: 10px;}
+	
+	#basic{ background-size: 100%;}
+	#basic .row{ justify-content: space-evenly; flex-wrap: wrap;}
+	#basic .col-md-2{ flex: 0 0 45%; margin-bottom: 1rem; padding: 0; max-width: inherit;}
+	#basic .card{ margin-bottom: 0; padding: 1.25rem 0; font-size: 1rem;}
+	#basic .card .icon{ margin-bottom: 1.25rem;}
+
+	
+	.hexage{ margin-top: inherit; padding-bottom: 3rem;}
+	.hexage:after{ display: none;}
+	.hexage .node{ margin-bottom: 3rem; width: 45%;}
+	.hexage .node:nth-child(1), .hexage .node:nth-child(6){ top: inherit; width: 45%;}
+	.hexage .node:nth-child(1){ flex-direction: column; top: inherit;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)){ flex-direction: column; padding-left: inherit;}
+	.hexage .node:nth-child(2), .hexage .node:nth-child(4){ padding-right: inherit;}
+	.hexage .node .icon{ width: 10rem; height: 10rem;}
+	.hexage .node span{ font-size: 1.5rem;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)) span{ height: inherit; line-height: inherit;}
+	.hexage .node:nth-child(n+2):not(:nth-child(6)) .icon{ margin: 0 auto 10px;}
+
+	#app{ background-size: 100%;}
+	#app .item{ font-size: 1.25rem;}
+	#app .item .icon{ margin-bottom: 20px; font-size: 8rem;}
+
+	#software .card .icon{ width: 6rem; height: 6rem;}
+
+	#member .card{ padding: 3rem 1rem 1rem; min-height: inherit;}
 	
 }
 
@@ -434,6 +523,21 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	}
 	
 	#bloc-carousel .carousel-caption{ top: 5%; font-size: 1.2rem;}
+
+	#basic .col-md-2{ width: 45%;}	
+
+	.hexage .node{ margin-bottom: 1rem;}
+	.hexage .node span{ font-size: 1rem;}
+	.hexage .node .icon{ width: 6rem; height: 6rem;}
+
+	#app .row{ display: flex;}
+	#app .col-md-4+.col-md-4{ margin-top: 3rem;}
+	#app .item{ font-size: 1rem;}
+	#app .item .icon{font-size: 5rem;}
+
+	#member .col-md-4+.col-md-4{ margin-top: 1rem;}
+	#member .card p{ font-size: 15px;}
+
 }
 
 @media (max-width: 575px){
@@ -454,27 +558,19 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	.bloc h2 .more{ margin-top: 0; font-size: .75rem;}
 	.bloc h2 .more .icon{ font-size: .625rem;}
 	
-	#basic .row{ justify-content: space-evenly;}
-	#basic .col-md-2{ margin-bottom: 1rem; padding: 0; width: 45%;}
-	.card{ padding: 1.25rem 0; font-size: 1rem;}
-	.card .icon{ margin-bottom: 1.25rem;}
+	#bloc-carousel .carousel-nav-controls .icon{ font-size: 2rem;}
 
-	.hexage{ margin-top: inherit; padding-bottom: 3rem;}
-	.hexage:after{ display: none;}
-	.hexage .node{ width: 45%;}
-	.hexage .node:nth-child(1), .hexage .node:nth-child(6){ top: inherit; width: 45%;}
-	.hexage .node:nth-child(1){ flex-direction: column; top: inherit;}
-	.hexage .node:nth-child(n+2):not(:nth-child(6)){ flex-direction: column; padding-left: inherit;}
-	.hexage .node:nth-child(2), .hexage .node:nth-child(4){ padding-right: inherit;}
-	.hexage .node .icon{ width: 6rem; height: 6rem;}
-	.hexage .node span{ font-size: 1rem;}
-	.hexage .node:nth-child(n+2):not(:nth-child(6)) span{ height: inherit; line-height: inherit;}
-	.hexage .node:nth-child(n+2):not(:nth-child(6)) .icon{ margin: 0 auto 10px;}
-	
-	
-	#app .col-md-4+.col-md-4{ margin-top: 3rem;}
-	#app .item{ font-size: 1.25rem;}
-	#app .item .icon{ margin-bottom: 20px; font-size: 96px;}
+	#software{ background-size: 75%;}
 
+	#links .imgbox a{ display: block; text-align: center;}
+	#links .imgbox a+a{ margin-left: inherit;}
+
+	#footer{ justify-content: flex-start; padding: 2rem 1rem 1rem;}
+	#footer .menu{ justify-content: flex-start; flex-wrap: wrap;}
+	#footer .menu li+li{ margin-left: inherit;}
+	#footer .menu li{ margin-bottom: 1rem; padding: 0 1rem; width: 45%;}
+	#footer p+p{ margin-top: 10px; font-size: 14px;}
+	#footer p{ text-align: left;}
+	#footer .qrcode{ position: inherit; margin-bottom: 2rem; padding: 0 1rem;}
 }
 
