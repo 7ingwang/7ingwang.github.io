@@ -34,14 +34,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	position:relative;
 	display:flex;
 }
-.bloc .container{
-	padding-left:0;
-	padding-right:0;
-}
 
-.bloc h2{ display: flex; justify-content: space-between; padding: 50px 0 30px; font-size: 30px; color: #2D3436; font-weight: 500;}
-.bloc h2 .more{ display: inline-block; margin-top: .5rem; font-size: 1.5rem; color: #B2BEC3; font-weight: normal;}
-.bloc h2 .more .icon{ margin-left: .5rem; font-size: 1rem;}
 
 /* Sizes */
 
@@ -129,28 +122,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:30px;
 }
 
-/* = header
--------------------------------------------------------------- */
-#header{ background: #148FE4;}
-#header .bloc-sm{ padding: 17px 0;}
-#header.sticky{ background: rgba(20,143,228,.9);}
-
-/* = NavBar
--------------------------------------------------------------- */
-.navbar-brand{ width: 138px; height: 40px; background: url(img/logo@2x.png) no-repeat left center; background-size: contain; text-indent: -9999vw;}
-.navbar-brand:hover{ opacity: .75;}
-
-.hero .hero-nav{
-	padding-left:inherit;
-	padding-right:inherit;
-}
-
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-collapse .nav-login{ display: flex; width: 36%; justify-content: flex-end;}
-.navbar-collapse .nav-login a{ padding: .375rem 1.25rem; border: 1px solid #FFF; border-radius: 1.25rem; color: #FFF;}
-.navbar-collapse .nav-login a:hover{ color: #FFF; opacity: .75;}
-.navbar-collapse .nav-login a+a{ margin-left: 1.25rem;}
-
 /* = Sticky Nav
 -------------------------------------------------------------- */
 
@@ -212,9 +183,6 @@ button{
 .icon-md{
 	font-size:30px!important;
 }
-
-
-
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
@@ -285,8 +253,6 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 .list-symbol li:hover:before{ background: #148FE4;}
 
 
-
-
 /* = Card
 -------------------------------------------------------------- */
 .card{ padding: 1rem; text-align: center; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10); font-size: 1rem;}
@@ -312,6 +278,36 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 .bg-color-6{ background: #72A8C1;}
 
 
+/* = blocs
+-------------------------------------------------------------- */
+.bloc .container{ padding-left:0; padding-right:0;}
+.bloc h2{ display: flex; justify-content: space-between; padding: 50px 0 30px; font-size: 30px; color: #2D3436; font-weight: 500;}
+.bloc h2 .more{ display: inline-block; margin-top: .5rem; font-size: 1.5rem; color: #B2BEC3; font-weight: normal;}
+.bloc h2 .more .icon{ margin-left: .5rem; font-size: 1rem;}
+
+/* = Header
+-------------------------------------------------------------- */
+#header{ background: #148FE4; z-index: 2;}
+#header .bloc-sm{ padding: 17px 0;}
+#header.sticky{ background: rgba(20,143,228,.9);}
+
+/* = NavBar
+-------------------------------------------------------------- */
+.navbar-brand{ width: 138px; height: 40px; background: url(img/logo@2x.png) no-repeat left center; background-size: contain; text-indent: -9999vw;}
+.navbar-brand:hover{ opacity: .75;}
+
+.hero .hero-nav{
+	padding-left:inherit;
+	padding-right:inherit;
+}
+
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-collapse .nav-login{ display: flex; width: 36%; justify-content: flex-end;}
+.navbar-collapse .nav-login a{ padding: .375rem 1.25rem; border: 1px solid #FFF; border-radius: 1.25rem; color: #FFF;}
+.navbar-collapse .nav-login a:hover{ color: #FFF; opacity: .75;}
+.navbar-collapse .nav-login a+a{ margin-left: 1.25rem;}
+
+
 /* = bloc-carousel
 -------------------------------------------------------------- */
 #bloc-carousel .carousel-caption{ bottom: inherit; top: 15%; font-size: 50px;}
@@ -322,8 +318,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = Basic
 -------------------------------------------------------------- */
-#basic{ padding-bottom: 3.125rem; background: url(img/bg_hill.png) no-repeat right bottom; background-attachment: fixed;}
-
+#basic{ padding-bottom: 3.125rem; background: url(img/bg_hill.png) no-repeat right bottom; background-size: 50%; background-attachment: fixed; z-index: 1;}
 #basic .card{ margin-bottom: 3.125rem; padding: 3.125rem 0; border: none; font-size: 1.5rem; color: #FFF;}
 #basic .card:hover{ color: #FFF; }
 #basic .card .icon{ margin-bottom: 3.125rem; font-size: 5rem;}
@@ -333,9 +328,10 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 -------------------------------------------------------------- */
 
 #plats{ position: relative; padding-bottom: 3.125rem; background-image: radial-gradient(50% 89%, #476182 33%, #2E4562 89%); text-align: center;}
+#plats:before{ content: ""; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: url(img/bg_platform.png) no-repeat center bottom; background-size: 50%; z-index: 0;}
 #plats h2{ color: #FFF;}
-#plats:after{ position: absolute; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: 0 auto; width: 100%; height: calc( 100% / 2.5); background: url(img/bg_platform.png) no-repeat center bottom; background-size: 75%; background-attachment: fixed;}
-.hexage{ position: relative; display: flex; justify-content: space-between; margin: -70px 0;flex-wrap: wrap; text-align: center;}
+
+.hexage{ position: relative; display: flex; justify-content: space-between; margin-top: -70px; flex-wrap: wrap; text-align: center;}
 .hexage:after{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ""; display: block; margin: auto; height: 467px; background: url(img/bg_nodes@2x.png) no-repeat center center; background-size: contain; opacity: .5;}
 
 .hexage .node{ position: relative; display: flex; justify-content: center; margin: 20px 0; width: 45%; color: #FFF; text-align: center; z-index: 1;}
@@ -364,7 +360,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 /* = App
 -------------------------------------------------------------- */
-#app{ padding-bottom: 3.125rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-attachment: fixed;}
+#app{ padding-bottom: 6.25rem; background: #148FE4 url(img/bg_hill_sm.png) no-repeat 30% bottom; background-size: 30%; background-attachment: fixed;}
 #app h2, #app h2 .more{ color: #FFF;}
 #app .items{ display: flex; justify-content: space-around; padding: 40px 0 130px;}
 #app .item{ display: block; text-align: center; font-size: 24px; color: #FFF; text-align: center;}
@@ -520,6 +516,7 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 
 	#basic .col-md-2{ width: 45%;}	
 
+	#plats:before{ background-size: 70%;}
 	.hexage .node{ margin-bottom: 1rem;}
 	.hexage .node span{ font-size: 1rem;}
 	.hexage .node .icon{ width: 6rem; height: 6rem;}
@@ -543,10 +540,12 @@ ul, li{ margin: 0; padding: 0; list-style: none;}
 	.navbar-light .navbar-nav .nav-link{ padding: 10px 0;}
 	.navbar-collapse .nav-login{ justify-content: flex-start; width: 100%;}
 
-	.bloc h2{ margin-top: 2.5rem; padding: 1.5rem 0; font-size: 1.5rem;}
+	.bloc h2{ padding: 1.5rem 0; font-size: 1.5rem;}
 	.bloc h2 .more{ margin-top: 0; font-size: .75rem;}
 	.bloc h2 .more .icon{ font-size: .625rem;}
-	
+
+	#basic, #plats, #app, #software{ background-size: contain; background-attachment: inherit;}	
+
 	#bloc-carousel .carousel-nav-controls .icon{ font-size: 2rem;}
 
 	#software{ background-size: 75%;}
