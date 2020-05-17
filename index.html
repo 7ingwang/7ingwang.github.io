@@ -17,18 +17,30 @@
 			<h1>Terry Wang</h1>
 			<p>UI Designer & Photographer</p>
 			<ul class="icons">
-				<li><a href="http://terry.wang/wechat.html" target="_blank"><i class="icon icon-wechat" title="加我微信"></i><label>微信</label></a></li>
+				<li><a href="javascript:void(0)" onclick="btn_toggle();"><i class="icon icon-wechat" title="加我微信"></i><label>微信</label></a></li>
 				<li><a href="https://unsplash.com/@blueskin" target="_blank"><i class="icon icon-unsplash" title="Unsplash"></i><label>Unsplash</label></a></li>
 				<li><a href="https://500px.com.cn/blueskin" target="_blank" title="500px"><i class="icon icon-px500"></i><label>500px</label></a></li>
 				<li><a href="https://www.instagram.com/pixwind/" target="_blank" title="Instagram"><i class="icon icon-instagram"></i><label>Instagram</label></a></li>
 				<li><a href="mailto:terry@pixwind.com"><i class="icon icon-mail" title="发邮件给我"></i><label>Email</label></a></li>
 			</ul>
+			<div id="scan" class="hide"><img src="./img/wechat_terry.png" alt="wechat_terry">扫码加我微信</div>
 		</section>
-
 		<footer id="footer">
-			<p class="copyright">&copy; 2020 <a href="#">Terry.Wang</a> | <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备15009576号</a></p>
+			<p class="copyright">&copy; 2020 <a href="./">Terry.Wang</a> | <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备15009576号</a></p>
 		</footer>
 
 		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=66539297" charset="UTF-8"></script>
+		<script type="text/javascript">
+		    function btn_toggle(){
+		        var sh = document.getElementById('scan').classList.contains('show');
+		        if(sh){
+		            document.getElementById('scan').classList.remove('show');
+		            document.getElementById('scan').classList.add('hide');
+		        }else{
+		            document.getElementById('scan').classList.remove('hide');
+		            document.getElementById('scan').classList.add('show');
+		        }
+		    }
+		</script>
 	</body>
 </html>

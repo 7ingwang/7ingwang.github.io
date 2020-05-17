@@ -3,17 +3,27 @@ body, h1, p, ul, li{ margin: 0; padding: 0;}
 ul, li{ list-style: none;}
 body{ display: flex; flex-direction: column; line-height: 2; background-image: linear-gradient(90deg, #E7DFEC 0%, #75A5B8 100%); text-align: center; font-family: Helvetica; font-size: 16px;}
 a{ text-decoration: none; color: #666;}
+img{ object-fit: contain;}
 
-.card{ margin: 10% auto 1%; padding: 4rem 2rem 1rem; width: 75vw; height: 65vh; background: #EDEDED; border-radius: .25rem;}
+.show{ display: block;}
+.hide{ display: none;}
+
+.card{ margin: 10% auto 1%; padding: 3rem 2rem; width: 75vw; min-height: 70vh; background: #EDEDED; border-radius: .25rem;}
 .avatar{ width: 120px; height: 120px; border-radius: 50%; background-image: linear-gradient(135deg, #FFFFFF 0%, #EDEDED 100%);}
 .card h1{}
-.card p{ color: #999;}
-.icons{ display: flex; justify-content: space-around; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #DDD;}
-.icons .icon{ color: #333;}
+.card p{ color: #999; font-weight: 300;}
+.icons{ display: flex; justify-content: space-around; margin: 1rem 0; padding: .5rem 0 0; border: 1px solid #DDD; border-width: 1px 0;}
+.icons .icon{ font-size: 1.25rem; color: #333;}
+.icons .icon:hover{ color: #000;}
 .icons label{ display: none;}
+.card a{ font-size: .75rem; color: #999; font-weight: 100;}
 
-#footer{ font-size: .75rem; color: #666;}
+#scan{ text-align: center; font-size: .75rem; color: #999;}
+#scan img{ display: block; margin: 0 auto; width: 9rem; height: 9rem;}
+
+#footer{ font-size: .75rem; color: #666; opacity: .75;}
 
 @media (min-width: 992px) {
-.card{ max-width: 15rem; max-height: 50vh;}
+.card{ max-width: 15rem; min-height: inherit;}
+#scan img{ width: 6rem; height: 6rem;}
 }
