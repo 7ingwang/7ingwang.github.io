@@ -17,3 +17,23 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /pix/$1
 RewriteCond %{HTTP_HOST} ^((www|)\.)?pixwind\.com$
 RewriteRule ^(/)?$ pix/index.php [L]
+
+#terry.wang 绑定子目录terry
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^((www|)\.)?terry\.wang$
+RewriteCond %{REQUEST_URI} !^/terry/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /terry/$1
+RewriteCond %{HTTP_HOST} ^((www|)\.)?terry\.wang$
+RewriteRule ^(/)?$ terry/index.php [L]
+
+#icons.uedog.com 绑定子目录icons
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^icons\.uedog\.com$
+RewriteCond %{REQUEST_URI} !^/icons/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /icons/$1
+RewriteCond %{HTTP_HOST} ^icons\.uedog\.com$
+RewriteRule ^(/)?$ icons/index.php [L]
