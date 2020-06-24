@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'icons-pixwind';
+    src:    url('../fonts/icons-pixwind.eot?j3rrcl');
+    src:    url('../fonts/icons-pixwind.eot?j3rrcl#iefix') format('embedded-opentype'),
+        url('../fonts/icons-pixwind.ttf?j3rrcl') format('truetype'),
+        url('../fonts/icons-pixwind.woff?j3rrcl') format('woff'),
+        url('../fonts/icons-pixwind.svg?j3rrcl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons-pixwind' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-drawing:before {
+    content: "\e900";
+}
+.icon-earphone:before {
+    content: "\e901";
+}
+.icon-pencil:before {
+    content: "\e902";
+}
+.icon-ice:before {
+    content: "\e903";
+}
+.icon-camera:before {
+    content: "\e904";
+}
+.icon-p-leaf:before {
+    content: "\e905";
+}
+

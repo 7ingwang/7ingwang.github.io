@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>tech</title>
+    <defs>
+        <polygon id="path-1" points="30 28 58 42.9681648 30 56 2 42.9507491"></polygon>
+        <filter x="-4.5%" y="-8.9%" width="108.9%" height="135.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="tech" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-Copy-6">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#00CEC9" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <polygon id="Rectangle-Copy-2" fill="#6C5CE7" opacity="0.800000012" points="30 0 30 26 3.61523437 39.65625 3.61523438 11.4977442"></polygon>
+        <polygon id="Rectangle-Copy-3" fill="#FFFFFF" opacity="0.800000012" points="22 7 22 17.4901497 11 23 11 11.6389638"></polygon>
+        <polygon id="Rectangle-Copy-7" fill="#FFFFFF" opacity="0.800000012" points="22 7 22 17.4901497 16.5 11 16.5 -0.361036207"></polygon>
+        <polygon id="Rectangle-Copy-4" fill="#FFFFFF" opacity="0.800000012" points="21.2861328 20.828125 21.2861328 22.0981445 6 29.7529297 6 28.1892876"></polygon>
+        <polygon id="Rectangle-Copy-5" fill="#FFFFFF" opacity="0.800000012" points="26 22.6337252 26 23.8613281 6 33.7529297 6 32.1892876"></polygon>
+        <polygon id="Path-7" fill="#00CEC9" opacity="0.800000012" points="2 42.9507491 2 48 30 61.1225586 30 56"></polygon>
+        <polygon id="Path-7-Copy" fill="#00CEC9" opacity="0.800000012" points="58 42.8882491 58 47.9375 30 61.1225586 30 56"></polygon>
+        <g id="Group" transform="translate(21.000000, 25.000000)">
+            <polygon id="Path-8-Copy" fill="#0984E3" points="0 0 31 10.7308815 16.6299562 14"></polygon>
+            <polygon id="Path-8" fill="#008CF8" opacity="0.600000024" points="1 0 9 21 17 14.1751552"></polygon>
+            <polygon id="Path-10" fill="#01589B" points="13 16.700476 19 23 16.5153364 14"></polygon>
+            <polygon id="Path-10-Copy" fill="#01589B" opacity="0.82249814" points="6 4 21 12.9693682 19.2262889 23 16.6739398 14.0529387"></polygon>
+        </g>
+        <g id="Group-2" opacity="0.600000024" transform="translate(10.000000, 34.000000)" fill="#0984E3">
+            <polygon id="Path-8-Copy" points="0 0 19 6.89842382 10.1925538 9"></polygon>
+            <polygon id="Path-8" points="1 0 6 13 11 8.77509605"></polygon>
+            <polygon id="Path-10" points="8 10.5002644 12 14 10.3435576 9"></polygon>
+            <polygon id="Path-10-Copy" opacity="0.82249814" points="4 2 13 7.6648641 11.9357734 14 10.4043639 8.34922442"></polygon>
+        </g>
+        <g id="Group-3" opacity="0.800000012" transform="translate(24.000000, 5.000000)">
+            <polygon id="Path-6" fill="#00B894" points="1.54284002e-14 0.174130756 27.7490234 1.15463195e-14 27.7490234 12.2962011 4 12.828125 8.8817842e-15 15.828125"></polygon>
+            <line x1="4" y1="4" x2="15.2744141" y2="4" id="Path-11" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="4" y1="8" x2="24" y2="8" id="Path-11-Copy" stroke="#FFFFFF" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>

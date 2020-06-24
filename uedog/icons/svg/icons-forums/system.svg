@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>system</title>
+    <g id="system" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle-Copy" fill="#3D4045" points="30 40 30 6 1.0658141e-13 15.2070313 6.70297151e-14 49.8789062"></polygon>
+        <polygon id="Rectangle-Copy-5" fill="#3D4045" points="30 40 30 6 60 15.328125 60 50"></polygon>
+        <polygon id="Rectangle-Copy-10" fill="#DFE6E9" points="55.3085938 41.4238281 55.3085938 7.42382812 33 1.0658141e-14 33 34.671875"></polygon>
+        <polygon id="Rectangle-Copy-9" fill="#8EAB60" points="46.3085938 41.4238281 46.3085938 7.42382812 24 1.0658141e-14 24 34.671875"></polygon>
+        <polygon id="Rectangle-Copy-8" fill="#AAC382" points="36.3085938 41.4238281 36.3085938 7.42382812 14 1.0658141e-14 14 34.671875"></polygon>
+        <polygon id="Rectangle-Copy-7" fill="#85B737" points="27.3085938 41.4238281 27.3085938 7.42382812 5 1.0658141e-14 5 34.671875"></polygon>
+        <polygon id="Rectangle-Copy-6" fill="#22B6B4" opacity="0.900000036" points="30 59.8789063 30 25.8789063 60 15.328125 60 50"></polygon>
+        <polygon id="Star" fill="#E17055" transform="translate(44.657537, 35.969157) rotate(6.000000) translate(-44.657537, -35.969157) " points="46.2732173 38.4982906 42.4616161 44.9147717 42.9392355 38.1171597 38.2464399 35.6684951 43.4933547 32.9660789 44.2375799 27.0235421 46.583278 31.3863934 51.0686346 29.084089 48.2965498 34.612186 50.4945052 40.8938997"></polygon>
+        <polygon id="Rectangle-Copy-4" fill="#22B6B4" points="30 59.8789063 30 25.8789063 1.0658141e-13 15.2070313 6.70297151e-14 49.8789062"></polygon>
+        <line x1="7.72460937" y1="30" x2="21.3476562" y2="35" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+    </g>
+</svg>

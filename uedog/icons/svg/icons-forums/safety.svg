@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>safety</title>
+    <defs>
+        <linearGradient x1="50%" y1="37.6579122%" x2="50%" y2="37.6579122%" id="linearGradient-1">
+            <stop stop-color="#1254AF" offset="0%"></stop>
+            <stop stop-color="#1A8FCE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="37.6579122%" x2="50%" y2="37.6579122%" id="linearGradient-2">
+            <stop stop-color="#1868D4" offset="0%"></stop>
+            <stop stop-color="#1A8FCE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="safety" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="Oval" fill="#5ABFBC" opacity="0.800000012" cx="30" cy="53" rx="30" ry="7"></ellipse>
+        <ellipse id="Oval-Copy" fill="#5ABFBC" cx="30.5" cy="47.5" rx="23.5" ry="5.5"></ellipse>
+        <g id="Group" transform="translate(12.000000, 0.000000)">
+            <path d="M2,9.47354272 C5.65289714,8.11241318 8.97680664,6.50959346 11.9717285,4.66508356 C14.9666504,2.82057367 17.3094076,1.26554581 19,0 C21.6326415,2.03326374 24.1566324,3.5882916 26.5719727,4.66508356 C28.9873129,5.74187553 32.1299887,7.34469525 36,9.47354272 C35.7632714,18.1418233 34.3466047,24.3410258 31.75,28.0711501 C29.1533953,31.8012745 24.9033953,35.7775578 19,40 C13.0100446,35.6532108 8.76004459,31.6769275 6.25,28.0711501 C3.73995541,24.4653728 2.32328875,18.2661703 2,9.47354272 Z" id="Path-2-Copy" fill="url(#linearGradient-1)" opacity="0.600000024"></path>
+            <path d="M0,18.1840584 C3.97521159,16.7208442 7.59240723,14.997813 10.8515869,13.0149648 C14.1107666,11.0321167 16.6602376,9.36046175 18.5,8 C21.3649334,10.1857585 24.1116294,11.8574135 26.7400879,13.0149648 C29.3685464,14.1725162 32.7885171,15.8955474 37,18.1840584 C36.7423835,27.5024601 35.2007169,34.1666027 32.375,38.1764864 C29.5492831,42.1863701 24.9242831,46.4608746 18.5,51 C11.9815191,46.3272016 7.35651911,42.0526971 4.625,38.1764864 C1.89348089,34.3002757 0.351814223,27.6361331 0,18.1840584 Z" id="Path-2" fill="url(#linearGradient-2)" opacity="0.800000012"></path>
+            <polyline id="Path-3" stroke="#FFFFFF" stroke-width="4" opacity="0.800000012" points="10 28.3027344 16.6972656 35 27.6582031 23"></polyline>
+        </g>
+    </g>
+</svg>

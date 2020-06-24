@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>survey</title>
+    <g id="survey" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle-Copy" fill="#5ABFBC" points="60 12.9626805 30 -2.01937686e-14 30 32.0373195 60 45"></polygon>
+        <polygon id="Rectangle-Copy-3" fill="#71D8D6" transform="translate(15.000000, 22.500000) scale(-1, 1) translate(-15.000000, -22.500000) " points="30 12.9626805 -7.99179663e-14 -2.01937686e-14 -7.99179663e-14 32.0373195 30 45"></polygon>
+        <polygon id="Rectangle-Copy-4" fill="#5C8D8C" transform="translate(30.000000, 46.037319) scale(-1, 1) translate(-30.000000, -46.037319) " points="30 60.0373195 0 45.1141188 30 32.0373195 60 45.1141188"></polygon>
+        <polygon id="Rectangle-Copy-8" fill="#81ECEC" transform="translate(19.500000, 36.500000) scale(-1, 1) translate(-19.500000, -36.500000) " points="28 33.674621 11 21 11 39.325379 28 52"></polygon>
+        <polygon id="Rectangle-Copy-7" fill="#00CEC9" transform="translate(30.500000, 28.500000) scale(-1, 1) translate(-30.500000, -28.500000) " points="39 17.674621 22 5 22 39.325379 39 52"></polygon>
+        <polygon id="Rectangle-Copy-6" fill="#A29BFE" opacity="0.900000036" transform="translate(41.500000, 26.000000) scale(-1, 1) translate(-41.500000, -26.000000) " points="50 12.674621 33 -3.55271368e-15 33 39.325379 50 52"></polygon>
+        <path d="M6.29101563,39 C14.0970052,39.4375 18,39.65625 18,39.65625 C18,39.65625 21.6666667,36.4895833 29,30.15625 L43.5,35.65625 L55.765625,26" id="Path-4" stroke="#FFFFFF" stroke-width="2"></path>
+    </g>
+</svg>

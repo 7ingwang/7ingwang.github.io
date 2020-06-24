@@ -210,12 +210,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* = Icons
 -------------------------------------------------------------- */
 .icons{ justify-content: space-evenly;}
-.icons-col-3 .icon{ width: 30%;}
-.icon{ padding: 1rem; background: #f0f0f0; text-align: center;}
-.icon:hover{ background: #eee;}
-.icon:before{ display: block; margin-bottom: .5rem; font-size: 3rem;}
+.icons-col-3 .icon{ width: 33.33%;}
+.icon{ padding: 1rem; text-align: center;}
+.icon:hover{ background: #f0f0f0;}
+.icon:before{ display: block; margin-bottom: .5rem;}
 
-.icons-ued .icon:before{ color: #3B77EF;}
+.icons-ued .icon:before{ font-family: 'icons-ued' !important; font-size: 3rem; color: #3B77EF;}
+
+.icons-pixwind .icon:before{ font-family: 'icons-pixwind' !important; font-size: 3rem; color: #00CEC9;}
+
+.icons-forums .icon{ width: 20%;}
+
+.tabbar.icons-wallet{ background: #1C2846;}
+.tabbar.icons-wallet .icon{ font-size: 2rem;}
+.tabbar.icons-wallet .icon span:last-child{ display: block; margin-top: .5rem; font-size: .75rem; color: #A2A2A2;}
+.tabbar.icons-wallet .icon.active span:last-child{ color: #36CEEC;}
 
 /* = Mobile adjustments
 -------------------------------------------------------------- */
