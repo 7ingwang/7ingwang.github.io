@@ -211,20 +211,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 -------------------------------------------------------------- */
 .icons{ justify-content: space-evenly;}
 .icons-col-3 .icon{ width: 33.33%;}
-.icon{ padding: 1rem; text-align: center;}
-.icon:hover{ background: #f0f0f0;}
+.icon{ padding: 2rem 1rem; text-align: center;}
 .icon:before{ display: block; margin-bottom: .5rem;}
 
-.icons-ued .icon:before{ font-family: 'icons-ued' !important; font-size: 3rem; color: #3B77EF;}
+.icons-ued .icon:before{ font-family: 'icons-ued' !important; font-size: 6rem; color: #00CEC9;}
+.icons-ued .icon:first-child:before{ color: #A29BFE;}
+.icons-ued .icon:last-child:before{ color: #74B9FF;}
 
-.icons-pixwind .icon:before{ font-family: 'icons-pixwind' !important; font-size: 3rem; color: #00CEC9;}
+.icons-pixwind .icon:before{ font-family: 'icons-pixwind' !important; font-size: 5rem; color: #1bf;}
 
-.icons-forums .icon{ width: 20%;}
+.icons-forums .icon{ width: 30%;}
+.icons-forums .icon:before{ min-height: 10rem;}
+
+.icons-wallet .icon:before{ font-family: 'icons-wallet' !important; font-size: 3rem; color: #7A808F;}
 
 .tabbar.icons-wallet{ background: #1C2846;}
-.tabbar.icons-wallet .icon{ font-size: 2rem;}
+.tabbar.icons-wallet .icon{ font-size: 5rem;}
+.tabbar.icons-wallet .icon span:before{ font-family: 'icons-wallet' !important;}
 .tabbar.icons-wallet .icon span:last-child{ display: block; margin-top: .5rem; font-size: .75rem; color: #A2A2A2;}
 .tabbar.icons-wallet .icon.active span:last-child{ color: #36CEEC;}
+
+.icons-3data .icon:before{ font-family: 'icons-3edata' !important; font-size: 3rem;}
+.icons-3data [class*="icon-member-"]:before{ font-size: 6rem; color: #1F6CDB;}
 
 /* = Mobile adjustments
 -------------------------------------------------------------- */
