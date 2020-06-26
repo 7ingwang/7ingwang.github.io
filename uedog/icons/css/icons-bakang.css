@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'icons-bakang';
+  src:  url('../fonts/icons-bakang.eot?q9cluw');
+  src:  url('../fonts/icons-bakang.eot?q9cluw#iefix') format('embedded-opentype'),
+    url('../fonts/icons-bakang.ttf?q9cluw') format('truetype'),
+    url('../fonts/icons-bakang.woff?q9cluw') format('woff'),
+    url('../fonts/icons-bakang.svg?q9cluw#icons-bakang') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-bakang' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-del:before {
+  content: "\e920";
+}
+.icon-male:before {
+  content: "\e911";
+}
+.icon-female:before {
+  content: "\e910";
+}
+.icon-right-small:before {
+  content: "\e90c";
+}
+.icon-up-small:before {
+  content: "\e90d";
+}
+.icon-down-small:before {
+  content: "\e90e";
+}
+.icon-left-small:before {
+  content: "\e90f";
+}
+.icon-down:before {
+  content: "\e912";
+}
+.icon-share:before {
+  content: "\e913";
+}
+.icon-more:before {
+  content: "\e914";
+}
+.icon-done:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-star-o:before {
+  content: "\e917";
+}
+.icon-star:before {
+  content: "\e918";
+}
+.icon-check:before {
+  content: "\e919";
+}
+.icon-like:before {
+  content: "\e91a";
+}
+.icon-favorite:before {
+  content: "\e91b";
+}
+.icon-review:before {
+  content: "\e91c";
+}
+.icon-up:before {
+  content: "\e91d";
+}
+.icon-right:before {
+  content: "\e91e";
+}
+.icon-left:before {
+  content: "\e91f";
+}
+.icon-photo:before {
+  content: "\e905";
+}
+.icon-home-o:before {
+  content: "\e900";
+}
+.icon-service-o:before {
+  content: "\e901";
+}
+.icon-health:before {
+  content: "\e902";
+}
+.icon-prebook:before {
+  content: "\e903";
+}
+.icon-contact:before {
+  content: "\e904";
+}
+.icon-my-o:before {
+  content: "\e906";
+}
+.icon-my:before {
+  content: "\e907";
+}
+.icon-service:before {
+  content: "\e908";
+}
+.icon-cases-o:before {
+  content: "\e909";
+}
+.icon-cases:before {
+  content: "\e90a";
+}
+.icon-home:before {
+  content: "\e90b";
+}
