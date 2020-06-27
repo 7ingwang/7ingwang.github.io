@@ -66,9 +66,11 @@
 .icon-star:before {
   content: "\e918";
 }
+/*
 .icon-check:before {
   content: "\e919";
 }
+*/
 .icon-like:before {
   content: "\e91a";
 }

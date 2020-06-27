@@ -1,5 +1,3 @@
-.icon-svg:before{ content: ""; display: block; width: 100%; min-height: 3rem; background: no-repeat center center; background-size: contain;}
-
 .icon-tech:before {
 	background-image: url(../svg/icons-forums/tech.svg);
 }

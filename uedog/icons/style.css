@@ -212,10 +212,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* = Icons
 -------------------------------------------------------------- */
 .icons{ justify-content: space-evenly;}
+.icons-col-1 .icon{ width: 100%;}
 .icons-col-3 .icon{ width: 33.33%;}
 .icons-col-3 .icon:before{ font-size: 5rem;}
-.icon{ padding: 2rem 1rem; text-align: center;}
+.icons-col-4 .icon{ width: 25%;}
+.icons-col-4 .icon:before{ font-size: 2rem;}
+.icon{ padding: 2rem 1rem; text-align: center; color: #999;}
 .icon:before{ display: block; margin-bottom: .5rem;}
+.icon-svg:before{ content: ""; display: block; width: 100%; min-height: 5rem; background: no-repeat center center; background-size: contain;}
 
 /* icons-ued */
 .icons-ued .icon:before{ font-family: 'icons-ued' !important; color: #00CEC9;}
@@ -226,8 +230,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .icons-pixwind .icon:before{ font-family: 'icons-pixwind' !important; color: #1bf;}
 
 /* icons-forums */
-.icons-forums .icon{ width: 30%;}
-.icons-forums .icon:before{ min-height: 5rem;}
+.icons-forums .icon-svg{ width: 30%;}
 
 /* icons-wallet */
 .icons-wallet .icon:before{ font-family: 'icons-wallet' !important; color: #7A808F;}
@@ -241,9 +244,32 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* icons-3data */
 .icons-3data .icon:before{ font-family: 'icons-3edata' !important;}
 .icons-3data [class*="icon-member-"]:before{ color: #1F6CDB;}
+.icons-3data .icon:nth-child(n+1):nth-child(-n+3):before{ color: #138FE4;}
+.icons-3data .icon:nth-child(n+4):nth-child(-n+9):before{ color: #4BC2D0;}
+
+.icons-3data .icon-svg:before{ min-height: 5rem;}
+.icons-3data .icon-svg.city:before{ min-height: 20rem; background: #BAE5F5 center bottom no-repeat; background-image: url(./svg/icons-3edata/city.svg); background-size: auto 90%;}
+.icons-3data .icon-svg.air:before{ background-image: url(./svg/icons-3edata/icon-air.svg);}
+.icons-3data .icon-svg.water:before{ background-image: url(./svg/icons-3edata/icon-water.svg);}
+.icons-3data .icon-svg.sewage:before{ background-image: url(./svg/icons-3edata/icon-sewage.svg);}
+.icons-3data .icon-svg.garbage:before{ background-image: url(./svg/icons-3edata/icon-garbage.svg);}
+.icons-3data .icon-svg.book:before{ background-image: url(./svg/icons-3edata/icon-book.svg);}
+
+/* icon-bkmp */
+.icons-bkmp .icon:before{ font-family: 'icons-bkmp' !important; color: #7CCDB7;}
+.icons-bkmp .icon-svg:before{}
+.icons-bkmp .icon-svg.home:before{ background-image: url(./svg/icons-bkmp/home.svg);}
+.icons-bkmp .icon-svg.heart:before{ background-image: url(./svg/icons-bkmp/heart.svg);}
+.icons-bkmp .icon-svg.my:before{ background-image: url(./svg/icons-bkmp/my.svg);}
+.icons-bkmp .icon-svg.appointment:before{ background-image: url(./svg/icons-bkmp/appointment.svg);}
+.icons-bkmp .icon-svg.follow-up:before{ background-image: url(./svg/icons-bkmp/follow-up.svg);}
+.icons-bkmp .icon-svg.rating:before{ background-image: url(./svg/icons-bkmp/rating.svg);}
+.icons-bkmp .icon-svg.vistitor:before{ background-image: url(./svg/icons-bkmp/vistitor.svg);}
 
 /* icons-bakang */
-.icons-bakang .icon:before{ font-family: 'icons-bakang' !important;}
+.icons-bakang .icon:before{ font-family: 'icons-bakang' !important; color: #ADADAD;}
+.icons-bakang .icon.active:before{ color: #17ADC0;}
+
 
 /* = Mobile adjustments
 -------------------------------------------------------------- */
@@ -313,6 +339,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .icons-col-3 .icon:before,
 .tabbar.icons-wallet .icon span:before{ font-size: 3rem;}
-.icons-forums .icon:before{ min-height: 3rem;}
+.icons-col-4 .icon{ font-size: .5rem;}
+.icon-svg:before,
+.icon-svg:before{ min-height: 3rem;}
 
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vistitor@2x</title>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="135.4685%" gradientTransform="translate(0.500000,0.000000),scale(1.000000,0.738179),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#ACDDFF" offset="0%"></stop>
+            <stop stop-color="#74B9FF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="vistitor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5">
+            <path d="M18,16.9411765 C13.3218233,16.9411765 9.52941176,13.1487649 9.52941176,8.47058824 C9.52941176,3.79241153 13.3218233,0 18,0 C22.6781767,0 26.4705882,3.79241153 26.4705882,8.47058824 C26.4705882,13.1487649 22.6781767,16.9411765 18,16.9411765 Z M18,36 L-3.76169684e-15,36 C-3.76169684e-15,27.2284187 8.0588745,20.1176471 18,20.1176471 C21.1043991,20.1176471 24.0252453,20.811074 26.5744434,22.0319618" id="Combined-Shape" fill="url(#radialGradient-1)"></path>
+            <path d="M23.1159479,31.8905589 L30.2215973,19.8469619 C30.8263299,18.8219808 32.1412276,18.4712239 33.1761259,19.0588235 C34.1869259,19.6327404 34.5410896,20.9174073 33.9671726,21.9282073 C33.9606825,21.9396379 33.9540854,21.9510075 33.9473822,21.9623146 L26.3971929,34.6981369 L26.3971929,34.6981369 L22.2352941,36 L23.1159479,31.8905589 Z" id="Path-6" fill="#B9DCFF"></path>
+        </g>
+    </g>
+</svg>
