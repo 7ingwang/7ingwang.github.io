@@ -213,6 +213,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 -------------------------------------------------------------- */
 .icons{ justify-content: space-evenly;}
 .icons-col-1 .icon{ width: 100%;}
+.icons-col-2 .icon{ width: 50%;}
+.icons-col-2 .icon:before{ font-size: 2rem;}
 .icons-col-3 .icon{ width: 33.33%;}
 .icons-col-3 .icon:before{ font-size: 5rem;}
 .icons-col-4 .icon{ width: 25%;}
@@ -257,7 +259,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* icon-bkmp */
 .icons-bkmp .icon:before{ font-family: 'icons-bkmp' !important; color: #7CCDB7;}
-.icons-bkmp .icon-svg:before{}
+.icons-bkmp.icons-col-2 .icon-svg:before{ min-height: 10rem;}
 .icons-bkmp .icon-svg.home:before{ background-image: url(./svg/icons-bkmp/home.svg);}
 .icons-bkmp .icon-svg.heart:before{ background-image: url(./svg/icons-bkmp/heart.svg);}
 .icons-bkmp .icon-svg.my:before{ background-image: url(./svg/icons-bkmp/my.svg);}
@@ -265,6 +267,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .icons-bkmp .icon-svg.follow-up:before{ background-image: url(./svg/icons-bkmp/follow-up.svg);}
 .icons-bkmp .icon-svg.rating:before{ background-image: url(./svg/icons-bkmp/rating.svg);}
 .icons-bkmp .icon-svg.vistitor:before{ background-image: url(./svg/icons-bkmp/vistitor.svg);}
+.icons-bkmp .icon-svg.hospital1:before{ background-image: url(./svg/icons-bkmp/hospital1.svg);}
+.icons-bkmp .icon-svg.hospital2:before{ background-image: url(./svg/icons-bkmp/hospital2.svg);}
 
 /* icons-bakang */
 .icons-bakang .icon:before{ font-family: 'icons-bakang' !important; color: #ADADAD;}
@@ -342,5 +346,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .icons-col-4 .icon{ font-size: .5rem;}
 .icon-svg:before,
 .icon-svg:before{ min-height: 3rem;}
-
+.icons-bkmp.icons-col-2 .icon-svg:before{ min-height: 5rem;}
+.icons-3data .icon-svg.city:before{ min-height: 10rem; background-size: contain;}
 }
