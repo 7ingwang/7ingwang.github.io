@@ -206,6 +206,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bloc .container{ margin-bottom: 1rem; padding-bottom: 1rem;}
 
+h1{ padding: 1rem 0;}
+
+.scrollToTop{ width: inherit; height: inherit;}
+.scrollToTop .icon{ padding: 0; color: #fff;}
+
 /* = Colour
 -------------------------------------------------------------- */
 
@@ -250,6 +255,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .icons-3data .icon:nth-child(n+4):nth-child(-n+9):before{ color: #4BC2D0;}
 
 .icons-3data .icon-svg:before{ min-height: 5rem;}
+.icons-3data .icon-svg.city{ padding: 2rem 0;}
 .icons-3data .icon-svg.city:before{ min-height: 20rem; background: #BAE5F5 center bottom no-repeat; background-image: url(./svg/icons-3edata/city.svg); background-size: auto 90%;}
 .icons-3data .icon-svg.air:before{ background-image: url(./svg/icons-3edata/icon-air.svg);}
 .icons-3data .icon-svg.water:before{ background-image: url(./svg/icons-3edata/icon-water.svg);}
@@ -273,6 +279,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* icons-bakang */
 .icons-bakang .icon:before{ font-family: 'icons-bakang' !important; color: #ADADAD;}
 .icons-bakang .icon.active:before{ color: #17ADC0;}
+
+
+/* icons-social */
+.icons-social .icon:before{ font-family: 'icons-social' !important; color: #333; }
 
 
 /* = Mobile adjustments
