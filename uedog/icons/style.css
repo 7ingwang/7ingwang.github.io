@@ -238,6 +238,7 @@ h1{ padding: 1rem 0;}
 
 /* icons-forums */
 .icons-forums .icon-svg{ width: 30%;}
+.icons-forums .icon-svg:before{ min-height: 5rem;}
 
 /* icons-wallet */
 .icons-wallet .icon:before{ font-family: 'icons-wallet' !important; color: #7A808F;}
