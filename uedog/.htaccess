@@ -37,3 +37,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /icons/$1
 RewriteCond %{HTTP_HOST} ^icons\.uedog\.com$
 RewriteRule ^(/)?$ icons/index.php [L]
+
+#dq.uedog.com 绑定子目录dq
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^dq\.uedog\.com$
+RewriteCond %{REQUEST_URI} !^/dq/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /dq/$1
+RewriteCond %{HTTP_HOST} ^dq\.uedog\.com$
+RewriteRule ^(/)?$ dq/public/index.php [L]
