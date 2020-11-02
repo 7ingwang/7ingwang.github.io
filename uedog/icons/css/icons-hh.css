@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icons-hh';
+  src:  url('../fonts/icons-hh.eot?jl9fxh');
+  src:  url('../fonts/icons-hh.eot?jl9fxh#iefix') format('embedded-opentype'),
+    url('../fonts/icons-hh.ttf?jl9fxh') format('truetype'),
+    url('../fonts/icons-hh.woff?jl9fxh') format('woff'),
+    url('../fonts/icons-hh.svg?jl9fxh#icons-hh') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-hh' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-furn-solid:before {
+  content: "\e900";
+}
+.icon-workshop-solid:before {
+  content: "\e901";
+}
+.icon-power-solid:before {
+  content: "\e902";
+}
+.icon-steelmaking-solid:before {
+  content: "\e903";
+}
+.icon-oxygen-solid:before {
+  content: "\e904";
+}
+.icon-strip-solid:before {
+  content: "\e905";
+}

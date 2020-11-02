@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>steelmaking-solid</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.176471 0 0 0 0 0.203922 0 0 0 0 0.211765 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HH_HD_home_v0.55" transform="translate(-410.000000, -388.000000)">
+            <g id="Group-42" transform="translate(50.000000, 20.000000)">
+                <g id="Group-9-Copy" transform="translate(340.000000, 350.000000)">
+                    <g id="steelmaking-solid" transform="translate(20.000000, 18.000000)" filter="url(#filter-1)">
+                        <g>
+                            <path d="M9.78064799,0 L11.8401926,4.1380551 L17.6059545,4.1380551 L20.3537653,0 L25,0 L23.1847636,20 L6.14798599,20 L4,0 L9.78064799,0 Z M16.1291935,5 C16.4308405,8.90493843 15.9047177,11.2983678 14.5508251,12.1802882 C12.6857689,13.3951785 13.379531,8.31672779 13.5052268,7.47949708 L13.4975383,7.51956626 C13.4084338,7.96463734 13.0267873,9.34893729 11.4904185,11.4550038 C9.59950317,14.0470856 13.5230843,19.0598284 17.3498159,16.0858576 C19.9009703,14.1032104 19.4940962,10.4079246 16.1291935,5 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                            <polygon id="Rectangle-Copy-3---Rectangle-Copy-4" fill="#FFFFFF" points="3.72133569 16 4.2813342 22 8.2038926 22 9 28 2.2301403 28 -5.68434189e-14 16"></polygon>
+                            <polygon id="Rectangle-Copy-2---Rectangle-Copy-4" fill="#FFFFFF" points="28 16 26.4307185 28 20 28 20.6484088 22 24.822651 22 25.2611252 16"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

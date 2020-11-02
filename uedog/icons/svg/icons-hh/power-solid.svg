@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>power-solid</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.176471 0 0 0 0 0.203922 0 0 0 0 0.211765 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HH_HD_home_v0.55" transform="translate(-410.000000, -472.000000)">
+            <g id="Group-42" transform="translate(50.000000, 20.000000)">
+                <g id="Group-17" transform="translate(340.000000, 434.000000)">
+                    <g id="power-solid" transform="translate(20.000000, 18.000000)" filter="url(#filter-1)">
+                        <g>
+                            <path d="M19.3709542,0 C19.080914,3.83750764 19.080914,7.72639653 19.3709542,11.6666667 C19.5257815,13.7700341 19.8042294,15.8812171 20.2062979,18.0002158 L18.9929315,18 L18.9929315,18 L18.9929315,22.1666667 C18.9929315,23.3361003 18.328621,25.2805447 17,28 L17,28 L0,28 C2.77802579,20.3855252 4.16703869,14.9410807 4.16703869,11.6666667 L4.16703869,0 L19.3709542,0 Z M23,28 C21.7663727,24.6476205 20.8351386,21.3143591 20.2062979,18.0002158 L26.2643694,18 C26.1256545,19.3705384 26.1256545,20.7594273 26.2643694,22.1666667 C26.454229,24.0927607 27.0327726,26.0372051 28,28 Z M14.9111856,5.06309474 L6.48022285,15.6553976 L10.4411143,15.770525 L9.40566499,24.1426704 L16.8414224,14.3891771 L13.3673237,12.6868071 L14.9111856,5.06309474 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
