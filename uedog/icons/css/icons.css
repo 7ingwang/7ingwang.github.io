@@ -8,3 +8,7 @@
 @import "icons-bakang.css";
 @import "icons-hh.css";
 
+/* icons-color */
+.icons-black,
+.icons-black .icon{ color: black;}
+
