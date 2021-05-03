@@ -4,10 +4,13 @@
 		<title>Terry Wang</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<meta name="Keywords" content="Terry,wang,UI,UE,UX,design,摄影,photography">
+		<meta name="Keywords" content="Terry,wang,UI,UE,UX,design,摄影,photography,sticker,微表情">
 		<meta name="description" content="I am Terry Wang.">
-		<link rel="stylesheet" href="./css/icons.css">
-		<link rel="stylesheet" href="./css/style.css">
+		<style>
+			html, body{ height: 100vh; overflow: hidden;}
+			body{ display: flex; flex-direction: column; justify-content: flex-end; text-align: center;}
+			.avatar{ margin: 0 auto; width: 120px; height: 120px;}
+		</style>
 
 		<script>
 		var _hmt = _hmt || [];
@@ -21,38 +24,6 @@
 
 	</head>
 	<body>
-		<header id="header"></header>
-
-		<section class="card">
-			<img class="avatar" src="./img/avatar.gif" alt="Terry Wang">
-			<h1>Terry Wang</h1>
-			<p>UI Designer & Photographer</p>
-			<div class="links"><a href="http://pixwind.com" target="_blank">pixwind.com</a></div>
-			<ul class="icons">
-				<li><a href="javascript:void(0)" onclick="btn_toggle();"><i class="icon icon-wechat" title="加我微信"></i><label>微信</label></a></li>
-				<li><a href="https://unsplash.com/@blueskin" target="_blank"><i class="icon icon-unsplash" title="Unsplash"></i><label>Unsplash</label></a></li>
-				<li><a href="https://500px.com.cn/blueskin" target="_blank" title="500px"><i class="icon icon-px500"></i><label>500px</label></a></li>
-				<li><a href="https://www.instagram.com/pixwind/" target="_blank" title="Instagram"><i class="icon icon-instagram"></i><label>Instagram</label></a></li>
-				<li><a href="mailto:terry@pixwind.com"><i class="icon icon-mail" title="发邮件给我"></i><label>Email</label></a></li>
-			</ul>
-			<div id="scan" class="hide"><img src="./img/wechat_terry.png" alt="扫码加我微信"></div>
-		</section>
-		<footer id="footer">
-			<p class="copyright">&copy; 2020 <a href="./">Terry.Wang</a> | <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备15009576号</a></p>
-		</footer>
-
-		<script type="text/javascript" src="http://tajs.qq.com/stats?sId=66539297" charset="UTF-8"></script>
-		<script type="text/javascript">
-		    function btn_toggle(){
-		        var sh = document.getElementById('scan').classList.contains('show');
-		        if(sh){
-		            document.getElementById('scan').classList.remove('show');
-		            document.getElementById('scan').classList.add('hide');
-		        }else{
-		            document.getElementById('scan').classList.remove('hide');
-		            document.getElementById('scan').classList.add('show');
-		        }
-		    }
-		</script>
+		<img class="avatar" src="./img/avatar.gif" alt="Terry Wang">
 	</body>
 </html>
