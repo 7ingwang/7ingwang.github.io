@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon-qkdlve.eot');
+  src:  url('fonts/icomoon-qkdlve.eot#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-qkdlve.ttf') format('truetype'),
+    url('fonts/icomoon-qkdlve.woff') format('woff'),
+    url('fonts/icomoon-qkdlve.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-language:before {
+  content: "\e909";
+}
+.icon-scan:before {
+  content: "\e900";
+}
+.icon-key:before {
+  content: "\e901";
+}
+.icon-admin:before {
+  content: "\e902";
+}
+.icon-cert:before {
+  content: "\e903";
+}
+.icon-research:before {
+  content: "\e904";
+}
+.icon-padlock:before {
+  content: "\e905";
+}
+.icon-quality:before {
+  content: "\e906";
+}
+.icon-glc:before {
+  content: "\e907";
+}
+.icon-logo:before {
+  content: "\e908";
+}
