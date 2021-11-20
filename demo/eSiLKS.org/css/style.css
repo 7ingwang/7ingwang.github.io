@@ -275,7 +275,7 @@ a:hover{ text-decoration: none;}
 
 /* map */
 .block.map, .block.tags{ height: 400px; }
-.block.map{ background: #2c70c2;}
+.block.map{ background: #2c70c2 url(../img/map.svg) center center no-repeat; background-size: contain;}
 .block.map .block-title{ color: #fff;}
 
 .block.map.large{ }
