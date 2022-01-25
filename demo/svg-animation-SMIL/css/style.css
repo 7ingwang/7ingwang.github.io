@@ -1,0 +1,14 @@
+html{ height: 100vh;}
+body{ background: #002560 url(../img/bg.png) no-repeat center bottom; background-size: cover; color: #fff; overflow: hidden;}
+
+.container{ max-width: 1856px;}
+
+header{ position: relative; height: 64px; background-image: radial-gradient(circle at 50% 1e+02%, #2D76FF 0%, rgba(30,84,165,0.00) 100%), linear-gradient(180deg, #033268 0%, #1B5AAB 100%);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.30);}
+header::after{ content: ""; position: absolute; bottom: -4px; display: block; width: 100%; height: 4px; background-image: linear-gradient(270deg, rgba(84,160,255,0.00) 0%, #54A0FF 51%, rgba(84,160,255,0.00) 100%);}
+
+.portal{ position: relative;}
+.portal svg{ width: 100%;}
+.portal-l{ margin-top: 0; left: 8%}
+.portal-c{ margin-top: 13.4%;}
+.portal-r{ margin-top: 3.7%; left: -8%;}
