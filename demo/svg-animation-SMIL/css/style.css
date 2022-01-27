@@ -1,5 +1,5 @@
 html{ height: 100vh;}
-body{ background: #002560 url(../img/bg.png) no-repeat center bottom; background-size: cover; color: #fff; overflow: hidden;}
+body{ background: #002560 url(../img/bg.png) no-repeat center bottom; background-size: cover; background-attachment: fixed; color: #fff;  min-height: 5000px;}
 
 .container{ max-width: 1856px;}
 
@@ -9,6 +9,6 @@ header::after{ content: ""; position: absolute; bottom: -4px; display: block; wi
 
 .portal{ position: relative;}
 .portal svg{ width: 100%;}
-.portal-l{ margin-top: 0; left: 8%}
-.portal-c{ margin-top: 13.4%;}
-.portal-r{ margin-top: 3.7%; left: -8%;}
+.portal-l{ margin-top: 8%; left: 8%}
+.portal-c{ margin-top: 21%; }
+.portal-r{ margin-top: 11%; left: -8%;}
