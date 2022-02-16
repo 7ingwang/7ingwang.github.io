@@ -9,6 +9,10 @@ header::after{ content: ""; position: absolute; bottom: -4px; display: block; wi
 
 .portal{ position: relative;}
 .portal svg{ width: 100%;}
+.portal:hover{ transition: ease-in-out .3s; cursor: pointer;}
 .portal-l{ margin-top: 8%; left: 8%}
+.portal-l:hover{ margin-top: 5%;}
 .portal-c{ margin-top: 21%; }
+.portal-c:hover{ margin-top: 18%;}
 .portal-r{ margin-top: 11%; left: -8%;}
+.portal-r:hover{ margin-top: 8%;}
