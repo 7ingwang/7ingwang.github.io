@@ -149,15 +149,7 @@
                                 <polygon id="Path-Copy-4" stroke="url(#linearGradient-91q5iw_dy7-13)" stroke-width="3.57157895" opacity="0.900000036" points="307.494253 208.689759 183.963325 260.830717 183.963325 214.686332 223.955352 199.13552 239.063451 207.368303 268.390937 195.476505 278.166766 173.522417 307.494253 163.460127"></polygon>
                             </g>
                         </g>
-                        <linearGradient x1="50.0021449%" y1="2.51534904e-15%" x2="50.0024623%" y2="90.2926261%" id="linearGradient-iyx5bb7q7p-1">
-                        <stop stop-color="#00EAFF" stop-opacity="0" offset="0%"></stop>
-                        <stop stop-color="#00EAFF" offset="53.4145542%"></stop>
-                        <stop stop-color="#4DE7FE" stop-opacity="0" offset="100%"></stop>
-                        </linearGradient>
-                        <filter x="-333.2%" y="-2.1%" width="808.2%" height="104.0%" filterUnits="objectBoundingBox" id="f1-1">
-                            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
-                        </filter>
-                        <line x1="323.336544" y1="431.74" x2="323.5" y2="716.193917" id="light" stop-color="#00EAFF" stroke="url(#linearGradient-iyx5bb7q7p-1)" stroke-width="4" filter="url(#f1-1)">
+                        <line x1="323.336544" y1="431.74" x2="323.5" y2="716.193917" id="light" stroke="url(#linearGradient-91q5iw_dy7-14)" stroke-width="4" filter="url(#f1-1)">
                             <animateMotion 
                             path="M 0 0 V 300" 
                             begin="1s" 
