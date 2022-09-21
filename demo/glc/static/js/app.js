@@ -3,7 +3,7 @@ webpackJsonp([1], {
         t.exports = i.p + "static/img/problem.f934190.gif"
     },
     "1Heb": function(t, e, i) {
-        t.exports = i.p + "static/img/problem-section.98a4244.gif"
+        t.exports = "static/img/problem-section.98a4244.gif"
     },
     NHnr: function(t, e, i) {
         "use strict";
